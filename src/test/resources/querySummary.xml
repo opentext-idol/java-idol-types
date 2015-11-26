@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>50</autn:numhits>
+        <autn:querysummary>
+            Reddit StumbleUpon Delicious, Chart Yammer Sickle Yammer Sickle, Guess Which Curling
+        </autn:querysummary>
+        <autn:qs>
+            <autn:element pdocs="11" poccs="13" cluster="0" docs="11">Reddit StumbleUpon Delicious</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="-3" docs="9">Chart Yammer Sickle Yammer Sickle</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="-3" docs="9">Guess Which Curling</autn:element>
+            <autn:element pdocs="9" poccs="10" cluster="-3" docs="9">Jimmy Fallon</autn:element>
+            <autn:element pdocs="9" poccs="10" cluster="-3" docs="9">Heeere's Ivan</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="-3" docs="9">Portfolio Portfolio</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="-3" docs="9">PE VC</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="1" docs="9">BARRON'S Barron's</autn:element>
+            <autn:element pdocs="9" poccs="9" cluster="1" docs="9">MARKETWATCH MarketWatch</autn:element>
+            <autn:element pdocs="18" poccs="27" cluster="2" docs="18">Español</autn:element>
+        </autn:qs>
+    </responsedata>
+</autnresponse>

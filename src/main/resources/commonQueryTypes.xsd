@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           xmlns:s="AutnSimpleTypes"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:complexType name="docContent" mixed="true">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="skip"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="fieldRecurse">
+        <xs:sequence>
+            <xs:element name="fieldcode" type="xs:integer"/>
+            <xs:element name="field" type="xs:string"/>
+            <xs:element name="value" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="reasons">
+        <xs:sequence>
+            <xs:element name="name" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="code" type="xs:integer"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="reason" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="positions" type="xs:string"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="hit">
+        <xs:sequence>
+            <!-- Default elements that are always returned -->
+            <xs:element name="reference" type="xs:string"/>
+            <xs:element name="id" type="xs:integer"/>
+            <xs:element name="section" type="xs:integer"/>
+            <xs:element name="weight" type="xs:double"/>
+            <xs:element name="cluster" type="xs:integer" minOccurs="0"/>
+            <xs:element name="clustertitle" type="xs:string" minOccurs="0"/>
+            <xs:element name="links" type="xs:string" minOccurs="0"/>
+            <xs:element name="database" type="xs:string" minOccurs="0"/>
+            <xs:element name="printable" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="highlighted" type="xs:string" minOccurs="0"/>
+            <xs:element name="summary" type="xs:string" minOccurs="0"/>
+            <xs:element name="content" type="autn:docContent" minOccurs="0"/>
+            <!-- Extra elements returned when &xmlmeta=true is passed in -->
+            <xs:element name="baseid" type="xs:integer" minOccurs="0"/>
+            <xs:element name="date" type="xs:integer" minOccurs="0"/>
+            <xs:element name="datestring" type="s:queryResultDate" minOccurs="0"/>
+            <xs:element name="expiredate" type="xs:integer" minOccurs="0"/>
+            <xs:element name="language" type="xs:string" minOccurs="0"/>
+            <xs:element name="languagetype" type="xs:string" minOccurs="0"/>
+            <xs:element name="languageencoding" type="xs:string" minOccurs="0"/>
+            <xs:element name="fieldsortvalue" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="combinevalue" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="fieldrecurse" minOccurs="0" maxOccurs="unbounded" type="autn:fieldRecurse"/>
+            <xs:element name="reasons" minOccurs="0" type="autn:reasons"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="databaseHits">
+        <xs:sequence>
+            <xs:element name="database" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:integer">
+                            <xs:attribute name="name" type="xs:string"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="qs">
+        <xs:sequence>
+            <xs:element name="element" type="autn:qsElement" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="qsElement">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="pdocs" type="xs:int"/>
+                <xs:attribute name="poccs" type="xs:int"/>
+                <xs:attribute name="cluster" type="xs:int"/>
+                <xs:attribute name="docs" type="xs:int"/>
+                <xs:attribute name="ids" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="queryStats">
+        <xs:sequence>
+            <xs:element name="avglinks" minOccurs="0" type="xs:float"/>
+            <xs:element name="avgscore" type="xs:float"/>
+            <xs:element name="numterms" type="xs:integer"/>
+            <xs:element name="nonstopwordterms" type="xs:integer"/>
+            <xs:element name="nonexistentterms" type="xs:integer"/>
+            <xs:element name="type" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

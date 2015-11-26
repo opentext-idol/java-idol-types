@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="http://schemas.autonomy.com/aci/" schemaLocation="documentStatsResponseTypes.xsd"/>
+
+    <xs:complexType name="termStats">
+        <xs:sequence>
+            <xs:element name="total_terms" type="xs:integer"/>
+            <xs:element name="stopwords" type="xs:integer"/>
+            <xs:element name="dre_terms" type="xs:integer"/>
+            <xs:element name="average_percent_dococcs" type="xs:float"/>
+            <xs:element name="average_percent_dredococcs" type="xs:float"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="characters">
+        <xs:sequence>
+            <xs:element name="total" type="xs:integer"/>
+            <xs:element name="percent_alphabetic" type="xs:float"/>
+            <xs:element name="percent_uppercase" type="xs:float"/>
+            <xs:element name="percent_numeric" type="xs:float"/>
+            <xs:element name="percent_whitespace" type="xs:float"/>
+            <xs:element name="percent_punctuation" type="xs:float"/>
+            <xs:element name="percent_control" type="xs:float"/>
+            <xs:element name="utf8_1-byte" type="xs:integer"/>
+            <xs:element name="utf8_2-byte" type="xs:integer"/>
+            <xs:element name="utf8_3-byte" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="documentStatsResponseData">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="sentences" type="xs:integer"/>
+            <xs:element minOccurs="0" name="paragraphs" type="xs:integer"/>
+            <xs:element minOccurs="0" name="total" type="termStats"/>
+            <xs:element minOccurs="0" name="distinct" type="termStats"/>
+            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element minOccurs="0" name="characters" type="characters"/>
+            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element minOccurs="0" name="autnresponse" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="documentStatsResponse">
+        <xs:sequence>
+            <xs:element name="action" type="xs:string"/>
+            <xs:element name="response" type="xs:string"/>
+            <xs:element name="responsedata" type="documentStatsResponseData"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+

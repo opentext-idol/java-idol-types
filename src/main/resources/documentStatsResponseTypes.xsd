@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:element name="positions" type="xs:string"/>
+    <xs:element name="element">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="termtag" type="xs:integer"/>
+                    <xs:attribute name="document_occurrences" type="xs:integer"/>
+                    <xs:attribute name="total_occurrences" type="xs:integer"/>
+                    <xs:attribute name="match" type="xs:integer"/>
+                    <xs:attribute name="type" type="xs:integer" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="wildrequired" type="xs:boolean"/>
+    <xs:element name="numberrequired" type="xs:integer"/>
+    <xs:element name="costestimate">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:integer">
+                    <xs:attribute name="indexkb" type="xs:integer" use="required"/>
+                    <xs:attribute name="minloop" type="xs:integer" use="required"/>
+                    <xs:attribute name="maxloop" type="xs:integer" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="required" type="xs:string"/>
+    <xs:element name="warning" type="xs:string"/>
+
+</xs:schema>

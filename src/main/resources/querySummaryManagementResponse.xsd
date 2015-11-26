@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="phraseList">
+        <xs:sequence>
+            <xs:element name="phrase" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="subphrase" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="querySummaryManagementResponseData">
+        <xs:sequence>
+            <xs:element name="whitelist" minOccurs="0" type="phraseList"/>
+            <xs:element name="stopphrase" minOccurs="0" type="phraseList"/>
+            <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="autnresponse" minOccurs="0" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+

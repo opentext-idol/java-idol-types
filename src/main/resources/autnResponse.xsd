@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="AutnSimpleTypes" elementFormDefault="qualified">
+
+    <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:element name="autnresponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="action" type="xs:string"/>
+                <xs:element name="response" type="xs:string"/>
+                <xs:element name="responsedata" type="xs:anyType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="errorResponse">
+        <xs:sequence>
+            <xs:element name="error" type="error"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="error">
+        <xs:sequence>
+            <xs:element name="errorid" type="xs:string"/>
+            <xs:element name="rawerrorid" type="xs:string"/>
+            <xs:element name="errorstring" type="xs:string"/>
+            <xs:element name="errordescription" type="xs:string"/>
+            <xs:element name="errorcode" type="xs:string"/>
+            <xs:element name="errortime" type="s:idolDate"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

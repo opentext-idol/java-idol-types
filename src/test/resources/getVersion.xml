@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>GETVERSION</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:version>10.10.0</autn:version>
+        <autn:aciversion>3.5.0.1208563</autn:aciversion>
+        <autn:productname>Query Manipulation Service</autn:productname>
+        <autn:commonname>Query Manipulation Service</autn:commonname>
+        <autn:producttypecsv>QMS</autn:producttypecsv>
+        <autn:productUID>1941794827</autn:productUID>
+        <autn:build>1208563</autn:build>
+        <autn:wordsize>64</autn:wordsize>
+        <autn:operatingsystem>Linux</autn:operatingsystem>
+        <autn:compiler>GCC 4.4.7</autn:compiler>
+        <autn:directory>/opt/qms</autn:directory>
+        <autn:configpath>/opt/qms/qms.cfg</autn:configpath>
+        <autn:servertime>
+            <autn:epoch>1448282817</autn:epoch>
+            <autn:string>23 Nov 15 12:46:57</autn:string>
+        </autn:servertime>
+        <autn:performance>
+            <autn:qps>
+                <autn:qps>0.0</autn:qps>
+                <autn:queries>13</autn:queries>
+                <autn:period>2 days, 19 hours, 25 mins, 27 secs</autn:period>
+            </autn:qps>
+        </autn:performance>
+        <autn:uptime>
+            <autn:uptime>2 days, 19 hours, 25 mins, 27 secs</autn:uptime>
+            <autn:seconds>242727</autn:seconds>
+            <autn:starttime>20 Nov 15 17:21:30</autn:starttime>
+        </autn:uptime>
+    </responsedata>
+</autnresponse>
