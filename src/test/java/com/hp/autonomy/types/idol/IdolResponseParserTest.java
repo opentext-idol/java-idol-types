@@ -46,7 +46,7 @@ public class IdolResponseParserTest<T> {
 //                new Object[]{GetQueryTagValuesResponseData.class, ""},
 //                new Object[]{GetSampleResponseData.class, ""},
                 new Object[]{GetStatusResponseData.class, "/getStatus.xml"},
-//                new Object[]{GetTagNamesResponseData.class, ""},
+                new Object[]{GetTagNamesResponseData.class, "/getTagNames.xml"},
 //                new Object[]{GetTagValuesResponseData.class, ""},
                 new Object[]{GetVersionResponseData.class, "/getVersion.xml"},
 //                new Object[]{HighlightResponseData.class, ""},
