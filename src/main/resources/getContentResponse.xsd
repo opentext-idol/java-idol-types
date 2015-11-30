@@ -12,7 +12,7 @@
     <xs:include schemaLocation="commonQueryTypes.xsd"/>
     <xs:complexType name="getContentResponseData">
         <xs:sequence>
-            <xs:element name="numhits" type="xs:integer"/>
+            <xs:element name="numhits" type="xs:int"/>
             <xs:element name="hit" minOccurs="0" maxOccurs="unbounded" type="autn:hit"/>
             <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:any namespace="##local" minOccurs="0" processContents="lax"/>

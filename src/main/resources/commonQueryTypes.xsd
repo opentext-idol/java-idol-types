@@ -55,7 +55,7 @@
             <xs:element name="reference" type="xs:string"/>
             <xs:element name="id" type="xs:integer"/>
             <xs:element name="section" type="xs:integer"/>
-            <xs:element name="weight" type="xs:double"/>
+            <xs:element name="weight" type="xs:double" minOccurs="0"/>
             <xs:element name="cluster" type="xs:integer" minOccurs="0"/>
             <xs:element name="clustertitle" type="xs:string" minOccurs="0"/>
             <xs:element name="links" type="xs:string" minOccurs="0"/>

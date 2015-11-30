@@ -15,37 +15,26 @@
             <xs:element name="number_of_values" type="xs:integer"/>
             <xs:element name="total_values" minOccurs="0" type="xs:integer"/>
             <xs:choice minOccurs="0" maxOccurs="unbounded">
-                <xs:element name="value">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="count" type="xs:string"/>
-                                <xs:attribute name="date" type="xs:string"/>
-                                <xs:attribute name="date_with_offset" type="xs:string"/>
-                                <xs:attribute name="type" type="xs:string"/>
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="subvalue">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="xs:string">
-                                <xs:attribute name="count" type="xs:string"/>
-                                <xs:attribute name="date" type="xs:string"/>
-                                <xs:attribute name="date_with_offset" type="xs:string"/>
-                                <xs:attribute name="type" type="xs:string"/>
-                            </xs:extension>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="values" minOccurs="0" type="xs:integer"/>
+                <xs:element name="value" type="autn:tagValue"/>
+                <xs:element name="subvalue" type="autn:tagValue"/>
+                <xs:element name="values" minOccurs="0" type="xs:int"/>
                 <xs:element name="valuesum" minOccurs="0" type="xs:float"/>
                 <xs:element name="valueaverage" minOccurs="0" type="xs:float"/>
                 <xs:element name="valuemin" minOccurs="0" type="xs:float"/>
                 <xs:element name="valuemax" minOccurs="0" type="xs:float"/>
             </xs:choice>
         </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tagValue">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="count" type="xs:int"/>
+                <xs:attribute name="date" type="xs:string"/>
+                <xs:attribute name="date_with_offset" type="xs:string"/>
+                <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
 
     <xs:complexType name="valueDetails">
