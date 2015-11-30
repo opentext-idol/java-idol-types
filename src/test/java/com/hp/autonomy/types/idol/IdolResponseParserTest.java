@@ -42,7 +42,7 @@ public class IdolResponseParserTest<T> {
 //                new Object[]{DetectLanguageResponseData.class, ""},
 //                new Object[]{DocumentStatsResponseData.class, ""},
 //                new Object[]{GetAllRefsResponseData.class, ""},
-//                new Object[]{GetContentResponseData.class, ""},
+                new Object[]{GetContentResponseData.class, "/getContent.xml"},
 //                new Object[]{GetQueryTagValuesResponseData.class, ""},
 //                new Object[]{GetSampleResponseData.class, ""},
                 new Object[]{GetStatusResponseData.class, "/getStatus.xml"},
