@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           xmlns:s="AutnSimpleTypes"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:complexType name="getVersionResponseData">
+        <xs:sequence>
+            <xs:element name="version" type="xs:string"/>
+            <xs:element name="aciversion" type="xs:string"/>
+            <xs:element name="productname" type="xs:string"/>
+            <xs:element name="commonname" type="xs:string"/>
+            <xs:element name="producttypecsv" type="xs:string"/>
+            <xs:element name="productUID" type="xs:unsignedLong"/>
+            <xs:element name="build" type="xs:unsignedLong"/>
+            <xs:element name="wordsize" type="xs:unsignedLong"/>
+            <xs:element name="operatingsystem" type="xs:string"/>
+            <xs:element name="compiler" type="xs:string"/>
+            <xs:element name="directory" type="xs:string"/>
+            <xs:element name="configpath" type="xs:string"/>
+            <xs:element name="servertime" type="autn:serverTime"/>
+            <xs:element name="performance" type="autn:performance"/>
+            <xs:element name="uptime" type="autn:upTime"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="serverTime">
+        <xs:sequence>
+            <xs:element name="epoch" type="xs:string"/>
+            <xs:element name="string" type="s:idolDate"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="performance">
+        <xs:sequence>
+            <xs:element name="qps" type="autn:qps"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="qps">
+        <xs:sequence>
+            <xs:element name="qps" type="xs:double"/>
+            <xs:element name="queries" type="xs:unsignedLong"/>
+            <xs:element name="period" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="upTime">
+        <xs:sequence>
+            <xs:element name="uptime" type="xs:string"/>
+            <xs:element name="seconds" type="xs:unsignedLong"/>
+            <xs:element name="starttime" type="s:idolDate"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

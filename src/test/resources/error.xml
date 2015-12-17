@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse>
+    <action>QUERY</action>
+    <response>ERROR</response>
+    <responsedata>
+        <error>
+            <errorid>AXEQUERY502</errorid>
+            <rawerrorid>0x1F6</rawerrorid>
+            <errorstring>No valid query text supplied</errorstring>
+            <errordescription>
+                All terms were invalid, through being stopwords, too short, or incorrectly formatted
+            </errordescription>
+            <errorcode>ERRORPARAMINVALID</errorcode>
+            <errortime>20 Nov 15 16:49:50</errortime>
+        </error>
+    </responsedata>
+</autnresponse>

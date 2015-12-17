@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+<xs:complexType name="termAnalysis">
+    <xs:sequence>
+        <xs:element name="terms" type="xs:integer"/>
+        <xs:element name="numeric" type="xs:integer"/>
+        <xs:element name="alphanumeric" type="xs:integer"/>
+        <xs:element name="multibyte" type="xs:integer"/>
+        <xs:element name="dococcs" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+                        <xs:attribute name="logn" type="xs:integer" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="length" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+                        <xs:attribute name="len" type="xs:integer" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="distincttermsperdoc" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+                        <xs:attribute name="logn" type="xs:integer"/>
+                        <xs:attribute name="truncated" type="xs:integer"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="termsperdoc" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+                        <xs:attribute name="logn" type="xs:integer" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="termGetAllResponseData">
+    <xs:sequence>
+        <xs:element name="number_of_terms" type="xs:integer"/>
+        <xs:element name="term" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                        <xs:attribute name="document_occurrences" type="xs:integer"/>
+                        <xs:attribute name="total_occurrences" type="xs:integer"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="internal_db" minOccurs="0" maxOccurs="unbounded">                                                   
+            <xs:complexType>
+                <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                        <xs:attribute name="occs" type="xs:integer" use="required"/>
+                        <xs:attribute name="terms" type="xs:integer" use="required"/>
+                        <xs:attribute name="name" type="xs:string" use="required"/>
+                    </xs:extension>
+                </xs:simpleContent>
+            </xs:complexType>
+        </xs:element>
+        <xs:element name="termanalysis" minOccurs="0" type="autn:termAnalysis"/>
+        <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string" />  
+        <xs:any namespace="##local" minOccurs="0" processContents="lax"/>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>
+

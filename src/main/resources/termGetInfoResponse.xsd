@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="termGetInfoResponseData">
+        <xs:sequence>
+            <xs:element name="number_of_terms" type="xs:integer"/>
+            <xs:element name="term" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="apcm_weight" type="xs:integer"/>
+                            <xs:attribute name="case" type="xs:integer"/>
+                            <xs:attribute name="document_occurrences" type="xs:integer"/>
+                            <xs:attribute name="eop" type="xs:boolean"/>
+                            <xs:attribute name="eos" type="xs:boolean"/>
+                            <xs:attribute name="length" type="xs:integer"/>
+                            <xs:attribute name="numeric" type="xs:integer"/>
+                            <xs:attribute name="pos" type="xs:string"/>
+                            <xs:attribute name="startpos" type="xs:integer"/>
+                            <xs:attribute name="stopword" type="xs:boolean"/>
+                            <xs:attribute name="total_occurrences" type="xs:integer"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:any namespace="##local" minOccurs="0" processContents="lax"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+

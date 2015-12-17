@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>GETTAGNAMES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:name code="2">DOCUMENT</autn:name>
+        <autn:name code="3">DOCUMENT/DREREFERENCE</autn:name>
+        <autn:name code="4">DOCUMENT/DRETITLE</autn:name>
+        <autn:name code="5">DOCUMENT/ALTTITLE</autn:name>
+        <autn:name code="6">DOCUMENT/AUTNRANK</autn:name>
+        <autn:name code="7">DOCUMENT/TITLELENGTH</autn:name>
+        <autn:name code="8">DOCUMENT/CONTENTLENGTH</autn:name>
+        <autn:name code="9">DOCUMENT/LANGUAGETYPE</autn:name>
+        <autn:name code="10">DOCUMENT/WIKIID</autn:name>
+        <autn:name code="11">DOCUMENT/DREDATE</autn:name>
+        <autn:name code="12">DOCUMENT/CATEGORY</autn:name>
+        <autn:name code="13">DOCUMENT/DREDBNAME</autn:name>
+        <autn:name code="14">DOCUMENT/DRECONTENT</autn:name>
+        <autn:count type="index">2</autn:count>
+        <autn:count type="reference">1</autn:count>
+        <autn:count type="date">1</autn:count>
+        <autn:count type="expire">0</autn:count>
+        <autn:count type="section">0</autn:count>
+        <autn:count type="dbase">1</autn:count>
+        <autn:count type="flattenindex">0</autn:count>
+        <autn:count type="gobblewhitespace">0</autn:count>
+        <autn:count type="hiddenfield">0</autn:count>
+        <autn:count type="language">0</autn:count>
+        <autn:count type="security">0</autn:count>
+        <autn:count type="acl">0</autn:count>
+        <autn:count type="highlight">2</autn:count>
+        <autn:count type="title">1</autn:count>
+        <autn:count type="print">0</autn:count>
+        <autn:count type="numeric">0</autn:count>
+        <autn:count type="invertedagent">0</autn:count>
+        <autn:count type="numericdate">0</autn:count>
+        <autn:count type="autnhidden">0</autn:count>
+        <autn:count type="parametric">0</autn:count>
+        <autn:count type="sourcefield">2</autn:count>
+        <autn:count type="doctracking">0</autn:count>
+        <autn:count type="memorymapped">0</autn:count>
+        <autn:count type="stored">0</autn:count>
+        <autn:count type="ocrfilter">0</autn:count>
+        <autn:count type="autnrank">0</autn:count>
+        <autn:count type="fieldcheck">0</autn:count>
+        <autn:count type="textparseindex">0</autn:count>
+        <autn:count type="sort">0</autn:count>
+        <autn:count type="quicktag">0</autn:count>
+        <autn:count type="match">0</autn:count>
+        <autn:count type="count">0</autn:count>
+        <autn:count type="trimspaces">1</autn:count>
+        <autn:count type="paramrange">0</autn:count>
+        <autn:count type="memcache">0</autn:count>
+        <autn:count type="langdetect">0</autn:count>
+        <autn:count type="sectionbroken">0</autn:count>
+        <autn:count type="refmemmapped">0</autn:count>
+        <autn:count type="indexnumbers">0</autn:count>
+        <autn:count type="intnumeric">0</autn:count>
+        <autn:count type="nbit">0</autn:count>
+        <autn:count type="nonreversible">0</autn:count>
+        <autn:count type="alwaysmatch">0</autn:count>
+        <autn:number_of_fields>13</autn:number_of_fields>
+    </responsedata>
+</autnresponse>

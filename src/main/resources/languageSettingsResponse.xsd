@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="knowledge">
+        <xs:sequence>
+            <xs:element name="unicodeblock" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="encodings">
+        <xs:sequence>
+            <xs:element name="encoding" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="configuredName" type="xs:string"/>
+                            <xs:attribute name="enum" type="xs:integer"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="count" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="names">
+        <xs:sequence>
+            <xs:element name="name" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="representation" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="count" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="language">
+        <xs:sequence>
+            <xs:element name="names" type="names"/>
+            <xs:element name="encodings" type="encodings"/>
+        </xs:sequence>
+        <xs:attribute name="hyphenChars" type="xs:string"/>
+        <xs:attribute name="indexNumbers" type="xs:string"/>
+        <xs:attribute name="languageDirectory" type="xs:string"/>
+        <xs:attribute name="numberPunctuation" type="xs:string"/>
+        <xs:attribute name="properNames" type="xs:string"/>
+        <xs:attribute name="separators" type="xs:string"/>
+        <xs:attribute name="stemming" type="xs:boolean"/>
+        <xs:attribute name="tangibleChars" type="xs:string"/>
+        <xs:attribute name="transliteration" type="xs:boolean"/>
+    </xs:complexType>
+
+    <xs:complexType name="languages">
+        <xs:sequence>
+            <xs:element name="language" minOccurs="0" maxOccurs="unbounded" type="language"/>
+        </xs:sequence>
+        <xs:attribute name="configured" type="xs:integer" use="required"/>
+        <xs:attribute name="defaultEncoding" type="xs:string" use="required"/>
+        <xs:attribute name="defaultLanguage" type="xs:string" use="required"/>
+        <xs:attribute name="defaultLanguageType" type="xs:string" use="required"/>
+        <xs:attribute name="genericFullStemming" type="xs:boolean" use="required"/>
+        <xs:attribute name="genericStemming" type="xs:boolean" use="required"/>
+        <xs:attribute name="genericTransliteration" type="xs:boolean" use="required"/>
+        <xs:attribute name="langDetectUTF8" type="xs:boolean" use="required"/>
+        <xs:attribute name="stopwordIndex" type="xs:string" use="required"/>
+        <xs:attribute name="total" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="languageSettingsResponseData">
+        <xs:sequence>
+            <xs:element name="knowledge" minOccurs="0">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="booleanClose" type="xs:string" use="required"/>
+                            <xs:attribute name="booleanOpen" type="xs:string" use="required"/>
+                            <xs:attribute name="closeValue" type="xs:string" use="required"/>
+                            <xs:attribute name="fieldAllowed" type="xs:string" use="required"/>
+                            <xs:attribute name="fieldValues" type="xs:string" use="required"/>
+                            <xs:attribute name="multiply" type="xs:string" use="required"/>
+                            <xs:attribute name="noConversionCSVs" type="xs:string" use="required"/>
+                            <xs:attribute name="noStemValues" type="xs:string" use="required"/>
+                            <xs:attribute name="openValue" type="xs:string" use="required"/>
+                            <xs:attribute name="paramClose" type="xs:string" use="required"/>
+                            <xs:attribute name="paramOpen" type="xs:string" use="required"/>
+                            <xs:attribute name="phraseMarks" type="xs:string" use="required"/>
+                            <xs:attribute name="slotSize" type="xs:integer" use="required"/>
+                            <xs:attribute name="stemOffset" type="xs:integer" use="required"/>
+                            <xs:attribute name="wildcards" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="languages" type="languages"/>
+            <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="autnrequest" minOccurs="0" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

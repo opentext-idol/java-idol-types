@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETCONTENT</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>2</autn:numhits>
+        <autn:hit>
+            <autn:reference>
+                http://washingtontimes.feedsportal.com/c/34503/f/629218/s/1fb85532/l/0L0Swashingtontimes0N0Cnews0C20A120Cmay0C250Chonoring0Eour0Efallen0Eby0Esupporting0Etheir0Eloved0Eones0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS/story01.htm
+            </autn:reference>
+            <autn:id>1188837</autn:id>
+            <autn:section>0</autn:section>
+            <autn:title>DAVIS: Honoring our fallen by supporting their loved ones</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>
+                        http://washingtontimes.feedsportal.com/c/34503/f/629218/s/1fb85532/l/0L0Swashingtontimes0N0Cnews0C20A120Cmay0C250Chonoring0Eour0Efallen0Eby0Esupporting0Etheir0Eloved0Eones0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS/story01.htm
+                    </DREREFERENCE>
+                    <DRETITLE>DAVIS: Honoring our fallen by supporting their loved ones</DRETITLE>
+                    <DREDATE>1337992505</DREDATE>
+                    <ORIGIN>http://www.washingtontimes.com/rss/headlines/news/headlines/</ORIGIN>
+                    <SOURCE>Washington Times</SOURCE>
+                    <REGION>USA</REGION>
+                    <LANGUAGETYPE>englishUTF8</LANGUAGETYPE>
+                    <FETCHTIME>1338390450</FETCHTIME>
+                    <DRECONTENT>Memorial Day is the solemn occasion on which we respectfully remember those in uniform
+                        who have given their lives in service to our country. I can think of no better way to honor
+                        their memory than by recognizing and supporting the family members for whom they will forever be
+                        irreplaceable ...
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>
+                http://washingtontimes.feedsportal.com/c/34503/f/629218/s/1fb85532/l/0L0Swashingtontimes0N0Cnews0C20A120Cmay0C250Chonoring0Eour0Efallen0Eby0Esupporting0Etheir0Eloved0Eones0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS/story01.htm
+            </autn:reference>
+            <autn:id>1450132</autn:id>
+            <autn:section>0</autn:section>
+            <autn:title>DAVIS: Honoring our fallen by supporting their loved ones</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>
+                        http://washingtontimes.feedsportal.com/c/34503/f/629218/s/1fb85532/l/0L0Swashingtontimes0N0Cnews0C20A120Cmay0C250Chonoring0Eour0Efallen0Eby0Esupporting0Etheir0Eloved0Eones0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS/story01.htm
+                    </DREREFERENCE>
+                    <DRETITLE>DAVIS: Honoring our fallen by supporting their loved ones</DRETITLE>
+                    <DREDATE>1337992505</DREDATE>
+                    <ORIGIN>http://www.washingtontimes.com/rss/headlines/news/headlines/</ORIGIN>
+                    <SOURCE>Washington Times</SOURCE>
+                    <REGION>USA</REGION>
+                    <LANGUAGETYPE>englishUTF8</LANGUAGETYPE>
+                    <FETCHTIME>1338390450</FETCHTIME>
+                    <DRECONTENT>Memorial Day is the solemn occasion on which we respectfully remember those in uniform
+                        who have given their lives in service to our country. I can think of no better way to honor
+                        their memory than by recognizing and supporting the family members for whom they will forever be
+                        irreplaceable ...
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

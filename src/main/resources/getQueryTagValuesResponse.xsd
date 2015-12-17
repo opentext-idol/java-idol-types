@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="flatField">
+        <xs:sequence>
+            <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="number_of_values" type="xs:integer"/>
+            <xs:element name="total_values" minOccurs="0" type="xs:integer"/>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="value" type="autn:tagValue"/>
+                <xs:element name="subvalue" type="autn:tagValue"/>
+                <xs:element name="values" minOccurs="0" type="xs:int"/>
+                <xs:element name="valuesum" minOccurs="0" type="xs:float"/>
+                <xs:element name="valueaverage" minOccurs="0" type="xs:float"/>
+                <xs:element name="valuemin" minOccurs="0" type="xs:float"/>
+                <xs:element name="valuemax" minOccurs="0" type="xs:float"/>
+            </xs:choice>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tagValue">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="count" type="xs:int"/>
+                <xs:attribute name="date" type="xs:string"/>
+                <xs:attribute name="date_with_offset" type="xs:string"/>
+                <xs:attribute name="type" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="valueDetails">
+        <xs:sequence>
+            <xs:element name="values" type="xs:integer"/>
+            <xs:element name="value_sum" type="xs:float"/>
+            <xs:element name="value_average" type="xs:float"/>
+            <xs:element name="value_min" type="xs:float"/>
+            <xs:element name="value_max" type="xs:float"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="recursiveField">
+        <xs:sequence>
+            <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:recursiveField"/>
+            <xs:element name="value_details" minOccurs="0" type="autn:valueDetails"/>
+        </xs:sequence>
+        <xs:attribute name="count" type="xs:string"/>
+        <xs:attribute name="date" type="xs:string"/>
+        <xs:attribute name="date_with_offset" type="xs:string"/>
+        <xs:attribute name="value" type="xs:string"/>
+    </xs:complexType>
+
+    <xs:complexType name="values">
+        <xs:sequence>
+            <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:recursiveField"/>
+            <xs:element name="value_details" minOccurs="0" type="autn:valueDetails"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getQueryTagValuesResponseData">
+        <xs:sequence>
+            <xs:element name="number_of_fields" type="xs:integer"/>
+            <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:flatField"/>
+            <xs:element name="values" minOccurs="0" type="autn:values"/>
+            <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:any namespace="##local" minOccurs="0" processContents="lax"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
+

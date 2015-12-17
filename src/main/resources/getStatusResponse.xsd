@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="indexQueue">
+        <xs:sequence>
+            <xs:element name="indexqueuereceived" type="xs:integer"/>
+            <xs:element name="indexqueuecompleted" type="xs:integer"/>
+            <xs:element name="indexqueuequeued" type="xs:integer"/>
+            <xs:element name="initialid" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="termCache">
+        <xs:sequence>
+            <xs:element name="used_kb" type="xs:integer"/>
+            <xs:element name="num_terms" type="xs:integer"/>
+            <xs:element name="limit_kb" type="xs:integer"/>
+            <xs:element name="requests" type="xs:integer"/>
+            <xs:element name="hits" type="xs:integer"/>
+            <xs:element name="hitrate" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="indexCache">
+        <xs:sequence>
+            <xs:element name="used_kb" type="xs:integer"/>
+            <xs:element name="num_terms" type="xs:integer"/>
+            <xs:element name="limit_kb" type="xs:integer"/>
+            <xs:element name="num_blocks" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="fieldCodes">
+        <xs:sequence>
+            <xs:element name="base" type="xs:integer"/>
+            <xs:element name="total" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="databases">
+        <xs:sequence>
+            <xs:element name="max_databases" type="xs:integer"/>
+            <xs:element name="num_databases" type="xs:integer"/>
+            <xs:element name="active_databases" type="xs:integer"/>
+            <xs:element name="database" minOccurs="0" maxOccurs="unbounded" type="database"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="database">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="documents" type="xs:long"/>
+            <xs:element name="sections" type="xs:integer"/>
+            <xs:element name="internal" type="xs:boolean"/>
+            <xs:element name="readonly" type="xs:boolean"/>
+            <xs:element name="expiry_hours" type="xs:string"/>
+            <xs:element name="expiry_action" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="languageTypeSettings">
+        <xs:sequence>
+            <xs:element name="no_of_language_types" type="xs:integer"/>
+            <xs:element name="language_type" minOccurs="0" maxOccurs="unbounded" type="languageType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="languageType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="language" type="xs:string"/>
+            <xs:element name="encoding" type="xs:string"/>
+            <xs:element name="documents" type="xs:integer"/>
+            <xs:element name="sections" type="xs:integer"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="validation">
+        <xs:sequence>
+            <xs:element name="result" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="type" type="xs:string" use="required"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="compaction">
+        <xs:sequence>
+            <xs:element name="last_compact_id" type="xs:string"/>
+            <xs:element name="compact_state" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getStatusResponseData">
+        <xs:sequence>
+            <xs:element name="product" type="xs:string"/>
+            <xs:element name="version" type="xs:string"/>
+            <xs:element name="build" type="xs:integer"/>
+            <xs:element name="licensed_languages" type="xs:string"/>
+            <xs:element name="indexport" type="xs:integer"/>
+            <xs:element name="indexport_ssl_enabled" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="queryport" type="xs:integer"/>
+            <xs:element name="aciport" type="xs:integer"/>
+            <xs:element name="serviceport" type="xs:integer"/>
+            <xs:element name="directory" type="xs:string"/>
+            <xs:element name="querythreads" type="xs:integer"/>
+            <xs:element name="acithreads" type="xs:integer"/>
+            <xs:element name="termsperdoc" type="xs:integer"/>
+            <xs:element name="suggestterms" type="xs:integer"/>
+            <xs:element name="documents" type="xs:integer"/>
+            <xs:element name="document_sections" type="xs:integer"/>
+            <xs:element name="committed_documents" type="xs:integer"/>
+            <xs:element name="deleted_sections" type="xs:integer"/>
+            <xs:element name="indexed_data_gb" type="xs:double" minOccurs="0"/>
+            <xs:element name="full" type="xs:boolean"/>
+            <xs:element name="full_ratio" type="xs:float"/>
+            <xs:element name="terms" type="xs:integer"/>
+            <xs:element name="total_terms" type="xs:integer"/>
+            <xs:element name="term_hashes" type="xs:integer"/>
+            <xs:element name="record_size" type="xs:integer"/>
+            <xs:element name="max_occurrences" type="xs:integer"/>
+            <xs:element name="mindate" type="xs:integer"/>
+            <xs:element name="maxdate" type="xs:integer"/>
+            <xs:element name="mindatestring" minOccurs="0" type="xs:integer"/>
+            <xs:element name="maxdatestring" minOccurs="0" type="xs:integer"/>
+            <xs:element name="ref_fields" type="xs:integer"/>
+            <xs:element name="ref_hashes" type="xs:integer"/>
+            <xs:element name="indexqueue" type="indexQueue"/>
+            <xs:element name="termcache" type="termCache"/>
+            <xs:element name="indexcache" type="indexCache"/>
+            <xs:element name="fieldcodes" type="fieldCodes"/>
+            <xs:element name="databases" type="databases"/>
+            <xs:element name="language_type_settings" type="languageTypeSettings"/>
+            <xs:element name="validation" type="validation"/>
+            <xs:element name="compaction" type="compaction"/>
+            <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="autnrequest" minOccurs="0" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
