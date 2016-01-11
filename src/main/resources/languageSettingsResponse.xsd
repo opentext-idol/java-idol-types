@@ -41,7 +41,7 @@
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
-        <xs:attribute name="count" type="xs:integer" use="required"/>
+        <xs:attribute name="count" type="xs:long" use="required"/>
     </xs:complexType>
 
     <xs:complexType name="language">
@@ -58,6 +58,11 @@
         <xs:attribute name="stemming" type="xs:boolean"/>
         <xs:attribute name="tangibleChars" type="xs:string"/>
         <xs:attribute name="transliteration" type="xs:boolean"/>
+        <xs:attribute name="stopList" type="xs:string"/>
+        <xs:attribute name="sentenceBreakingDLL" type="xs:string"/>
+        <xs:attribute name="sentenceMutex" type="xs:boolean"/>
+        <xs:attribute name="defaultEncoding" type="xs:string"/>
+        <xs:attribute name="normaliseMode" type="xs:string"/>
     </xs:complexType>
 
     <xs:complexType name="languages">

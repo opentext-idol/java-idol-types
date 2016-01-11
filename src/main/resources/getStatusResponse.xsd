@@ -76,8 +76,8 @@
             <xs:element name="name" type="xs:string"/>
             <xs:element name="language" type="xs:string"/>
             <xs:element name="encoding" type="xs:string"/>
-            <xs:element name="documents" type="xs:integer"/>
-            <xs:element name="sections" type="xs:integer"/>
+            <xs:element name="documents" type="xs:long"/>
+            <xs:element name="sections" type="xs:int"/>
         </xs:sequence>
     </xs:complexType>
 
