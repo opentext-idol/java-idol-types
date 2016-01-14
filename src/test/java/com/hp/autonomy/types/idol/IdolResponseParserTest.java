@@ -54,7 +54,7 @@ public class IdolResponseParserTest<T> {
 //                new Object[]{ListResponseData.class, ""},
                 new Object[]{QueryResponseData.class, "/query.xml"},
                 new Object[]{QueryResponseData.class, "/queryForPromotions.xml"},
-                new Object[]{QueryResponseData.class, "/querySummary.xml"}//,
+                new Object[]{QueryResponseData.class, "/querySummary.xml"},
 //                new Object[]{QuerySummaryManagementResponseData.class, ""},
 //                new Object[]{SuggestOnTextResponseData.class, ""},
 //                new Object[]{SuggestResponseData.class, ""},
@@ -62,7 +62,9 @@ public class IdolResponseParserTest<T> {
 //                new Object[]{TermExpandResponseData.class, ""},
 //                new Object[]{TermGetAllResponseData.class, ""},
 //                new Object[]{TermGetBestResponseData.class, ""},
-                /*new Object[]{TermGetInfoResponseData.class, ""}*/);
+//                new Object[]{TermGetInfoResponseData.class, ""},
+                new Object[]{TypeAheadResponseData.class, "/typeAhead.xml"}
+        );
     }
 
 
