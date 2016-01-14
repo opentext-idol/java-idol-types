@@ -51,6 +51,9 @@
 
     <xs:complexType name="hit">
         <xs:sequence>
+            <!-- QMS elements -->
+            <xs:element name="promotionref" type="xs:string" minOccurs="0"/>
+            <xs:element name="promotionname" type="xs:string" minOccurs="0"/>
             <!-- Default elements that are always returned -->
             <xs:element name="reference" type="xs:string"/>
             <xs:element name="id" type="xs:integer"/>

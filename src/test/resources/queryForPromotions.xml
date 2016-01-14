@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>2</autn:numhits>
+        <autn:hit>
+            <autn:promotionref>478dafb5-cec9-4e11-8f75-d6ea6e304242</autn:promotionref>
+            <autn:promotionname>Sponsored</autn:promotionname>
+            <autn:reference>http://starwars.wikia.com/wiki/Alien Exodus</autn:reference>
+            <autn:id>276988</autn:id>
+            <autn:section>2</autn:section>
+            <autn:weight>96.0</autn:weight>
+            <autn:database>Wookiepedia</autn:database>
+            <autn:title>Alien Exodus</autn:title>
+        </autn:hit>
+        <autn:hit>
+            <autn:promotionref>309df9a9-0b91-4a3c-b32a-afc34df997a5</autn:promotionref>
+            <autn:promotionname>Top Promotions</autn:promotionname>
+            <autn:reference>6a219aaa-3f64-41e5-9e89-3ab5d84dd430</autn:reference>
+            <autn:id>0</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:title>Theo2</autn:title>
+            <autn:summary>Theodore "Teddy" Roosevelt, often referred to as TR, was an American statesman, author,
+                explorer, soldier, naturalist, and reformer who served as the 26th President of the United States from
+                1901 to 1909. As a leader of the Republican Party during this time, he became a driving force for the
+                Progressive Era in the United States in the early 20th Century.
+            </autn:summary>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

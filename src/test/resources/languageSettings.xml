@@ -1,0 +1,1228 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse>
+    <action>LANGUAGESETTINGS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <languages total="160" configured="88" defaultLanguageType="englishUTF8" defaultLanguage="ENGLISH"
+                   defaultEncoding="UTF8" genericStemming="false" genericFullStemming="false"
+                   genericTransliteration="false" langDetectUTF8="true" stopwordIndex="0 (Stopwords not indexed)">
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">AFRIKAANS</name>
+                    <name representation="ISO639">AFR</name>
+                    <name representation="alt">AF</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="afrikaansASCII">ASCII</encoding>
+                    <encoding configuredName="afrikaansUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="5">
+                    <name representation="autn">ALBANIAN</name>
+                    <name representation="ISO639">ALB</name>
+                    <name representation="alt">SQI</name>
+                    <name representation="alt">SQ</name>
+                    <name representation="alt">SHQIP</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="albanianASCII">ASCII</encoding>
+                    <encoding configuredName="albanianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+060C U+061B U+061F U+06D4"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">ARABIC</name>
+                    <name representation="ISO639">ARA</name>
+                    <name representation="alt">AR</name>
+                </names>
+                <encodings count="3">
+                    <encoding configuredName="arabicARABIC_ISO">ARABIC_ISO</encoding>
+                    <encoding configuredName="arabicARABIC">ARABIC</encoding>
+                    <encoding configuredName="arabicUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+058A"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">ARMENIAN</name>
+                    <name representation="ISO639">ARM</name>
+                    <name representation="alt">HYE</name>
+                    <name representation="alt">HY</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="armenianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">AZERI</name>
+                    <name representation="ISO639">AZE</name>
+                    <name representation="alt">AZ</name>
+                    <name representation="alt">AZERBAIJANI</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="azeriUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="basque.dat">
+                <names count="5">
+                    <name representation="autn">BASQUE</name>
+                    <name representation="ISO639">BAQ</name>
+                    <name representation="alt">EUS</name>
+                    <name representation="alt">EU</name>
+                    <name representation="alt">EUSKARA</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="basqueASCII">ASCII</encoding>
+                    <encoding configuredName="basqueUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="6">
+                    <name representation="autn">BELORUSSIAN</name>
+                    <name representation="ISO639">BEL</name>
+                    <name representation="alt">BE</name>
+                    <name representation="alt">BELARUSSIAN</name>
+                    <name representation="alt">BYELORUSSIAN</name>
+                    <name representation="alt">BELARUSIAN</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="belorussianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="belorussianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">BENGALI</name>
+                    <name representation="ISO639">BEN</name>
+                    <name representation="alt">BN</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="bengaliUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">BOSNIAN</name>
+                    <name representation="ISO639">BOS</name>
+                    <name representation="alt">BS</name>
+                    <name representation="alt">BOSNIAQUE</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="bosnianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">BRETON</name>
+                    <name representation="ISO639">BRE</name>
+                    <name representation="alt">BR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="bretonASCII">ASCII</encoding>
+                    <encoding configuredName="bretonUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">BULGARIAN</name>
+                    <name representation="ISO639">BUL</name>
+                    <name representation="alt">BG</name>
+                </names>
+                <encodings count="3">
+                    <encoding configuredName="bulgarianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="bulgarianUTF8">UTF8</encoding>
+                    <encoding configuredName="bulgarianCYRILLIC_ISO">CYRILLIC_ISO</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">BURMESE</name>
+                    <name representation="ISO639">BUR</name>
+                    <name representation="alt">MYA</name>
+                    <name representation="alt">MY</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="burmeseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="catalan.dat">
+                <names count="5">
+                    <name representation="autn">CATALAN</name>
+                    <name representation="ISO639">CAT</name>
+                    <name representation="alt">CA</name>
+                    <name representation="alt">VALENCIAN</name>
+                    <name representation="alt">VALENCIANO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="catalanASCII">ASCII</encoding>
+                    <encoding configuredName="catalanUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles"
+                      sentenceBreakingDLL="libchinesebreaking.so" sentenceMutex="false" defaultEncoding="UTF8"
+                      normaliseMode="Default">
+                <names count="4">
+                    <name representation="autn">CHINESE</name>
+                    <name representation="ISO639">CHI</name>
+                    <name representation="alt">ZHO</name>
+                    <name representation="alt">ZH</name>
+                </names>
+                <encodings count="3">
+                    <encoding configuredName="chineseCHINESESIMPLIFIED">CHINESESIMPLIFIED</encoding>
+                    <encoding configuredName="chineseCHINESETRADITIONAL">CHINESETRADITIONAL</encoding>
+                    <encoding configuredName="chineseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">CROATIAN</name>
+                    <name representation="ISO639">HRV</name>
+                    <name representation="alt">HR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="croatianEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="croatianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="czech.dat">
+                <names count="4">
+                    <name representation="autn">CZECH</name>
+                    <name representation="ISO639">CZE</name>
+                    <name representation="alt">CES</name>
+                    <name representation="alt">CS</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="czechEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="czechUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="danish.dat">
+                <names count="4">
+                    <name representation="autn">DANISH</name>
+                    <name representation="ISO639">DAN</name>
+                    <name representation="alt">DA</name>
+                    <name representation="alt">DANSK</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="danishASCII">ASCII</encoding>
+                    <encoding configuredName="danishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="dutch.dat">
+                <names count="8">
+                    <name representation="autn">DUTCH</name>
+                    <name representation="ISO639">DUT</name>
+                    <name representation="alt">NLA</name>
+                    <name representation="alt">NL</name>
+                    <name representation="alt">FLEMISH</name>
+                    <name representation="alt">DUITS</name>
+                    <name representation="alt">NEDERLANDS</name>
+                    <name representation="alt">VLAAMS</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="dutchASCII">ASCII</encoding>
+                    <encoding configuredName="dutchUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="english.dat">
+                <names count="3">
+                    <name representation="autn">ENGLISH</name>
+                    <name representation="ISO639">ENG</name>
+                    <name representation="alt">EN</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="englishASCII">ASCII</encoding>
+                    <encoding configuredName="englishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">ESPERANTO</name>
+                    <name representation="ISO639">EPO</name>
+                    <name representation="alt">EO</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="esperantoUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">ESTONIAN</name>
+                    <name representation="ISO639">EST</name>
+                    <name representation="alt">ET</name>
+                    <name representation="alt">EESTI</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="estonianNORTHERNEUROPEAN">NORTHERNEUROPEAN</encoding>
+                    <encoding configuredName="estonianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="2">
+                    <name representation="autn">ETHIOPIC</name>
+                    <name representation="ISO639">ETH</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="ethiopicUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">FAROESE</name>
+                    <name representation="ISO639">FAO</name>
+                    <name representation="alt">FO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="faroeseASCII">ASCII</encoding>
+                    <encoding configuredName="faroeseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="finnish.dat">
+                <names count="4">
+                    <name representation="autn">FINNISH</name>
+                    <name representation="ISO639">FIN</name>
+                    <name representation="alt">FI</name>
+                    <name representation="alt">SUOMI</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="finnishASCII">ASCII</encoding>
+                    <encoding configuredName="finnishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="french.dat">
+                <names count="5">
+                    <name representation="autn">FRENCH</name>
+                    <name representation="ISO639">FRE</name>
+                    <name representation="alt">FRA</name>
+                    <name representation="alt">FR</name>
+                    <name representation="alt">FRANCAIS</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="frenchASCII">ASCII</encoding>
+                    <encoding configuredName="frenchUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">GAELIC</name>
+                    <name representation="ISO639">GLE</name>
+                    <name representation="alt">GDH</name>
+                    <name representation="alt">IRISH</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="gaelicASCII">ASCII</encoding>
+                    <encoding configuredName="gaelicUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">GALICIAN</name>
+                    <name representation="ISO639">GLG</name>
+                    <name representation="alt">GL</name>
+                    <name representation="alt">GALLEGAN</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="galicianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">GEORGIAN</name>
+                    <name representation="ISO639">GEO</name>
+                    <name representation="alt">KAT</name>
+                    <name representation="alt">KA</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="georgianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="german.dat">
+                <names count="5">
+                    <name representation="autn">GERMAN</name>
+                    <name representation="ISO639">GER</name>
+                    <name representation="alt">DEU</name>
+                    <name representation="alt">DE</name>
+                    <name representation="alt">DEUTSCH</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="germanASCII">ASCII</encoding>
+                    <encoding configuredName="germanUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="5">
+                    <name representation="autn">GREEK</name>
+                    <name representation="ISO639">GRE</name>
+                    <name representation="alt">ELL</name>
+                    <name representation="alt">EL</name>
+                    <name representation="alt">ELINIKI</name>
+                </names>
+                <encodings count="3">
+                    <encoding configuredName="greekGREEK">GREEK</encoding>
+                    <encoding configuredName="greekGREEK_ISO">GREEK_ISO</encoding>
+                    <encoding configuredName="greekUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">GUJARATI</name>
+                    <name representation="ISO639">GUJ</name>
+                    <name representation="alt">GU</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="gujaratiUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">HAUSA</name>
+                    <name representation="ISO639">HAU</name>
+                    <name representation="alt">HA</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="hausaUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+05BE"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="hebrew.dat">
+                <names count="4">
+                    <name representation="autn">HEBREW</name>
+                    <name representation="ISO639">HEB</name>
+                    <name representation="alt">HE</name>
+                    <name representation="alt">IVRIT</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="hebrewHEBREW">HEBREW</encoding>
+                    <encoding configuredName="hebrewUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">HINDI</name>
+                    <name representation="ISO639">HIN</name>
+                    <name representation="alt">HI</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="hindiASCII">ASCII</encoding>
+                    <encoding configuredName="hindiUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="hungarian.dat">
+                <names count="4">
+                    <name representation="autn">HUNGARIAN</name>
+                    <name representation="ISO639">HUN</name>
+                    <name representation="alt">HU</name>
+                    <name representation="alt">MAGYAR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="hungarianEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="hungarianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="icelandic.dat">
+                <names count="4">
+                    <name representation="autn">ICELANDIC</name>
+                    <name representation="ISO639">ICE</name>
+                    <name representation="alt">ISL</name>
+                    <name representation="alt">IS</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="icelandicASCII">ASCII</encoding>
+                    <encoding configuredName="icelandicUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">INDONESIAN</name>
+                    <name representation="ISO639">IND</name>
+                    <name representation="alt">IN</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="indonesianASCII">ASCII</encoding>
+                    <encoding configuredName="indonesianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="italian.dat">
+                <names count="4">
+                    <name representation="autn">ITALIAN</name>
+                    <name representation="ISO639">ITA</name>
+                    <name representation="alt">IT</name>
+                    <name representation="alt">ITALIANO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="italianASCII">ASCII</encoding>
+                    <encoding configuredName="italianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+80FB"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles"
+                      sentenceBreakingDLL="libjapanesebreaking.so" sentenceMutex="true" defaultEncoding="UTF8"
+                      normaliseMode="Default">
+                <names count="4">
+                    <name representation="autn">JAPANESE</name>
+                    <name representation="ISO639">JPN</name>
+                    <name representation="alt">JA</name>
+                    <name representation="alt">NIHONGO</name>
+                </names>
+                <encodings count="4">
+                    <encoding configuredName="japaneseEUC">EUC</encoding>
+                    <encoding configuredName="japaneseSJIS">SHIFTJIS</encoding>
+                    <encoding configuredName="japaneseJIS">JIS</encoding>
+                    <encoding configuredName="japaneseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">KANNADA</name>
+                    <name representation="ISO639">KAN</name>
+                    <name representation="alt">KN</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="kannadaUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">KAZAKH</name>
+                    <name representation="ISO639">KAZ</name>
+                    <name representation="alt">KK</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="kazakhUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="5">
+                    <name representation="autn">KHMER</name>
+                    <name representation="ISO639">KHM</name>
+                    <name representation="alt">KM</name>
+                    <name representation="alt">KHMAE</name>
+                    <name representation="alt">CAMBODIAN</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="khmerUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles"
+                      sentenceBreakingDLL="libkoreanbreaking.so" sentenceMutex="false" defaultEncoding="UTF8"
+                      normaliseMode="Default">
+                <names count="3">
+                    <name representation="autn">KOREAN</name>
+                    <name representation="ISO639">KOR</name>
+                    <name representation="alt">KO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="koreanKOREAN">KOREAN</encoding>
+                    <encoding configuredName="koreanUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">KURDISH</name>
+                    <name representation="ISO639">KUR</name>
+                    <name representation="alt">KU</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="kurdishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">ISAN</name>
+                    <name representation="ISO639">LAO</name>
+                    <name representation="alt">LO</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="laoUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">LATIN</name>
+                    <name representation="ISO639">LAT</name>
+                    <name representation="alt">LA</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="latinASCII">ASCII</encoding>
+                    <encoding configuredName="latinUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="latvian.dat">
+                <names count="3">
+                    <name representation="autn">LATVIAN</name>
+                    <name representation="ISO639">LAV</name>
+                    <name representation="alt">LV</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="latvianNORTHERNEUROPEAN">NORTHERNEUROPEAN</encoding>
+                    <encoding configuredName="latvianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="lithuanian.dat">
+                <names count="4">
+                    <name representation="autn">LITHUANIAN</name>
+                    <name representation="ISO639">LIT</name>
+                    <name representation="alt">LT</name>
+                    <name representation="alt">LIETUVIU</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="lithuanianNORTHERNEUROPEAN">NORTHERNEUROPEAN</encoding>
+                    <encoding configuredName="lithuanianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">LUXEMBOURGISH</name>
+                    <name representation="ISO639">LTZ</name>
+                    <name representation="alt">LETZEBURGESCH</name>
+                    <name representation="alt">LUXEMBURGISH</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="luxembourgishASCII">ASCII</encoding>
+                    <encoding configuredName="luxembourgishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">MACEDONIAN</name>
+                    <name representation="ISO639">MAC</name>
+                    <name representation="alt">MKE</name>
+                    <name representation="alt">MK</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="macedonianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="macedonianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">MALAY</name>
+                    <name representation="ISO639">MAY</name>
+                    <name representation="alt">MSA</name>
+                    <name representation="alt">MS</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="malayUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">MALAYALAM</name>
+                    <name representation="ISO639">MAL</name>
+                    <name representation="alt">ML</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="malayalamUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">MAORI</name>
+                    <name representation="ISO639">MAO</name>
+                    <name representation="alt">MRI</name>
+                    <name representation="alt">MI</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="maoriASCII">ASCII</encoding>
+                    <encoding configuredName="maoriUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">MONGOLIAN</name>
+                    <name representation="ISO639">MON</name>
+                    <name representation="alt">MN</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="mongolianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="mongolianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">NEPALI</name>
+                    <name representation="ISO639">NPI</name>
+                    <name representation="alt">NE</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="nepaliUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="norwegian.dat">
+                <names count="4">
+                    <name representation="autn">NORWEGIAN</name>
+                    <name representation="ISO639">NOR</name>
+                    <name representation="alt">NO</name>
+                    <name representation="alt">NORSK</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="norwegianASCII">ASCII</encoding>
+                    <encoding configuredName="norwegianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">ORIYA</name>
+                    <name representation="ISO639">ORI</name>
+                    <name representation="alt">OR</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="oriyaUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">PUNJABI</name>
+                    <name representation="ISO639">PAN</name>
+                    <name representation="alt">PA</name>
+                    <name representation="alt">PANJABI</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="panjabiUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="5">
+                    <name representation="autn">PERSIAN</name>
+                    <name representation="ISO639">PER</name>
+                    <name representation="alt">FAS</name>
+                    <name representation="alt">FA</name>
+                    <name representation="alt">FARSI</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="persianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="polish.dat">
+                <names count="3">
+                    <name representation="autn">POLISH</name>
+                    <name representation="ISO639">POL</name>
+                    <name representation="alt">PL</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="polishEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="polishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="portuguese.dat">
+                <names count="4">
+                    <name representation="autn">PORTUGUESE</name>
+                    <name representation="ISO639">POR</name>
+                    <name representation="alt">PT</name>
+                    <name representation="alt">PORTUGUES</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="portugueseASCII">ASCII</encoding>
+                    <encoding configuredName="portugueseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">PASHTO</name>
+                    <name representation="ISO639">PUS</name>
+                    <name representation="alt">PS</name>
+                    <name representation="alt">PUSHTO</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="pushtoUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="romanian.dat">
+                <names count="4">
+                    <name representation="autn">ROMANIAN</name>
+                    <name representation="ISO639">RUM</name>
+                    <name representation="alt">RON</name>
+                    <name representation="alt">RO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="romanianEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="romanianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">RUSSIAN</name>
+                    <name representation="ISO639">RUS</name>
+                    <name representation="alt">RU</name>
+                </names>
+                <encodings count="4">
+                    <encoding configuredName="russianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="russianCYRILLIC_ISO">CYRILLIC_ISO</encoding>
+                    <encoding configuredName="russianCYRILLIC_KOI8">CYRILLIC_KOI8</encoding>
+                    <encoding configuredName="russianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">SERBIAN</name>
+                    <name representation="ISO639">SRP</name>
+                    <name representation="alt">SR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="serbianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="serbianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="5">
+                    <name representation="autn">SINGHALESE</name>
+                    <name representation="ISO639">SIN</name>
+                    <name representation="alt">SI</name>
+                    <name representation="alt">SINHALESE</name>
+                    <name representation="alt">SINHALA</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="singhaleseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="0 (Ignore all terms containing numbers)"
+                      properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D">
+                <names count="4">
+                    <name representation="autn">SINGHALESE</name>
+                    <name representation="ISO639">SIN</name>
+                    <name representation="alt">SSW</name>
+                    <name representation="alt">SISWANT</name>
+                    <name representation="alt">SS</name>
+                    <name representation="alt">SWATI</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="singhaleseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="slovak.dat">
+                <names count="6">
+                    <name representation="autn">SLOVAK</name>
+                    <name representation="ISO639">SLO</name>
+                    <name representation="alt">SLK</name>
+                    <name representation="alt">SK</name>
+                    <name representation="alt">SLOVENSKY</name>
+                    <name representation="alt">SLOVAKIAN</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="slovakEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="slovakUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="slovenian.dat">
+                <names count="5">
+                    <name representation="autn">SLOVENIAN</name>
+                    <name representation="ISO639">SLV</name>
+                    <name representation="alt">SL</name>
+                    <name representation="alt">SLOVENSKO</name>
+                    <name representation="alt">SLOVENE</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="slovenianEASTERNEUROPEAN">EASTERNEUROPEAN</encoding>
+                    <encoding configuredName="slovenianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">SOMALI</name>
+                    <name representation="ISO639">SOM</name>
+                    <name representation="alt">SO</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="somaliUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="spanish.dat">
+                <names count="5">
+                    <name representation="autn">SPANISH</name>
+                    <name representation="ISO639">SPA</name>
+                    <name representation="alt">ESL</name>
+                    <name representation="alt">ES</name>
+                    <name representation="alt">ESPANOL</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="spanishASCII">ASCII</encoding>
+                    <encoding configuredName="spanishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">SWAHILI</name>
+                    <name representation="ISO639">SWA</name>
+                    <name representation="alt">SW</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="swahiliUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="swedish.dat">
+                <names count="5">
+                    <name representation="autn">SWEDISH</name>
+                    <name representation="ISO639">SWE</name>
+                    <name representation="alt">SVE</name>
+                    <name representation="alt">SV</name>
+                    <name representation="alt">SVENSKA</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="swedishASCII">ASCII</encoding>
+                    <encoding configuredName="swedishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="9">
+                    <name representation="autn">TAGALOG</name>
+                    <name representation="ISO639">TGL</name>
+                    <name representation="alt">TL</name>
+                    <name representation="alt">PHILIPPINE</name>
+                    <name representation="alt">HANUNOO</name>
+                    <name representation="alt">BUHID</name>
+                    <name representation="alt">TAGBANWA</name>
+                    <name representation="alt">FIL</name>
+                    <name representation="alt">FILIPINO</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="tagalogASCII">ASCII</encoding>
+                    <encoding configuredName="tagalogUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">TAJIK</name>
+                    <name representation="ISO639">TGK</name>
+                    <name representation="alt">TG</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="tajikUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">TAMIL</name>
+                    <name representation="ISO639">TAM</name>
+                    <name representation="alt">TA</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="tamilUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">TATAR</name>
+                    <name representation="ISO639">TAT</name>
+                    <name representation="alt">TT</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="tatarUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">TELUGU</name>
+                    <name representation="ISO639">TEL</name>
+                    <name representation="alt">TE</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="teluguUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="false" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="thai.dat"
+                      sentenceBreakingDLL="libthaibreaking.so" sentenceMutex="false" defaultEncoding="UTF8"
+                      normaliseMode="Default">
+                <names count="3">
+                    <name representation="autn">THAI</name>
+                    <name representation="ISO639">THA</name>
+                    <name representation="alt">TH</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="thaiTHAI">THAI</encoding>
+                    <encoding configuredName="thaiUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">TIBETAN</name>
+                    <name representation="ISO639">TIB</name>
+                    <name representation="alt">BOD</name>
+                    <name representation="alt">BO</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="tibetanUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="turkish.dat">
+                <names count="3">
+                    <name representation="autn">TURKISH</name>
+                    <name representation="ISO639">TUR</name>
+                    <name representation="alt">TR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="turkishTURKISH">TURKISH</encoding>
+                    <encoding configuredName="turkishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="ukrainian.dat">
+                <names count="3">
+                    <name representation="autn">UKRAINIAN</name>
+                    <name representation="ISO639">UKR</name>
+                    <name representation="alt">UK</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="ukrainianCYRILLIC">CYRILLIC</encoding>
+                    <encoding configuredName="ukrainianUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">URDU</name>
+                    <name representation="ISO639">URD</name>
+                    <name representation="alt">UR</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="urduASCII">ASCII</encoding>
+                    <encoding configuredName="urduUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">UZBEK</name>
+                    <name representation="ISO639">UZB</name>
+                    <name representation="alt">UZ</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="uzbekUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">VIETNAMESE</name>
+                    <name representation="ISO639">VIE</name>
+                    <name representation="alt">VI</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="vietnameseVIETNAMESE">VIETNAMESE</encoding>
+                    <encoding configuredName="vietnameseUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63 U+0027"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles" stopList="welsh.dat">
+                <names count="4">
+                    <name representation="autn">WELSH</name>
+                    <name representation="ISO639">WEL</name>
+                    <name representation="alt">CYM</name>
+                    <name representation="alt">CY</name>
+                </names>
+                <encodings count="2">
+                    <encoding configuredName="welshASCII">ASCII</encoding>
+                    <encoding configuredName="welshUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">XHOSA</name>
+                    <name representation="ISO639">XHO</name>
+                    <name representation="alt">XH</name>
+                    <name representation="alt">ISIXHOSA</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="xhosaUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="3">
+                    <name representation="autn">YIDDISH</name>
+                    <name representation="ISO639">YID</name>
+                    <name representation="alt">YI</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="yiddishUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+            <language stemming="true" transliteration="true" indexNumbers="1 (Index all numeric terms)" properNames="0"
+                      separators="U+0020 U+000A U+000D U+0009 U+0021 U+0022 U+0023 U+0024 U+0025 U+0026 U+0028 U+0029 U+002A U+002B U+002C U+002D U+002F U+003A U+003B U+003C U+003D U+003E U+003F U+0040 U+005B U+005C U+005D U+005E U+0060 U+007B U+007C U+007D U+007E U+00A0 U+1680 U+2000 U+2001 U+2002 U+2003 U+2004 U+2005 U+2006 U+2007 U+2008 U+2009 U+200A U+202F U+205F U+3000 U+2010 U+2011 U+2012 U+2013 U+2014 U+2015 U+2053 U+2E3A U+2E3B U+FE31 U+FE32 U+FE58 U+FE63"
+                      hyphenChars="U+002D" languageDirectory="/opt/content/langfiles">
+                <names count="4">
+                    <name representation="autn">ZULU</name>
+                    <name representation="ISO639">ZUL</name>
+                    <name representation="alt">ZU</name>
+                    <name representation="alt">ISIZULU</name>
+                </names>
+                <encodings count="1">
+                    <encoding configuredName="zuluUTF8">UTF8</encoding>
+                </encodings>
+            </language>
+        </languages>
+    </responsedata>
+</autnresponse>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>TYPEAHEAD</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:expansion score="1020">YODA</autn:expansion>
+        <autn:expansion score="198">YODAS</autn:expansion>
+        <autn:expansion score="6">YOD</autn:expansion>
+        <autn:expansion score="6">YODER</autn:expansion>
+    </responsedata>
+</autnresponse>
