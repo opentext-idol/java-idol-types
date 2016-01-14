@@ -53,6 +53,7 @@ public class IdolResponseParserTest<T> {
                 new Object[]{LanguageSettingsResponseData.class, "/languageSettings.xml"},
 //                new Object[]{ListResponseData.class, ""},
                 new Object[]{QueryResponseData.class, "/query.xml"},
+                new Object[]{QueryResponseData.class, "/queryForPromotions.xml"},
                 new Object[]{QueryResponseData.class, "/querySummary.xml"}//,
 //                new Object[]{QuerySummaryManagementResponseData.class, ""},
 //                new Object[]{SuggestOnTextResponseData.class, ""},
