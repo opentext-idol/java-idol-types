@@ -1,0 +1,52 @@
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>USERREADUSERLISTDETAILS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:totalusers>3</autn:totalusers>
+        <autn:numusers>3</autn:numusers>
+        <autn:user>
+            <autn:uid>1</autn:uid>
+            <autn:username>user1</autn:username>
+            <autn:locked>false</autn:locked>
+            <autn:lockedlasttime>0</autn:lockedlasttime>
+            <autn:maxagents>15</autn:maxagents>
+            <autn:numagents>0</autn:numagents>
+            <autn:lastloggedin>1455862417</autn:lastloggedin>
+            <autn:numfields>0</autn:numfields>
+            <autn:securityinfo>
+                OTJ8iF/OXLKE4uZSeZsnKEAFXkyLNNYXxVdIVt8F312YSXeQz7tVPMvJ0qQJfoOxSqE1ejKBQamrUMn1Y3bSFsxhb62017iWLrXYKvxCOnDkGzFD190wFZHDHvWHT30=
+            </autn:securityinfo>
+        </autn:user>
+        <autn:user>
+            <autn:uid>2</autn:uid>
+            <autn:username>user2</autn:username>
+            <autn:locked>false</autn:locked>
+            <autn:lockedlasttime>0</autn:lockedlasttime>
+            <autn:maxagents>15</autn:maxagents>
+            <autn:numagents>0</autn:numagents>
+            <autn:lastloggedin>1455280890</autn:lastloggedin>
+            <autn:numfields>0</autn:numfields>
+            <autn:securityinfo>
+                ODh8w4GFOyOt/PgZavsPCWaNOEKC77J05jv3c1KYzrdaLet5Ikv3Uz3VC7kVu4gdSD5llk/VKj21n9fqQbEIpKgnZTnDl1q1OyksnBQ9oVv4/n5c/fx8/6lmzA==
+            </autn:securityinfo>
+        </autn:user>
+        <autn:user>
+            <autn:uid>3</autn:uid>
+            <autn:username>user3</autn:username>
+            <autn:locked>false</autn:locked>
+            <autn:lockedlasttime>0</autn:lockedlasttime>
+            <autn:maxagents>15</autn:maxagents>
+            <autn:numagents>0</autn:numagents>
+            <autn:lastloggedin>1455814985</autn:lastloggedin>
+            <autn:numfields>0</autn:numfields>
+            <autn:securityinfo>
+                OTJ8wklPCFxBSX2ZDrTC3G0DkajGjlOq9IyzylwJGGgDUm4EID9Nph2ijTsmeTj4h/Mae5LN4tr+8yT95ULhaAczx+YFnEphG8r0rxhEwxpDbZZYaCNL5xTsZdAGCgs=
+            </autn:securityinfo>
+        </autn:user>
+    </responsedata>
+</autnresponse>

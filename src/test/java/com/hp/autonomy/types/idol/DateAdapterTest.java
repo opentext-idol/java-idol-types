@@ -16,6 +16,14 @@ import static org.junit.Assert.assertNotNull;
 @SuppressWarnings("UseOfObsoleteDateTimeApi")
 public class DateAdapterTest {
     @Test
+    public void parseEpochDate() throws ParseException {
+        final String sampleDate = "0";
+        final Date parsedDate = DateAdapter.parseEpochDate(sampleDate);
+        assertNotNull(parsedDate);
+        assertEquals(sampleDate, DateAdapter.printEpochDate(parsedDate));
+    }
+
+    @Test
     public void parseDate() throws ParseException {
         final String sampleDate = "20 Nov 15 16:49:50";
         final Date parsedDate = DateAdapter.parseDate(sampleDate);

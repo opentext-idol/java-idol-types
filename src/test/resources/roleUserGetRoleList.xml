@@ -1,0 +1,10 @@
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>ROLEUSERGETROLELIST</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numroles>3</autn:numroles>
+        <autn:role>ADMIN</autn:role>
+        <autn:role>FindAdmin</autn:role>
+        <autn:role>everyone</autn:role>
+    </responsedata>
+</autnresponse>

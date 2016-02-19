@@ -56,15 +56,22 @@ public class IdolResponseParserTest<T> {
                 new Object[]{QueryResponseData.class, "/queryForPromotions.xml"},
                 new Object[]{QueryResponseData.class, "/querySummary.xml"},
 //                new Object[]{QuerySummaryManagementResponseData.class, ""},
+                new Object[]{Users.class, "/roleGetUserList.xml"},
+                new Object[]{RolesResponseData.class, "/roleUserGetRoleList.xml"},
 //                new Object[]{SuggestOnTextResponseData.class, ""},
 //                new Object[]{SuggestResponseData.class, ""},
 //                new Object[]{SummarizeResponseData.class, ""},
+                new Object[]{Security.class, "/security.xml"},
 //                new Object[]{TermExpandResponseData.class, ""},
 //                new Object[]{TermGetAllResponseData.class, ""},
 //                new Object[]{TermGetBestResponseData.class, ""},
 //                new Object[]{TermGetInfoResponseData.class, ""},
-                new Object[]{TypeAheadResponseData.class, "/typeAhead.xml"}
-        );
+                new Object[]{TypeAheadResponseData.class, "/typeAhead.xml"},
+//                new Object[]{TermGetInfoResponseData.class, ""},
+                new Object[]{Uid.class, "/userAdd.xml"},
+                new Object[]{null, "/userDelete.xml"},
+                new Object[]{User.class, "/userRead.xml"},
+                new Object[]{UserDetails.class, "/userReadUserListDetails.xml"});
     }
 
 
@@ -97,10 +104,11 @@ public class IdolResponseParserTest<T> {
 
     @Test
     public void parseResponse() throws JAXBException, IOException, SAXException, CustomParsingException, CustomProcessingException {
-        final Autnresponse response = idolResponseParser.parseIdolResponse(xml, type);
+        final Autnresponse response = type != null ? idolResponseParser.parseIdolResponse(xml, type) : idolResponseParser.parseIdolResponse(xml);
 
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
-        JAXBContext.newInstance(Autnresponse.class, type).createMarshaller().marshal(response, outputStream);
+        final Class<?>[] classesToBeBound = type == null ? new Class<?>[]{Autnresponse.class} : new Class<?>[]{Autnresponse.class, type};
+        JAXBContext.newInstance(classesToBeBound).createMarshaller().marshal(response, outputStream);
         final String generatedXml = new String(outputStream.toByteArray(), StandardCharsets.UTF_8);
 
         XMLUnit.setIgnoreWhitespace(true);
@@ -113,7 +121,9 @@ public class IdolResponseParserTest<T> {
 
     @Test
     public void parseResponseData() throws CustomParsingException, CustomProcessingException {
-        assertNotNull(idolResponseParser.parseIdolResponseData(xml, type));
+        if (type != null) {
+            assertNotNull(idolResponseParser.parseIdolResponseData(xml, type));
+        }
     }
 
     @Test(expected = CustomParsingException.class)
