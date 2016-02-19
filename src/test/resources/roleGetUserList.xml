@@ -1,0 +1,9 @@
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+    <action>ROLEGETUSERLIST</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:totalusers>1</autn:totalusers>
+        <autn:numusers>1</autn:numusers>
+        <autn:user>admin</autn:user>
+    </responsedata>
+</autnresponse>

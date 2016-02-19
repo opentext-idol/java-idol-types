@@ -6,6 +6,10 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="AutnSimpleTypes" elementFormDefault="qualified">
 
+    <xs:simpleType name="epochDate">
+        <xs:restriction base="xs:long"/>
+    </xs:simpleType>
+
     <xs:simpleType name="idolDate">
         <xs:restriction base="xs:string">
             <xs:pattern value="\d{1,2} [A-Z][a-z]{2} \d{2} \d{2}:\d{2}:\d{2}"/>

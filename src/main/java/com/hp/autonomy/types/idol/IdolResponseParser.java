@@ -27,6 +27,10 @@ public class IdolResponseParser<E1 extends Exception, E2 extends Exception> {
         this.parsingErrorHandler = parsingErrorHandler;
     }
 
+    public Autnresponse parseIdolResponse(final String xml) throws E1, E2 {
+        return parseIdolResponse(xml, null);
+    }
+
     @SuppressWarnings("CastToConcreteClass")
     public <T> Autnresponse parseIdolResponse(final String xml, final Class<T> type) throws E1, E2 {
         try {
@@ -40,19 +44,21 @@ public class IdolResponseParser<E1 extends Exception, E2 extends Exception> {
                 final JAXBContext errorContext = JAXBContext.newInstance(ErrorResponse.class);
                 final ErrorResponse errorResponse = (ErrorResponse) errorContext.createUnmarshaller().unmarshal((Node) response.getResponsedata());
                 throw errorResponseHandler.apply(errorResponse.getError());
-            } else {
+            }
+
+            if (type != null) {
                 final JAXBContext specificContext = JAXBContext.newInstance(type);
                 final Unmarshaller responseDataUnmarshaller = specificContext.createUnmarshaller();
                 final T unmarshalledResponseData = responseDataUnmarshaller.unmarshal((Node) response.getResponsedata(), type).getValue();
                 response.setResponsedata(unmarshalledResponseData);
-                return response;
             }
+
+            return response;
         } catch (final JAXBException | IdolDateParsingException e) {
             throw parsingErrorHandler.apply("Error parsing Idol response", e);
         }
     }
 
-    @SuppressWarnings("CastToConcreteClass")
     public <T> T parseIdolResponseData(final String xml, final Class<T> type) throws E1, E2 {
         return type.cast(parseIdolResponse(xml, type).getResponsedata());
     }

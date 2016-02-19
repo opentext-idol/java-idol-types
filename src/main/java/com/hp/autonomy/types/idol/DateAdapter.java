@@ -17,6 +17,14 @@ public class DateAdapter {
     private static final SimpleDateFormat IDOL_DATE_FORMAT = new SimpleDateFormat(IDOL_DATE_PATTERN, Locale.ENGLISH);
     private static final SimpleDateFormat QUERY_RESPONSE_DATE_FORMAT = new SimpleDateFormat(QUERY_RESPONSE_DATE_PATTERN, Locale.ENGLISH);
 
+    public static Date parseEpochDate(final String epochDate) {
+        return new Date(Long.parseLong(epochDate) * 1000);
+    }
+
+    public static String printEpochDate(final Date date) {
+        return String.valueOf(date.getTime() / 1000);
+    }
+
     public static Date parseDate(final String idolDateString) {
         try {
             return IDOL_DATE_FORMAT.parse(idolDateString);
