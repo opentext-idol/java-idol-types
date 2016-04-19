@@ -9,20 +9,24 @@ import org.w3c.dom.Node;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.ByteArrayInputStream;
+import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 /**
  * Simple IDOL response parser using native Java JAXB tools
  */
-public class IdolResponseParser<E1 extends Exception, E2 extends Exception> {
+@SuppressWarnings("WeakerAccess")
+public class IdolXmlMarshaller<E1 extends Exception, E2 extends Exception> {
     public static final String ERROR_NODE = "error";
 
     private final Function<Error, E1> errorResponseHandler;
     private final BiFunction<String, Exception, E2> parsingErrorHandler;
 
-    public IdolResponseParser(final Function<Error, E1> errorResponseHandler, final BiFunction<String, Exception, E2> parsingErrorHandler) {
+    public IdolXmlMarshaller(final Function<Error, E1> errorResponseHandler, final BiFunction<String, Exception, E2> parsingErrorHandler) {
         this.errorResponseHandler = errorResponseHandler;
         this.parsingErrorHandler = parsingErrorHandler;
     }
@@ -41,15 +45,12 @@ public class IdolResponseParser<E1 extends Exception, E2 extends Exception> {
             final Node responseData = (Node) response.getResponsedata();
 
             if (responseData.getFirstChild() != null && ERROR_NODE.equals(responseData.getFirstChild().getNodeName())) {
-                final JAXBContext errorContext = JAXBContext.newInstance(ErrorResponse.class);
-                final ErrorResponse errorResponse = (ErrorResponse) errorContext.createUnmarshaller().unmarshal((Node) response.getResponsedata());
+                final ErrorResponse errorResponse = unmarshalNode(responseData, ErrorResponse.class);
                 throw errorResponseHandler.apply(errorResponse.getError());
             }
 
             if (type != null) {
-                final JAXBContext specificContext = JAXBContext.newInstance(type);
-                final Unmarshaller responseDataUnmarshaller = specificContext.createUnmarshaller();
-                final T unmarshalledResponseData = responseDataUnmarshaller.unmarshal((Node) response.getResponsedata(), type).getValue();
+                final T unmarshalledResponseData = unmarshalNode(responseData, type);
                 response.setResponsedata(unmarshalledResponseData);
             }
 
@@ -59,8 +60,50 @@ public class IdolResponseParser<E1 extends Exception, E2 extends Exception> {
         }
     }
 
+    public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+        final Autnresponse autnresponse;
+        try {
+            autnresponse = parseIdolResponse(xml, responseType);
+            final QueryResponse queryResponse = responseType.cast(autnresponse.getResponsedata());
+            for (final Hit hit : queryResponse.getHits()) {
+                final DocContent contentWrapper = hit.getContent();
+                if (contentWrapper != null && !contentWrapper.getContent().isEmpty()) {
+                    final List<Object> contentNodes = contentWrapper.getContent();
+                    final Node contentNode = (Node) contentNodes.get(0);
+                    final C contentObject = unmarshalNode(contentNode, contentType);
+                    contentNodes.clear();
+                    contentNodes.add(contentObject);
+                }
+            }
+        } catch (final JAXBException e) {
+            throw parsingErrorHandler.apply("Error parsing Idol query response content", e);
+        }
+
+        return autnresponse;
+    }
+
     public <T> T parseIdolResponseData(final String xml, final Class<T> type) throws E1, E2 {
         return type.cast(parseIdolResponse(xml, type).getResponsedata());
+    }
+
+    public <R extends QueryResponse, C> R parseIdolQueryResponseData(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+        return responseType.cast(parseIdolQueryResponse(xml, responseType, contentType).getResponsedata());
+    }
+
+    public <T> void generateXmlDocument(final OutputStream outputStream, final T object, final Class<T> type) throws E2 {
+        try {
+            final JAXBContext context = JAXBContext.newInstance(type);
+            final Marshaller marshaller = context.createMarshaller();
+            marshaller.marshal(object, outputStream);
+        } catch (final JAXBException e) {
+            throw parsingErrorHandler.apply("Error generating Idol document", e);
+        }
+    }
+
+    private <T> T unmarshalNode(final Node node, final Class<T> type) throws JAXBException {
+        final JAXBContext context = JAXBContext.newInstance(type);
+        final Unmarshaller unmarshaller = context.createUnmarshaller();
+        return unmarshaller.unmarshal(node, type).getValue();
     }
 
     /**

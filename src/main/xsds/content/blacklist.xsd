@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="blacklist">
+        <xs:sequence>
+            <xs:element name="DREREFERENCE" type="xs:string"/>
+            <xs:element name="QMSTYPE" type="xs:int"/>
+            <xs:element name="DRETITLE" type="xs:string"/>
+            <xs:element name="KEYWORDS" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

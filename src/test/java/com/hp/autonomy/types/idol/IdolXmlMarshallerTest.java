@@ -5,6 +5,11 @@
 
 package com.hp.autonomy.types.idol;
 
+import com.hp.autonomy.types.idol.content.Blacklist;
+import com.hp.autonomy.types.idol.content.DynamicSpotlight;
+import com.hp.autonomy.types.idol.content.PinToPosition;
+import com.hp.autonomy.types.idol.content.Spotlight;
+import com.hp.autonomy.types.idol.content.SynonymGroup;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.custommonkey.xmlunit.Diff;
@@ -28,73 +33,81 @@ import java.util.Collection;
 
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 @SuppressWarnings("OverlyCoupledClass")
 @RunWith(Parameterized.class)
-public class IdolResponseParserTest<T> {
+public class IdolXmlMarshallerTest<T, U> {
     private static final String ERROR_FILE_NAME = "/error.xml";
 
     @SuppressWarnings("OverlyCoupledMethod")
-    @Parameterized.Parameters(name = "{1}")
-    public static Collection<Object[]> data(){
+    @Parameterized.Parameters(name = "{2}")
+    public static Collection<Object[]> data() {
         return Arrays.asList(
 //                new Object[]{DateConvertResponseData.class, ""},
 //                new Object[]{DetectLanguageResponseData.class, ""},
 //                new Object[]{DocumentStatsResponseData.class, ""},
 //                new Object[]{GetAllRefsResponseData.class, ""},
-                new Object[]{GetContentResponseData.class, "/getContent.xml"},
+                new Object[]{GetContentResponseData.class, null, "/getContent.xml"},
 //                new Object[]{GetQueryTagValuesResponseData.class, ""},
 //                new Object[]{GetSampleResponseData.class, ""},
-                new Object[]{GetStatusResponseData.class, "/getStatus.xml"},
-                new Object[]{GetTagNamesResponseData.class, "/getTagNames.xml"},
+                new Object[]{GetStatusResponseData.class, null, "/getStatus.xml"},
+                new Object[]{GetTagNamesResponseData.class, null, "/getTagNames.xml"},
 //                new Object[]{GetTagValuesResponseData.class, ""},
-                new Object[]{GetVersionResponseData.class, "/getVersion.xml"},
+                new Object[]{GetVersionResponseData.class, null, "/getVersion.xml"},
 //                new Object[]{HighlightResponseData.class, ""},
-                new Object[]{LanguageSettingsResponseData.class, "/languageSettings.xml"},
+                new Object[]{LanguageSettingsResponseData.class, null, "/languageSettings.xml"},
 //                new Object[]{ListResponseData.class, ""},
-                new Object[]{QueryResponseData.class, "/query.xml"},
-                new Object[]{QueryResponseData.class, "/queryForPromotions.xml"},
-                new Object[]{QueryResponseData.class, "/querySummary.xml"},
+                new Object[]{QueryResponseData.class, Blacklist.class, "/blacklists.xml"},
+                new Object[]{QueryResponseData.class, DynamicSpotlight.class, "/dynamicSpotlights.xml"},
+                new Object[]{QueryResponseData.class, PinToPosition.class, "/pinToPosition.xml"},
+                new Object[]{QueryResponseData.class, null, "/query.xml"},
+                new Object[]{QueryResponseData.class, null, "/queryForPromotions.xml"},
+                new Object[]{QueryResponseData.class, null, "/querySummary.xml"},
+                new Object[]{QueryResponseData.class, Spotlight.class, "/spotlights.xml"},
+                new Object[]{QueryResponseData.class, SynonymGroup.class, "/synonyms.xml"},
 //                new Object[]{QuerySummaryManagementResponseData.class, ""},
-                new Object[]{Users.class, "/roleGetUserList.xml"},
-                new Object[]{RolesResponseData.class, "/roleUserGetRoleList.xml"},
+                new Object[]{Users.class, null, "/roleGetUserList.xml"},
+                new Object[]{RolesResponseData.class, null, "/roleUserGetRoleList.xml"},
 //                new Object[]{SuggestOnTextResponseData.class, ""},
 //                new Object[]{SuggestResponseData.class, ""},
 //                new Object[]{SummarizeResponseData.class, ""},
-                new Object[]{Security.class, "/security.xml"},
+                new Object[]{Security.class, null, "/security.xml"},
 //                new Object[]{TermExpandResponseData.class, ""},
 //                new Object[]{TermGetAllResponseData.class, ""},
 //                new Object[]{TermGetBestResponseData.class, ""},
 //                new Object[]{TermGetInfoResponseData.class, ""},
-                new Object[]{TypeAheadResponseData.class, "/typeAhead.xml"},
+                new Object[]{TypeAheadResponseData.class, null, "/typeAhead.xml"},
 //                new Object[]{TermGetInfoResponseData.class, ""},
-                new Object[]{Uid.class, "/userAdd.xml"},
-                new Object[]{null, "/userDelete.xml"},
-                new Object[]{User.class, "/userRead.xml"},
-                new Object[]{UserDetails.class, "/userReadUserListDetails.xml"});
+                new Object[]{Uid.class, null, "/userAdd.xml"},
+                new Object[]{null, null, "/userDelete.xml"},
+                new Object[]{User.class, null, "/userRead.xml"},
+                new Object[]{UserDetails.class, null, "/userReadUserListDetails.xml"});
     }
 
 
     private final Class<T> type;
+    private final Class<U> subType;
     private final String xml;
     private final String errorXml;
 
-    private IdolResponseParser<CustomParsingException, CustomProcessingException> idolResponseParser;
+    private IdolXmlMarshaller<CustomParsingException, CustomProcessingException> idolXmlMarshaller;
 
-    public IdolResponseParserTest(final Class<T> type, final String fileName) throws IOException {
+    public IdolXmlMarshallerTest(final Class<T> type, final Class<U> subType, final String fileName) throws IOException {
         this.type = type;
-        xml = IOUtils.toString(IdolResponseParserTest.class.getResource(fileName));
-        errorXml = IOUtils.toString(IdolResponseParserTest.class.getResource(ERROR_FILE_NAME));
+        this.subType = subType;
+        xml = IOUtils.toString(IdolXmlMarshallerTest.class.getResource(fileName));
+        errorXml = IOUtils.toString(IdolXmlMarshallerTest.class.getResource(ERROR_FILE_NAME));
     }
 
     @Before
     public void setUp() {
-        idolResponseParser = new IdolResponseParser<>(new IdolResponseParser.Function<Error, CustomParsingException>() {
+        idolXmlMarshaller = new IdolXmlMarshaller<>(new IdolXmlMarshaller.Function<Error, CustomParsingException>() {
             @Override
             public CustomParsingException apply(final Error error) {
                 return new CustomParsingException(error);
             }
-        }, new IdolResponseParser.BiFunction<String, Exception, CustomProcessingException>() {
+        }, new IdolXmlMarshaller.BiFunction<String, Exception, CustomProcessingException>() {
             @Override
             public CustomProcessingException apply(final String message, final Exception cause) {
                 return new CustomProcessingException(message, cause);
@@ -104,7 +117,7 @@ public class IdolResponseParserTest<T> {
 
     @Test
     public void parseResponse() throws JAXBException, IOException, SAXException, CustomParsingException, CustomProcessingException {
-        final Autnresponse response = type != null ? idolResponseParser.parseIdolResponse(xml, type) : idolResponseParser.parseIdolResponse(xml);
+        final Autnresponse response = type != null ? idolXmlMarshaller.parseIdolResponse(xml, type) : idolXmlMarshaller.parseIdolResponse(xml);
 
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final Class<?>[] classesToBeBound = type == null ? new Class<?>[]{Autnresponse.class} : new Class<?>[]{Autnresponse.class, type};
@@ -120,20 +133,45 @@ public class IdolResponseParserTest<T> {
     }
 
     @Test
+    public void parseIdolQueryResponse() throws CustomParsingException, CustomProcessingException, IOException {
+        if (subType != null) {
+            @SuppressWarnings("unchecked")
+            final Autnresponse response = idolXmlMarshaller.parseIdolQueryResponse(xml, (Class<QueryResponse>) type, subType);
+            for (final Hit hit : ((QueryResponse) response.getResponsedata()).getHits()) {
+                for (final Object o : hit.getContent().getContent()) {
+                    assertTrue(subType.isAssignableFrom(o.getClass()));
+                    try (final ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
+                        idolXmlMarshaller.generateXmlDocument(outputStream, subType.cast(o), subType);
+                        assertNotNull(outputStream.toByteArray());
+                    }
+                }
+            }
+        }
+    }
+
+    @Test
     public void parseResponseData() throws CustomParsingException, CustomProcessingException {
         if (type != null) {
-            assertNotNull(idolResponseParser.parseIdolResponseData(xml, type));
+            assertNotNull(idolXmlMarshaller.parseIdolResponseData(xml, type));
+        }
+    }
+
+    @Test
+    public void parseQueryResponseData() throws CustomParsingException, CustomProcessingException {
+        if (subType != null) {
+            //noinspection unchecked
+            assertNotNull(idolXmlMarshaller.parseIdolQueryResponseData(xml, (Class<QueryResponse>) type, subType));
         }
     }
 
     @Test(expected = CustomParsingException.class)
     public void parseErrorResponse() throws CustomParsingException, CustomProcessingException {
-        idolResponseParser.parseIdolResponse(errorXml, type);
+        idolXmlMarshaller.parseIdolResponse(errorXml, type);
     }
 
     @Test(expected = CustomProcessingException.class)
     public void processingError() throws CustomParsingException, CustomProcessingException {
-        idolResponseParser.parseIdolResponse("bad", type);
+        idolXmlMarshaller.parseIdolResponse("bad", type);
     }
 
     private static class XMLDifferenceListener implements DifferenceListener {
@@ -158,7 +196,7 @@ public class IdolResponseParserTest<T> {
     private static class CustomParsingException extends Exception {
         private static final long serialVersionUID = -5167479141615219983L;
 
-        public CustomParsingException(final Error error) {
+        CustomParsingException(final Error error) {
             super(error.getErrorstring());
         }
     }
@@ -166,7 +204,7 @@ public class IdolResponseParserTest<T> {
     private static class CustomProcessingException extends Exception {
         private static final long serialVersionUID = -5167479141615219983L;
 
-        public CustomProcessingException(final String message, final Throwable cause) {
+        CustomProcessingException(final String message, final Throwable cause) {
             super(message, cause);
         }
     }

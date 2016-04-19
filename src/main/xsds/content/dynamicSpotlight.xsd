@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:complexType name="dynamicSpotlight">
+        <xs:sequence>
+            <xs:element name="DREREFERENCE" type="xs:string"/>
+            <xs:element name="DYNAMIC_QUERY_TEXT" type="xs:string"/>
+            <xs:element name="QMSTYPE" type="xs:int"/>
+            <xs:element name="PROMOTION_NAME" type="xs:string"/>
+            <xs:element name="DRETITLE" type="xs:string"/>
+            <xs:element name="ALWAYSACTIVE" type="xs:boolean"/>
+            <xs:element name="QMSAGENTBOOL" type="xs:string"/>
+            <xs:element name="DRECONTENT" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

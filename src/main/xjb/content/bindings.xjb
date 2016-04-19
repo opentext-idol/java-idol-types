@@ -1,0 +1,167 @@
+<!--
+  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:annox="http://annox.dev.java.net"
+          extensionBindingPrefixes="annox"
+          version="2.1">
+    <globalBindings>
+        <serializable/>
+        <javaType name="long" xmlType="xs:integer"/>
+    </globalBindings>
+    <bindings schemaLocation="../../xsds/content/blacklist.xsd">
+        <bindings node="xs:complexType[@name='blacklist']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='KEYWORDS']">
+                <property name="keywords"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/content/dynamicSpotlight.xsd">
+        <bindings node="xs:complexType[@name='dynamicSpotlight']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DYNAMIC_QUERY_TEXT']">
+                <property name="dynamicQueryText"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='PROMOTION_NAME']">
+                <property name="promotionName"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='ALWAYSACTIVE']">
+                <property name="alwaysActive"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRECONTENT']">
+                <property name="content"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/content/pinToPosition.xsd">
+        <bindings node="xs:complexType[@name='pinToPosition']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='GROUPID']">
+                <property name="groupId"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSVALUE1']">
+                <property name="qmsValue1"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSVALUE2']">
+                <property name="qmsValue2"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='ALWAYSACTIVE']">
+                <property name="alwaysActive"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRECONTENT']">
+                <property name="content"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/content/spotlight.xsd">
+        <bindings node="xs:complexType[@name='spotlight']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSVALUE1']">
+                <property name="qmsValue1"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMS_PROMOTION_ITEMS']">
+                <property name="qmsPromotionItems"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMS_PROMOTION_ITEM_COUNT']">
+                <property name="qmsPromotionItemCount"/>
+            </bindings>
+            <bindings node="//xs:element[@name='PROMOTION_NAME']">
+                <property name="promotionName"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='ALWAYSACTIVE']">
+                <property name="alwaysActive"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRECONTENT']">
+                <property name="content"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/content/synonymGroup.xsd">
+        <bindings node="xs:complexType[@name='synonymGroup']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DATABASERESTRICTION']">
+                <property name="databaseRestriction"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
+            <bindings node="//xs:element[@name='KEYWORDS']">
+                <property name="keywords"/>
+            </bindings>
+            <bindings node="//xs:element[@name='CONCEPT']">
+                <property name="concept"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRECONTENT']">
+                <property name="content"/>
+            </bindings>
+        </bindings>
+    </bindings>
+</bindings>

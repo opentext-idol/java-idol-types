@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>2</autn:numhits>
+        <autn:hit>
+            <autn:reference>ISO_BLACKLIST_englishUTF8</autn:reference>
+            <autn:id>695</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>ISO_BLACKLIST</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ISO_BLACKLIST_englishUTF8</DREREFERENCE>
+                    <DRETITLE>ISO_BLACKLIST</DRETITLE>
+                    <QMSTYPE>6</QMSTYPE>
+                    <KEYWORDS>badd%2Cfooba</KEYWORDS>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>695</autn:baseid>
+            <autn:date>1460716240</autn:date>
+            <autn:datestring>10:30:40 15/04/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ISO_BLACKLIST_frenchUTF8</autn:reference>
+            <autn:id>377</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>ISO_BLACKLIST</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ISO_BLACKLIST_frenchUTF8</DREREFERENCE>
+                    <DRETITLE>ISO_BLACKLIST</DRETITLE>
+                    <QMSTYPE>6</QMSTYPE>
+                    <KEYWORDS>maison</KEYWORDS>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>377</autn:baseid>
+            <autn:date>1423491526</autn:date>
+            <autn:datestring>14:18:46 09/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>FRENCH</autn:language>
+            <autn:languagetype>frenchUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

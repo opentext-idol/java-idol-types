@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>26</autn:numhits>
+        <autn:hit>
+            <autn:reference>4020bf84-9025-49fa-bc96-cf48093b747a</autn:reference>
+            <autn:id>636</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: money, spend</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>4020bf84-9025-49fa-bc96-cf48093b747a</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>*</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: money, spend</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>money OR spend</QMSAGENTBOOL>
+                    <DRECONTENT>money spend
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>636</autn:baseid>
+            <autn:date>1456415918</autn:date>
+            <autn:datestring>15:58:38 25/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>6782d59e-efa4-4e68-b5a3-246ba931c8b7</autn:reference>
+            <autn:id>627</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: smarshed</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>6782d59e-efa4-4e68-b5a3-246ba931c8b7</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Cordan</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: smarshed</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>smarshed</QMSAGENTBOOL>
+                    <DRECONTENT>smarshed
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>627</autn:baseid>
+            <autn:date>1453286874</autn:date>
+            <autn:datestring>10:47:54 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3b27babc-14d7-4ca6-8839-7c687b431b78</autn:reference>
+            <autn:id>626</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: smarshed</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3b27babc-14d7-4ca6-8839-7c687b431b78</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Dulok AND Asha NOT tribe NOT korrina</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: smarshed</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>smarshed</QMSAGENTBOOL>
+                    <DRECONTENT>smarshed
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>626</autn:baseid>
+            <autn:date>1453286791</autn:date>
+            <autn:datestring>10:46:31 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3f3e696d-b2aa-412e-8305-2d679ab9f460</autn:reference>
+            <autn:id>623</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: blarble</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3f3e696d-b2aa-412e-8305-2d679ab9f460</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Adarian AND tropis</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: blarble</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>blarble</QMSAGENTBOOL>
+                    <DRECONTENT>blarble
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>623</autn:baseid>
+            <autn:date>1453286352</autn:date>
+            <autn:datestring>10:39:12 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>6740b5b2-e556-4602-b6f0-76c95c257dc3</autn:reference>
+            <autn:id>622</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: blarble</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>6740b5b2-e556-4602-b6f0-76c95c257dc3</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Brianna AND triumvirate</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: blarble</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>blarble</QMSAGENTBOOL>
+                    <DRECONTENT>blarble
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>622</autn:baseid>
+            <autn:date>1453286271</autn:date>
+            <autn:datestring>10:37:51 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>d3aad02a-5ae0-4420-a1db-9c643579693b</autn:reference>
+            <autn:id>621</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: schwarble</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>d3aad02a-5ae0-4420-a1db-9c643579693b</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Brianna AND triumvirate</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: schwarble</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>schwarble</QMSAGENTBOOL>
+                    <DRECONTENT>schwarble
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>621</autn:baseid>
+            <autn:date>1453286101</autn:date>
+            <autn:datestring>10:35:01 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>5e20d1b4-0d3d-4bcd-bab5-f3af69d15bdd</autn:reference>
+            <autn:id>620</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Schwarble</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>5e20d1b4-0d3d-4bcd-bab5-f3af69d15bdd</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>Brianna AND triumvirate</DYNAMIC_QUERY_TEXT>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>schwarble</QMSAGENTBOOL>
+                    <DRECONTENT>schwarble
+                    </DRECONTENT>
+                    <DRETITLE>Schwarble</DRETITLE>
+                    <QMSTYPE>3</QMSTYPE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>620</autn:baseid>
+            <autn:date>1453286024</autn:date>
+            <autn:datestring>10:33:44 20/01/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>68f88dae-08bf-4d84-a0d3-272454f12e1f</autn:reference>
+            <autn:id>619</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: bonjour</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>68f88dae-08bf-4d84-a0d3-272454f12e1f</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>banane</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: bonjour</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>bonjour</QMSAGENTBOOL>
+                    <DRECONTENT>bonjour
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>619</autn:baseid>
+            <autn:date>1448902024</autn:date>
+            <autn:datestring>16:47:04 30/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>MALAY</autn:language>
+            <autn:languagetype>malayUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>b657d2ff-f1a5-48ef-8767-8c6b860c296e</autn:reference>
+            <autn:id>598</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: twelve</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>b657d2ff-f1a5-48ef-8767-8c6b860c296e</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>jedi</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>twelve</QMSAGENTBOOL>
+                    <DRETITLE>Dynamic Spotlight for: twelve</DRETITLE>
+                    <DRECONTENT>twelve
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>598</autn:baseid>
+            <autn:date>1444754550</autn:date>
+            <autn:datestring>16:42:30 13/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>164807b1-1676-4ec5-9d60-d58d58338d05</autn:reference>
+            <autn:id>597</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: jedi, species, yoda</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>164807b1-1676-4ec5-9d60-d58d58338d05</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>The Jedi Master Yoda was the best-known member of a Force-sensitive species
+                        whose true name is not recorded. Known in some sources simply as Yoda's species, this species of
+                        small carnivorous humanoids produced several well-known members of the Jedi Order during the
+                        time of the Galactic Republic. Contents[show] Characteristics and history Manyyodas Members of
+                        the species worshiping an idol The name and homeworld of this species remains unknown. Members
+                        of the species were very small, most standing below 70 centimeters, but had extremely long
+                        lifespans lasting many hundreds of years (though because all known members of the species were
+                        Jedi, who are known to generally have longer lifespans than what is ordinary for a species, the
+                        exact average lifespan of the species is unknown). Adult members of the species were
+                        characterized by sharp, elfin ears, ridges on their foreheads, tridactyl hands and (most
+                        commonly) anisodactyl feet. Their leathery skin and blood were both light green. Their sharp
+                        teeth pointed to a carnivorous diet. The diet of the most famous member of the species, Jedi
+                        Master Yoda, consisted of nutriment most other beings considered disgusting. Most of them,
+                        though not all, spoke an idiosyncratic dialect of Galactic Basic Standard, utilizing
+                        non-standard grammar and formalized sentence construction. All known members were very wise and
+                        had extraordinary Force potential. Yoda, the most famous member of this species, was the Jedi
+                        Grand Master during the time of the Galactic Republic for over two centuries and one of the most
+                        powerful Jedi in the history of the Order. Master Yoda died from natural causes at the age of
+                        exactly 900 standard years.
+                    </DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>jedi OR species OR yoda</QMSAGENTBOOL>
+                    <DRETITLE>Dynamic Spotlight for: jedi, species, yoda</DRETITLE>
+                    <DRECONTENT>jedi species yoda
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>597</autn:baseid>
+            <autn:date>1444754070</autn:date>
+            <autn:datestring>16:34:30 13/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>fa211f4c-89e9-455f-90a5-a0d5b31aae31</autn:reference>
+            <autn:id>596</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: darren</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>fa211f4c-89e9-455f-90a5-a0d5b31aae31</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>jedi</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>darren</QMSAGENTBOOL>
+                    <DRETITLE>Dynamic Spotlight for: darren</DRETITLE>
+                    <DRECONTENT>darren
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>596</autn:baseid>
+            <autn:date>1444752051</autn:date>
+            <autn:datestring>16:00:51 13/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ea451e0c-eb7e-428d-9b2e-4c2520863831</autn:reference>
+            <autn:id>595</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: sith</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ea451e0c-eb7e-428d-9b2e-4c2520863831</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>jedi</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>sith</QMSAGENTBOOL>
+                    <DRETITLE>Dynamic Spotlight for: sith</DRETITLE>
+                    <DRECONTENT>sith
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>595</autn:baseid>
+            <autn:date>1444751220</autn:date>
+            <autn:datestring>15:47:00 13/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>fe46ee0d-3871-41fe-900d-c737e287ab6e</autn:reference>
+            <autn:id>588</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: car</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>fe46ee0d-3871-41fe-900d-c737e287ab6e</DREREFERENCE>
+                    <DRETITLE>Dynamic Spotlight for: car</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSFIELDTEXT/>
+                    <DYNAMIC_QUERY_TEXT>car</DYNAMIC_QUERY_TEXT>
+                    <QMSAGENTBOOL>car OR vehicle OR auto</QMSAGENTBOOL>
+                    <QMSTYPE>3</QMSTYPE>
+                    <DRECONTENT>car vehicle auto</DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>588</autn:baseid>
+            <autn:date>1440152501</autn:date>
+            <autn:datestring>10:21:41 21/08/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>8c3edd52-6077-4a3b-af60-8bf6f4da4806</autn:reference>
+            <autn:id>578</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: cat</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>8c3edd52-6077-4a3b-af60-8bf6f4da4806</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>cat</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: cat</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>cat</QMSAGENTBOOL>
+                    <DRECONTENT>cat
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>578</autn:baseid>
+            <autn:date>1438006297</autn:date>
+            <autn:datestring>14:11:37 27/07/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>4c4f8a6c-03e9-4829-a3da-8f7f7f205203</autn:reference>
+            <autn:id>577</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: ewok</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>4c4f8a6c-03e9-4829-a3da-8f7f7f205203</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>luke</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: ewok</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>ewok</QMSAGENTBOOL>
+                    <DRECONTENT>ewok
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>577</autn:baseid>
+            <autn:date>1436180231</autn:date>
+            <autn:datestring>10:57:11 06/07/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>6b27d6a5-27e0-49d1-83af-995624f70375</autn:reference>
+            <autn:id>541</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: car</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>6b27d6a5-27e0-49d1-83af-995624f70375</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>car</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: car</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>car</QMSAGENTBOOL>
+                    <DRECONTENT>car
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>541</autn:baseid>
+            <autn:date>1430402909</autn:date>
+            <autn:datestring>14:08:29 30/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f3e846fb-c21c-4018-ae7c-6a009d531b5c</autn:reference>
+            <autn:id>528</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: cat, dog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f3e846fb-c21c-4018-ae7c-6a009d531b5c</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>cat and dog</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: cat, dog</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>cat OR dog</QMSAGENTBOOL>
+                    <DRECONTENT>cat dog
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>528</autn:baseid>
+            <autn:date>1430292894</autn:date>
+            <autn:datestring>07:34:54 29/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ca12e9c3-4d54-4918-968a-88b6b59e820e</autn:reference>
+            <autn:id>524</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: white</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ca12e9c3-4d54-4918-968a-88b6b59e820e</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>oranges</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: white</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>white</QMSAGENTBOOL>
+                    <DRECONTENT>white
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>524</autn:baseid>
+            <autn:date>1430160442</autn:date>
+            <autn:datestring>18:47:22 27/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>70e989b7-9565-4e55-a895-d60862ea9845</autn:reference>
+            <autn:id>517</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: dog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>70e989b7-9565-4e55-a895-d60862ea9845</DREREFERENCE>
+                    <DRETITLE>Dynamic Spotlight for: dog</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <QMSAGENTBOOL>cats OR dog</QMSAGENTBOOL>
+                    <DRECONTENT>cats dog</DRECONTENT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <DYNAMIC_QUERY_TEXT>dog AND cats</DYNAMIC_QUERY_TEXT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>517</autn:baseid>
+            <autn:date>1428585219</autn:date>
+            <autn:datestring>13:13:39 09/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>82286a1e-eafc-4d21-bf81-a458a25e12b0</autn:reference>
+            <autn:id>489</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Croatia</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>82286a1e-eafc-4d21-bf81-a458a25e12b0</DREREFERENCE>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:IDOL Search
+                        Optimizer+\\BEGIN:VEVENT+\\UID:e98206cc-f722-4525-b00f-2119ea08947c+\\DTSTAMP:20150223T151341Z+\\DTSTART:20150222T220000Z+\\DTEND:20150322T220000Z+\\RRULE:FREQ=YEARLY;UNTIL=20150322T220000Z+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                    <QMSAGENTBOOL>always</QMSAGENTBOOL>
+                    <DRECONTENT>always</DRECONTENT>
+                    <DRETITLE>Croatia</DRETITLE>
+                    <DYNAMIC_QUERY_TEXT>green</DYNAMIC_QUERY_TEXT>
+                    <QMSFIELDTEXT>car</QMSFIELDTEXT>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <QMSTYPE>3</QMSTYPE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>489</autn:baseid>
+            <autn:date>1426613689</autn:date>
+            <autn:datestring>17:34:49 17/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>241383cf-e713-4437-95ec-1649604541ba</autn:reference>
+            <autn:id>482</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: cat</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>241383cf-e713-4437-95ec-1649604541ba</DREREFERENCE>
+                    <DYNAMIC_QUERY_TEXT>cat</DYNAMIC_QUERY_TEXT>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Dynamic Spotlight for: cat</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>cat</QMSAGENTBOOL>
+                    <DRECONTENT>cat
+                    </DRECONTENT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <QMSFIELDTEXT/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>482</autn:baseid>
+            <autn:date>1426067179</autn:date>
+            <autn:datestring>09:46:19 11/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>20d7088e-58ce-4bf0-baf3-9324f4caea39</autn:reference>
+            <autn:id>458</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: bad boy, blaster, falcon, rogue</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>20d7088e-58ce-4bf0-baf3-9324f4caea39</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DYNAMIC_QUERY_TEXT>han solo</DYNAMIC_QUERY_TEXT>
+                    <DRETITLE>Dynamic Spotlight for: bad boy, blaster, falcon, rogue</DRETITLE>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:IDOL Search
+                        Optimizer+\\BEGIN:VEVENT+\\UID:27779db8-553c-4922-94d9-a13102e46fab+\\DTSTAMP:20150210T175405Z+\\DTSTART;VALUE=DATE:20150211+\\DTEND;VALUE=DATE:20150213+\\RRULE:FREQ=MONTHLY;UNTIL=20150520T230000Z+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                    <QMSAGENTBOOL>"bad boy" OR blaster OR falcon OR rogue</QMSAGENTBOOL>
+                    <DRECONTENT>bad boy blaster falcon rogue</DRECONTENT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <QMSFIELDTEXT>MATCH{falcon}:DRECONTENT</QMSFIELDTEXT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>458</autn:baseid>
+            <autn:date>1424709520</autn:date>
+            <autn:datestring>16:38:40 23/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3b22b746-828d-455e-9021-0b7f89755748</autn:reference>
+            <autn:id>450</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: itsik</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3b22b746-828d-455e-9021-0b7f89755748</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DYNAMIC_QUERY_TEXT>husband</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <DRETITLE>Dynamic Spotlight for: itsik</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>itsik</QMSAGENTBOOL>
+                    <DRECONTENT>itsik
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>450</autn:baseid>
+            <autn:date>1424699700</autn:date>
+            <autn:datestring>13:55:00 23/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ee5b3be6-3e2f-4abe-8ed5-708456ae507a</autn:reference>
+            <autn:id>449</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: test</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ee5b3be6-3e2f-4abe-8ed5-708456ae507a</DREREFERENCE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DYNAMIC_QUERY_TEXT>jedi</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <DRETITLE>Dynamic Spotlight for: test</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>test</QMSAGENTBOOL>
+                    <DRECONTENT>test
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>449</autn:baseid>
+            <autn:date>1424699140</autn:date>
+            <autn:datestring>13:45:40 23/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>0eaf1417-dfe1-44d0-92e7-d114fb1da4c7</autn:reference>
+            <autn:id>447</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic Spotlight for: water</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>0eaf1417-dfe1-44d0-92e7-d114fb1da4c7</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DYNAMIC_QUERY_TEXT>orange</DYNAMIC_QUERY_TEXT>
+                    <QMSTYPE>3</QMSTYPE>
+                    <QMSAGENTBOOL>water</QMSAGENTBOOL>
+                    <DRETITLE>Dynamic Spotlight for: water</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>water
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>447</autn:baseid>
+            <autn:date>1424604895</autn:date>
+            <autn:datestring>11:34:55 22/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>cc904f32-97af-4d75-b650-01be72a75408</autn:reference>
+            <autn:id>357</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Dynamic spotlight for: blue</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>cc904f32-97af-4d75-b650-01be72a75408</DREREFERENCE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Dynamic spotlight for: blue</DRETITLE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DYNAMIC_QUERY_TEXT>green</DYNAMIC_QUERY_TEXT>
+                    <QMSAGENTBOOL>blue</QMSAGENTBOOL>
+                    <DRECONTENT>blue
+                    </DRECONTENT>
+                    <BAR/>
+                    <QMSTYPE>3</QMSTYPE>
+                    <QMSFIELDTEXT/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>357</autn:baseid>
+            <autn:date>1422879742</autn:date>
+            <autn:datestring>12:22:22 02/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

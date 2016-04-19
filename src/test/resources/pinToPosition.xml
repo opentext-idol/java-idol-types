@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>23</autn:numhits>
+        <autn:hit>
+            <autn:reference>cc829d8e-1a19-4826-9573-c4c5ad9e7efc</autn:reference>
+            <autn:id>687</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: badger</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>cc829d8e-1a19-4826-9573-c4c5ad9e7efc</DREREFERENCE>
+                    <GROUPID>156452d6-0de2-4251-b04f-73a4947ebd2a</GROUPID>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Mushroom Cutting ceremony</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: badger</DRETITLE>
+                    <QMSAGENTBOOL>badger</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>badger
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>687</autn:baseid>
+            <autn:date>1459874463</autn:date>
+            <autn:datestring>16:41:03 05/04/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>614f7584-f0df-42a5-8290-6a1e849ebc83</autn:reference>
+            <autn:id>685</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: badger</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>614f7584-f0df-42a5-8290-6a1e849ebc83</DREREFERENCE>
+                    <GROUPID>156452d6-0de2-4251-b04f-73a4947ebd2a</GROUPID>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Luilris mushroom pie</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: badger</DRETITLE>
+                    <QMSAGENTBOOL>badger</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>badger
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>685</autn:baseid>
+            <autn:date>1459874463</autn:date>
+            <autn:datestring>16:41:03 05/04/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e51d0ca6-5436-4bbf-a2f5-816a8ae5a05b</autn:reference>
+            <autn:id>684</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: badger</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e51d0ca6-5436-4bbf-a2f5-816a8ae5a05b</DREREFERENCE>
+                    <GROUPID>156452d6-0de2-4251-b04f-73a4947ebd2a</GROUPID>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Vaporator mushroom</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: badger</DRETITLE>
+                    <QMSAGENTBOOL>badger</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>badger
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>684</autn:baseid>
+            <autn:date>1459874463</autn:date>
+            <autn:datestring>16:41:03 05/04/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>1cc38aac-2336-47cc-aadb-f61b36086b99</autn:reference>
+            <autn:id>666</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: isles</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>1cc38aac-2336-47cc-aadb-f61b36086b99</DREREFERENCE>
+                    <GROUPID>7369b9c9-6054-4c7c-b92f-9fad07eb62cb</GROUPID>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Grand Isle</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: isles</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>isles</QMSAGENTBOOL>
+                    <DRECONTENT>isles
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>666</autn:baseid>
+            <autn:date>1459419610</autn:date>
+            <autn:datestring>10:20:10 31/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>2cf70478-74b9-40a7-9d91-8ea83a204758</autn:reference>
+            <autn:id>601</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: twenty</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>2cf70478-74b9-40a7-9d91-8ea83a204758</DREREFERENCE>
+                    <GROUPID>42eda41e-1433-47e9-96cc-349629d62286</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Red Twelve</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>twenty</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: twenty</DRETITLE>
+                    <DRECONTENT>twenty
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>601</autn:baseid>
+            <autn:date>1444817102</autn:date>
+            <autn:datestring>10:05:02 14/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>6a1f31bb-2773-49d8-8eeb-b3aecb255b8f</autn:reference>
+            <autn:id>600</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: twenty</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>6a1f31bb-2773-49d8-8eeb-b3aecb255b8f</DREREFERENCE>
+                    <GROUPID>42eda41e-1433-47e9-96cc-349629d62286</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Bravo Twelve</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>twenty</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: twenty</DRETITLE>
+                    <DRECONTENT>twenty
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>600</autn:baseid>
+            <autn:date>1444817102</autn:date>
+            <autn:datestring>10:05:02 14/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>069fa86b-d5dd-4160-87d5-107115392d25</autn:reference>
+            <autn:id>599</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: twenty</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>069fa86b-d5dd-4160-87d5-107115392d25</DREREFERENCE>
+                    <GROUPID>42eda41e-1433-47e9-96cc-349629d62286</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Shadow Twelve</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>twenty</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: twenty</DRETITLE>
+                    <DRECONTENT>twenty
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>599</autn:baseid>
+            <autn:date>1444817102</autn:date>
+            <autn:datestring>10:05:02 14/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ae8897e8-c395-45b7-806f-bc0c754024f2</autn:reference>
+            <autn:id>576</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: ewok</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ae8897e8-c395-45b7-806f-bc0c754024f2</DREREFERENCE>
+                    <GROUPID>c1e912a3-ae55-4a45-a147-6e3d122c98a6</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Skirmish at the Keet Hive</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: ewok</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>ewok</QMSAGENTBOOL>
+                    <DRECONTENT>ewok
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>576</autn:baseid>
+            <autn:date>1436180209</autn:date>
+            <autn:datestring>10:56:49 06/07/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>1c616404-5484-481b-b336-74b00d4c6c5e</autn:reference>
+            <autn:id>563</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: oranges</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>1c616404-5484-481b-b336-74b00d4c6c5e</DREREFERENCE>
+                    <GROUPID>6ba5d16c-46a8-48e4-9916-c7ebb574485c</GROUPID>
+                    <QMSVALUE2>3</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Cloud City Pod Car</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>oranges</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: oranges</DRETITLE>
+                    <DRECONTENT>oranges
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>563</autn:baseid>
+            <autn:date>1433235528</autn:date>
+            <autn:datestring>08:58:48 02/06/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3b9d30ea-3f7d-4cb4-9912-f4bbd1a0ea7c</autn:reference>
+            <autn:id>559</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: jedi</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3b9d30ea-3f7d-4cb4-9912-f4bbd1a0ea7c</DREREFERENCE>
+                    <GROUPID>59e5646f-7eb5-4e2d-bd72-e04cf2866987</GROUPID>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Jedi Trials</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: jedi</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>jedi</QMSAGENTBOOL>
+                    <DRECONTENT>jedi
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>559</autn:baseid>
+            <autn:date>1432038348</autn:date>
+            <autn:datestring>12:25:48 19/05/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>14ad7054-5f06-45d5-a4ff-60181afdf791</autn:reference>
+            <autn:id>516</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Serious Alien</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>14ad7054-5f06-45d5-a4ff-60181afdf791</DREREFERENCE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Alien</QMSVALUE1>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>serious</QMSAGENTBOOL>
+                    <DRECONTENT>serious
+                    </DRECONTENT>
+                    <DRETITLE>Serious Alien</DRETITLE>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <GROUPID>3b1fce8b-86ea-4770-94e8-c25334fe3445</GROUPID>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>516</autn:baseid>
+            <autn:date>1428424095</autn:date>
+            <autn:datestring>16:28:15 07/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>df551615-ef73-408d-8e9f-de74c3790246</autn:reference>
+            <autn:id>515</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Serious Monkey</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>df551615-ef73-408d-8e9f-de74c3790246</DREREFERENCE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Kowak</QMSVALUE1>
+                    <DRETITLE>Serious Monkey</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>serious</QMSAGENTBOOL>
+                    <DRECONTENT>serious
+                    </DRECONTENT>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <GROUPID>a18610c4-8e46-4310-82c2-761af08559a8</GROUPID>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>515</autn:baseid>
+            <autn:date>1428423336</autn:date>
+            <autn:datestring>16:15:36 07/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>b5d8e9ac-cdf9-477c-87cb-e23f6b5e523e</autn:reference>
+            <autn:id>514</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Serious Monkey</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>b5d8e9ac-cdf9-477c-87cb-e23f6b5e523e</DREREFERENCE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Gibberous Crumb</QMSVALUE1>
+                    <DRETITLE>Serious Monkey</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>serious</QMSAGENTBOOL>
+                    <DRECONTENT>serious
+                    </DRECONTENT>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <GROUPID>a18610c4-8e46-4310-82c2-761af08559a8</GROUPID>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>514</autn:baseid>
+            <autn:date>1428423336</autn:date>
+            <autn:datestring>16:15:36 07/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>fc3035f7-3643-40b8-b351-73c79e135d91</autn:reference>
+            <autn:id>513</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Serious Clone</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>fc3035f7-3643-40b8-b351-73c79e135d91</DREREFERENCE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Joker (clone trooper)</QMSVALUE1>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>serious</QMSAGENTBOOL>
+                    <DRECONTENT>serious
+                    </DRECONTENT>
+                    <DRETITLE>Serious Clone</DRETITLE>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSVALUE2>10</QMSVALUE2>
+                    <GROUPID>bfb00516-74cd-48ad-b32a-03c531651a8d</GROUPID>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>513</autn:baseid>
+            <autn:date>1428423152</autn:date>
+            <autn:datestring>16:12:32 07/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>770b17d0-4e69-45bd-8d70-04bbfdc6a1ce</autn:reference>
+            <autn:id>502</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: star wars</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>770b17d0-4e69-45bd-8d70-04bbfdc6a1ce</DREREFERENCE>
+                    <GROUPID>01fc1de1-87e9-4719-b53f-e7a56389790c</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Star Wars (Blu-ray)</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <DRETITLE>Pin to Position for: star wars</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>"star wars"</QMSAGENTBOOL>
+                    <DRECONTENT>star wars
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>502</autn:baseid>
+            <autn:date>1427894520</autn:date>
+            <autn:datestring>13:22:00 01/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>931d9560-dccd-41d6-897f-c58d889953f4</autn:reference>
+            <autn:id>480</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Jar Jar</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>931d9560-dccd-41d6-897f-c58d889953f4</DREREFERENCE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Jar Jar Binks</QMSVALUE1>
+                    <DRETITLE>Jar Jar</DRETITLE>
+                    <QMSAGENTBOOL>"long ears" OR gungan</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>long ears gungan</DRECONTENT>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <THINGS/>
+                    <THING/>
+                    <QMSTYPE>1</QMSTYPE>
+                    <GROUPID>2fcbac8a-56b0-4bfe-80bd-92f7bb9b6a1f</GROUPID>
+                    <QMSFIELDTEXT/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>480</autn:baseid>
+            <autn:date>1425483395</autn:date>
+            <autn:datestring>15:36:35 04/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>8fa5f97d-d453-4b29-a068-7a8f95869416</autn:reference>
+            <autn:id>469</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: fish</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>8fa5f97d-d453-4b29-a068-7a8f95869416</DREREFERENCE>
+                    <GROUPID>cb1dae05-0693-4b05-901a-3ffa10d6e536</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Dark Horse invasion storyline</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSAGENTBOOL>fish</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Pin to Position for: fish</DRETITLE>
+                    <DRECONTENT>fish
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>469</autn:baseid>
+            <autn:date>1425383371</autn:date>
+            <autn:datestring>11:49:31 03/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>eaced485-9db0-4261-a925-3a9e4eb1031b</autn:reference>
+            <autn:id>468</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: fish</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>eaced485-9db0-4261-a925-3a9e4eb1031b</DREREFERENCE>
+                    <GROUPID>cb1dae05-0693-4b05-901a-3ffa10d6e536</GROUPID>
+                    <QMSVALUE2>2</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Horse</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSAGENTBOOL>fish</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Pin to Position for: fish</DRETITLE>
+                    <DRECONTENT>fish
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>468</autn:baseid>
+            <autn:date>1425383371</autn:date>
+            <autn:datestring>11:49:31 03/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>4a1a61d4-e39f-4202-9915-fe08917b0cfb</autn:reference>
+            <autn:id>396</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: red</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>4a1a61d4-e39f-4202-9915-fe08917b0cfb</DREREFERENCE>
+                    <GROUPID>2eef5c13-86c9-4593-a9e5-2bcc96d62705</GROUPID>
+                    <QMSVALUE2>3</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Blue Wing</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSAGENTBOOL>red</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: red</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>red
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>396</autn:baseid>
+            <autn:date>1423648351</autn:date>
+            <autn:datestring>09:52:31 11/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>c91b3f1e-3382-40eb-aea3-fa80e66bba24</autn:reference>
+            <autn:id>395</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: red</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>c91b3f1e-3382-40eb-aea3-fa80e66bba24</DREREFERENCE>
+                    <GROUPID>2eef5c13-86c9-4593-a9e5-2bcc96d62705</GROUPID>
+                    <QMSVALUE2>3</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Deliah Blue</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSAGENTBOOL>red</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: red</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>red
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>395</autn:baseid>
+            <autn:date>1423648351</autn:date>
+            <autn:datestring>09:52:31 11/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>4a03979e-2248-4ccf-a251-02f30f939220</autn:reference>
+            <autn:id>394</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: red</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>4a03979e-2248-4ccf-a251-02f30f939220</DREREFERENCE>
+                    <GROUPID>2eef5c13-86c9-4593-a9e5-2bcc96d62705</GROUPID>
+                    <QMSVALUE2>3</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Old Republic military uniforms</QMSVALUE1>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSAGENTBOOL>red</QMSAGENTBOOL>
+                    <DRETITLE>Pin to Position for: red</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRECONTENT>red
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>394</autn:baseid>
+            <autn:date>1423648351</autn:date>
+            <autn:datestring>09:52:31 11/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>92d39fb6-dfac-42fc-9b8b-afdf909f7658</autn:reference>
+            <autn:id>368</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: green</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>92d39fb6-dfac-42fc-9b8b-afdf909f7658</DREREFERENCE>
+                    <QMSTYPE>1</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <GROUPID>be990037-b18c-4c1c-95bc-9faa01b7a3a2</GROUPID>
+                    <DRETITLE>Pin to Position for: green</DRETITLE>
+                    <QMSVALUE2>3</QMSVALUE2>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Unidentified Biituian fruit tree</QMSVALUE1>
+                    <QMSAGENTBOOL>green</QMSAGENTBOOL>
+                    <DRECONTENT>green
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>368</autn:baseid>
+            <autn:date>1423063317</autn:date>
+            <autn:datestring>15:21:57 04/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>2719ab1b-810b-414c-8b7b-0095b7e87995</autn:reference>
+            <autn:id>353</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Pin to Position for: Darth Maul</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>2719ab1b-810b-414c-8b7b-0095b7e87995</DREREFERENCE>
+                    <DRETITLE>Pin to Position for: Darth Maul</DRETITLE>
+                    <QMSAGENTBOOL>Maul OR Darth</QMSAGENTBOOL>
+                    <QMSTYPE>1</QMSTYPE>
+                    <QMSVALUE1>http://starwars.wikia.com/wiki/Darth Maul</QMSVALUE1>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <DRECONTENT>Maul Darth</DRECONTENT>
+                    <QMSVALUE2>1</QMSVALUE2>
+                    <GROUPID>2534e551-20c7-479a-9ea5-09199613b73e</GROUPID>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:-//Michael Angstadt//biweekly
+                        0.4.1//EN+\\BEGIN:VEVENT+\\UID:8a79aed6-50a2-489b-8998-72794b8e5918+\\DTSTAMP:20150129T110203Z+\\DTSTART;VALUE=DATE:20150129+\\DTEND;VALUE=DATE:20150130+\\RRULE:FREQ=DAILY+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>353</autn:baseid>
+            <autn:date>1422529323</autn:date>
+            <autn:datestring>11:02:03 29/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

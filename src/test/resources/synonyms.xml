@@ -1,0 +1,837 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>30</autn:numhits>
+        <autn:hit>
+            <autn:reference>04c3a0f1-6be1-4226-966f-53240dd4db56</autn:reference>
+            <autn:id>689</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: cat 12345678f914874257324547098235</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>04c3a0f1-6be1-4226-966f-53240dd4db56</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: cat 12345678f914874257324547098235</DRETITLE>
+                    <QMSAGENTBOOL>cat OR 12345678f914874257324547098235</QMSAGENTBOOL>
+                    <KEYWORDS>cat%2C12345678f914874257324547098235</KEYWORDS>
+                    <CONCEPT>cat+OR+12345678f914874257324547098235</CONCEPT>
+                    <DRECONTENT>cat 12345678f914874257324547098235
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>689</autn:baseid>
+            <autn:date>1460466703</autn:date>
+            <autn:datestring>13:11:43 12/04/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>8ea05d6d-3f84-4aa2-aba9-ca2bd414187a</autn:reference>
+            <autn:id>664</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: stuff thing</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>8ea05d6d-3f84-4aa2-aba9-ca2bd414187a</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: stuff thing</DRETITLE>
+                    <CONCEPT>stuff+OR+thing</CONCEPT>
+                    <QMSAGENTBOOL>stuff OR thing</QMSAGENTBOOL>
+                    <KEYWORDS>stuff%2Cthing</KEYWORDS>
+                    <DRECONTENT>stuff thing
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>664</autn:baseid>
+            <autn:date>1459331705</autn:date>
+            <autn:datestring>09:55:05 30/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>7f56fc67-a1fb-481f-96ff-c2f990f4f403</autn:reference>
+            <autn:id>647</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: abc cde</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>7f56fc67-a1fb-481f-96ff-c2f990f4f403</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <QMSAGENTBOOL>abc OR cde</QMSAGENTBOOL>
+                    <DRETITLE>Synonym Group: abc cde</DRETITLE>
+                    <KEYWORDS>abc%2Ccde</KEYWORDS>
+                    <CONCEPT>abc+OR+cde</CONCEPT>
+                    <DRECONTENT>abc cde
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>647</autn:baseid>
+            <autn:date>1458839592</autn:date>
+            <autn:datestring>17:13:12 24/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>060a7403-0f95-4715-bb4b-2f3bbb6192ad</autn:reference>
+            <autn:id>638</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: ape monkey</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>060a7403-0f95-4715-bb4b-2f3bbb6192ad</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>ape+OR+monkey</CONCEPT>
+                    <DRETITLE>Synonym Group: ape monkey</DRETITLE>
+                    <QMSAGENTBOOL>ape OR monkey</QMSAGENTBOOL>
+                    <KEYWORDS>ape%2Cmonkey</KEYWORDS>
+                    <DRECONTENT>ape monkey
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>638</autn:baseid>
+            <autn:date>1458125761</autn:date>
+            <autn:datestring>10:56:01 16/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ac9a9f56-f197-45b8-95a6-6968fd20faa9</autn:reference>
+            <autn:id>637</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: foo bar</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ac9a9f56-f197-45b8-95a6-6968fd20faa9</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>foo+OR+bar</CONCEPT>
+                    <DRETITLE>Synonym Group: foo bar</DRETITLE>
+                    <QMSAGENTBOOL>foo OR bar</QMSAGENTBOOL>
+                    <KEYWORDS>foo%2Cbar</KEYWORDS>
+                    <DRECONTENT>foo bar
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>637</autn:baseid>
+            <autn:date>1458124947</autn:date>
+            <autn:datestring>10:42:27 16/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ac7d2bc5-5f87-4172-b0ca-df6b3226e124</autn:reference>
+            <autn:id>635</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: lion cat tiger</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ac7d2bc5-5f87-4172-b0ca-df6b3226e124</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>lion+OR+cat+OR+tiger</CONCEPT>
+                    <DRETITLE>Synonym Group: lion cat tiger</DRETITLE>
+                    <KEYWORDS>lion%2Ccat%2Ctiger</KEYWORDS>
+                    <QMSAGENTBOOL>lion OR cat OR tiger</QMSAGENTBOOL>
+                    <DRECONTENT>lion cat tiger
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>635</autn:baseid>
+            <autn:date>1455809527</autn:date>
+            <autn:datestring>15:32:07 18/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>b62a8877-8ad3-4c9c-a6f6-330a1d034e20</autn:reference>
+            <autn:id>634</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: beige grey</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>b62a8877-8ad3-4c9c-a6f6-330a1d034e20</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>beige+OR+grey</CONCEPT>
+                    <DRETITLE>Synonym Group: beige grey</DRETITLE>
+                    <KEYWORDS>beige%2Cgrey</KEYWORDS>
+                    <QMSAGENTBOOL>beige OR grey</QMSAGENTBOOL>
+                    <DRECONTENT>beige grey
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>634</autn:baseid>
+            <autn:date>1455809387</autn:date>
+            <autn:datestring>15:29:47 18/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>1178b6a0-1ee6-4e53-85b0-fdfb9c881d91</autn:reference>
+            <autn:id>633</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: blue green</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>1178b6a0-1ee6-4e53-85b0-fdfb9c881d91</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>blue+OR+green</CONCEPT>
+                    <DRETITLE>Synonym Group: blue green</DRETITLE>
+                    <KEYWORDS>blue%2Cgreen</KEYWORDS>
+                    <QMSAGENTBOOL>blue OR green</QMSAGENTBOOL>
+                    <DRECONTENT>blue green
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>633</autn:baseid>
+            <autn:date>1455809314</autn:date>
+            <autn:datestring>15:28:34 18/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>d9939a4d-fd79-40ac-9acd-89638d005f63</autn:reference>
+            <autn:id>632</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: cat kitten pussy</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>d9939a4d-fd79-40ac-9acd-89638d005f63</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>cat+OR+kitten+OR+pussy</CONCEPT>
+                    <DRETITLE>Synonym Group: cat kitten pussy</DRETITLE>
+                    <KEYWORDS>cat%2Ckitten%2Cpussy</KEYWORDS>
+                    <QMSAGENTBOOL>cat OR kitten OR pussy</QMSAGENTBOOL>
+                    <DRECONTENT>cat kitten pussy
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>632</autn:baseid>
+            <autn:date>1455808982</autn:date>
+            <autn:datestring>15:23:02 18/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3f693c56-6e98-415d-8324-753a74f3193d</autn:reference>
+            <autn:id>631</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: cat kitten</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3f693c56-6e98-415d-8324-753a74f3193d</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>cat+OR+kitten</CONCEPT>
+                    <DRETITLE>Synonym Group: cat kitten</DRETITLE>
+                    <KEYWORDS>cat%2Ckitten</KEYWORDS>
+                    <QMSAGENTBOOL>cat OR kitten</QMSAGENTBOOL>
+                    <DRECONTENT>cat kitten
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>631</autn:baseid>
+            <autn:date>1455808925</autn:date>
+            <autn:datestring>15:22:05 18/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>8706f79b-61cb-4fff-af5d-b98183e0f10d</autn:reference>
+            <autn:id>628</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: cats hats</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>8706f79b-61cb-4fff-af5d-b98183e0f10d</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>cats+OR+hats</CONCEPT>
+                    <QMSAGENTBOOL>cats OR hats</QMSAGENTBOOL>
+                    <DRETITLE>Synonym Group: cats hats</DRETITLE>
+                    <KEYWORDS>cats%2Chats</KEYWORDS>
+                    <DRECONTENT>cats hats
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>628</autn:baseid>
+            <autn:date>1455538002</autn:date>
+            <autn:datestring>12:06:42 15/02/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>bf7a4a10-4994-4818-bbee-07caf8381b87</autn:reference>
+            <autn:id>617</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: chewbacca luke</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>bf7a4a10-4994-4818-bbee-07caf8381b87</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: chewbacca luke</DRETITLE>
+                    <KEYWORDS>chewbacca%2Cluke</KEYWORDS>
+                    <CONCEPT>chewbacca+OR+luke</CONCEPT>
+                    <QMSAGENTBOOL>chewbacca OR luke</QMSAGENTBOOL>
+                    <DRECONTENT>chewbacca luke
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>617</autn:baseid>
+            <autn:date>1448453189</autn:date>
+            <autn:datestring>12:06:29 25/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>d57a5135-6079-4ae6-adbb-09f134dcb05f</autn:reference>
+            <autn:id>616</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: leia luke</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>d57a5135-6079-4ae6-adbb-09f134dcb05f</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: leia luke</DRETITLE>
+                    <KEYWORDS>leia%2Cluke</KEYWORDS>
+                    <CONCEPT>leia+OR+luke</CONCEPT>
+                    <QMSAGENTBOOL>leia OR luke</QMSAGENTBOOL>
+                    <DRECONTENT>leia luke
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>616</autn:baseid>
+            <autn:date>1448453168</autn:date>
+            <autn:datestring>12:06:08 25/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>65128ab2-9b76-4994-8082-1b75d933a9a1</autn:reference>
+            <autn:id>614</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: darth vader han solo</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>65128ab2-9b76-4994-8082-1b75d933a9a1</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: darth vader han solo</DRETITLE>
+                    <QMSAGENTBOOL>"darth vader" OR "han solo"</QMSAGENTBOOL>
+                    <CONCEPT>%22darth+vader%22+OR+%22han+solo%22</CONCEPT>
+                    <KEYWORDS>darth+vader%2Chan+solo</KEYWORDS>
+                    <DRECONTENT>darth vader han solo
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>614</autn:baseid>
+            <autn:date>1448446695</autn:date>
+            <autn:datestring>10:18:15 25/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>afd41ec3-6878-4a13-83eb-be4c349eb59e</autn:reference>
+            <autn:id>611</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: baaaadmonkey jar jar</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>afd41ec3-6878-4a13-83eb-be4c349eb59e</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: baaaadmonkey jar jar</DRETITLE>
+                    <KEYWORDS>baaaadmonkey%2Cjar+jar</KEYWORDS>
+                    <CONCEPT>baaaadmonkey+OR+%22jar+jar%22</CONCEPT>
+                    <QMSAGENTBOOL>baaaadmonkey OR "jar jar"</QMSAGENTBOOL>
+                    <DRECONTENT>baaaadmonkey jar jar
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>611</autn:baseid>
+            <autn:date>1448442016</autn:date>
+            <autn:datestring>09:00:16 25/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3bf0a72f-f068-4202-9d09-656ab9bb70cf</autn:reference>
+            <autn:id>610</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: aaaamonkey vader</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3bf0a72f-f068-4202-9d09-656ab9bb70cf</DREREFERENCE>
+                    <DRETITLE>Synonym Group: aaaamonkey vader</DRETITLE>
+                    <QMSAGENTBOOL>aaaamonkey OR vader</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>aaaamonkey vader</DRECONTENT>
+                    <KEYWORDS>aaaamonkey%2Cvader</KEYWORDS>
+                    <CONCEPT>aaaamonkey+OR+vader</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>610</autn:baseid>
+            <autn:date>1448441818</autn:date>
+            <autn:datestring>08:56:58 25/11/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>baf2f13c-3ab0-46c4-a730-dbc272a384a6</autn:reference>
+            <autn:id>590</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: extra fluffy cat cat monkey cat dog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>baf2f13c-3ab0-46c4-a730-dbc272a384a6</DREREFERENCE>
+                    <DRETITLE>Synonym Group: extra fluffy cat cat monkey cat dog</DRETITLE>
+                    <QMSAGENTBOOL>"extra fluffy" OR "cat cat" OR "monkey cat" OR dog</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>extra fluffy cat cat monkey cat dog</DRECONTENT>
+                    <KEYWORDS>extra+fluffy%2Ccat+cat%2Cmonkey+cat%2Cdog</KEYWORDS>
+                    <CONCEPT>%22extra+fluffy%22+OR+%22cat+cat%22+OR+%22monkey+cat%22+OR+dog</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>590</autn:baseid>
+            <autn:date>1440508836</autn:date>
+            <autn:datestring>13:20:36 25/08/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>93edd09a-d2cd-4ef4-b6ff-f43a56bd9d2b</autn:reference>
+            <autn:id>589</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: red color green pink</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>93edd09a-d2cd-4ef4-b6ff-f43a56bd9d2b</DREREFERENCE>
+                    <DRETITLE>Synonym Group: red color green pink</DRETITLE>
+                    <QMSAGENTBOOL>red OR color OR green OR pink</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>red color green pink</DRECONTENT>
+                    <KEYWORDS>red%2Ccolor%2Cgreen%2Cpink</KEYWORDS>
+                    <CONCEPT>red+OR+color+OR+green+OR+pink</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>589</autn:baseid>
+            <autn:date>1440508415</autn:date>
+            <autn:datestring>13:13:35 25/08/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>a147eb02-33cc-45b0-a2f6-9d19bf6aa101</autn:reference>
+            <autn:id>586</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: kiwi kiwi fruit new zealand</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>a147eb02-33cc-45b0-a2f6-9d19bf6aa101</DREREFERENCE>
+                    <DRETITLE>Synonym Group: kiwi kiwi fruit new zealand</DRETITLE>
+                    <QMSAGENTBOOL>kiwi OR "kiwi fruit" OR "new zealand"</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>kiwi kiwi fruit new zealand</DRECONTENT>
+                    <KEYWORDS>kiwi%2Ckiwi+fruit%2Cnew+zealand</KEYWORDS>
+                    <CONCEPT>kiwi+OR+%22kiwi+fruit%22+OR+%22new+zealand%22</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>586</autn:baseid>
+            <autn:date>1438611812</autn:date>
+            <autn:datestring>14:23:32 03/08/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f7d1aa63-9f99-44ef-abec-23956cd27afa</autn:reference>
+            <autn:id>585</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: lotr hobbits new zealand</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f7d1aa63-9f99-44ef-abec-23956cd27afa</DREREFERENCE>
+                    <DRETITLE>Synonym Group: lotr hobbits new zealand</DRETITLE>
+                    <QMSAGENTBOOL>lotr OR hobbits OR "new zealand"</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>lotr hobbits new zealand</DRECONTENT>
+                    <KEYWORDS>lotr%2Chobbits%2Cnew+zealand</KEYWORDS>
+                    <CONCEPT>lotr+OR+hobbits+OR+%22new+zealand%22</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>585</autn:baseid>
+            <autn:date>1438611805</autn:date>
+            <autn:datestring>14:23:25 03/08/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>09444d0d-2000-453c-8d7b-dd2ca4b66647</autn:reference>
+            <autn:id>571</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: van automobile vehicle</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>09444d0d-2000-453c-8d7b-dd2ca4b66647</DREREFERENCE>
+                    <DRETITLE>Synonym Group: van automobile vehicle</DRETITLE>
+                    <QMSAGENTBOOL>van OR automobile OR vehicle</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>van automobile vehicle</DRECONTENT>
+                    <KEYWORDS>van%2Cautomobile%2Cvehicle</KEYWORDS>
+                    <CONCEPT>van+OR+automobile+OR+vehicle</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>571</autn:baseid>
+            <autn:date>1435748935</autn:date>
+            <autn:datestring>11:08:55 01/07/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>4c19433e-33fa-4654-b3ab-e33a14b64ed7</autn:reference>
+            <autn:id>448</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: workers husband</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>4c19433e-33fa-4654-b3ab-e33a14b64ed7</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <KEYWORDS>workers%2Chusband</KEYWORDS>
+                    <DRETITLE>Synonym Group: workers husband</DRETITLE>
+                    <CONCEPT>workers+OR+husband</CONCEPT>
+                    <QMSAGENTBOOL>workers OR husband</QMSAGENTBOOL>
+                    <DRECONTENT>workers husband
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>448</autn:baseid>
+            <autn:date>1424698690</autn:date>
+            <autn:datestring>13:38:10 23/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e8bb6092-b1e6-441b-902f-aa0bbe1232c2</autn:reference>
+            <autn:id>415</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: water waterfall</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e8bb6092-b1e6-441b-902f-aa0bbe1232c2</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <CONCEPT>water+OR+waterfall</CONCEPT>
+                    <KEYWORDS>water%2Cwaterfall</KEYWORDS>
+                    <DRETITLE>Synonym Group: water waterfall</DRETITLE>
+                    <QMSAGENTBOOL>water OR waterfall</QMSAGENTBOOL>
+                    <DRECONTENT>water waterfall
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>415</autn:baseid>
+            <autn:date>1424204695</autn:date>
+            <autn:datestring>20:24:55 17/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>a01ffcbe-615b-4521-a0ee-151345771df3</autn:reference>
+            <autn:id>379</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: wow chien l'amaze chat chaton doge</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>a01ffcbe-615b-4521-a0ee-151345771df3</DREREFERENCE>
+                    <DRETITLE>Synonym Group: wow chien l'amaze chat chaton doge</DRETITLE>
+                    <QMSAGENTBOOL>wow OR chien OR l'amaze OR chat OR chaton OR doge</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>wow chien l'amaze chat chaton doge</DRECONTENT>
+                    <KEYWORDS>wow%2Cchien%2Cl%27amaze%2Cchat%2Cchaton%2Cdoge</KEYWORDS>
+                    <CONCEPT>wow+OR+chien+OR+l%27amaze+OR+chat+OR+chaton+OR+doge</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>379</autn:baseid>
+            <autn:date>1423491634</autn:date>
+            <autn:datestring>14:20:34 09/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>FRENCH</autn:language>
+            <autn:languagetype>frenchUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>dcc35185-09e7-4293-b362-8309aad333de</autn:reference>
+            <autn:id>364</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: totalement boule de étonnant</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>dcc35185-09e7-4293-b362-8309aad333de</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <QMSAGENTBOOL>totalement OR "boule de étonnant"</QMSAGENTBOOL>
+                    <CONCEPT>totalement+OR+%22boule+de+%C3%A9tonnant%22</CONCEPT>
+                    <DRETITLE>Synonym Group: totalement boule de étonnant</DRETITLE>
+                    <KEYWORDS>totalement%2Cboule+de+%C3%A9tonnant</KEYWORDS>
+                    <DRECONTENT>totalement boule de étonnant
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>364</autn:baseid>
+            <autn:date>1423056044</autn:date>
+            <autn:datestring>13:20:44 04/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>FRENCH</autn:language>
+            <autn:languagetype>frenchUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>acf3afe3-0f86-43a1-afff-d57646ca6482</autn:reference>
+            <autn:id>327</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: crispbread biscuit</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>acf3afe3-0f86-43a1-afff-d57646ca6482</DREREFERENCE>
+                    <DRETITLE>Synonym Group: crispbread biscuit</DRETITLE>
+                    <QMSAGENTBOOL>crispbread OR biscuit</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>crispbread biscuit</DRECONTENT>
+                    <KEYWORDS>crispbread%2Cbiscuit</KEYWORDS>
+                    <CONCEPT>crispbread+OR+biscuit</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>327</autn:baseid>
+            <autn:date>1422035454</autn:date>
+            <autn:datestring>17:50:54 23/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishASCII</autn:languagetype>
+            <autn:languageencoding>ASCII</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>a9ad5803-276e-4501-a402-c906e04c9ab7</autn:reference>
+            <autn:id>325</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: banana fruit apple</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>a9ad5803-276e-4501-a402-c906e04c9ab7</DREREFERENCE>
+                    <DRETITLE>Synonym Group: banana fruit apple</DRETITLE>
+                    <QMSAGENTBOOL>banana OR fruit OR apple</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>banana fruit apple</DRECONTENT>
+                    <KEYWORDS>banana%2Cfruit%2Capple</KEYWORDS>
+                    <CONCEPT>banana+OR+fruit+OR+apple</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>325</autn:baseid>
+            <autn:date>1422035432</autn:date>
+            <autn:datestring>17:50:32 23/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishASCII</autn:languagetype>
+            <autn:languageencoding>ASCII</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>96b27656-f8e2-41b8-bd7e-f775ea05b11c</autn:reference>
+            <autn:id>324</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: banana yellow</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>96b27656-f8e2-41b8-bd7e-f775ea05b11c</DREREFERENCE>
+                    <DRETITLE>Synonym Group: banana yellow</DRETITLE>
+                    <QMSAGENTBOOL>banana OR yellow</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>banana yellow</DRECONTENT>
+                    <KEYWORDS>banana%2Cyellow</KEYWORDS>
+                    <CONCEPT>banana+OR+yellow</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>324</autn:baseid>
+            <autn:date>1422035428</autn:date>
+            <autn:datestring>17:50:28 23/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishASCII</autn:languagetype>
+            <autn:languageencoding>ASCII</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>72c5cc79-a929-4929-9308-e961a7ea2bd6</autn:reference>
+            <autn:id>288</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: cuttlefish octopus squid cephalopod</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>72c5cc79-a929-4929-9308-e961a7ea2bd6</DREREFERENCE>
+                    <DRETITLE>Synonym Group: cuttlefish octopus squid cephalopod</DRETITLE>
+                    <QMSAGENTBOOL>cuttlefish OR octopus OR squid OR cephalopod</QMSAGENTBOOL>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DRECONTENT>cuttlefish octopus squid cephalopod</DRECONTENT>
+                    <KEYWORDS>cuttlefish%2Coctopus%2Csquid%2Ccephalopod</KEYWORDS>
+                    <CONCEPT>cuttlefish+OR+octopus+OR+squid+OR+cephalopod</CONCEPT>
+                    <DATABASERESTRICTION/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>288</autn:baseid>
+            <autn:date>1421418343</autn:date>
+            <autn:datestring>14:25:43 16/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishASCII</autn:languagetype>
+            <autn:languageencoding>ASCII</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f3139de1-23c4-4e77-a0e5-c22218e37771</autn:reference>
+            <autn:id>178</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Synonym Group: deceive confuse baffle</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f3139de1-23c4-4e77-a0e5-c22218e37771</DREREFERENCE>
+                    <QMSTYPE>4</QMSTYPE>
+                    <DATABASERESTRICTION/>
+                    <DRETITLE>Synonym Group: deceive confuse baffle</DRETITLE>
+                    <QMSAGENTBOOL>deceive OR confuse OR baffle</QMSAGENTBOOL>
+                    <CONCEPT>deceive+OR+confuse+OR+baffle</CONCEPT>
+                    <KEYWORDS>deceive%2Cconfuse%2Cbaffle</KEYWORDS>
+                    <DRECONTENT>deceive confuse baffle
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>178</autn:baseid>
+            <autn:date>1418833783</autn:date>
+            <autn:datestring>16:29:43 17/12/2014</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishASCII</autn:languagetype>
+            <autn:languageencoding>ASCII</autn:languageencoding>
+        </autn:hit>
+    </responsedata>
+</autnresponse>
