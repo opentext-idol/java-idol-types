@@ -20,21 +20,23 @@ import java.util.List;
  * Simple IDOL response parser using native Java JAXB tools
  */
 @SuppressWarnings("WeakerAccess")
-public class IdolXmlMarshaller<E1 extends Exception, E2 extends Exception> {
+public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> implements IdolJaxbMarshaller<E1, E2> {
     public static final String ERROR_NODE = "error";
 
     private final Function<Error, E1> errorResponseHandler;
     private final BiFunction<String, Exception, E2> parsingErrorHandler;
 
-    public IdolXmlMarshaller(final Function<Error, E1> errorResponseHandler, final BiFunction<String, Exception, E2> parsingErrorHandler) {
+    public IdolJaxbMarshallerImpl(final Function<Error, E1> errorResponseHandler, final BiFunction<String, Exception, E2> parsingErrorHandler) {
         this.errorResponseHandler = errorResponseHandler;
         this.parsingErrorHandler = parsingErrorHandler;
     }
 
+    @Override
     public Autnresponse parseIdolResponse(final String xml) throws E1, E2 {
         return parseIdolResponse(xml, null);
     }
 
+    @Override
     @SuppressWarnings("CastToConcreteClass")
     public <T> Autnresponse parseIdolResponse(final String xml, final Class<T> type) throws E1, E2 {
         try {
@@ -60,6 +62,7 @@ public class IdolXmlMarshaller<E1 extends Exception, E2 extends Exception> {
         }
     }
 
+    @Override
     public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
         final Autnresponse autnresponse;
         try {
@@ -82,14 +85,17 @@ public class IdolXmlMarshaller<E1 extends Exception, E2 extends Exception> {
         return autnresponse;
     }
 
+    @Override
     public <T> T parseIdolResponseData(final String xml, final Class<T> type) throws E1, E2 {
         return type.cast(parseIdolResponse(xml, type).getResponsedata());
     }
 
+    @Override
     public <R extends QueryResponse, C> R parseIdolQueryResponseData(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
         return responseType.cast(parseIdolQueryResponse(xml, responseType, contentType).getResponsedata());
     }
 
+    @Override
     public <T> void generateXmlDocument(final OutputStream outputStream, final T object, final Class<T> type) throws E2 {
         try {
             final JAXBContext context = JAXBContext.newInstance(type);
@@ -104,42 +110,5 @@ public class IdolXmlMarshaller<E1 extends Exception, E2 extends Exception> {
         final JAXBContext context = JAXBContext.newInstance(type);
         final Unmarshaller unmarshaller = context.createUnmarshaller();
         return unmarshaller.unmarshal(node, type).getValue();
-    }
-
-    /**
-     * Represents a function that accepts one argument and produces a result.
-     * TODO: delete this once we can use Java8
-     *
-     * @param <T> the type of the input to the function
-     * @param <R> the type of the result of the function
-     */
-    public interface Function<T, R> {
-        /**
-         * Applies this function to the given argument.
-         *
-         * @param t the function argument
-         * @return the function result
-         */
-        R apply(T t);
-    }
-
-    /**
-     * Represents a function that accepts two arguments and produces a result.
-     * TODO: delete this once we can use Java8
-     *
-     * @param <T> the type of the first argument to the function
-     * @param <U> the type of the second argument to the function
-     * @param <R> the type of the result of the function
-     */
-    public interface BiFunction<T, U, R> {
-
-        /**
-         * Applies this function to the given arguments.
-         *
-         * @param t the first function argument
-         * @param u the second function argument
-         * @return the function result
-         */
-        R apply(T t, U u);
     }
 }

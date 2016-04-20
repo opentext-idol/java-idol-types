@@ -37,7 +37,7 @@ import static org.junit.Assert.assertTrue;
 
 @SuppressWarnings("OverlyCoupledClass")
 @RunWith(Parameterized.class)
-public class IdolXmlMarshallerTest<T, U> {
+public class IdolJaxbMarshallerTest<T, U> {
     private static final String ERROR_FILE_NAME = "/error.xml";
 
     @SuppressWarnings("OverlyCoupledMethod")
@@ -91,23 +91,23 @@ public class IdolXmlMarshallerTest<T, U> {
     private final String xml;
     private final String errorXml;
 
-    private IdolXmlMarshaller<CustomParsingException, CustomProcessingException> idolXmlMarshaller;
+    private IdolJaxbMarshaller<CustomParsingException, CustomProcessingException> idolJaxbMarshaller;
 
-    public IdolXmlMarshallerTest(final Class<T> type, final Class<U> subType, final String fileName) throws IOException {
+    public IdolJaxbMarshallerTest(final Class<T> type, final Class<U> subType, final String fileName) throws IOException {
         this.type = type;
         this.subType = subType;
-        xml = IOUtils.toString(IdolXmlMarshallerTest.class.getResource(fileName));
-        errorXml = IOUtils.toString(IdolXmlMarshallerTest.class.getResource(ERROR_FILE_NAME));
+        xml = IOUtils.toString(IdolJaxbMarshallerTest.class.getResource(fileName));
+        errorXml = IOUtils.toString(IdolJaxbMarshallerTest.class.getResource(ERROR_FILE_NAME));
     }
 
     @Before
     public void setUp() {
-        idolXmlMarshaller = new IdolXmlMarshaller<>(new IdolXmlMarshaller.Function<Error, CustomParsingException>() {
+        idolJaxbMarshaller = new IdolJaxbMarshallerImpl<>(new IdolJaxbMarshaller.Function<Error, CustomParsingException>() {
             @Override
             public CustomParsingException apply(final Error error) {
                 return new CustomParsingException(error);
             }
-        }, new IdolXmlMarshaller.BiFunction<String, Exception, CustomProcessingException>() {
+        }, new IdolJaxbMarshaller.BiFunction<String, Exception, CustomProcessingException>() {
             @Override
             public CustomProcessingException apply(final String message, final Exception cause) {
                 return new CustomProcessingException(message, cause);
@@ -117,7 +117,7 @@ public class IdolXmlMarshallerTest<T, U> {
 
     @Test
     public void parseResponse() throws JAXBException, IOException, SAXException, CustomParsingException, CustomProcessingException {
-        final Autnresponse response = type != null ? idolXmlMarshaller.parseIdolResponse(xml, type) : idolXmlMarshaller.parseIdolResponse(xml);
+        final Autnresponse response = type != null ? idolJaxbMarshaller.parseIdolResponse(xml, type) : idolJaxbMarshaller.parseIdolResponse(xml);
 
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final Class<?>[] classesToBeBound = type == null ? new Class<?>[]{Autnresponse.class} : new Class<?>[]{Autnresponse.class, type};
@@ -136,12 +136,12 @@ public class IdolXmlMarshallerTest<T, U> {
     public void parseIdolQueryResponse() throws CustomParsingException, CustomProcessingException, IOException {
         if (subType != null) {
             @SuppressWarnings("unchecked")
-            final Autnresponse response = idolXmlMarshaller.parseIdolQueryResponse(xml, (Class<QueryResponse>) type, subType);
+            final Autnresponse response = idolJaxbMarshaller.parseIdolQueryResponse(xml, (Class<QueryResponse>) type, subType);
             for (final Hit hit : ((QueryResponse) response.getResponsedata()).getHits()) {
                 for (final Object o : hit.getContent().getContent()) {
                     assertTrue(subType.isAssignableFrom(o.getClass()));
                     try (final ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
-                        idolXmlMarshaller.generateXmlDocument(outputStream, subType.cast(o), subType);
+                        idolJaxbMarshaller.generateXmlDocument(outputStream, subType.cast(o), subType);
                         assertNotNull(outputStream.toByteArray());
                     }
                 }
@@ -152,7 +152,7 @@ public class IdolXmlMarshallerTest<T, U> {
     @Test
     public void parseResponseData() throws CustomParsingException, CustomProcessingException {
         if (type != null) {
-            assertNotNull(idolXmlMarshaller.parseIdolResponseData(xml, type));
+            assertNotNull(idolJaxbMarshaller.parseIdolResponseData(xml, type));
         }
     }
 
@@ -160,18 +160,18 @@ public class IdolXmlMarshallerTest<T, U> {
     public void parseQueryResponseData() throws CustomParsingException, CustomProcessingException {
         if (subType != null) {
             //noinspection unchecked
-            assertNotNull(idolXmlMarshaller.parseIdolQueryResponseData(xml, (Class<QueryResponse>) type, subType));
+            assertNotNull(idolJaxbMarshaller.parseIdolQueryResponseData(xml, (Class<QueryResponse>) type, subType));
         }
     }
 
     @Test(expected = CustomParsingException.class)
     public void parseErrorResponse() throws CustomParsingException, CustomProcessingException {
-        idolXmlMarshaller.parseIdolResponse(errorXml, type);
+        idolJaxbMarshaller.parseIdolResponse(errorXml, type);
     }
 
     @Test(expected = CustomProcessingException.class)
     public void processingError() throws CustomParsingException, CustomProcessingException {
-        idolXmlMarshaller.parseIdolResponse("bad", type);
+        idolJaxbMarshaller.parseIdolResponse("bad", type);
     }
 
     private static class XMLDifferenceListener implements DifferenceListener {
