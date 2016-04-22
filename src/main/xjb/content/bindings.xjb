@@ -10,7 +10,6 @@
           version="2.1">
     <globalBindings>
         <serializable/>
-        <javaType name="long" xmlType="xs:integer"/>
     </globalBindings>
     <bindings schemaLocation="../../xsds/content/blacklist.xsd">
         <bindings node="xs:complexType[@name='blacklist']">
@@ -48,11 +47,17 @@
             <bindings node="//xs:element[@name='PROMOTION_NAME']">
                 <property name="promotionName"/>
             </bindings>
+            <bindings node="//xs:element[@name='QMSFIELDTEXT']">
+                <property name="fieldText"/>
+            </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
             </bindings>
             <bindings node="//xs:element[@name='ALWAYSACTIVE']">
                 <property name="alwaysActive"/>
+            </bindings>
+            <bindings node="//xs:element[@name='SCHEDULE']">
+                <property name="schedule"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
@@ -74,10 +79,10 @@
                 <property name="groupId"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSVALUE1']">
-                <property name="qmsValue1"/>
+                <property name="documentReference"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSVALUE2']">
-                <property name="qmsValue2"/>
+                <property name="position"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSTYPE']">
                 <property name="qmsType"/>
@@ -88,11 +93,17 @@
             <bindings node="//xs:element[@name='ALWAYSACTIVE']">
                 <property name="alwaysActive"/>
             </bindings>
+            <bindings node="//xs:element[@name='SCHEDULE']">
+                <property name="schedule"/>
+            </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
             </bindings>
             <bindings node="//xs:element[@name='DRECONTENT']">
                 <property name="content"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSFIELDTEXT']">
+                <property name="fieldText"/>
             </bindings>
         </bindings>
     </bindings>
@@ -105,7 +116,7 @@
                 <property name="reference"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSVALUE1']">
-                <property name="qmsValue1"/>
+                <property name="documentReferences"/>
             </bindings>
             <bindings node="//xs:element[@name='QMS_PROMOTION_ITEMS']">
                 <property name="qmsPromotionItems"/>
@@ -119,11 +130,17 @@
             <bindings node="//xs:element[@name='PROMOTION_NAME']">
                 <property name="promotionName"/>
             </bindings>
+            <bindings node="//xs:element[@name='QMSFIELDTEXT']">
+                <property name="fieldText"/>
+            </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
             </bindings>
             <bindings node="//xs:element[@name='ALWAYSACTIVE']">
                 <property name="alwaysActive"/>
+            </bindings>
+            <bindings node="//xs:element[@name='SCHEDULE']">
+                <property name="schedule"/>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
