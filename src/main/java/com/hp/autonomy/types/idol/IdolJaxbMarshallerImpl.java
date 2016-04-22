@@ -5,6 +5,7 @@
 
 package com.hp.autonomy.types.idol;
 
+import com.hp.autonomy.types.idol.content.Documents;
 import org.w3c.dom.Node;
 
 import javax.xml.bind.JAXBContext;
@@ -12,7 +13,9 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.OutputStream;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
@@ -96,11 +99,19 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     }
 
     @Override
-    public <T> void generateXmlDocument(final OutputStream outputStream, final T object, final Class<T> type) throws E2 {
+    public <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws E2 {
+        final Documents documents = new Documents();
+        final List<Object> documentList = documents.getContent();
+        for (final T object : objects) {
+            documentList.add(object);
+        }
+
         try {
-            final JAXBContext context = JAXBContext.newInstance(type);
+            final JAXBContext context = JAXBContext.newInstance(new Class<?>[] {Documents.class, type});
             final Marshaller marshaller = context.createMarshaller();
-            marshaller.marshal(object, outputStream);
+            final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            marshaller.marshal(documents, byteArrayOutputStream);
+            return new String(byteArrayOutputStream.toByteArray(), charset) + "\n#DREENDDATANOOP\n\n"; // because Idol is rubbish
         } catch (final JAXBException e) {
             throw parsingErrorHandler.apply("Error generating Idol document", e);
         }

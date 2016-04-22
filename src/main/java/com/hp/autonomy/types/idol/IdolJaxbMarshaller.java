@@ -5,7 +5,7 @@
 
 package com.hp.autonomy.types.idol;
 
-import java.io.OutputStream;
+import java.nio.charset.Charset;
 
 @SuppressWarnings("WeakerAccess")
 public interface IdolJaxbMarshaller<E1 extends Exception, E2 extends Exception> {
@@ -20,7 +20,7 @@ public interface IdolJaxbMarshaller<E1 extends Exception, E2 extends Exception> 
 
     <R extends QueryResponse, C> R parseIdolQueryResponseData(String xml, Class<R> responseType, Class<C> contentType) throws E1, E2;
 
-    <T> void generateXmlDocument(OutputStream outputStream, T object, Class<T> type) throws E2;
+    <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws E2;
 
     /**
      * Represents a function that accepts one argument and produces a result.

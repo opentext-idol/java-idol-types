@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 import static org.custommonkey.xmlunit.XMLAssert.assertXMLEqual;
 import static org.junit.Assert.assertNotNull;
@@ -140,10 +141,7 @@ public class IdolJaxbMarshallerTest<T, U> {
             for (final Hit hit : ((QueryResponse) response.getResponsedata()).getHits()) {
                 for (final Object o : hit.getContent().getContent()) {
                     assertTrue(subType.isAssignableFrom(o.getClass()));
-                    try (final ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
-                        idolJaxbMarshaller.generateXmlDocument(outputStream, subType.cast(o), subType);
-                        assertNotNull(outputStream.toByteArray());
-                    }
+                    assertNotNull(idolJaxbMarshaller.generateXmlDocument(Collections.singleton(subType.cast(o)), subType, StandardCharsets.UTF_8));
                 }
             }
         }
