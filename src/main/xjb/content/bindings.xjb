@@ -75,9 +75,6 @@
             <bindings node="//xs:element[@name='DREREFERENCE']">
                 <property name="reference"/>
             </bindings>
-            <bindings node="//xs:element[@name='GROUPID']">
-                <property name="groupId"/>
-            </bindings>
             <bindings node="//xs:element[@name='QMSVALUE1']">
                 <property name="documentReference"/>
             </bindings>
