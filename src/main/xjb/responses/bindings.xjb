@@ -9,6 +9,10 @@
           xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
           extensionBindingPrefixes="annox"
           version="2.1">
+    <globalBindings>
+        <serializable/>
+        <javaType name="long" xmlType="xs:integer"/>
+    </globalBindings>
     <bindings schemaLocation="../../xsds/responses/autnSimpleTypes.xsd">
         <bindings node="xs:simpleType[@name='epochDate']">
             <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.DateAdapter.parseEpochDate" printMethod="com.hp.autonomy.types.idol.DateAdapter.printEpochDate"/>
