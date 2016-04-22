@@ -7,7 +7,7 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:complexType name="synonymGroup">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="DREREFERENCE" type="xs:string"/>
             <xs:element name="QMSTYPE" type="xs:int"/>
             <xs:element name="DATABASERESTRICTION" type="xs:string"/>
@@ -16,6 +16,6 @@
             <xs:element name="KEYWORDS" type="xs:string"/>
             <xs:element name="CONCEPT" type="xs:string"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
-        </xs:sequence>
+        </xs:all>
     </xs:complexType>
 </xs:schema>

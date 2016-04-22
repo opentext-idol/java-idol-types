@@ -2,7 +2,7 @@
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
     <xs:complexType name="pinToPosition">
-        <xs:sequence>
+        <xs:all>
             <xs:element name="DREREFERENCE" type="xs:string"/>
             <xs:element name="GROUPID" type="xs:string"/>
             <xs:element name="QMSVALUE2" type="xs:int"/>
@@ -11,7 +11,9 @@
             <xs:element name="DRETITLE" type="xs:string"/>
             <xs:element name="QMSAGENTBOOL" type="xs:string"/>
             <xs:element name="ALWAYSACTIVE" type="xs:boolean"/>
+            <xs:element name="SCHEDULE" type="xs:string" minOccurs="0"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
-        </xs:sequence>
+            <xs:element name="QMSFIELDTEXT" type="xs:string" minOccurs="0"/>
+        </xs:all>
     </xs:complexType>
 </xs:schema>
