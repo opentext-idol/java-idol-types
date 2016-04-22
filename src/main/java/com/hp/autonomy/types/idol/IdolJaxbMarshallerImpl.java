@@ -12,11 +12,9 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.OutputStream;
+import java.io.InputStream;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.util.List;
 
 /**
@@ -35,18 +33,18 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     }
 
     @Override
-    public Autnresponse parseIdolResponse(final String xml) throws E1, E2 {
-        return parseIdolResponse(xml, null);
+    public Autnresponse parseIdolResponse(final InputStream inputStream) throws E1, E2 {
+        return parseIdolResponse(inputStream, null);
     }
 
     @Override
     @SuppressWarnings("CastToConcreteClass")
-    public <T> Autnresponse parseIdolResponse(final String xml, final Class<T> type) throws E1, E2 {
+    public <T> Autnresponse parseIdolResponse(final InputStream inputStream, final Class<T> type) throws E1, E2 {
         try {
             final JAXBContext jaxbContext = JAXBContext.newInstance(Autnresponse.class);
             final Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-            final Autnresponse response = (Autnresponse) unmarshaller.unmarshal(new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8)));
+            final Autnresponse response = (Autnresponse) unmarshaller.unmarshal(inputStream);
             final Node responseData = (Node) response.getResponsedata();
 
             if (responseData.getFirstChild() != null && ERROR_NODE.equals(responseData.getFirstChild().getNodeName())) {
@@ -66,10 +64,10 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     }
 
     @Override
-    public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+    public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
         final Autnresponse autnresponse;
         try {
-            autnresponse = parseIdolResponse(xml, responseType);
+            autnresponse = parseIdolResponse(inputStream, responseType);
             final QueryResponse queryResponse = responseType.cast(autnresponse.getResponsedata());
             for (final Hit hit : queryResponse.getHits()) {
                 final DocContent contentWrapper = hit.getContent();
@@ -89,13 +87,13 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     }
 
     @Override
-    public <T> T parseIdolResponseData(final String xml, final Class<T> type) throws E1, E2 {
-        return type.cast(parseIdolResponse(xml, type).getResponsedata());
+    public <T> T parseIdolResponseData(final InputStream inputStream, final Class<T> type) throws E1, E2 {
+        return type.cast(parseIdolResponse(inputStream, type).getResponsedata());
     }
 
     @Override
-    public <R extends QueryResponse, C> R parseIdolQueryResponseData(final String xml, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
-        return responseType.cast(parseIdolQueryResponse(xml, responseType, contentType).getResponsedata());
+    public <R extends QueryResponse, C> R parseIdolQueryResponseData(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+        return responseType.cast(parseIdolQueryResponse(inputStream, responseType, contentType).getResponsedata());
     }
 
     @Override
@@ -107,7 +105,7 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
         }
 
         try {
-            final JAXBContext context = JAXBContext.newInstance(new Class<?>[] {Documents.class, type});
+            final JAXBContext context = JAXBContext.newInstance(new Class<?>[]{Documents.class, type});
             final Marshaller marshaller = context.createMarshaller();
             final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             marshaller.marshal(documents, byteArrayOutputStream);

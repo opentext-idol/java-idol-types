@@ -26,7 +26,9 @@ import org.xml.sax.SAXException;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Collection;
@@ -90,7 +92,6 @@ public class IdolJaxbMarshallerTest<T, U> {
     private final Class<T> type;
     private final Class<U> subType;
     private final String xml;
-    private final String errorXml;
 
     private IdolJaxbMarshaller<CustomParsingException, CustomProcessingException> idolJaxbMarshaller;
 
@@ -98,7 +99,6 @@ public class IdolJaxbMarshallerTest<T, U> {
         this.type = type;
         this.subType = subType;
         xml = IOUtils.toString(IdolJaxbMarshallerTest.class.getResource(fileName));
-        errorXml = IOUtils.toString(IdolJaxbMarshallerTest.class.getResource(ERROR_FILE_NAME));
     }
 
     @Before
@@ -118,7 +118,8 @@ public class IdolJaxbMarshallerTest<T, U> {
 
     @Test
     public void parseResponse() throws JAXBException, IOException, SAXException, CustomParsingException, CustomProcessingException {
-        final Autnresponse response = type != null ? idolJaxbMarshaller.parseIdolResponse(xml, type) : idolJaxbMarshaller.parseIdolResponse(xml);
+        final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8));
+        final Autnresponse response = type != null ? idolJaxbMarshaller.parseIdolResponse(inputStream, type) : idolJaxbMarshaller.parseIdolResponse(inputStream);
 
         final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         final Class<?>[] classesToBeBound = type == null ? new Class<?>[]{Autnresponse.class} : new Class<?>[]{Autnresponse.class, type};
@@ -136,8 +137,9 @@ public class IdolJaxbMarshallerTest<T, U> {
     @Test
     public void parseIdolQueryResponse() throws CustomParsingException, CustomProcessingException, IOException {
         if (subType != null) {
+            final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8));
             @SuppressWarnings("unchecked")
-            final Autnresponse response = idolJaxbMarshaller.parseIdolQueryResponse(xml, (Class<QueryResponse>) type, subType);
+            final Autnresponse response = idolJaxbMarshaller.parseIdolQueryResponse(inputStream, (Class<QueryResponse>) type, subType);
             for (final Hit hit : ((QueryResponse) response.getResponsedata()).getHits()) {
                 for (final Object o : hit.getContent().getContent()) {
                     assertTrue(subType.isAssignableFrom(o.getClass()));
@@ -148,28 +150,32 @@ public class IdolJaxbMarshallerTest<T, U> {
     }
 
     @Test
-    public void parseResponseData() throws CustomParsingException, CustomProcessingException {
+    public void parseResponseData() throws CustomParsingException, CustomProcessingException, IOException {
         if (type != null) {
-            assertNotNull(idolJaxbMarshaller.parseIdolResponseData(xml, type));
+            try (final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8))) {
+                assertNotNull(idolJaxbMarshaller.parseIdolResponseData(inputStream, type));
+            }
         }
     }
 
     @Test
-    public void parseQueryResponseData() throws CustomParsingException, CustomProcessingException {
+    public void parseQueryResponseData() throws CustomParsingException, CustomProcessingException, IOException {
         if (subType != null) {
-            //noinspection unchecked
-            assertNotNull(idolJaxbMarshaller.parseIdolQueryResponseData(xml, (Class<QueryResponse>) type, subType));
+            try (final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8))) {
+                //noinspection unchecked
+                assertNotNull(idolJaxbMarshaller.parseIdolQueryResponseData(inputStream, (Class<QueryResponse>) type, subType));
+            }
         }
     }
 
     @Test(expected = CustomParsingException.class)
     public void parseErrorResponse() throws CustomParsingException, CustomProcessingException {
-        idolJaxbMarshaller.parseIdolResponse(errorXml, type);
+        idolJaxbMarshaller.parseIdolResponse(IdolJaxbMarshallerTest.class.getResourceAsStream(ERROR_FILE_NAME), type);
     }
 
     @Test(expected = CustomProcessingException.class)
     public void processingError() throws CustomParsingException, CustomProcessingException {
-        idolJaxbMarshaller.parseIdolResponse("bad", type);
+        idolJaxbMarshaller.parseIdolResponse(new ByteArrayInputStream("bad".getBytes()), type);
     }
 
     private static class XMLDifferenceListener implements DifferenceListener {
