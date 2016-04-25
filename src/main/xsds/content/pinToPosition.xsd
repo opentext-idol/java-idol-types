@@ -4,12 +4,12 @@
     <xs:complexType name="pinToPosition">
         <xs:all>
             <xs:element name="DREREFERENCE" type="xs:string"/>
-            <xs:element name="QMSVALUE2" type="xs:int"/>
+            <xs:element name="QMSVALUE2" type="xs:int" minOccurs="0"/>
             <xs:element name="QMSVALUE1" type="xs:string"/>
             <xs:element name="QMSTYPE" type="xs:int"/>
             <xs:element name="DRETITLE" type="xs:string"/>
             <xs:element name="QMSAGENTBOOL" type="xs:string"/>
-            <xs:element name="ALWAYSACTIVE" type="xs:boolean"/>
+            <xs:element name="ALWAYSACTIVE" type="xs:boolean" minOccurs="0"/>
             <xs:element name="SCHEDULE" type="xs:string" minOccurs="0"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
             <xs:element name="QMSFIELDTEXT" type="xs:string" minOccurs="0"/>
