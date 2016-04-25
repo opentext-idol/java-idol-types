@@ -13,6 +13,8 @@
     </globalBindings>
     <bindings schemaLocation="../../xsds/content/blacklist.xsd">
         <bindings node="xs:complexType[@name='blacklist']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
                 "DOCUMENT")
             </annox:annotate>
@@ -32,6 +34,8 @@
     </bindings>
     <bindings schemaLocation="../../xsds/content/dynamicSpotlight.xsd">
         <bindings node="xs:complexType[@name='dynamicSpotlight']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
                 "DOCUMENT")
             </annox:annotate>
@@ -69,6 +73,8 @@
     </bindings>
     <bindings schemaLocation="../../xsds/content/pinToPosition.xsd">
         <bindings node="xs:complexType[@name='pinToPosition']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
                 "DOCUMENT")
             </annox:annotate>
@@ -106,6 +112,8 @@
     </bindings>
     <bindings schemaLocation="../../xsds/content/spotlight.xsd">
         <bindings node="xs:complexType[@name='spotlight']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
                 "DOCUMENT")
             </annox:annotate>
@@ -149,6 +157,8 @@
     </bindings>
     <bindings schemaLocation="../../xsds/content/synonymGroup.xsd">
         <bindings node="xs:complexType[@name='synonymGroup']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
                 "DOCUMENT")
             </annox:annotate>

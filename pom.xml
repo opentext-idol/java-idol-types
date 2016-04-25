@@ -80,6 +80,11 @@
                             <artifactId>jaxb2-basics-annotate</artifactId>
                             <version>1.0.2</version>
                         </plugin>
+                        <dependency>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.16.2</version>
+                        </dependency>
                     </plugins>
                 </configuration>
                 <executions>
@@ -123,6 +128,13 @@
             <groupId>org.jvnet.jaxb2_commons</groupId>
             <artifactId>jaxb2-basics-runtime</artifactId>
             <version>0.9.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.2</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
