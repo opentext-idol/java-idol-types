@@ -61,7 +61,9 @@
                 <property name="alwaysActive"/>
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
-                <property name="schedule"/>
+                <property name="schedule">
+                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
@@ -97,7 +99,9 @@
                 <property name="alwaysActive"/>
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
-                <property name="schedule"/>
+                <property name="schedule">
+                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
@@ -145,7 +149,9 @@
                 <property name="alwaysActive"/>
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
-                <property name="schedule"/>
+                <property name="schedule">
+                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
                 <property name="qmsAgentBoolean"/>
