@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
-@SuppressWarnings({"UseOfObsoleteDateTimeApi", "UtilityClass"}) //TODO rework once we can use java8
+@SuppressWarnings({"UseOfObsoleteDateTimeApi", "UtilityClass", "WeakerAccess"}) //TODO rework once we can use java8
 public class DateAdapter {
     private static final String IDOL_DATE_PATTERN = "dd MMM yy HH:mm:ss";
     private static final String QUERY_RESPONSE_DATE_PATTERN = "HH:mm:ss dd/MM/yyyy";

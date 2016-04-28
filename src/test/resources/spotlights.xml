@@ -1,0 +1,937 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>QUERY</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:numhits>29</autn:numhits>
+        <autn:hit>
+            <autn:reference>af3a384c-3ecc-4d0b-a2b9-32f7ad37c15e</autn:reference>
+            <autn:id>665</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: isles</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>af3a384c-3ecc-4d0b-a2b9-32f7ad37c15e</DREREFERENCE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FAtaria%20Island</QMSVALUE1>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: isles</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>isles</QMSAGENTBOOL>
+                    <DRECONTENT>isles
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>665</autn:baseid>
+            <autn:date>1459419539</autn:date>
+            <autn:datestring>10:18:59 31/03/2016</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>923eb7f7-8133-4d04-bbe0-f7f2e53cefaa</autn:reference>
+            <autn:id>602</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: sag</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>923eb7f7-8133-4d04-bbe0-f7f2e53cefaa</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FRey%C3%A9%20Hollis,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FGavyn%20Sykes
+                    </QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: sag</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>sag</QMSAGENTBOOL>
+                    <DRECONTENT>sag
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>602</autn:baseid>
+            <autn:date>1445339829</autn:date>
+            <autn:datestring>11:17:09 20/10/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e8fca219-741e-40ba-963c-e025a13141bb</autn:reference>
+            <autn:id>558</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: red</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e8fca219-741e-40ba-963c-e025a13141bb</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FLightsaber%20crystal,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FBlue%20Wing
+                    </QMSVALUE1>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: red</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>red</QMSAGENTBOOL>
+                    <DRECONTENT>red
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>558</autn:baseid>
+            <autn:date>1432038319</autn:date>
+            <autn:datestring>12:25:19 19/05/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>11fc2a26-8585-44a0-9d6d-c673bee69b8b</autn:reference>
+            <autn:id>534</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: wang</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>11fc2a26-8585-44a0-9d6d-c673bee69b8b</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fwashingtontimes.feedsportal.com%2Fc%2F34503%2Ff%2F629218%2Fs%2F1fc9e08b%2Fl%2F0L0Swashingtontimes0N0Cnews0C20A120Cmay0C280Cpets0Edying0Efor0Ea0Esmoke0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS%2Fstory01.htm
+                    </QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSAGENTBOOL>wang</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Spotlight for: wang</DRETITLE>
+                    <DRECONTENT>wang
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>534</autn:baseid>
+            <autn:date>1430387995</autn:date>
+            <autn:datestring>09:59:55 30/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>646cb9a1-2486-4679-9891-5d90b308800a</autn:reference>
+            <autn:id>533</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: cracking</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>646cb9a1-2486-4679-9891-5d90b308800a</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FKeyan%20Farlander</QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSAGENTBOOL>cracking</QMSAGENTBOOL>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Spotlight for: cracking</DRETITLE>
+                    <DRECONTENT>cracking
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>533</autn:baseid>
+            <autn:date>1430387762</autn:date>
+            <autn:datestring>09:56:02 30/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>01b2c7c3-c0bd-4c40-b1e3-d259197402ab</autn:reference>
+            <autn:id>532</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: gorgon</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>01b2c7c3-c0bd-4c40-b1e3-d259197402ab</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FGorgon</QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: gorgon</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>gorgon</QMSAGENTBOOL>
+                    <DRECONTENT>gorgon
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>532</autn:baseid>
+            <autn:date>1430325006</autn:date>
+            <autn:datestring>16:30:06 29/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3dc72e4f-3c92-4eec-92e2-247da08d5528</autn:reference>
+            <autn:id>529</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: cat</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3dc72e4f-3c92-4eec-92e2-247da08d5528</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FWater</QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>cat</QMSAGENTBOOL>
+                    <DRETITLE>Spotlight for: cat</DRETITLE>
+                    <DRECONTENT>cat
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>529</autn:baseid>
+            <autn:date>1430304431</autn:date>
+            <autn:datestring>10:47:11 29/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f5f06fe9-f193-4043-914f-bdc5a2cf7f86</autn:reference>
+            <autn:id>522</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: orange, oranges</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f5f06fe9-f193-4043-914f-bdc5a2cf7f86</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FNaboo%20orange%20reptavian,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FOrange%20frilled%20mushroom
+                    </QMSVALUE1>
+                    <QMSTYPE>2</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: orange, oranges</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>orange OR oranges</QMSAGENTBOOL>
+                    <DRECONTENT>orange oranges
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>522</autn:baseid>
+            <autn:date>1430160281</autn:date>
+            <autn:datestring>18:44:41 27/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>164e44b2-b29c-4456-8d8c-487b7299dd5d</autn:reference>
+            <autn:id>521</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: car</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>164e44b2-b29c-4456-8d8c-487b7299dd5d</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCloud%20City%20Pod%20Car</QMSVALUE1>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>car</QMSAGENTBOOL>
+                    <DRETITLE>Spotlight for: car</DRETITLE>
+                    <DRECONTENT>car
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>521</autn:baseid>
+            <autn:date>1429623492</autn:date>
+            <autn:datestring>13:38:12 21/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>df51bc76-b69a-495b-a28b-38eb8dd3e12a</autn:reference>
+            <autn:id>520</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: star, wars</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>df51bc76-b69a-495b-a28b-38eb8dd3e12a</DREREFERENCE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStar%20Wars%20%28Blu-ray%29</QMSVALUE1>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>star OR wars</QMSAGENTBOOL>
+                    <DRETITLE>Spotlight for: star, wars</DRETITLE>
+                    <DRECONTENT>star wars
+                    </DRECONTENT>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>520</autn:baseid>
+            <autn:date>1429541460</autn:date>
+            <autn:datestring>14:51:00 20/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>263070fb-ec85-46d9-b9e0-7c700bfc6aca</autn:reference>
+            <autn:id>509</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: donkey</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>263070fb-ec85-46d9-b9e0-7c700bfc6aca</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FSequel%20trilogy</QMSVALUE1>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: donkey</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>donkey</QMSAGENTBOOL>
+                    <DRECONTENT>donkey
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>509</autn:baseid>
+            <autn:date>1428412772</autn:date>
+            <autn:datestring>13:19:32 07/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>7739b4a5-b06f-4221-8944-cc06e138eb57</autn:reference>
+            <autn:id>505</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: apple</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>7739b4a5-b06f-4221-8944-cc06e138eb57</DREREFERENCE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fwashingtontimes.feedsportal.com%2Fc%2F34503%2Ff%2F629218%2Fs%2F1fb8515c%2Fl%2F0L0Swashingtontimes0N0Cnews0C20A120Cmay0C250Cmaintain0Epeace0Eby0Estaying0Estrong0E3240A20A4630C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS%2Fstory01.htm
+                    </QMSVALUE1>
+                    <DRETITLE>Spotlight for: apple</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>apple</QMSAGENTBOOL>
+                    <DRECONTENT>apple
+                    </DRECONTENT>
+                    <QMSFIELDTEXT>MATCH{apple}:DRECONTENT</QMSFIELDTEXT>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>505</autn:baseid>
+            <autn:date>1427900098</autn:date>
+            <autn:datestring>14:54:58 01/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>efe436dc-9e97-49d7-9400-6046c2bf3563</autn:reference>
+            <autn:id>504</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: star wars</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>efe436dc-9e97-49d7-9400-6046c2bf3563</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStar%20Wars%20Insider%20121,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FMy%20Star%20Wars%21
+                    </QMSVALUE1>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: star wars</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>"star wars"</QMSAGENTBOOL>
+                    <DRECONTENT>star wars
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>504</autn:baseid>
+            <autn:date>1427896935</autn:date>
+            <autn:datestring>14:02:15 01/04/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e214f6a5-e09c-4531-b88b-b81f6b81d6cc</autn:reference>
+            <autn:id>495</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: fog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e214f6a5-e09c-4531-b88b-b81f6b81d6cc</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FList%20of%20references%20to%20Star%20Wars%20in%20movies
+                    </QMSVALUE1>
+                    <QMSTYPE>2</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: fog</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>fog</QMSAGENTBOOL>
+                    <DRECONTENT>fog
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>495</autn:baseid>
+            <autn:date>1427275311</autn:date>
+            <autn:datestring>09:21:51 25/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f811161b-14f5-4d38-8296-2c792be2acbf</autn:reference>
+            <autn:id>494</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: hi</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f811161b-14f5-4d38-8296-2c792be2acbf</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FTadar%27Ro,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStar%20Wars%20%28Marvel%20UK%29,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FHuttese
+                    </QMSVALUE1>
+                    <QMSTYPE>2</QMSTYPE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>hi</QMSAGENTBOOL>
+                    <DRETITLE>Spotlight for: hi</DRETITLE>
+                    <DRECONTENT>hi
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>494</autn:baseid>
+            <autn:date>1427121354</autn:date>
+            <autn:datestring>14:35:54 23/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>5eb95b37-b333-4906-8451-12809a9ee229</autn:reference>
+            <autn:id>490</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: carp</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>5eb95b37-b333-4906-8451-12809a9ee229</DREREFERENCE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: carp</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>carp</QMSAGENTBOOL>
+                    <DRECONTENT>carp
+                    </DRECONTENT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FHorse</QMSVALUE1>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>490</autn:baseid>
+            <autn:date>1426849952</autn:date>
+            <autn:datestring>11:12:32 20/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e09b4dd9-3df8-4790-b17c-d2ef9e0ed857</autn:reference>
+            <autn:id>485</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: cat</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e09b4dd9-3df8-4790-b17c-d2ef9e0ed857</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FTusk%20cat,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FVine%20cat,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCat%20Miin
+                    </QMSVALUE1>
+                    <QMSTYPE>2</QMSTYPE>
+                    <PROMOTION_NAME>Hotwire</PROMOTION_NAME>
+                    <DRETITLE>Spotlight for: cat</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>cat</QMSAGENTBOOL>
+                    <DRECONTENT>cat
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>485</autn:baseid>
+            <autn:date>1426160487</autn:date>
+            <autn:datestring>11:41:27 12/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>47fd4c8c-de56-4eb5-8a82-c0aa857ab8ba</autn:reference>
+            <autn:id>484</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: dog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>47fd4c8c-de56-4eb5-8a82-c0aa857ab8ba</DREREFERENCE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FAkk%20dog,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FKath%20hound
+                    </QMSVALUE1>
+                    <DRETITLE>Spotlight for: dog</DRETITLE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>dog</QMSAGENTBOOL>
+                    <DRECONTENT>dog
+                    </DRECONTENT>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>484</autn:baseid>
+            <autn:date>1426067380</autn:date>
+            <autn:datestring>09:49:40 11/03/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>f2938001-c0f4-431e-8aa6-961d0145605d</autn:reference>
+            <autn:id>459</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Hoarse</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>f2938001-c0f4-431e-8aa6-961d0145605d</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FKilian%20Plunkett</QMSVALUE1>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMSAGENTBOOL>horse</QMSAGENTBOOL>
+                    <DRECONTENT>horse
+                    </DRECONTENT>
+                    <DRETITLE>Hoarse</DRETITLE>
+                    <D/>
+                    <WHATEVER/>
+                    <DRE/>
+                    <SDG/>
+                    <HELL/>
+                    <HELLO/>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSFIELDTEXT/>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>459</autn:baseid>
+            <autn:date>1424779673</autn:date>
+            <autn:datestring>12:07:53 24/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>3d5086f1-de39-44cb-a947-7fc7d87404f0</autn:reference>
+            <autn:id>452</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Croatia</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>3d5086f1-de39-44cb-a947-7fc7d87404f0</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Croatia</DRETITLE>
+                    <QMSAGENTBOOL>europe OR Croatia OR east</QMSAGENTBOOL>
+                    <DRECONTENT>europe Croatia east</DRECONTENT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FGoran%20Beviin,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FVine%20cat,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FTusk%20cat,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCat,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FSaber%20cat
+                    </QMSVALUE1>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSFIELDTEXT>MATCH{dog}:DRETITLE</QMSFIELDTEXT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>452</autn:baseid>
+            <autn:date>1424704968</autn:date>
+            <autn:datestring>15:22:48 23/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>cf755c0d-e1a4-49b6-a6e8-9aba4cd579c2</autn:reference>
+            <autn:id>414</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: orange, yellow</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>cf755c0d-e1a4-49b6-a6e8-9aba4cd579c2</DREREFERENCE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FOrange%20District,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCloud%20City%20Pod%20Car,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FScum%20and%20Villainy%20%28Jedi%20Knights%20TCG%29
+                    </QMSVALUE1>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <DRETITLE>Spotlight for: orange, yellow</DRETITLE>
+                    <QMSAGENTBOOL>orange OR yellow</QMSAGENTBOOL>
+                    <DRECONTENT>orange yellow
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>414</autn:baseid>
+            <autn:date>1424204526</autn:date>
+            <autn:datestring>20:22:06 17/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>0de68f69-5ec3-4ad2-814e-b7dc24d33b30</autn:reference>
+            <autn:id>397</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: test</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>0de68f69-5ec3-4ad2-814e-b7dc24d33b30</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCT-21-0408,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FCT-27-5555,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FJedi%20Trials
+                    </QMSVALUE1>
+                    <QMSAGENTBOOL>test</QMSAGENTBOOL>
+                    <DRETITLE>Spotlight for: test</DRETITLE>
+                    <DRECONTENT>test
+                    </DRECONTENT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:IDOL Search
+                        Optimizer+\\BEGIN:VEVENT+\\UID:9e3e62c2-f0a4-4b7f-bf1a-a90d4ba9bb19+\\DTSTAMP:20150211T121310Z+\\DTSTART;VALUE=DATE:20150211+\\DTEND;VALUE=DATE:20150214+\\RRULE:FREQ=WEEKLY;UNTIL=20150228T111154Z+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>397</autn:baseid>
+            <autn:date>1423652156</autn:date>
+            <autn:datestring>10:55:56 11/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>e70a61ec-5287-4ecd-a762-c48d20e1af52</autn:reference>
+            <autn:id>383</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Energizer promotion</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>e70a61ec-5287-4ecd-a762-c48d20e1af52</DREREFERENCE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSAGENTBOOL>vader</QMSAGENTBOOL>
+                    <DRECONTENT>vader
+                    </DRECONTENT>
+                    <DRETITLE>Energizer promotion</DRETITLE>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:IDOL Search
+                        Optimizer+\\BEGIN:VEVENT+\\UID:4e36be5e-4171-464f-905e-e0b8ba0778fe+\\DTSTAMP:20150209T152045Z+\\DTSTART;VALUE=DATE:20150213+\\DTEND;VALUE=DATE:20150217+\\RRULE:FREQ=DAILY;UNTIL=20150219T000000Z+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FEnergizer%20Bunny,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FTusk%20cat
+                    </QMSVALUE1>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>383</autn:baseid>
+            <autn:date>1423495114</autn:date>
+            <autn:datestring>15:18:34 09/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>2fe9a32a-aa8c-4efd-a613-1332766ba9bc</autn:reference>
+            <autn:id>371</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: cell, smartphone</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>2fe9a32a-aa8c-4efd-a613-1332766ba9bc</DREREFERENCE>
+                    <QMSTYPE>2</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <DRETITLE>Spotlight for: cell, smartphone</DRETITLE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <QMSAGENTBOOL>cell OR smartphone</QMSAGENTBOOL>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FIPhone,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FTHQ
+                    </QMSVALUE1>
+                    <DRECONTENT>cell smartphone
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>371</autn:baseid>
+            <autn:date>1423162205</autn:date>
+            <autn:datestring>18:50:05 05/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>1e4ddbe3-1797-470e-b16e-3065c05137e1</autn:reference>
+            <autn:id>367</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: color, tree</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>1e4ddbe3-1797-470e-b16e-3065c05137e1</DREREFERENCE>
+                    <QMSTYPE>2</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <DRETITLE>Spotlight for: color, tree</DRETITLE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <QMSAGENTBOOL>tree OR color</QMSAGENTBOOL>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FGreen%20Leader%20%28clone%20trooper%29,http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FGreen%20Squadron%20%28Rebel%20Alliance%29
+                    </QMSVALUE1>
+                    <DRECONTENT>tree color
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>367</autn:baseid>
+            <autn:date>1423062818</autn:date>
+            <autn:datestring>15:13:38 04/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>99527b43-8e9f-412f-bb41-785381aa4304</autn:reference>
+            <autn:id>363</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: winston</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>99527b43-8e9f-412f-bb41-785381aa4304</DREREFERENCE>
+                    <DRETITLE>Spotlight for: winston</DRETITLE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSAGENTBOOL>winston</QMSAGENTBOOL>
+                    <QMSVALUE1>http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FStan%20Winston</QMSVALUE1>
+                    <DRECONTENT>winston
+                    </DRECONTENT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:-//Michael Angstadt//biweekly
+                        0.4.1//EN+\\BEGIN:VEVENT+\\UID:dc344f8d-2192-4bc3-89ac-05f31ea70063+\\DTSTAMP:20150204T120838Z+\\DTSTART;VALUE=DATE:20150204+\\DTEND;VALUE=DATE:20150205+\\RRULE:FREQ=DAILY+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>363</autn:baseid>
+            <autn:date>1423051687</autn:date>
+            <autn:datestring>12:08:07 04/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>cb66faed-da7c-4930-bad3-8bfa4e0d34b2</autn:reference>
+            <autn:id>358</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: apple, cell, phone</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>cb66faed-da7c-4930-bad3-8bfa4e0d34b2</DREREFERENCE>
+                    <QMSTYPE>2</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <DRETITLE>Spotlight for: apple, cell, phone</DRETITLE>
+                    <PROMOTION_NAME>Top Promotions</PROMOTION_NAME>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FIPhone,http%3A%2F%2Fwashingtontimes.feedsportal.com%2Fc%2F34503%2Ff%2F629304%2Fs%2F1faead65%2Fl%2F0L0Swashingtontimes0N0Cnews0C20A120Cmay0C240Ceconomy0Ebriefs0Efacebook0Elaunches0Eiphone0Ecamera0Eapp0C0Dutm0Isource0FRSS0IFeed0Gutm0Imedium0FRSS%2Fstory01.htm
+                    </QMSVALUE1>
+                    <QMSAGENTBOOL>phone OR apple OR cell</QMSAGENTBOOL>
+                    <DRECONTENT>phone apple cell
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>358</autn:baseid>
+            <autn:date>1422966326</autn:date>
+            <autn:datestring>12:25:26 03/02/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>5a2547fd-d911-4dd2-a0dc-a6b29275bd7d</autn:reference>
+            <autn:id>354</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: dog</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>5a2547fd-d911-4dd2-a0dc-a6b29275bd7d</DREREFERENCE>
+                    <QMSTYPE>2</QMSTYPE>
+                    <ALWAYSACTIVE>true</ALWAYSACTIVE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <DRETITLE>Spotlight for: dog</DRETITLE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fhe.wikipedia.org%2Fwiki%2F%D7%A1%D7%99%D7%96%D7%A8%20%D7%9E%D7%99%D7%9C%D7%90%D7%9F
+                    </QMSVALUE1>
+                    <QMSAGENTBOOL>dog</QMSAGENTBOOL>
+                    <DRECONTENT>dog
+                    </DRECONTENT>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>354</autn:baseid>
+            <autn:date>1422534536</autn:date>
+            <autn:datestring>12:28:56 29/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>HEBREW</autn:language>
+            <autn:languagetype>hebrewUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+        <autn:hit>
+            <autn:reference>ce362200-e4fd-4871-b288-6b7dc92f5992</autn:reference>
+            <autn:id>339</autn:id>
+            <autn:section>0</autn:section>
+            <autn:weight>100.0</autn:weight>
+            <autn:database>Activated</autn:database>
+            <autn:title>Spotlight for: jedi</autn:title>
+            <autn:content>
+                <DOCUMENT>
+                    <DREREFERENCE>ce362200-e4fd-4871-b288-6b7dc92f5992</DREREFERENCE>
+                    <DRETITLE>Spotlight for: jedi</DRETITLE>
+                    <PROMOTION_NAME>Sponsored</PROMOTION_NAME>
+                    <QMSVALUE1>
+                        http%3A%2F%2Fstarwars.wikia.com%2Fwiki%2FMission%20to%20Coruscant%20%28Desolator%20Crisis%29
+                    </QMSVALUE1>
+                    <QMSAGENTBOOL>jedi</QMSAGENTBOOL>
+                    <DRECONTENT>jedi
+                    </DRECONTENT>
+                    <QMSTYPE>2</QMSTYPE>
+                    <QMS_PROMOTION_ITEMS/>
+                    <QMS_PROMOTION_ITEM_COUNT>0</QMS_PROMOTION_ITEM_COUNT>
+                    <ALWAYSACTIVE>false</ALWAYSACTIVE>
+                    <SCHEDULE>BEGIN:VCALENDAR+\\VERSION:2.0+\\PRODID:-//Michael Angstadt//biweekly
+                        0.4.1//EN+\\BEGIN:VEVENT+\\UID:033ad1ca-852b-41e3-9ffd-16021d776e84+\\DTSTAMP:20150126T173906Z+\\DTSTART;VALUE=DATE:20150126+\\DTEND;VALUE=DATE:20150127+\\RRULE:FREQ=DAILY+\\END:VEVENT+\\END:VCALENDAR+\\
+                    </SCHEDULE>
+                </DOCUMENT>
+            </autn:content>
+            <autn:baseid>339</autn:baseid>
+            <autn:date>1422293921</autn:date>
+            <autn:datestring>17:38:41 26/01/2015</autn:datestring>
+            <autn:expiredate>2147483645</autn:expiredate>
+            <autn:language>ENGLISH</autn:language>
+            <autn:languagetype>englishUTF8</autn:languagetype>
+            <autn:languageencoding>UTF8</autn:languageencoding>
+        </autn:hit>
+    </responsedata>
+</autnresponse>

@@ -12,7 +12,7 @@
 
     <groupId>com.hp.autonomy.frontend</groupId>
     <artifactId>idol-types</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
@@ -80,17 +80,36 @@
                             <artifactId>jaxb2-basics-annotate</artifactId>
                             <version>1.0.2</version>
                         </plugin>
+                        <dependency>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.16.2</version>
+                        </dependency>
                     </plugins>
                 </configuration>
                 <executions>
                     <execution>
+                        <id>response xsds</id>
                         <goals>
                             <goal>generate</goal>
                         </goals>
                         <configuration>
                             <generatePackage>com.hp.autonomy.types.idol</generatePackage>
-                            <bindingDirectory>src/main/xjb</bindingDirectory>
-                            <schemaDirectory>src/main/resources</schemaDirectory>
+                            <bindingDirectory>src/main/xjb/responses</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses</schemaDirectory>
+                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses</generateDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>content xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.content</generatePackage>
+                            <bindingDirectory>src/main/xjb/content</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/content</schemaDirectory>
+                            <generateDirectory>${project.build.directory}/generated-sources/xjc-content</generateDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -109,6 +128,41 @@
             <groupId>org.jvnet.jaxb2_commons</groupId>
             <artifactId>jaxb2-basics-runtime</artifactId>
             <version>0.9.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.2</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.biweekly</groupId>
+            <artifactId>biweekly</artifactId>
+            <version>0.4.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-joda</artifactId>
+            <version>2.6.4</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
         </dependency>
 
         <dependency>
