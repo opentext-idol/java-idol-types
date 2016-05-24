@@ -17,6 +17,8 @@
             <xs:element name="totalhits" type="xs:int" minOccurs="0"/>
             <xs:element name="totaldbdocs" type="xs:integer" minOccurs="0"/>
             <xs:element name="totaldbsecs" type="xs:integer" minOccurs="0"/>
+            <xs:element name="expandedQuery" type="xs:string" minOccurs="0"/>
+            <xs:element name="expansionOrder" type="autn:expansionOrder" minOccurs="0"/>
             <xs:element name="databasehits" type="autn:databaseHits" minOccurs="0"/>
             <xs:element name="querysummary" type="xs:string" minOccurs="0"/>
             <xs:element name="qs" type="autn:qs" minOccurs="0"/>
@@ -32,4 +34,15 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="expansionOrder">
+        <xs:sequence>
+            <xs:element name="rule" type="autn:rule"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rule">
+        <xs:attribute name="reference" type="xs:string"/>
+        <xs:attribute name="modified_query" type="xs:string"/>
+        <xs:attribute name="rule_type" type="xs:string"/>
+    </xs:complexType>
 </xs:schema>
