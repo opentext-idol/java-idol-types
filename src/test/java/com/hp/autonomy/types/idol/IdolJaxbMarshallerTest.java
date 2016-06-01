@@ -52,7 +52,7 @@ public class IdolJaxbMarshallerTest<T, U> {
 //                new Object[]{DocumentStatsResponseData.class, ""},
 //                new Object[]{GetAllRefsResponseData.class, ""},
                 new Object[]{GetContentResponseData.class, null, "/getContent.xml"},
-//                new Object[]{GetQueryTagValuesResponseData.class, ""},
+                new Object[]{GetQueryTagValuesResponseData.class, null, "/getQueryTagValuesRangeResponse.xml"},
 //                new Object[]{GetSampleResponseData.class, ""},
                 new Object[]{GetStatusResponseData.class, null, "/getStatus.xml"},
                 new Object[]{GetTagNamesResponseData.class, null, "/getTagNames.xml"},

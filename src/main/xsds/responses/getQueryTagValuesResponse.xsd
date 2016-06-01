@@ -13,16 +13,20 @@
         <xs:sequence>
             <xs:element name="name" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="number_of_values" type="xs:integer"/>
-            <xs:element name="total_values" minOccurs="0" type="xs:integer"/>
-            <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="total_values" minOccurs="0" type="xs:int"/>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
                 <xs:element name="value" type="autn:tagValue"/>
-                <xs:element name="subvalue" type="autn:tagValue"/>
-                <xs:element name="values" minOccurs="0" type="xs:int"/>
-                <xs:element name="valuesum" minOccurs="0" type="xs:float"/>
-                <xs:element name="valueaverage" minOccurs="0" type="xs:float"/>
-                <xs:element name="valuemin" minOccurs="0" type="xs:float"/>
-                <xs:element name="valuemax" minOccurs="0" type="xs:float"/>
-            </xs:choice>
+                <xs:choice minOccurs="0">
+                    <xs:element name="subvalue" minOccurs="0" type="autn:tagValue"/>
+                    <xs:sequence minOccurs="0" maxOccurs="1">
+                        <xs:element name="values" type="xs:int"/>
+                        <xs:element name="valuesum" type="xs:float"/>
+                        <xs:element name="valueaverage" type="xs:float"/>
+                        <xs:element name="valuemin" type="xs:float"/>
+                        <xs:element name="valuemax" type="xs:float"/>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
         </xs:sequence>
     </xs:complexType>
 

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETQUERYTAGVALUES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:number_of_fields>1</autn:number_of_fields>
+        <autn:field>
+            <autn:name>DOCUMENTS/DOCUMENT/A_CLEAN_NUMERIC_FIELD</autn:name>
+            <autn:number_of_values>7</autn:number_of_values>
+            <autn:total_values>7</autn:total_values>
+            <autn:values>37</autn:values>
+            <autn:valuesum>221.0</autn:valuesum>
+            <autn:valueaverage>5.97</autn:valueaverage>
+            <autn:valuemin>0.0</autn:valuemin>
+            <autn:valuemax>21.0</autn:valuemax>
+            <autn:value type="range" count="11">0,3</autn:value>
+            <autn:value type="range" count="9">3,6</autn:value>
+            <autn:value type="range" count="8">6,9</autn:value>
+            <autn:value type="range" count="5">9,12</autn:value>
+            <autn:value type="range" count="1">12,15</autn:value>
+            <autn:value type="range" count="2">15,18</autn:value>
+            <autn:value type="range" count="1">21,</autn:value>
+        </autn:field>
+    </responsedata>
+</autnresponse>
