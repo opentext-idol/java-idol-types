@@ -13,7 +13,6 @@ import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 import lombok.experimental.Accessors;
 import org.joda.time.DateTime;
 
@@ -22,7 +21,6 @@ import java.io.Serializable;
 
 @SuppressWarnings("WeakerAccess")
 @Getter
-@ToString
 @EqualsAndHashCode
 @JsonDeserialize(builder = Schedule.Builder.class)
 @XmlJavaTypeAdapter(ScheduleAdapter.class)
@@ -45,6 +43,11 @@ public class Schedule implements Serializable {
 
     public ValidationWarnings validate() {
         return new ScheduleAdapter().toICalendar(this).validate(ICalVersion.V2_0);
+    }
+
+    @Override
+    public String toString() {
+        return new ScheduleAdapter().marshal(this);
     }
 
     @SuppressWarnings("WeakerAccess")
