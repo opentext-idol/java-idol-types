@@ -10,8 +10,8 @@
             <autn:number_of_values>7</autn:number_of_values>
             <autn:total_values>7</autn:total_values>
             <autn:values>37</autn:values>
-            <autn:valuesum>221.0</autn:valuesum>
-            <autn:valueaverage>5.97</autn:valueaverage>
+            <autn:valuesum>3.641307143573E12</autn:valuesum>
+            <autn:valueaverage>2.664845686E12</autn:valueaverage>
             <autn:valuemin>0.0</autn:valuemin>
             <autn:valuemax>21.0</autn:valuemax>
             <autn:value type="range" count="11">0,3</autn:value>
