@@ -5,6 +5,8 @@
 
 package com.hp.autonomy.types.idol;
 
+import com.autonomy.aci.client.services.AciErrorException;
+import com.autonomy.aci.client.services.ProcessorException;
 import com.hp.autonomy.types.idol.content.Blacklist;
 import com.hp.autonomy.types.idol.content.DynamicSpotlight;
 import com.hp.autonomy.types.idol.content.PinToPosition;
@@ -93,7 +95,7 @@ public class IdolJaxbMarshallerTest<T, U> {
     private final Class<U> subType;
     private final String xml;
 
-    private IdolJaxbMarshaller<CustomParsingException, CustomProcessingException> idolJaxbMarshaller;
+    private IdolJaxbMarshaller idolJaxbMarshaller;
 
     public IdolJaxbMarshallerTest(final Class<T> type, final Class<U> subType, final String fileName) throws IOException {
         this.type = type;
@@ -103,11 +105,11 @@ public class IdolJaxbMarshallerTest<T, U> {
 
     @Before
     public void setUp() {
-        idolJaxbMarshaller = new IdolJaxbMarshallerImpl<>(CustomParsingException::new, CustomProcessingException::new);
+        idolJaxbMarshaller = new IdolJaxbMarshallerImpl();
     }
 
     @Test
-    public void parseResponse() throws JAXBException, IOException, SAXException, CustomParsingException, CustomProcessingException {
+    public void parseResponse() throws JAXBException, IOException, SAXException {
         final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8));
         final Autnresponse response = type != null ? idolJaxbMarshaller.parseIdolResponse(inputStream, type) : idolJaxbMarshaller.parseIdolResponse(inputStream);
 
@@ -125,7 +127,7 @@ public class IdolJaxbMarshallerTest<T, U> {
     }
 
     @Test
-    public void parseIdolQueryResponse() throws CustomParsingException, CustomProcessingException, IOException {
+    public void parseIdolQueryResponse() throws IOException {
         if (subType != null) {
             final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8));
             @SuppressWarnings("unchecked")
@@ -140,7 +142,7 @@ public class IdolJaxbMarshallerTest<T, U> {
     }
 
     @Test
-    public void parseResponseData() throws CustomParsingException, CustomProcessingException, IOException {
+    public void parseResponseData() throws IOException {
         if (type != null) {
             try (final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8))) {
                 assertNotNull(idolJaxbMarshaller.parseIdolResponseData(inputStream, type));
@@ -149,7 +151,7 @@ public class IdolJaxbMarshallerTest<T, U> {
     }
 
     @Test
-    public void parseQueryResponseData() throws CustomParsingException, CustomProcessingException, IOException {
+    public void parseQueryResponseData() throws IOException {
         if (subType != null) {
             try (final InputStream inputStream = new ByteArrayInputStream(xml.getBytes(StandardCharsets.UTF_8))) {
                 //noinspection unchecked
@@ -158,13 +160,13 @@ public class IdolJaxbMarshallerTest<T, U> {
         }
     }
 
-    @Test(expected = CustomParsingException.class)
-    public void parseErrorResponse() throws CustomParsingException, CustomProcessingException {
+    @Test(expected = AciErrorException.class)
+    public void parseErrorResponse() {
         idolJaxbMarshaller.parseIdolResponse(IdolJaxbMarshallerTest.class.getResourceAsStream(ERROR_FILE_NAME), type);
     }
 
-    @Test(expected = CustomProcessingException.class)
-    public void processingError() throws CustomParsingException, CustomProcessingException {
+    @Test(expected = ProcessorException.class)
+    public void processingError() {
         idolJaxbMarshaller.parseIdolResponse(new ByteArrayInputStream("bad".getBytes()), type);
     }
 
@@ -184,22 +186,6 @@ public class IdolJaxbMarshallerTest<T, U> {
 
         @Override
         public void skippedComparison(final Node node, final Node node1) {
-        }
-    }
-
-    private static class CustomParsingException extends Exception {
-        private static final long serialVersionUID = -5167479141615219983L;
-
-        CustomParsingException(final Error error) {
-            super(error.getErrorstring());
-        }
-    }
-
-    private static class CustomProcessingException extends Exception {
-        private static final long serialVersionUID = -5167479141615219983L;
-
-        CustomProcessingException(final String message, final Throwable cause) {
-            super(message, cause);
         }
     }
 }

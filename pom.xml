@@ -75,7 +75,7 @@
                         <dependency>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.16.2</version>
+                            <version>1.16.10</version>
                         </dependency>
                     </plugins>
                 </configuration>
@@ -89,7 +89,8 @@
                             <generatePackage>com.hp.autonomy.types.idol</generatePackage>
                             <bindingDirectory>src/main/xjb/responses</bindingDirectory>
                             <schemaDirectory>src/main/xsds/responses</schemaDirectory>
-                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses</generateDirectory>
+                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses
+                            </generateDirectory>
                         </configuration>
                     </execution>
                     <execution>
@@ -101,7 +102,8 @@
                             <generatePackage>com.hp.autonomy.types.idol.content</generatePackage>
                             <bindingDirectory>src/main/xjb/content</bindingDirectory>
                             <schemaDirectory>src/main/xsds/content</schemaDirectory>
-                            <generateDirectory>${project.build.directory}/generated-sources/xjc-content</generateDirectory>
+                            <generateDirectory>${project.build.directory}/generated-sources/xjc-content
+                            </generateDirectory>
                         </configuration>
                     </execution>
                 </executions>
@@ -115,6 +117,11 @@
             <artifactId>aci-types</artifactId>
             <version>0.12.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.hp.autonomy.aci.client</groupId>
+            <artifactId>aci-api</artifactId>
+            <version>5.0.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.jvnet.jaxb2_commons</groupId>
@@ -125,7 +132,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.2</version>
+            <version>1.16.10</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -156,17 +163,16 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.4</version>
         </dependency>
-
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
-            <scope>test</scope>
         </dependency>
+
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>1.4.1.RELEASE</version>
             <scope>test</scope>
         </dependency>
         <dependency>
@@ -181,8 +187,12 @@
         <repository>
             <id>snapshots-repo</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases><enabled>false</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
     </repositories>
 

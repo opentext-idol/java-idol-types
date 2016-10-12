@@ -5,21 +5,24 @@
 
 package com.hp.autonomy.types.idol;
 
+import com.autonomy.aci.client.services.AciErrorException;
+import com.autonomy.aci.client.services.ProcessorException;
+
 import java.io.InputStream;
 import java.nio.charset.Charset;
 
 @SuppressWarnings("WeakerAccess")
-public interface IdolJaxbMarshaller<E1 extends Exception, E2 extends Exception> {
-    Autnresponse parseIdolResponse(InputStream inputStream) throws E1, E2;
+public interface IdolJaxbMarshaller {
+    Autnresponse parseIdolResponse(InputStream inputStream) throws AciErrorException, ProcessorException;
 
     @SuppressWarnings("CastToConcreteClass")
-    <T> Autnresponse parseIdolResponse(InputStream inputStream, Class<T> type) throws E1, E2;
+    <T> Autnresponse parseIdolResponse(InputStream inputStream, Class<T> type) throws AciErrorException, ProcessorException;
 
-    <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(InputStream inputStream, Class<R> responseType, Class<C> contentType) throws E1, E2;
+    <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(InputStream inputStream, Class<R> responseType, Class<C> contentType) throws AciErrorException, ProcessorException;
 
-    <T> T parseIdolResponseData(InputStream inputStream, Class<T> type) throws E1, E2;
+    <T> T parseIdolResponseData(InputStream inputStream, Class<T> type) throws AciErrorException, ProcessorException;
 
-    <R extends QueryResponse, C> R parseIdolQueryResponseData(InputStream inputStream, Class<R> responseType, Class<C> contentType) throws E1, E2;
+    <R extends QueryResponse, C> R parseIdolQueryResponseData(InputStream inputStream, Class<R> responseType, Class<C> contentType) throws AciErrorException, ProcessorException;
 
-    <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws E2;
+    <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws ProcessorException;
 }

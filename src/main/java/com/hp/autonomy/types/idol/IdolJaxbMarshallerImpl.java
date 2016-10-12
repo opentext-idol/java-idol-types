@@ -5,6 +5,8 @@
 
 package com.hp.autonomy.types.idol;
 
+import com.autonomy.aci.client.services.AciErrorException;
+import com.autonomy.aci.client.services.ProcessorException;
 import com.hp.autonomy.types.idol.content.Documents;
 import org.w3c.dom.Node;
 
@@ -18,35 +20,25 @@ import java.nio.charset.Charset;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * Simple IDOL response parser using native Java JAXB tools
  */
 @SuppressWarnings("WeakerAccess")
-public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> implements IdolJaxbMarshaller<E1, E2> {
+public class IdolJaxbMarshallerImpl implements IdolJaxbMarshaller {
     public static final String ERROR_NODE = "error";
 
     private final Map<Class<?>, JAXBContext> contextMap = new ConcurrentHashMap<>();
     private final Map<Class<?>, JAXBContext> marshallingContextMap = new ConcurrentHashMap<>();
 
-    private final Function<Error, E1> errorResponseHandler;
-    private final BiFunction<String, Exception, E2> parsingErrorHandler;
-
-    public IdolJaxbMarshallerImpl(final Function<Error, E1> errorResponseHandler, final BiFunction<String, Exception, E2> parsingErrorHandler) {
-        this.errorResponseHandler = errorResponseHandler;
-        this.parsingErrorHandler = parsingErrorHandler;
-    }
-
     @Override
-    public Autnresponse parseIdolResponse(final InputStream inputStream) throws E1, E2 {
+    public Autnresponse parseIdolResponse(final InputStream inputStream) throws AciErrorException, ProcessorException {
         return parseIdolResponse(inputStream, null);
     }
 
     @Override
     @SuppressWarnings("CastToConcreteClass")
-    public <T> Autnresponse parseIdolResponse(final InputStream inputStream, final Class<T> type) throws E1, E2 {
+    public <T> Autnresponse parseIdolResponse(final InputStream inputStream, final Class<T> type) throws AciErrorException, ProcessorException {
         try {
             final JAXBContext jaxbContext = getContext(Autnresponse.class);
             final Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
@@ -56,7 +48,7 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
 
             if (responseData.getFirstChild() != null && ERROR_NODE.equals(responseData.getFirstChild().getNodeName())) {
                 final ErrorResponse errorResponse = unmarshalNode(responseData, ErrorResponse.class);
-                throw errorResponseHandler.apply(errorResponse.getError());
+                throw new AciErrorExceptionBuilder(errorResponse.getError()).build();
             }
 
             if (type != null) {
@@ -66,12 +58,12 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
 
             return response;
         } catch (final JAXBException | IdolDateParsingException e) {
-            throw parsingErrorHandler.apply("Error parsing Idol response", e);
+            throw new ProcessorException("Error parsing Idol response", e);
         }
     }
 
     @Override
-    public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+    public <R extends QueryResponse, C> Autnresponse parseIdolQueryResponse(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws AciErrorException, ProcessorException {
         final Autnresponse autnresponse;
         try {
             autnresponse = parseIdolResponse(inputStream, responseType);
@@ -87,24 +79,24 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
                 }
             }
         } catch (final JAXBException e) {
-            throw parsingErrorHandler.apply("Error parsing Idol query response content", e);
+            throw new ProcessorException("Error parsing Idol query response content", e);
         }
 
         return autnresponse;
     }
 
     @Override
-    public <T> T parseIdolResponseData(final InputStream inputStream, final Class<T> type) throws E1, E2 {
+    public <T> T parseIdolResponseData(final InputStream inputStream, final Class<T> type) throws AciErrorException, ProcessorException {
         return type.cast(parseIdolResponse(inputStream, type).getResponsedata());
     }
 
     @Override
-    public <R extends QueryResponse, C> R parseIdolQueryResponseData(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws E1, E2 {
+    public <R extends QueryResponse, C> R parseIdolQueryResponseData(final InputStream inputStream, final Class<R> responseType, final Class<C> contentType) throws AciErrorException, ProcessorException {
         return responseType.cast(parseIdolQueryResponse(inputStream, responseType, contentType).getResponsedata());
     }
 
     @Override
-    public <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws E2 {
+    public <T> String generateXmlDocument(final Iterable<T> objects, final Class<T> type, final Charset charset) throws ProcessorException {
         final Documents documents = new Documents();
         final List<Object> documentList = documents.getContent();
         for (final T object : objects) {
@@ -118,7 +110,7 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
             marshaller.marshal(documents, byteArrayOutputStream);
             return new String(byteArrayOutputStream.toByteArray(), charset) + "\n#DREENDDATANOOP\n\n"; // because Idol is rubbish
         } catch (final JAXBException e) {
-            throw parsingErrorHandler.apply("Error generating Idol document", e);
+            throw new ProcessorException("Error generating Idol document", e);
         }
     }
 
