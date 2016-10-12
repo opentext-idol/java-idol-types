@@ -16,6 +16,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.charset.Charset;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Simple IDOL response parser using native Java JAXB tools
@@ -23,6 +25,9 @@ import java.util.List;
 @SuppressWarnings("WeakerAccess")
 public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> implements IdolJaxbMarshaller<E1, E2> {
     public static final String ERROR_NODE = "error";
+
+    private final Map<Class<?>, JAXBContext> contextMap = new ConcurrentHashMap<>();
+    private final Map<Class<?>, JAXBContext> marshallingContextMap = new ConcurrentHashMap<>();
 
     private final Function<Error, E1> errorResponseHandler;
     private final BiFunction<String, Exception, E2> parsingErrorHandler;
@@ -41,7 +46,7 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     @SuppressWarnings("CastToConcreteClass")
     public <T> Autnresponse parseIdolResponse(final InputStream inputStream, final Class<T> type) throws E1, E2 {
         try {
-            final JAXBContext jaxbContext = JAXBContext.newInstance(Autnresponse.class);
+            final JAXBContext jaxbContext = getContext(Autnresponse.class);
             final Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
             final Autnresponse response = (Autnresponse) unmarshaller.unmarshal(inputStream);
@@ -105,7 +110,7 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
         }
 
         try {
-            final JAXBContext context = JAXBContext.newInstance(new Class<?>[]{Documents.class, type});
+            final JAXBContext context = getMarshallingContext(type);
             final Marshaller marshaller = context.createMarshaller();
             final ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
             marshaller.marshal(documents, byteArrayOutputStream);
@@ -116,8 +121,30 @@ public class IdolJaxbMarshallerImpl<E1 extends Exception, E2 extends Exception> 
     }
 
     private <T> T unmarshalNode(final Node node, final Class<T> type) throws JAXBException {
-        final JAXBContext context = JAXBContext.newInstance(type);
+        final JAXBContext context = getContext(type);
         final Unmarshaller unmarshaller = context.createUnmarshaller();
         return unmarshaller.unmarshal(node, type).getValue();
+    }
+
+    private JAXBContext getContext(final Class<?> type) throws JAXBException {
+        final JAXBContext jaxbContext;
+        if (contextMap.containsKey(type)) {
+            jaxbContext = contextMap.get(type);
+        } else {
+            jaxbContext = JAXBContext.newInstance(type);
+            contextMap.put(type, jaxbContext);
+        }
+        return jaxbContext;
+    }
+
+    private JAXBContext getMarshallingContext(final Class<?> type) throws JAXBException {
+        final JAXBContext jaxbContext;
+        if (marshallingContextMap.containsKey(type)) {
+            jaxbContext = marshallingContextMap.get(type);
+        } else {
+            jaxbContext = JAXBContext.newInstance(new Class<?>[]{Documents.class, type});
+            marshallingContextMap.put(type, jaxbContext);
+        }
+        return jaxbContext;
     }
 }
