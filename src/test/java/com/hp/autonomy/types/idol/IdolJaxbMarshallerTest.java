@@ -103,17 +103,7 @@ public class IdolJaxbMarshallerTest<T, U> {
 
     @Before
     public void setUp() {
-        idolJaxbMarshaller = new IdolJaxbMarshallerImpl<>(new IdolJaxbMarshaller.Function<Error, CustomParsingException>() {
-            @Override
-            public CustomParsingException apply(final Error error) {
-                return new CustomParsingException(error);
-            }
-        }, new IdolJaxbMarshaller.BiFunction<String, Exception, CustomProcessingException>() {
-            @Override
-            public CustomProcessingException apply(final String message, final Exception cause) {
-                return new CustomProcessingException(message, cause);
-            }
-        });
+        idolJaxbMarshaller = new IdolJaxbMarshallerImpl<>(CustomParsingException::new, CustomProcessingException::new);
     }
 
     @Test
