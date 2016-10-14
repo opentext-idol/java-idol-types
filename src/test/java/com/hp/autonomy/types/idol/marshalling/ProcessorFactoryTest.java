@@ -5,14 +5,13 @@
 
 package com.hp.autonomy.types.idol.marshalling;
 
-import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
-import com.hp.autonomy.types.idol.responses.LanguageTypeSettings;
-import com.hp.autonomy.types.idol.responses.QueryResponse;
 import com.hp.autonomy.types.idol.content.Blacklist;
 import com.hp.autonomy.types.idol.marshalling.marshallers.DocumentGenerator;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
 import com.hp.autonomy.types.idol.responses.QueryResponseData;
 import org.junit.Before;
 import org.junit.Test;
@@ -70,13 +69,13 @@ public class ProcessorFactoryTest {
 
     @Test
     public void getResponseDataWrapperProcessor() {
-        assertNotNull(processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, LanguageTypeSettings.class, GetStatusResponseData::getLanguageTypeSettings));
+        assertNotNull(processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, GetStatusResponseData::getLanguageTypeSettings));
     }
 
     @Test
     public void getResponseDataWrapperProcessorCaching() {
-        processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, LanguageTypeSettings.class, GetStatusResponseData::getLanguageTypeSettings);
-        processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, LanguageTypeSettings.class, GetStatusResponseData::getLanguageTypeSettings);
+        processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, GetStatusResponseData::getLanguageTypeSettings);
+        processorFactory.getResponseDataWrapperProcessor(GetStatusResponseData.class, GetStatusResponseData::getLanguageTypeSettings);
         verify(marshallerFactory).getResponseDataParser(GetStatusResponseData.class);
     }
 

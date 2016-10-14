@@ -10,8 +10,7 @@ import com.autonomy.aci.client.transport.AciResponseInputStream;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
 
 /**
- * Generic processor for handling Idol responses.
- * Note that this uses DOM processing behind the scenes so should not be used for very large responses.
+ * Generic processor for handling Idol responses where the response data type is unknown or immaterial.
  */
 @SuppressWarnings({"WeakerAccess", "NonSerializableFieldInSerializableClass"})
 public class VoidProcessor implements Processor<Void> {

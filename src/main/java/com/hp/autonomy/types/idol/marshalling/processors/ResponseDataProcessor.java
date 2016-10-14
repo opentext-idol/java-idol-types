@@ -10,7 +10,7 @@ import com.autonomy.aci.client.transport.AciResponseInputStream;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 
 /**
- * Generic processor for handling Idol responses.
+ * Generic processor for handling Idol responses with known content type.
  * Note that this uses DOM processing behind the scenes so should not be used for very large responses.
  */
 @SuppressWarnings({"WeakerAccess", "NonSerializableFieldInSerializableClass"})

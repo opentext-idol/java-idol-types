@@ -19,6 +19,7 @@ public interface ResponseDataParser<T> extends ResponseParser {
      *
      * @param inputStream the stream of xml data to parse
      * @return a Java object representing the specified response data
+     * @throws AciErrorException exception containing error information if Idol returns an error
      */
     T parseResponseData(InputStream inputStream) throws AciErrorException;
 }

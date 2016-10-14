@@ -10,6 +10,12 @@ import com.autonomy.aci.client.transport.AciResponseInputStream;
 
 import java.util.function.Function;
 
+/**
+ * Convenience processor for performing a known simple transformation on the processed output
+ *
+ * @param <T> The response object of the inner processor
+ * @param <R> The transformation function
+ */
 @SuppressWarnings("serial")
 public class WrapperProcessor<T, R> implements Processor<R> {
     private final Processor<T> processor;

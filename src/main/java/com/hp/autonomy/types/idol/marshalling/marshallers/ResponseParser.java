@@ -20,6 +20,7 @@ public interface ResponseParser {
      *
      * @param inputStream the stream of xml data to parse
      * @return a Java object representing the specified resource parsed from the response
+     * @throws AciErrorException exception containing error information if Idol returns an error
      */
     Autnresponse parseResponse(InputStream inputStream) throws AciErrorException;
 }

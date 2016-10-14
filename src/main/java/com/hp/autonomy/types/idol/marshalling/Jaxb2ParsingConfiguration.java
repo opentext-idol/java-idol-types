@@ -10,6 +10,9 @@ import com.hp.autonomy.types.idol.marshalling.marshallers.jaxb2.Jaxb2MarshallerF
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Simple spring configuration class for JAXB marshalling with Spring Jaxb2 underlying implementation
+ */
 @Configuration
 public class Jaxb2ParsingConfiguration {
     @Bean

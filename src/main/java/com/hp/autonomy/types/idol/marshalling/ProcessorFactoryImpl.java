@@ -48,7 +48,7 @@ class ProcessorFactoryImpl implements ProcessorFactory {
     }
 
     @Override
-    public <T, U> Processor<U> getResponseDataWrapperProcessor(final Class<T> responseDataType, final Class<U> type, final Function<T, U> function) {
+    public <T, U> Processor<U> getResponseDataWrapperProcessor(final Class<T> responseDataType, final Function<T, U> function) {
         final Processor<T> innerProcessor = getResponseDataProcessor(responseDataType);
         return new WrapperProcessor<>(innerProcessor, function);
     }
