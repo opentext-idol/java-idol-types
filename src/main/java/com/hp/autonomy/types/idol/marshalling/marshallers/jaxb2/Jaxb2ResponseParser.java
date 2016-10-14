@@ -36,7 +36,7 @@ class Jaxb2ResponseParser implements ResponseParser {
         final Autnresponse autnresponse = (Autnresponse) responseEnvelopeMarshaller.unmarshal(new StreamSource(inputStream));
 
         if (!SUCCESS_STATE.equals(autnresponse.getResponse())) {
-            final Node responseData = (Node) autnresponse.getResponsedata();
+            final Node responseData = (Node) autnresponse.getResponseData();
             final ErrorResponse errorResponse = (ErrorResponse) errorMarshaller.unmarshal(new DOMSource(responseData));
             throw new AciErrorExceptionBuilder(errorResponse.getError()).build();
         }

@@ -35,7 +35,7 @@ class Jaxb2QueryResponseDataParser<R extends QueryResponse, C> implements Respon
     @Override
     public Autnresponse parseResponse(final InputStream inputStream) throws AciErrorException {
         final Autnresponse autnresponse = responseDataMarshaller.parseResponse(inputStream);
-        final R responseData = responseDataType.cast(autnresponse.getResponsedata());
+        final R responseData = responseDataType.cast(autnresponse.getResponseData());
         responseData.getHits().forEach(hit -> {
             final DocContent contentWrapper = hit.getContent();
             if (contentWrapper != null && !contentWrapper.getContent().isEmpty()) {
@@ -52,6 +52,6 @@ class Jaxb2QueryResponseDataParser<R extends QueryResponse, C> implements Respon
 
     @Override
     public R parseResponseData(final InputStream inputStream) throws AciErrorException {
-        return responseDataType.cast(parseResponse(inputStream).getResponsedata());
+        return responseDataType.cast(parseResponse(inputStream).getResponseData());
     }
 }

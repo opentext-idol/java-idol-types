@@ -31,13 +31,13 @@ class Jaxb2ResponseDataParser<R> implements ResponseDataParser<R> {
     @Override
     public Autnresponse parseResponse(final InputStream inputStream) throws AciErrorException {
         final Autnresponse autnresponse = responseParser.parseResponse(inputStream);
-        final Node responseData = (Node) autnresponse.getResponsedata();
-        autnresponse.setResponsedata(marshaller.unmarshal(new DOMSource(responseData)));
+        final Node responseData = (Node) autnresponse.getResponseData();
+        autnresponse.setResponseData(marshaller.unmarshal(new DOMSource(responseData)));
         return autnresponse;
     }
 
     @Override
     public R parseResponseData(final InputStream inputStream) {
-        return type.cast(parseResponse(inputStream).getResponsedata());
+        return type.cast(parseResponse(inputStream).getResponseData());
     }
 }

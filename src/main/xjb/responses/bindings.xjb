@@ -25,6 +25,9 @@
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/autnResponse.xsd">
+        <bindings node="//xs:element[@name='responsedata']">
+            <property name="responseData"/>
+        </bindings>
         <bindings node="xs:complexType[@name='errorResponse']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
