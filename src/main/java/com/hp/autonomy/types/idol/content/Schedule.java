@@ -3,7 +3,7 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol;
+package com.hp.autonomy.types.idol.content;
 
 import biweekly.ICalVersion;
 import biweekly.ValidationWarnings;

@@ -6,9 +6,9 @@
 package com.hp.autonomy.types.idol.marshalling.marshallers.jaxb2;
 
 import com.autonomy.aci.client.services.AciErrorException;
-import com.hp.autonomy.types.idol.Autnresponse;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.Autnresponse;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.w3c.dom.Node;
 

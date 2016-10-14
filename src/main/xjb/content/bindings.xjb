@@ -62,7 +62,7 @@
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
                 <property name="schedule">
-                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                    <baseType name="com.hp.autonomy.types.idol.content.Schedule"/>
                 </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
@@ -100,7 +100,7 @@
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
                 <property name="schedule">
-                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                    <baseType name="com.hp.autonomy.types.idol.content.Schedule"/>
                 </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">
@@ -150,7 +150,7 @@
             </bindings>
             <bindings node="//xs:element[@name='SCHEDULE']">
                 <property name="schedule">
-                    <baseType name="com.hp.autonomy.types.idol.Schedule"/>
+                    <baseType name="com.hp.autonomy.types.idol.content.Schedule"/>
                 </property>
             </bindings>
             <bindings node="//xs:element[@name='QMSAGENTBOOL']">

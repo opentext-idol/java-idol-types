@@ -86,7 +86,7 @@
                             <goal>generate</goal>
                         </goals>
                         <configuration>
-                            <generatePackage>com.hp.autonomy.types.idol</generatePackage>
+                            <generatePackage>com.hp.autonomy.types.idol.responses</generatePackage>
                             <bindingDirectory>src/main/xjb/responses</bindingDirectory>
                             <schemaDirectory>src/main/xsds/responses</schemaDirectory>
                             <generateDirectory>${project.build.directory}/generated-sources/xjc-responses

@@ -11,6 +11,7 @@ import com.hp.autonomy.types.idol.marshalling.Jaxb2ParsingConfiguration;
 import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.Autnresponse;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 import org.custommonkey.xmlunit.Diff;
@@ -19,6 +20,7 @@ import org.custommonkey.xmlunit.DifferenceConstants;
 import org.custommonkey.xmlunit.DifferenceListener;
 import org.custommonkey.xmlunit.XMLUnit;
 import org.junit.ClassRule;
+import org.junit.Rule;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -42,7 +44,7 @@ import static org.junit.Assert.assertNull;
 public abstract class AbstractParsingTest<T> {
     @ClassRule
     public static final SpringClassRule SCR = new SpringClassRule();
-    @org.junit.Rule
+    @Rule
     public final SpringMethodRule springMethodRule = new SpringMethodRule();
 
     final Class<T> type;

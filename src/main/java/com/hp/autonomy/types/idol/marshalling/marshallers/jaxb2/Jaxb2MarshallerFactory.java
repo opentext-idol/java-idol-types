@@ -5,7 +5,7 @@
 
 package com.hp.autonomy.types.idol.marshalling.marshallers.jaxb2;
 
-import com.hp.autonomy.types.idol.QueryResponse;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
 import com.hp.autonomy.types.idol.marshalling.marshallers.DocumentGenerator;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;

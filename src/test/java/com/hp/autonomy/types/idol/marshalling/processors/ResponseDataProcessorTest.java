@@ -6,8 +6,8 @@
 package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import com.hp.autonomy.types.idol.GetStatusResponseData;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
+import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

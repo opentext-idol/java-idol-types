@@ -7,7 +7,7 @@ package com.hp.autonomy.types.idol.marshalling.marshallers;
 
 
 import com.autonomy.aci.client.services.AciErrorException;
-import com.hp.autonomy.types.idol.Error;
+import com.hp.autonomy.types.idol.responses.Error;
 
 import java.util.Date;
 

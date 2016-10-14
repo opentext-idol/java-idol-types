@@ -3,9 +3,11 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol;
+package com.hp.autonomy.types.idol.content;
 
 import biweekly.util.Recurrence;
+import com.hp.autonomy.types.idol.content.Schedule;
+import com.hp.autonomy.types.idol.content.ScheduleAdapter;
 import org.joda.time.DateTime;
 import org.junit.Before;
 import org.junit.Test;

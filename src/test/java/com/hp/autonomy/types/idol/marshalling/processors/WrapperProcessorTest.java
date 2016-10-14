@@ -7,8 +7,8 @@ package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.services.Processor;
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import com.hp.autonomy.types.idol.GetStatusResponseData;
-import com.hp.autonomy.types.idol.LanguageTypeSettings;
+import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
+import com.hp.autonomy.types.idol.responses.LanguageTypeSettings;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

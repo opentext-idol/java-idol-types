@@ -5,15 +5,15 @@
 
 package com.hp.autonomy.types.idol.marshalling;
 
-import com.hp.autonomy.types.idol.GetStatusResponseData;
-import com.hp.autonomy.types.idol.LanguageTypeSettings;
-import com.hp.autonomy.types.idol.QueryResponse;
-import com.hp.autonomy.types.idol.QueryResponseData;
+import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
+import com.hp.autonomy.types.idol.responses.LanguageTypeSettings;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
 import com.hp.autonomy.types.idol.content.Blacklist;
 import com.hp.autonomy.types.idol.marshalling.marshallers.DocumentGenerator;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.QueryResponseData;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

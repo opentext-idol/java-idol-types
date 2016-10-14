@@ -15,6 +15,8 @@ import com.hp.autonomy.types.idol.content.SynonymGroup;
 import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
+import com.hp.autonomy.types.idol.responses.QueryResponseData;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

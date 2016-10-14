@@ -5,10 +5,10 @@
 
 package com.hp.autonomy.types.idol.marshalling.marshallers.jaxb2;
 
-import com.hp.autonomy.types.idol.Autnresponse;
-import com.hp.autonomy.types.idol.ErrorResponse;
 import com.hp.autonomy.types.idol.marshalling.marshallers.AciErrorExceptionBuilder;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.Autnresponse;
+import com.hp.autonomy.types.idol.responses.ErrorResponse;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.w3c.dom.Node;
 

@@ -6,7 +6,7 @@
 package com.hp.autonomy.types.idol.marshalling;
 
 import com.autonomy.aci.client.services.Processor;
-import com.hp.autonomy.types.idol.QueryResponse;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
 import com.hp.autonomy.types.idol.marshalling.marshallers.DocumentGenerator;
 
 import java.util.function.Function;

@@ -6,7 +6,7 @@
 package com.hp.autonomy.types.idol.marshalling.marshallers;
 
 import com.autonomy.aci.client.services.AciErrorException;
-import com.hp.autonomy.types.idol.Autnresponse;
+import com.hp.autonomy.types.idol.responses.Autnresponse;
 
 import java.io.InputStream;
 

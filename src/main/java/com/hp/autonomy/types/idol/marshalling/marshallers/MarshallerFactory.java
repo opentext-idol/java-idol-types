@@ -5,7 +5,7 @@
 
 package com.hp.autonomy.types.idol.marshalling.marshallers;
 
-import com.hp.autonomy.types.idol.QueryResponse;
+import com.hp.autonomy.types.idol.responses.QueryResponse;
 
 public interface MarshallerFactory {
     ResponseParser getResponseParser();
