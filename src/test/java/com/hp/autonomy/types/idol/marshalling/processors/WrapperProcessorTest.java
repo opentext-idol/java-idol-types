@@ -3,39 +3,41 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol.processors;
+package com.hp.autonomy.types.idol.marshalling.processors;
 
+import com.autonomy.aci.client.services.Processor;
 import com.autonomy.aci.client.transport.AciResponseInputStream;
 import com.hp.autonomy.types.idol.GetStatusResponseData;
-import com.hp.autonomy.types.idol.IdolJaxbMarshaller;
+import com.hp.autonomy.types.idol.LanguageTypeSettings;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.omg.CORBA.portable.InputStream;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class AciResponseProcessorTest {
+public class WrapperProcessorTest {
     @Mock
-    private IdolJaxbMarshaller idolResponseParser;
+    private Processor<GetStatusResponseData> innerProcessor;
 
     @Mock
     private AciResponseInputStream inputStream;
 
-    private AciResponseJaxbProcessor<GetStatusResponseData> aciResponseProcessor;
+    private WrapperProcessor<GetStatusResponseData, LanguageTypeSettings> processor;
 
     @Before
     public void setUp() {
-        aciResponseProcessor = new AciResponseJaxbProcessor<>(idolResponseParser, GetStatusResponseData.class);
+        processor = new WrapperProcessor<>(innerProcessor, GetStatusResponseData::getLanguageTypeSettings);
+        when(innerProcessor.process(any())).thenReturn(new GetStatusResponseData());
     }
 
     @Test
     public void process() {
-        aciResponseProcessor.process(inputStream);
-        verify(idolResponseParser).parseIdolResponseData(any(InputStream.class), any(Class.class));
+        processor.process(inputStream);
+        verify(innerProcessor).process(any(AciResponseInputStream.class));
     }
 }

@@ -3,10 +3,10 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol.processors;
+package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import com.hp.autonomy.types.idol.IdolJaxbMarshaller;
+import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,22 +19,22 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
-public class EmptyAciResponseProcessorTest {
+public class VoidResponseProcessorTest {
     @Mock
-    private IdolJaxbMarshaller idolXmlMarshaller;
+    private ResponseParser responseParser;
     @Mock
     private AciResponseInputStream inputStream;
 
-    private EmptyAciResponseJaxbProcessor aciResponseProcessor;
+    private VoidProcessor aciResponseProcessor;
 
     @Before
     public void setUp() {
-        aciResponseProcessor = new EmptyAciResponseJaxbProcessor(idolXmlMarshaller);
+        aciResponseProcessor = new VoidProcessor(responseParser);
     }
 
     @Test
     public void process() {
         aciResponseProcessor.process(inputStream);
-        verify(idolXmlMarshaller).parseIdolResponse(any(InputStream.class));
+        verify(responseParser).parseResponse(any(InputStream.class));
     }
 }

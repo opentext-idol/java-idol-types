@@ -3,12 +3,11 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol.processors;
+package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import com.hp.autonomy.types.idol.IdolJaxbMarshaller;
-import com.hp.autonomy.types.idol.QueryResponseData;
-import com.hp.autonomy.types.idol.content.Blacklist;
+import com.hp.autonomy.types.idol.GetStatusResponseData;
+import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,22 +19,23 @@ import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.verify;
 
 @RunWith(MockitoJUnitRunner.class)
-public class QueryAciResponseProcessorTest {
+public class ResponseDataProcessorTest {
     @Mock
-    private IdolJaxbMarshaller idolXmlMarshaller;
+    private ResponseDataParser<GetStatusResponseData> responseDataParser;
+
     @Mock
     private AciResponseInputStream inputStream;
 
-    private QueryAciResponseJaxbProcessor<QueryResponseData> aciResponseProcessor;
+    private ResponseDataProcessor<GetStatusResponseData> aciResponseProcessor;
 
     @Before
     public void setUp() {
-        aciResponseProcessor = new QueryAciResponseJaxbProcessor<>(idolXmlMarshaller, QueryResponseData.class, Blacklist.class);
+        aciResponseProcessor = new ResponseDataProcessor<>(responseDataParser);
     }
 
     @Test
     public void process() {
         aciResponseProcessor.process(inputStream);
-        verify(idolXmlMarshaller).parseIdolQueryResponseData(any(InputStream.class), any(Class.class), any(Class.class));
+        verify(responseDataParser).parseResponseData(any(InputStream.class));
     }
 }

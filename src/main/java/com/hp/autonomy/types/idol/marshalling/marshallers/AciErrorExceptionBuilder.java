@@ -3,13 +3,11 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol;
+package com.hp.autonomy.types.idol.marshalling.marshallers;
 
 
 import com.autonomy.aci.client.services.AciErrorException;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.experimental.Accessors;
+import com.hp.autonomy.types.idol.Error;
 
 import java.util.Date;
 
@@ -17,16 +15,13 @@ import java.util.Date;
  * Builds error exception from Idol error response
  */
 @SuppressWarnings({"UseOfObsoleteDateTimeApi", "WeakerAccess"})
-@Setter
-@NoArgsConstructor
-@Accessors(chain = true)
 public class AciErrorExceptionBuilder {
-    private String errorId;
-    private String rawErrorId;
-    private String errorString;
-    private String errorDescription;
-    private String errorCode;
-    private Date errorTime;
+    private final String errorId;
+    private final String rawErrorId;
+    private final String errorString;
+    private final String errorDescription;
+    private final String errorCode;
+    private final Date errorTime;
 
     public AciErrorExceptionBuilder(final Error error) {
         errorId = error.getErrorid();

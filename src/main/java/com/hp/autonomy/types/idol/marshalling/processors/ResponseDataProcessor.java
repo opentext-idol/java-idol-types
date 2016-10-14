@@ -3,29 +3,28 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol.processors;
+package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.services.Processor;
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import com.hp.autonomy.types.idol.IdolJaxbMarshaller;
+import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 
 /**
  * Generic processor for handling Idol responses.
  * Note that this uses DOM processing behind the scenes so should not be used for very large responses.
  */
 @SuppressWarnings({"WeakerAccess", "NonSerializableFieldInSerializableClass"})
-public class EmptyAciResponseJaxbProcessor implements Processor<Void> {
+public class ResponseDataProcessor<T> implements Processor<T> {
     private static final long serialVersionUID = -1983490659468698548L;
 
-    private final IdolJaxbMarshaller idolXmlMarshaller;
+    private final ResponseDataParser<T> responseDataMarshaller;
 
-    public EmptyAciResponseJaxbProcessor(final IdolJaxbMarshaller idolXmlMarshaller) {
-        this.idolXmlMarshaller = idolXmlMarshaller;
+    public ResponseDataProcessor(final ResponseDataParser<T> responseDataMarshaller) {
+        this.responseDataMarshaller = responseDataMarshaller;
     }
 
     @Override
-    public Void process(final AciResponseInputStream aciResponseInputStream) {
-        idolXmlMarshaller.parseIdolResponse(aciResponseInputStream);
-        return null;
+    public T process(final AciResponseInputStream aciResponse) {
+        return responseDataMarshaller.parseResponseData(aciResponse);
     }
 }

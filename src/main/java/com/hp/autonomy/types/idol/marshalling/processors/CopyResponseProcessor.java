@@ -3,7 +3,7 @@
  * Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
  */
 
-package com.hp.autonomy.types.idol.processors;
+package com.hp.autonomy.types.idol.marshalling.processors;
 
 import com.autonomy.aci.client.services.Processor;
 import com.autonomy.aci.client.services.ProcessorException;
