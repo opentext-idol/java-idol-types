@@ -9,6 +9,7 @@ import com.autonomy.aci.client.services.Processor;
 import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.CommunityStatusResponseData;
 import com.hp.autonomy.types.idol.responses.GetContentResponseData;
 import com.hp.autonomy.types.idol.responses.GetQueryTagValuesResponseData;
 import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
@@ -37,6 +38,7 @@ public class ResponseParsingTest<T> extends AbstractParsingTest<T> {
     @Parameterized.Parameters(name = "{1}")
     public static Collection<Object[]> data() {
         return Arrays.asList(
+                new Object[]{CommunityStatusResponseData.class, "/communityGetStatus.xml"},
 //                new Object[]{DateConvertResponseData.class, ""},
 //                new Object[]{DetectLanguageResponseData.class, ""},
 //                new Object[]{DocumentStatsResponseData.class, ""},

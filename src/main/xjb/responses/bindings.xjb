@@ -47,6 +47,35 @@
             <inheritance:implements>com.hp.autonomy.types.requests.idol.actions.query.QuerySummaryElement</inheritance:implements>
         </bindings>
     </bindings>
+    <bindings schemaLocation="../../xsds/responses/communityGetStatusResponse.xsd">
+        <bindings node="xs:complexType[@name='communityStatusResponseData']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+        <bindings node="//xs:element[@name='securitytypes']">
+            <property name="securityTypes"/>
+        </bindings>
+        <bindings node="//xs:element[@name='maxusers']">
+            <property name="maxUsers"/>
+        </bindings>
+        <bindings node="//xs:element[@name='numusers']">
+            <property name="numUsers"/>
+        </bindings>
+        <bindings node="//xs:element[@name='defaultrolename']">
+            <property name="defaultRoleName"/>
+        </bindings>
+        <bindings node="//xs:element[@name='databaseprivilege']">
+            <property name="databasePrivilege"/>
+        </bindings>
+        <bindings node="//xs:element[@name='defaultsecuritytype']">
+            <property name="defaultSecurityType"/>
+        </bindings>
+        <bindings node="//xs:element[@name='securitytype']">
+            <property name="securityType"/>
+        </bindings>
+        <bindings node="//xs:element[@name='documentsecurity']">
+            <property name="documentSecurity"/>
+        </bindings>
+    </bindings>
     <bindings schemaLocation="../../xsds/responses/communityTypes.xsd">
         <bindings node="xs:complexType[@name='user']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
