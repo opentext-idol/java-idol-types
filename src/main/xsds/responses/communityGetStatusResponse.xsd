@@ -24,8 +24,8 @@
     <xs:complexType name="communityStatusResponseData">
         <xs:sequence>
             <xs:element name="securitytypes" type="securityTypes"/>
-            <xs:element name="maxusers" type="xs:string"/>
-            <xs:element name="numusers" type="xs:string"/>
+            <xs:element name="maxusers" type="xs:long"/>
+            <xs:element name="numusers" type="xs:long"/>
             <xs:element name="defaultrolename" type="xs:string"/>
             <xs:element name="databaseprivilege" type="xs:string"/>
         </xs:sequence>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETCHILDREN</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:name>UASERVER</autn:name>
+        <autn:host>16.26.26.212</autn:host>
+        <autn:port>9030</autn:port>
+        <autn:serviceport>9032</autn:serviceport>
+        <autn:serviceport_ssl_enabled>false</autn:serviceport_ssl_enabled>
+        <autn:children>
+            <autn:num_children>3</autn:num_children>
+            <autn:controlled>false</autn:controlled>
+            <autn:child>
+                <autn:name>DataDRE</autn:name>
+                <autn:host>localhost</autn:host>
+                <autn:port>9100</autn:port>
+            </autn:child>
+            <autn:child>
+                <autn:name>AgentStoreDRE</autn:name>
+                <autn:host>localhost</autn:host>
+                <autn:port>9050</autn:port>
+            </autn:child>
+            <autn:child>
+                <autn:name>AgentStoreDIH</autn:name>
+                <autn:host>Not connected.</autn:host>
+                <autn:port>1</autn:port>
+            </autn:child>
+        </autn:children>
+    </responsedata>
+</autnresponse>

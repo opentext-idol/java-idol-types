@@ -108,11 +108,11 @@
             <xs:element name="version" type="xs:string"/>
             <xs:element name="build" type="xs:integer"/>
             <xs:element name="licensed_languages" type="xs:string"/>
-            <xs:element name="indexport" type="xs:integer"/>
+            <xs:element name="indexport" type="xs:int" minOccurs="0"/>
             <xs:element name="indexport_ssl_enabled" type="xs:boolean" minOccurs="0"/>
-            <xs:element name="queryport" type="xs:integer"/>
-            <xs:element name="aciport" type="xs:integer"/>
-            <xs:element name="serviceport" type="xs:integer"/>
+            <xs:element name="queryport" type="xs:int" minOccurs="0"/>
+            <xs:element name="aciport" type="xs:int" minOccurs="0"/>
+            <xs:element name="serviceport" type="xs:int" minOccurs="0"/>
             <xs:element name="directory" type="xs:string"/>
             <xs:element name="querythreads" type="xs:integer"/>
             <xs:element name="acithreads" type="xs:integer"/>

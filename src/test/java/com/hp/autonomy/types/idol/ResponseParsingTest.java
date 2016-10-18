@@ -10,6 +10,7 @@ import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
 import com.hp.autonomy.types.idol.responses.CommunityStatusResponseData;
+import com.hp.autonomy.types.idol.responses.GetChildrenResponseData;
 import com.hp.autonomy.types.idol.responses.GetContentResponseData;
 import com.hp.autonomy.types.idol.responses.GetQueryTagValuesResponseData;
 import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
@@ -43,6 +44,7 @@ public class ResponseParsingTest<T> extends AbstractParsingTest<T> {
 //                new Object[]{DetectLanguageResponseData.class, ""},
 //                new Object[]{DocumentStatsResponseData.class, ""},
 //                new Object[]{GetAllRefsResponseData.class, ""},
+                new Object[]{GetChildrenResponseData.class, "/getChildren.xml"},
                 new Object[]{GetContentResponseData.class, "/getContent.xml"},
                 new Object[]{GetQueryTagValuesResponseData.class, "/getQueryTagValuesRangeResponse.xml"},
 //                new Object[]{GetSampleResponseData.class, ""},

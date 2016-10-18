@@ -104,6 +104,11 @@
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
     </bindings>
+    <bindings schemaLocation="../../xsds/responses/getChildrenResponse.xsd">
+        <bindings node="xs:complexType[@name='getChildrenResponseData']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+    </bindings>
     <bindings schemaLocation="../../xsds/responses/getContentResponse.xsd">
         <bindings node="xs:complexType[@name='getContentResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
