@@ -15,16 +15,19 @@
     </globalBindings>
     <bindings schemaLocation="../../xsds/responses/autnSimpleTypes.xsd">
         <bindings node="xs:simpleType[@name='epochDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.DateAdapter.parseEpochDate" printMethod="com.hp.autonomy.types.idol.DateAdapter.printEpochDate"/>
+            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseEpochDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printEpochDate"/>
         </bindings>
         <bindings node="xs:simpleType[@name='idolDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.DateAdapter.parseDate" printMethod="com.hp.autonomy.types.idol.DateAdapter.printDate"/>
+            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printDate"/>
         </bindings>
         <bindings node="xs:simpleType[@name='queryResultDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.DateAdapter.parseQueryResponseDate" printMethod="com.hp.autonomy.types.idol.DateAdapter.printQueryResponseDate"/>
+            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseQueryResponseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printQueryResponseDate"/>
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/autnResponse.xsd">
+        <bindings node="//xs:element[@name='responsedata']">
+            <property name="responseData"/>
+        </bindings>
         <bindings node="xs:complexType[@name='errorResponse']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
@@ -42,6 +45,35 @@
         <bindings node="//xs:complexType[@name='qsElement']">
             <property name="text"/>
             <inheritance:implements>com.hp.autonomy.types.requests.idol.actions.query.QuerySummaryElement</inheritance:implements>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/responses/communityGetStatusResponse.xsd">
+        <bindings node="xs:complexType[@name='communityStatusResponseData']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+        <bindings node="//xs:element[@name='securitytypes']">
+            <property name="securityTypes"/>
+        </bindings>
+        <bindings node="//xs:element[@name='maxusers']">
+            <property name="maxUsers"/>
+        </bindings>
+        <bindings node="//xs:element[@name='numusers']">
+            <property name="numUsers"/>
+        </bindings>
+        <bindings node="//xs:element[@name='defaultrolename']">
+            <property name="defaultRoleName"/>
+        </bindings>
+        <bindings node="//xs:element[@name='databaseprivilege']">
+            <property name="databasePrivilege"/>
+        </bindings>
+        <bindings node="//xs:element[@name='defaultsecuritytype']">
+            <property name="defaultSecurityType"/>
+        </bindings>
+        <bindings node="//xs:element[@name='securitytype']">
+            <property name="securityType"/>
+        </bindings>
+        <bindings node="//xs:element[@name='documentsecurity']">
+            <property name="documentSecurity"/>
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/communityTypes.xsd">
@@ -72,10 +104,15 @@
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
     </bindings>
+    <bindings schemaLocation="../../xsds/responses/getChildrenResponse.xsd">
+        <bindings node="xs:complexType[@name='getChildrenResponseData']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+    </bindings>
     <bindings schemaLocation="../../xsds/responses/getContentResponse.xsd">
         <bindings node="xs:complexType[@name='getContentResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>
@@ -89,7 +126,7 @@
     <bindings schemaLocation="../../xsds/responses/getSampleResponse.xsd">
         <bindings node="xs:complexType[@name='getSampleResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>
@@ -131,7 +168,7 @@
     <bindings schemaLocation="../../xsds/responses/listResponse.xsd">
         <bindings node="xs:complexType[@name='listResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>
@@ -140,7 +177,7 @@
     <bindings schemaLocation="../../xsds/responses/queryResponse.xsd">
         <bindings node="xs:complexType[@name='queryResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>
@@ -164,7 +201,7 @@
     <bindings schemaLocation="../../xsds/responses/suggestOnTextResponse.xsd">
         <bindings node="xs:complexType[@name='suggestOnTextResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>
@@ -173,7 +210,7 @@
     <bindings schemaLocation="../../xsds/responses/suggestResponse.xsd">
         <bindings node="xs:complexType[@name='suggestResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.QueryResponse</inheritance:implements>
+            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
             <bindings node="//xs:element[@name='hit']">
                 <property name="hits"/>
             </bindings>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:complexType name="children">
+        <xs:sequence>
+            <xs:element name="num_children" type="xs:int"/>
+            <xs:element name="controlled" type="xs:boolean"/>
+            <xs:element name="child" type="autn:child" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="child">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="host" type="xs:string"/>
+            <xs:element name="port" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getChildrenResponseData">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="host" type="xs:string"/>
+            <xs:element name="port" type="xs:int"/>
+            <xs:element name="serviceport" type="xs:int"/>
+            <xs:element name="serviceport_ssl_enabled" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="children" type="autn:children"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
