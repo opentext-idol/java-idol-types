@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+    <xs:complexType name="question_states">
+        <xs:sequence>
+            <xs:element name="stat" minOccurs="5" maxOccurs="5">
+                <xs:complexType>
+                    <xs:attribute name="count" type="xs:int"/>
+                    <xs:attribute name="state" type="question_state"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="question_equivalence_class_state">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Incoming"/>
+            <xs:enumeration value="Published"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="question_equivalence_class_states">
+        <xs:sequence>
+            <xs:element name="stat" minOccurs="2" maxOccurs="2">
+                <xs:complexType>
+                    <xs:attribute name="count" type="xs:int"/>
+                    <xs:attribute name="state" type="question_equivalence_class_state"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="stats">
+        <xs:sequence>
+            <xs:element name="question_states" type="question_states"/>
+            <xs:element name="question_equivalence_class_states" type="question_equivalence_class_states"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getStats_responsedata">
+        <xs:sequence>
+            <xs:element name="stats" type="stats"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

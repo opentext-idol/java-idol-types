@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETSTATUS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <product>answerserver</product>
+        <version>11.2.0</version>
+        <build>1280353</build>
+        <aciport>7000</aciport>
+        <serviceport>7002</serviceport>
+        <directory>C:\test\dg\AUTOTEST_AnswerServer_7000</directory>
+        <acithreads>10</acithreads>
+        <systems>
+            <system>
+                <name>answerbank0</name>
+                <type>(type not stored)</type>
+            </system>
+            <system>
+                <name>factbank0</name>
+                <type>(type not stored)</type>
+            </system>
+        </systems>
+    </responsedata>
+</autnresponse>

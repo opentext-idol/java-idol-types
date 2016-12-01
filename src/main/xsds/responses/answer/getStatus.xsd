@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+    <xs:complexType name="system">
+        <xs:sequence>
+            <xs:element name="name" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="type" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="info" type="metadata" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="systems">
+        <xs:sequence>
+            <xs:element name="system" type="system" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="answerserver_getStatus">
+        <xs:sequence>
+            <xs:element name="product" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="version" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="build" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="aciport" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="serviceport" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="directory" type="NonEmptyString" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="acithreads" type="xs:int" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="systems" type="systems" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

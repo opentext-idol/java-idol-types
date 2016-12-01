@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETRESOURCES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <resource>
+            <schemas>
+                <schemaInfo>
+                    <action>GetResources</action>
+                    <type>filter</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#GetResourceFilter&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource filter&quot;,
+                        &quot;description&quot;: &quot;A resource filter&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;text&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;Text to filter by&quot;
+                        },
+                        &quot;state&quot;: {
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;description&quot;: &quot;Resource state to filter by&quot;,
+                        &quot;items&quot;: {
+                        &quot;enum&quot;: [ &quot;Incoming&quot;, &quot;Answerable&quot;, &quot;NeedsAnswer&quot;,
+                        &quot;Answered&quot;, &quot;Rejected&quot; ]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: []
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>GetResources</action>
+                    <type>sort</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#GetResourceSort&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource sorting&quot;,
+                        &quot;description&quot;: &quot;Array of sorting specifications, to be applied in order.&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;Sorting specification&quot;,
+                        &quot;allOf&quot;: [ {
+                        &quot;oneOf&quot;: [ {
+                        &quot;properties&quot;: {
+                        &quot;sortBy&quot;: {
+                        &quot;description&quot;: &quot;Resource attribute to sort by&quot;,
+                        &quot;enum&quot;: [ &quot;id&quot;, &quot;createdTime&quot;, &quot;updatedTime&quot;, &quot;status&quot;,
+                        &quot;random&quot; ]
+                        }
+                        },
+                        &quot;required&quot;: [ &quot;sortBy&quot; ]
+                        }, {
+                        &quot;properties&quot;: {
+                        &quot;sortBy&quot;: {
+                        &quot;description&quot;: &quot;Resource attribute to sort by&quot;,
+                        &quot;enum&quot;: [ &quot;metadata&quot; ]
+                        },
+                        &quot;metadataKey&quot;: {
+                        &quot;description&quot;: &quot;Which key to use when sorting by metadata.&quot;,
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;minLength&quot;: 1
+                        },
+                        &quot;metadataType&quot;: {
+                        &quot;description&quot;: &quot;Data type of the metadata values used for sorting.&quot;,
+                        &quot;enum&quot;: [ &quot;auto&quot;, &quot;text&quot;, &quot;numeric&quot; ]
+                        }
+                        },
+                        &quot;required&quot;: [ &quot;sortBy&quot;, &quot;metadataKey&quot; ]
+                        } ]
+                        }, {
+                        &quot;properties&quot; : {
+                        &quot;ascending&quot;: {
+                        &quot;description&quot;: &quot;Whether to sort in ascending order (defaults to true).&quot;,
+                        &quot;type&quot;: &quot;boolean&quot;
+                        }
+                        }
+                        } ]
+                        }
+                        }
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>GetResources</action>
+                    <type>type</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#GetResourceType&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource type&quot;,
+                        &quot;description&quot;: &quot;A resource type&quot;,
+                        &quot;enum&quot;: [ &quot;question&quot;, &quot;question_equivalence_class&quot;, &quot;schema&quot;,
+                        &quot;xsd&quot; ]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>addanswer</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_aa&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Add Answer&quot;,
+                        &quot;description&quot;: &quot;An operation to add an answer to answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;add&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;answer&quot;]
+                        },
+                        &quot;reference_question&quot;:{
+                        &quot;type&quot;:&quot;string&quot;,
+                        &quot;description&quot;: &quot;The question answered by the answer object&quot;
+                        },
+                        &quot;answer&quot;:{
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;the answer itself&quot;,
+                        &quot;properties&quot;:{
+                        &quot;text&quot;: {
+                        &quot;description&quot;: &quot;the answer&apos;s text content&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;metadata&quot;: {
+                        &quot;description&quot;: &quot;optional metadata for this answer&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;a single item of metadata&quot;,
+                        &quot;properties&quot;: {
+                        &quot;key&quot;: {
+                        &quot;description&quot;: &quot;metadata name&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;value&quot;: {
+                        &quot;description&quot;: &quot;metadata value&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;key&quot;, &quot;value&quot;]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;text&quot;]
+                        },
+                        &quot;question_equivalence_class_id&quot;:{
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;id of the question equivalence class to associate this answer
+                        with&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;answer&quot;, &quot;type&quot;, &quot;question_equivalence_class_id&quot;,
+                        &quot;reference_question&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>addquestion</type>
+                    <schema>
+
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_aq&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Add Question&quot;,
+                        &quot;description&quot;: &quot;An operation to add questions to answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;add&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;question&quot;]
+                        },
+                        &quot;questions&quot;: {
+                        &quot;type&quot;:&quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;Structure representing a question someone has asked&quot;,
+                        &quot;properties&quot;:{
+                        &quot;text&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;The text of the question that was asked&quot;,
+                        &quot;minLength&quot;: 1
+                        }
+                        },
+                        &quot;required&quot;: [&quot;text&quot;]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;questions&quot;, &quot;type&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>addquestion_equivalence_class</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_aqec&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Add Question Equivalence Class&quot;,
+                        &quot;description&quot;: &quot;An operation to add a question equivalence class to answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;add&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;question_equivalence_class&quot;]
+                        },
+                        &quot;question_ids&quot;: {
+                        &quot;type&quot;:&quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;description&quot;: &quot;The questions to base this class around&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;answer&quot;:{
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;the answer itself&quot;,
+                        &quot;properties&quot;:{
+                        &quot;text&quot;: {
+                        &quot;description&quot;: &quot;the answer&apos;s text content&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;metadata&quot;: {
+                        &quot;description&quot;: &quot;optional metadata for this answer&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;a single item of metadata&quot;,
+                        &quot;properties&quot;: {
+                        &quot;key&quot;: {
+                        &quot;description&quot;: &quot;metadata name&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;value&quot;: {
+                        &quot;description&quot;: &quot;metadata value&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;key&quot;, &quot;value&quot;]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;text&quot;]
+                        },
+                        &quot;reference_question&quot;:{
+                        &quot;type&quot;:&quot;string&quot;,
+                        &quot;description&quot;:&quot;The question that the answer answers, and that sample questions is
+                        supposed to be mapped to by this class&apos;s rule&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;reference_question&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>deletequestion</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_dq&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Delete Question&quot;,
+                        &quot;description&quot;: &quot;An operation to delete a Question within answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;delete&quot;, &quot;Delete&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this delete deals with&quot;,
+                        &quot;enum&quot;: [&quot;question&quot;, &quot;Question&quot;]
+                        },
+                        &quot;ids&quot;: {
+                        &quot;description&quot;: &quot;array of ids of resources to delete&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;ids&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>deletequestion_equivalence_class</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_dqec&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Delete Question Equivalence Class&quot;,
+                        &quot;description&quot;: &quot;An operation to delete a Question Equivalence Class within
+                        answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;delete&quot;, &quot;Delete&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this delete deals with&quot;,
+                        &quot;enum&quot;: [&quot;question_equivalence_class&quot;]
+                        },
+                        &quot;ids&quot;: {
+                        &quot;description&quot;: &quot;array of ids of resources to delete&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;ids&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>undeletequestion</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_udq&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Undelete Question&quot;,
+                        &quot;description&quot;: &quot;An operation to undelete a Question within answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;undelete&quot;, &quot;Undelete&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this undelete deals with&quot;,
+                        &quot;enum&quot;: [&quot;question&quot;]
+                        },
+                        &quot;ids&quot;: {
+                        &quot;description&quot;: &quot;array of ids of deleted resources to undelete&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;ids&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>undeletequestion_equivalence_class</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_udqec&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Undelete Question Equivalence Class&quot;,
+                        &quot;description&quot;: &quot;An operation to undelete a Question Equivalence Class within
+                        answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;undelete&quot;, &quot;Undelete&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this undelete deals with&quot;,
+                        &quot;enum&quot;: [&quot;question_equivalence_class&quot;]
+                        },
+                        &quot;ids&quot;: {
+                        &quot;description&quot;: &quot;array of ids of deleted resources to undelete&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;ids&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>updateanswer</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_ua&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Update Answer&quot;,
+                        &quot;description&quot;: &quot;An operation to update an answer within answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;update&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;answer&quot;]
+                        },
+                        &quot;answer&quot;:{
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;the answer as it should appear following the update&quot;,
+                        &quot;properties&quot;:{
+                        &quot;answer_id&quot;: {
+                        &quot;description&quot;: &quot;id of the answer&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;text&quot;: {
+                        &quot;description&quot;: &quot;the answer&apos;s text content&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;metadata&quot;: {
+                        &quot;description&quot;: &quot;optional metadata for this answer&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;a single item of metadata&quot;,
+                        &quot;properties&quot;: {
+                        &quot;key&quot;: {
+                        &quot;description&quot;: &quot;metadata name&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;value&quot;: {
+                        &quot;description&quot;: &quot;metadata value&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;key&quot;, &quot;value&quot;]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;answer_id&quot;, &quot;text&quot;]
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;answer&quot;, &quot;type&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>updatequestion</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerserver#ResourceOperation_uq&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Update Question&quot;,
+                        &quot;description&quot;: &quot;An operation to update a set of questions within answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;update&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;question&quot;]
+                        },
+                        &quot;question&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;Which questions to update and what state they should be updated
+                        to&quot;,
+                        &quot;properties&quot;: {
+                        &quot;question_ids&quot;: {
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;description&quot;: &quot;The questions to be updated&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;new_state&quot;: {
+                        &quot;description&quot;: &quot;The new state of the specified questions&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;question_ids&quot;, &quot;new_state&quot;]
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;question&quot;, &quot;type&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>ManageResources</action>
+                    <type>updatequestion_equivalence_class</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#ResourceOperation_uqec&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Resource Operation - Update Question Equivalence Class&quot;,
+                        &quot;description&quot;: &quot;An operation to update a Question Equivalence Class within
+                        answerserver&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;operation&quot;: {
+                        &quot;description&quot;: &quot;The management operation to conduct against the resources&quot;,
+                        &quot;enum&quot;: [&quot;update&quot;, &quot;Update&quot;]
+                        },
+                        &quot;type&quot;: {
+                        &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
+                        &quot;enum&quot;: [&quot;question_equivalence_class&quot;]
+                        },
+                        &quot;question_equivalence_class&quot;:{
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;the Question Equivalence Class as it should appear following the
+                        update&quot;,
+                        &quot;properties&quot;:{
+                        &quot;id&quot;: {
+                        &quot;description&quot;: &quot;id of the question equivalence class to update&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;question_ids&quot;: {
+                        &quot;type&quot;:&quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;description&quot;: &quot;The questions to base this class around&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;answer&quot;:{
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;the answer itself&quot;,
+                        &quot;properties&quot;:{
+                        &quot;text&quot;: {
+                        &quot;description&quot;: &quot;the answer&apos;s text content&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;metadata&quot;: {
+                        &quot;description&quot;: &quot;optional metadata for this answer&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;minItems&quot;: 1,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;a single item of metadata&quot;,
+                        &quot;properties&quot;: {
+                        &quot;key&quot;: {
+                        &quot;description&quot;: &quot;metadata name&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        },
+                        &quot;value&quot;: {
+                        &quot;description&quot;: &quot;metadata value&quot;,
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;key&quot;, &quot;value&quot;]
+                        }
+                        }
+                        },
+                        &quot;required&quot;: [&quot;text&quot;]
+                        },
+                        &quot;reference_question&quot;:{
+                        &quot;type&quot;:&quot;string&quot;,
+                        &quot;description&quot;:&quot;The question that the answer answers, and that sample questions is
+                        supposed to be mapped to by this class&apos;s rule&quot;
+                        }
+                        },
+                        &quot;required&quot;: [&quot;id&quot;, &quot;question_ids&quot;, &quot;reference_question&quot;]
+                        }
+                        },
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;question_equivalence_class&quot;]
+                        }
+
+
+                    </schema>
+                </schemaInfo>
+            </schemas>
+        </resource>
+    </responsedata>
+</autnresponse>

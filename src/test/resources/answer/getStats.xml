@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETSTATS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <stats>
+            <question_states>
+                <stat count="36" state="Incoming"/>
+                <stat count="6" state="Answerable"/>
+                <stat count="0" state="NeedsAnswer"/>
+                <stat count="0" state="Answered"/>
+                <stat count="8" state="Rejected"/>
+            </question_states>
+            <question_equivalence_class_states>
+                <stat count="1222" state="Incoming"/>
+                <stat count="95" state="Published"/>
+            </question_equivalence_class_states>
+        </stats>
+    </responsedata>
+</autnresponse>
