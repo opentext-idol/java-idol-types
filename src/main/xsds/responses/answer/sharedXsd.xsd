@@ -14,6 +14,12 @@
             <xs:enumeration value="Rejected"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:simpleType name="question_equivalence_class_state">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Incoming"/>
+            <xs:enumeration value="Published"/>
+        </xs:restriction>
+    </xs:simpleType>
     <xs:complexType name="metadata">
         <xs:sequence>
             <xs:element name="field" minOccurs="0" maxOccurs="unbounded">

@@ -31,7 +31,6 @@ public class AnswerServerResponseParsingTest<T> extends AbstractParsingTest<T> {
                 new Object[]{AnswerserverGetStatus.class, "/answer/getStatus.xml"},
                 new Object[]{GetJobStatusResponsedata.class, "/answer/getJobStatus.xml"},
                 new Object[]{ManageResourcesResponsedata.class, "/answer/manageResources.xml"},
-                new Object[]{GetResourcesResponsedata.class, "/answer/getAnswers.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getQuestions.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getQuestionEquivalenceClasses.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getSchemas.xml"},

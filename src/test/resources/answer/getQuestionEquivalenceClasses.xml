@@ -5,36 +5,17 @@
     <responsedata>
         <resource>
             <question_equivalence_classes>
-                <total_resources>12</total_resources>
+                <total_resources>2</total_resources>
                 <question_equivalence_class>
-                    <id>3094584591442991676</id>
-                    <created_time>2016-11-09T11:05:11Z</created_time>
-                    <modified_time>2016-11-09T15:02:50Z</modified_time>
-                    <rule>deipnosophist</rule>
-                    <reference_question>What makes a good deipnosophist?</reference_question>
-                    <question_ids>
-                        <question_id>9526958115802841866</question_id>
-                    </question_ids>
-                    <answer_id>10422663709701427592</answer_id>
-                    <answer>
-                        <text>Scintillating dinner time conversation</text>
-                        <reference_question>What makes a good deipnosophist?</reference_question>
-                        <metadata>
-                            <field key="LAST_MODIFIED_BY" value="TestUser"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>7289639160883949391</id>
-                    <created_time>2016-11-09T14:57:22Z</created_time>
-                    <modified_time>2016-11-09T14:57:22Z</modified_time>
-                    <rule>misery</rule>
-                    <reference_question>Why is the world so full of misery?</reference_question>
+                    <id>14617008575454574537</id>
+                    <created_time>2016-12-01T16:21:36Z</created_time>
+                    <modified_time>2016-12-01T16:21:36Z</modified_time>
+                    <rule/>
+                    <state>Incoming</state>
+                    <reference_question>What are graphics cards (GPUs)?</reference_question>
                     <question_ids/>
-                    <answer_id>16526468934791847562</answer_id>
                     <answer>
-                        <text>(expletive)</text>
-                        <reference_question>Why is the world so full of misery?</reference_question>
+                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
                         <metadata>
                             <field key="CREATED_BY" value="TestUser"/>
                             <field key="LAST_MODIFIED_BY" value="TestUser"/>
@@ -42,139 +23,20 @@
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>10979378320261522414</id>
-                    <created_time>2016-11-09T14:42:48Z</created_time>
-                    <modified_time>2016-11-09T14:42:48Z</modified_time>
+                    <id>7554575378891999623</id>
+                    <created_time>2016-12-01T16:21:23Z</created_time>
+                    <modified_time>2016-12-01T16:21:29Z</modified_time>
                     <rule/>
+                    <state>Incoming</state>
                     <reference_question>What are graphics cards (GPUs)?</reference_question>
                     <question_ids/>
-                    <answer_id>2989292148324272386</answer_id>
                     <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>1612520518808029206</id>
-                    <created_time>2016-11-09T10:02:09Z</created_time>
-                    <modified_time>2016-11-09T10:02:09Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>9919869636016134517</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
+                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars....
+                        </text>
                         <metadata>
                             <field key="CREATED_BY" value="TestUser"/>
                             <field key="LAST_MODIFIED_BY" value="TestUser"/>
                             <field key="TESTING" value="testing"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>16531909024017238055</id>
-                    <created_time>2016-11-09T09:55:25Z</created_time>
-                    <modified_time>2016-11-09T09:55:25Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>10447128247681227820</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>3108375067570842893</id>
-                    <created_time>2016-11-09T09:54:49Z</created_time>
-                    <modified_time>2016-11-09T09:54:49Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>10722197578453059188</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>16083196333890625711</id>
-                    <created_time>2016-11-08T11:20:32Z</created_time>
-                    <modified_time>2016-11-08T11:20:32Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>7372234027888043627</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>17839948266756755753</id>
-                    <created_time>2016-11-07T17:12:20Z</created_time>
-                    <modified_time>2016-11-07T17:12:20Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>3897601246119485363</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>10615140844451681326</id>
-                    <created_time>2016-11-07T17:08:55Z</created_time>
-                    <modified_time>2016-11-07T17:08:55Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>14600003233628558364</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>4577757344572140892</id>
-                    <created_time>2016-11-07T17:07:00Z</created_time>
-                    <modified_time>2016-11-07T17:07:00Z</modified_time>
-                    <rule/>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
-                    <answer_id>17615765128115024693</answer_id>
-                    <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
-                        <reference_question>What are graphics cards (GPUs)?</reference_question>
-                        <metadata>
-                            <field key="CREATED_BY" value="user"/>
-                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>

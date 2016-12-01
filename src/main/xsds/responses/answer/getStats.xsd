@@ -11,12 +11,6 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-    <xs:simpleType name="question_equivalence_class_state">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="Incoming"/>
-            <xs:enumeration value="Published"/>
-        </xs:restriction>
-    </xs:simpleType>
     <xs:complexType name="question_equivalence_class_states">
         <xs:sequence>
             <xs:element name="stat" minOccurs="2" maxOccurs="2">

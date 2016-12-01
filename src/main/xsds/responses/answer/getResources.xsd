@@ -29,7 +29,6 @@
     <xs:complexType name="qec_answer">
         <xs:sequence>
             <xs:element name="text" type="xs:string"/>
-            <xs:element name="reference_question" type="NonEmptyString"/>
             <xs:element name="metadata" minOccurs="0" type="metadata"/>
         </xs:sequence>
     </xs:complexType>
@@ -39,9 +38,9 @@
             <xs:element name="created_time" type="xs:dateTime"/>
             <xs:element name="modified_time" type="xs:dateTime"/>
             <xs:element name="rule" type="xs:string"/>
+            <xs:element name="state" type="question_equivalence_class_state"/>
             <xs:element name="reference_question" type="NonEmptyString"/>
             <xs:element name="question_ids" type="question_ids"/>
-            <xs:element name="answer_id" type="NonEmptyString"/>
             <xs:element name="answer" type="qec_answer"/>
         </xs:sequence>
     </xs:complexType>
@@ -50,22 +49,6 @@
             <xs:element name="total_resources" type="xs:int"/>
             <xs:element name="question_equivalence_class" minOccurs="0" maxOccurs="unbounded"
                         type="question_equivalence_class"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="standalone_answer">
-        <xs:sequence>
-            <xs:element name="id" type="NonEmptyString"/>
-            <xs:element name="created_time" type="xs:dateTime"/>
-            <xs:element name="modified_time" type="xs:dateTime"/>
-            <xs:element name="text" type="xs:string"/>
-            <xs:element name="reference_question" type="NonEmptyString"/>
-            <xs:element name="metadata" minOccurs="0" type="metadata"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:complexType name="answers">
-        <xs:sequence>
-            <xs:element name="total_resources" type="xs:int"/>
-            <xs:element name="answer" minOccurs="0" maxOccurs="unbounded" type="standalone_answer"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -106,7 +89,6 @@
         <xs:choice>
             <xs:element name="questions" type="questions"/>
             <xs:element name="question_equivalence_classes" type="question_equivalence_classes"/>
-            <xs:element name="answers" type="answers"/>
             <xs:element name="schemas" type="schemas"/>
             <xs:element name="xsds" type="xsds"/>
             <xs:element name="rule_suggestion" type="rule_suggestion"/>

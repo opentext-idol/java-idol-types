@@ -5,83 +5,43 @@
     <responsedata>
         <resource>
             <questions>
-                <total_resources>47</total_resources>
+                <total_resources>5</total_resources>
                 <question>
-                    <id>9526958115802841866</id>
-                    <created_time>2016-11-08T10:31:22Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What makes a good deipnosophist?</text>
+                    <id>9420281021288077185</id>
+                    <created_time>2016-12-01T16:22:08Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What are CPUs?</text>
                     <state>Incoming</state>
                     <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>9058849544892911835</id>
-                    <created_time>2016-11-09T09:47:52Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
+                    <id>7672886550547886449</id>
+                    <created_time>2016-12-01T16:22:08Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
                     <text>What is a graphics card?</text>
                     <state>Incoming</state>
                     <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>8811688598600926522</id>
-                    <created_time>2016-11-04T12:33:42Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
+                    <id>17667912817423025834</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What are CPUs?</text>
                     <state>Incoming</state>
                     <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>8189917379393104127</id>
-                    <created_time>2016-11-09T09:58:16Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
+                    <id>16689594213272265969</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What is a GPU?</text>
                     <state>Incoming</state>
                     <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>657057713226250711</id>
-                    <created_time>2016-11-09T09:58:52Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
-                    <state>Incoming</state>
-                    <question_equivalence_class_id/>
-                </question>
-                <question>
-                    <id>3194896189466993152</id>
-                    <created_time>2016-11-09T10:15:32Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
-                    <state>Incoming</state>
-                    <question_equivalence_class_id/>
-                </question>
-                <question>
-                    <id>3152456943146228804</id>
-                    <created_time>2016-11-04T11:16:05Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What makes a good deipnosophist?</text>
-                    <state>Incoming</state>
-                    <question_equivalence_class_id/>
-                </question>
-                <question>
-                    <id>245308782787475299</id>
-                    <created_time>2016-11-09T10:12:19Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
-                    <state>Incoming</state>
-                    <question_equivalence_class_id/>
-                </question>
-                <question>
-                    <id>14392466426425469107</id>
-                    <created_time>2016-11-09T10:08:39Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
-                    <text>What is a graphics card?</text>
-                    <state>Incoming</state>
-                    <question_equivalence_class_id/>
-                </question>
-                <question>
-                    <id>10113826289698381183</id>
-                    <created_time>2016-11-09T14:33:09Z</created_time>
-                    <modified_time>2016-11-18T12:42:30Z</modified_time>
+                    <id>16228529869302658810</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
                     <text>What is a graphics card?</text>
                     <state>Incoming</state>
                     <question_equivalence_class_id/>
