@@ -1,0 +1,905 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>ASK</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <answers>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>46814237</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="46814237">
+                            <qualifier name="Point in time" value="1960"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>47444751</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="47444751">
+                            <qualifier name="Point in time" value="1961"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>48119649</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="48119649">
+                            <qualifier name="Point in time" value="1962"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>48803680</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="48803680">
+                            <qualifier name="Point in time" value="1963"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>49449403</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="49449403">
+                            <qualifier name="Point in time" value="1964"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>50023774</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="50023774">
+                            <qualifier name="Point in time" value="1965"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>50508717</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="50508717">
+                            <qualifier name="Point in time" value="1966"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>50915456</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="50915456">
+                            <qualifier name="Point in time" value="1967"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>51276054</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="51276054">
+                            <qualifier name="Point in time" value="1968"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>51638260</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="51638260">
+                            <qualifier name="Point in time" value="1969"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>52035095</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="52035095">
+                            <qualifier name="Point in time" value="1970"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>52480421</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="52480421">
+                            <qualifier name="Point in time" value="1971"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>52959228</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="52959228">
+                            <qualifier name="Point in time" value="1972"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>53441264</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="53441264">
+                            <qualifier name="Point in time" value="1973"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>53882416</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="53882416">
+                            <qualifier name="Point in time" value="1974"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>54252574</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="54252574">
+                            <qualifier name="Point in time" value="1975"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>54541493</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="54541493">
+                            <qualifier name="Point in time" value="1976"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>54764462</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="54764462">
+                            <qualifier name="Point in time" value="1977"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>54947975</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="54947975">
+                            <qualifier name="Point in time" value="1978"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>55130594</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="55130594">
+                            <qualifier name="Point in time" value="1979"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>55340782</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="55340782">
+                            <qualifier name="Point in time" value="1980"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>55585824</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="55585824">
+                            <qualifier name="Point in time" value="1981"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>55858727</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="55858727">
+                            <qualifier name="Point in time" value="1982"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>56156284</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="56156284">
+                            <qualifier name="Point in time" value="1983"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>56470769</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="56470769">
+                            <qualifier name="Point in time" value="1984"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>56795686</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="56795686">
+                            <qualifier name="Point in time" value="1985"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>57132691</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="57132691">
+                            <qualifier name="Point in time" value="1986"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>57482591</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="57482591">
+                            <qualifier name="Point in time" value="1987"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>57836486</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="57836486">
+                            <qualifier name="Point in time" value="1988"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>58182702</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="58182702">
+                            <qualifier name="Point in time" value="1989"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>58512808</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="58512808">
+                            <qualifier name="Point in time" value="1990"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>58559312</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="58559312">
+                            <qualifier name="Point in time" value="1991"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>58851216</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="58851216">
+                            <qualifier name="Point in time" value="1992"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>59106766</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="59106766">
+                            <qualifier name="Point in time" value="1993"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>59327194</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="59327194">
+                            <qualifier name="Point in time" value="1994"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>59541900</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="59541900">
+                            <qualifier name="Point in time" value="1995"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>59753098</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="59753098">
+                            <qualifier name="Point in time" value="1996"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>59964845</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="59964845">
+                            <qualifier name="Point in time" value="1997"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>60186291</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="60186291">
+                            <qualifier name="Point in time" value="1998"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>60496715</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="60496715">
+                            <qualifier name="Point in time" value="1999"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>60912498</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="60912498">
+                            <qualifier name="Point in time" value="2000"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>61357431</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="61357431">
+                            <qualifier name="Point in time" value="2001"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>61805267</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="61805267">
+                            <qualifier name="Point in time" value="2002"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>62244884</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="62244884">
+                            <qualifier name="Point in time" value="2003"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>62704897</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="62704897">
+                            <qualifier name="Point in time" value="2004"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>63179356</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="63179356">
+                            <qualifier name="Point in time" value="2005"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>63621376</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="63621376">
+                            <qualifier name="Point in time" value="2006"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>64016229</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="64016229">
+                            <qualifier name="Point in time" value="2007"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>64374990</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="64374990">
+                            <qualifier name="Point in time" value="2008"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>64707044</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="64707044">
+                            <qualifier name="Point in time" value="2009"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>65027512</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="65027512">
+                            <qualifier name="Point in time" value="2010"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>65342776</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="65342776">
+                            <qualifier name="Point in time" value="2011"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>65659790</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="65659790">
+                            <qualifier name="Point in time" value="2012"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>65972097</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="65972097">
+                            <qualifier name="Point in time" value="2013"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>66495940</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="66495940">
+                            <qualifier name="Point in time" value="2014"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+            <answer answerType="FactBank" systemName="factbank0">
+                <text>66808385</text>
+                <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
+                <source>SQLDB</source>
+                <metadata>
+                    <parsing name="factbank/standard_question_np_op"/>
+                    <component index="0" entityName="france" entityCode="QFRA">
+                        <property index="0" name="population" code="SSP.POP.TOTL"/>
+                    </component>
+                    <fact entityName="France">
+                        <property name="Population" value="66808385">
+                            <qualifier name="Point in time" value="2015"/>
+                        </property>
+                    </fact>
+                </metadata>
+            </answer>
+        </answers>
+    </responsedata>
+</autnresponse>

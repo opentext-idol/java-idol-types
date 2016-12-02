@@ -10,6 +10,7 @@ import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
 import com.hp.autonomy.types.idol.responses.answer.AnswerserverGetStatus;
+import com.hp.autonomy.types.idol.responses.answer.AskResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetJobStatusResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetResourcesResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetStatsResponsedata;
@@ -28,6 +29,8 @@ public class AnswerServerResponseParsingTest<T> extends AbstractParsingTest<T> {
     @Parameterized.Parameters(name = "{1}")
     public static Collection<Object[]> data() {
         return Arrays.asList(
+                new Object[]{AskResponsedata.class, "/answer/askAnswerbank.xml"},
+                new Object[]{AskResponsedata.class, "/answer/askFactbank.xml"},
                 new Object[]{AnswerserverGetStatus.class, "/answer/getStatus.xml"},
                 new Object[]{GetJobStatusResponsedata.class, "/answer/getJobStatus.xml"},
                 new Object[]{ManageResourcesResponsedata.class, "/answer/manageResources.xml"},
