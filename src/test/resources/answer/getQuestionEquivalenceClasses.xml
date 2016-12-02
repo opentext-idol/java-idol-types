@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETRESOURCES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <resource>
+            <question_equivalence_classes>
+                <total_resources>2</total_resources>
+                <question_equivalence_class>
+                    <id>14617008575454574537</id>
+                    <created_time>2016-12-01T16:21:36Z</created_time>
+                    <modified_time>2016-12-01T16:21:36Z</modified_time>
+                    <rule/>
+                    <state>Incoming</state>
+                    <reference_question>What are graphics cards (GPUs)?</reference_question>
+                    <question_ids/>
+                    <answer>
+                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="TestUser"/>
+                            <field key="LAST_MODIFIED_BY" value="TestUser"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>7554575378891999623</id>
+                    <created_time>2016-12-01T16:21:23Z</created_time>
+                    <modified_time>2016-12-01T16:21:29Z</modified_time>
+                    <rule/>
+                    <state>Incoming</state>
+                    <reference_question>What are graphics cards (GPUs)?</reference_question>
+                    <question_ids/>
+                    <answer>
+                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars....
+                        </text>
+                        <metadata>
+                            <field key="CREATED_BY" value="TestUser"/>
+                            <field key="LAST_MODIFIED_BY" value="TestUser"/>
+                            <field key="TESTING" value="testing"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+            </question_equivalence_classes>
+        </resource>
+    </responsedata>
+</autnresponse>

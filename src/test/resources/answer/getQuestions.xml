@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETRESOURCES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <resource>
+            <questions>
+                <total_resources>5</total_resources>
+                <question>
+                    <id>9420281021288077185</id>
+                    <created_time>2016-12-01T16:22:08Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What are CPUs?</text>
+                    <state>Incoming</state>
+                    <question_equivalence_class_id/>
+                </question>
+                <question>
+                    <id>7672886550547886449</id>
+                    <created_time>2016-12-01T16:22:08Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What is a graphics card?</text>
+                    <state>Incoming</state>
+                    <question_equivalence_class_id/>
+                </question>
+                <question>
+                    <id>17667912817423025834</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What are CPUs?</text>
+                    <state>Incoming</state>
+                    <question_equivalence_class_id/>
+                </question>
+                <question>
+                    <id>16689594213272265969</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What is a GPU?</text>
+                    <state>Incoming</state>
+                    <question_equivalence_class_id/>
+                </question>
+                <question>
+                    <id>16228529869302658810</id>
+                    <created_time>2016-12-01T16:21:54Z</created_time>
+                    <modified_time>2016-12-01T16:26:05Z</modified_time>
+                    <text>What is a graphics card?</text>
+                    <state>Incoming</state>
+                    <question_equivalence_class_id/>
+                </question>
+            </questions>
+        </resource>
+    </responsedata>
+</autnresponse>

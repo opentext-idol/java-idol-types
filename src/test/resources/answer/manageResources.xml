@@ -1,0 +1,17 @@
+<autnresponse>
+    <action>MANAGERESOURCES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <result>
+            <managed_resources>
+                <operation>add</operation>
+                <type>question</type>
+                <id>14437449597755917633</id>
+                <id>1581458719646268018</id>
+            </managed_resources>
+            <operation>add</operation>
+            <type>question</type>
+            <job_token>8</job_token>
+        </result>
+    </responsedata>
+</autnresponse>
