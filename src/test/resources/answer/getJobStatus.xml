@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETJOBSTATUS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <job>
+            <token>7</token>
+            <status>Finished</status>
+        </job>
+        <job>
+            <token>8</token>
+            <status>Finished</status>
+        </job>
+    </responsedata>
+</autnresponse>

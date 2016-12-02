@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="NonEmptyString">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="question_state">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Incoming"/>
+            <xs:enumeration value="Answerable"/>
+            <xs:enumeration value="NeedsAnswer"/>
+            <xs:enumeration value="Answered"/>
+            <xs:enumeration value="Rejected"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="question_equivalence_class_state">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Incoming"/>
+            <xs:enumeration value="Published"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="metadata">
+        <xs:sequence>
+            <xs:element name="field" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="key" type="NonEmptyString"/>
+                    <xs:attribute name="value" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

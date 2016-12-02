@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+    <xs:simpleType name="job_status">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Not finished"/>
+            <xs:enumeration value="Finished"/>
+            <xs:enumeration value="Unknown"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="job">
+        <xs:sequence>
+            <xs:element name="token" type="NonEmptyString"/>
+            <xs:element name="status" type="job_status"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="getJobStatus_responsedata">
+        <xs:sequence>
+            <xs:element name="job" minOccurs="1" maxOccurs="unbounded" type="job"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

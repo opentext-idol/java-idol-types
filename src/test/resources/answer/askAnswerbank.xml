@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>ASK</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <answers>
+            <answer answerType="Simple" systemName="answerbank0">
+                <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                <interpretation>What are graphics cards (GPUs)?</interpretation>
+                <source/>
+            </answer>
+            <answer answerType="Simple" systemName="answerbank0">
+                <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                <interpretation>What are graphics cards (GPUs)?</interpretation>
+                <source/>
+            </answer>
+            <answer answerType="Simple" systemName="answerbank0">
+                <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars....</text>
+                <interpretation>What are graphics cards (GPUs)?</interpretation>
+                <source/>
+            </answer>
+        </answers>
+    </responsedata>
+</autnresponse>

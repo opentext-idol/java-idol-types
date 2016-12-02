@@ -94,6 +94,19 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>answer-server response xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.responses.answer</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/answer</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/answer</schemaDirectory>
+                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses-answer
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>content xsds</id>
                         <goals>
                             <goal>generate</goal>
@@ -122,7 +135,7 @@
         <dependency>
             <groupId>com.hp.autonomy.frontend</groupId>
             <artifactId>aci-types</artifactId>
-            <version>0.12.0</version>
+            <version>0.15.0</version>
         </dependency>
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>

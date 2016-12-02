@@ -1,0 +1,54 @@
+<!--
+  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:annox="http://annox.dev.java.net"
+          extensionBindingPrefixes="annox"
+          version="2.1">
+    <globalBindings>
+        <javaType
+                name="java.time.ZonedDateTime"
+                xmlType="xs:dateTime"
+                parseMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
+                printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
+    </globalBindings>
+    <bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
+        <bindings node="//xs:complexType[@name='question']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
+        <bindings node="//xs:complexType[@name='question_equivalence_class']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
+        <bindings node="//xs:complexType[@name='qec_answer']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
+        <bindings node="//xs:complexType[@name='qec_answer']//xs:element[@name='metadata']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(MetadataMapAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
+            </property>
+        </bindings>
+        <bindings node="//xs:element[@name='question_ids']">
+            <annox:annotate target="field">@lombok.Singular</annox:annotate>
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionIdsAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
+            </property>
+        </bindings>
+    </bindings>
+</bindings>

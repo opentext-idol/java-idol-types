@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+
+    <!-- Question resources -->
+    <xs:complexType name="question">
+        <xs:sequence>
+            <xs:element name="id" type="NonEmptyString"/>
+            <xs:element name="created_time" type="xs:dateTime"/>
+            <xs:element name="modified_time" type="xs:dateTime"/>
+            <xs:element name="text" type="NonEmptyString"/>
+            <xs:element name="state" type="question_state"/>
+            <xs:element name="question_equivalence_class_id" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="questions">
+        <xs:sequence>
+            <xs:element name="total_resources" type="xs:int"/>
+            <xs:element name="question" minOccurs="0" maxOccurs="unbounded" type="question"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Question equivalence class and answer resources -->
+    <xs:complexType name="question_ids">
+        <xs:sequence>
+            <xs:element name="question_id" minOccurs="0" maxOccurs="unbounded" type="NonEmptyString"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="qec_answer">
+        <xs:sequence>
+            <xs:element name="text" type="xs:string"/>
+            <xs:element name="metadata" minOccurs="0" type="metadata"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="question_equivalence_class">
+        <xs:sequence>
+            <xs:element name="id" type="NonEmptyString"/>
+            <xs:element name="created_time" type="xs:dateTime"/>
+            <xs:element name="modified_time" type="xs:dateTime"/>
+            <xs:element name="rule" type="xs:string"/>
+            <xs:element name="state" type="question_equivalence_class_state"/>
+            <xs:element name="reference_question" type="NonEmptyString"/>
+            <xs:element name="question_ids" type="question_ids"/>
+            <xs:element name="answer" type="qec_answer"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="question_equivalence_classes">
+        <xs:sequence>
+            <xs:element name="total_resources" type="xs:int"/>
+            <xs:element name="question_equivalence_class" minOccurs="0" maxOccurs="unbounded"
+                        type="question_equivalence_class"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- Rule suggestion -->
+    <xs:simpleType name="rule_suggestion">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+
+    <!-- Schema resources -->
+    <xs:complexType name="schemaInfo">
+        <xs:sequence>
+            <xs:element name="action" type="NonEmptyString"/>
+            <xs:element name="type" type="NonEmptyString"/>
+            <xs:element name="schema" type="NonEmptyString"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="schemas">
+        <xs:sequence>
+            <xs:element name="schemaInfo" minOccurs="0" maxOccurs="unbounded" type="schemaInfo"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="actionXsd">
+        <xs:sequence>
+            <xs:element name="action" type="NonEmptyString"/>
+            <xs:element name="xsd" type="NonEmptyString"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="xsds">
+        <xs:sequence>
+            <xs:element name="baseXsd" type="NonEmptyString"/>
+            <xs:element name="sharedXsd" type="NonEmptyString"/>
+            <xs:element name="actionXsd" minOccurs="0" maxOccurs="unbounded" type="actionXsd"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- General resources -->
+    <xs:complexType name="resource">
+        <xs:choice>
+            <xs:element name="questions" type="questions"/>
+            <xs:element name="question_equivalence_classes" type="question_equivalence_classes"/>
+            <xs:element name="schemas" type="schemas"/>
+            <xs:element name="xsds" type="xsds"/>
+            <xs:element name="rule_suggestion" type="rule_suggestion"/>
+        </xs:choice>
+    </xs:complexType>
+    <xs:complexType name="getResources_responsedata">
+        <xs:sequence>
+            <xs:element name="resource" type="resource"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
