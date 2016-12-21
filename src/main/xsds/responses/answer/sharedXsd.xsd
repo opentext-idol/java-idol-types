@@ -20,7 +20,7 @@
             <xs:enumeration value="Published"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:complexType name="metadata">
+    <xs:complexType name="qec_metadata">
         <xs:sequence>
             <xs:element name="field" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>

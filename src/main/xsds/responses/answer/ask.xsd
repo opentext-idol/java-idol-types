@@ -1,23 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:complexType name="answer">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+    <xs:complexType name="ask_metadata">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ask_answer">
         <xs:sequence>
             <xs:element name="text" type="xs:string"/>
-            <xs:element name="interpretation" type="xs:string"/>
+            <xs:element name="score" type="xs:double"/>
+            <xs:element name="interpretation" type="xs:string" minOccurs="0"/>
             <xs:element name="source" type="xs:string"/>
-            <xs:element name="metadata" type="xs:anyType"/>
+            <xs:element name="metadata" type="ask_metadata" minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="answerType" type="xs:string" use="required"/>
-        <xs:attribute name="systemName" type="xs:string" use="required"/>
+        <xs:attribute name="answerType" type="xs:string"/>
+        <xs:attribute name="systemName" type="xs:string"/>
     </xs:complexType>
-    <xs:complexType name="answers">
-        <xs:sequence>
-            <xs:element name="answer" type="answer" maxOccurs="unbounded"/>
+    <xs:complexType name="ask_answers">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="answer" type="ask_answer"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="ask_responsedata">
         <xs:sequence>
-            <xs:element name="answers" type="answers" minOccurs="0"/>
+            <xs:element name="answers" type="ask_answers" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>

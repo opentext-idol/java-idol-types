@@ -29,7 +29,7 @@
     <xs:complexType name="qec_answer">
         <xs:sequence>
             <xs:element name="text" type="xs:string"/>
-            <xs:element name="metadata" minOccurs="0" type="metadata"/>
+            <xs:element name="metadata" minOccurs="0" type="qec_metadata"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="question_equivalence_class">
@@ -40,6 +40,7 @@
             <xs:element name="rule" type="xs:string"/>
             <xs:element name="state" type="question_equivalence_class_state"/>
             <xs:element name="reference_question" type="NonEmptyString"/>
+            <xs:element name="usage_count" type="xs:int"/>
             <xs:element name="question_ids" type="question_ids"/>
             <xs:element name="answer" type="qec_answer"/>
         </xs:sequence>
@@ -47,6 +48,8 @@
     <xs:complexType name="question_equivalence_classes">
         <xs:sequence>
             <xs:element name="total_resources" type="xs:int"/>
+            <xs:element name="usage_period_start" type="xs:dateTime"/>
+            <xs:element name="usage_period_end" type="xs:dateTime"/>
             <xs:element name="question_equivalence_class" minOccurs="0" maxOccurs="unbounded"
                         type="question_equivalence_class"/>
         </xs:sequence>

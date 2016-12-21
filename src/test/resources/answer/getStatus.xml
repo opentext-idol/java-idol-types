@@ -4,8 +4,8 @@
     <response>SUCCESS</response>
     <responsedata>
         <product>answerserver</product>
-        <version>11.2.0</version>
-        <build>1280353</build>
+        <version>11.3.0</version>
+        <build>1285049</build>
         <aciport>7000</aciport>
         <serviceport>7002</serviceport>
         <directory>C:\test\dg\AUTOTEST_AnswerServer_7000</directory>
@@ -14,6 +14,9 @@
             <system>
                 <name>answerbank0</name>
                 <type>(type not stored)</type>
+                <info>
+                    <field key="queued" value="0"/>
+                </info>
             </system>
             <system>
                 <name>factbank0</name>

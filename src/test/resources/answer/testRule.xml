@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>TESTRULE</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <outcome>
+            <rule>&quot;cruel pirate&quot;</rule>
+            <matched>
+                <text>where cruel pirate plunder unfailingly?</text>
+            </matched>
+            <not_matched>
+                <text>whom hostile coast pistol tenderly?</text>
+            </not_matched>
+        </outcome>
+    </responsedata>
+</autnresponse>

@@ -44,62 +44,43 @@
                     &lt;xs:minLength value=&quot;1&quot; /&gt;
                     &lt;/xs:restriction&gt;
                     &lt;/xs:simpleType&gt;
-
-                    &lt;xs:simpleType name=&quot;question_state&quot;&gt;
-                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;
-                    &lt;xs:enumeration value=&quot;Incoming&quot;/&gt;
-                    &lt;xs:enumeration value=&quot;Answerable&quot;/&gt;
-                    &lt;xs:enumeration value=&quot;NeedsAnswer&quot;/&gt;
-                    &lt;xs:enumeration value=&quot;Answered&quot;/&gt;
-                    &lt;xs:enumeration value=&quot;Rejected&quot;/&gt;
-                    &lt;/xs:restriction&gt;
-                    &lt;/xs:simpleType&gt;
-
-                    &lt;xs:simpleType name=&quot;question_equivalence_class_state&quot;&gt;
-                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;
-                    &lt;xs:enumeration value=&quot;Incoming&quot; /&gt;
-                    &lt;xs:enumeration value=&quot;Published&quot; /&gt;
-                    &lt;/xs:restriction&gt;
-                    &lt;/xs:simpleType&gt;
-
-                    &lt;xs:complexType name=&quot;metadata&quot;&gt;
-                    &lt;xs:sequence&gt;
-                    &lt;xs:element name=&quot;field&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;
-                    &lt;xs:complexType&gt;
-                    &lt;xs:attribute name=&quot;key&quot; type=&quot;NonEmptyString&quot;/&gt;
-                    &lt;xs:attribute name=&quot;value&quot; type=&quot;xs:string&quot;/&gt;
-                    &lt;/xs:complexType&gt;
-                    &lt;/xs:element&gt;
-                    &lt;/xs:sequence&gt;
-                    &lt;/xs:complexType&gt;
                     &lt;/xs:schema&gt;
                 </sharedXsd>
                 <actionXsd>
-                    <action>getJobStatus</action>
+                    <action>ask</action>
                     <xsd>
                         &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
                         &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
                         &lt;xs:include schemaLocation=&quot;sharedXsd.xsd&quot;/&gt;
 
-                        &lt;xs:simpleType name=&quot;job_status&quot;&gt;
-                        &lt;xs:restriction base=&quot;xs:string&quot;&gt;
-                        &lt;xs:enumeration value=&quot;Not finished&quot;/&gt;
-                        &lt;xs:enumeration value=&quot;Finished&quot;/&gt;
-                        &lt;xs:enumeration value=&quot;Unknown&quot;/&gt;
-                        &lt;/xs:restriction&gt;
-                        &lt;/xs:simpleType&gt;
 
-                        &lt;xs:complexType name=&quot;job&quot;&gt;
+                        &lt;xs:complexType name=&quot;ask_metadata&quot;&gt;
                         &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;token&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;status&quot; type=&quot;job_status&quot;/&gt;
+                        &lt;xs:any minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot; processContents=&quot;lax&quot;/&gt;
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
 
-                        &lt;xs:complexType name=&quot;getJobStatus_responsedata&quot;&gt;
+                        &lt;xs:complexType name=&quot;ask_answer&quot;&gt;
                         &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;job&quot; minOccurs=&quot;1&quot; maxOccurs=&quot;unbounded&quot;
-                        type=&quot;job&quot;&gt;&lt;/xs:element&gt;
+                        &lt;xs:element name=&quot;text&quot; type=&quot;xs:string&quot;/&gt;
+                        &lt;xs:element name=&quot;score&quot; type=&quot;xs:double&quot;/&gt;
+                        &lt;xs:element name=&quot;interpretation&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot;/&gt;
+                        &lt;xs:element name=&quot;source&quot; type=&quot;xs:string&quot;/&gt;
+                        &lt;xs:element name=&quot;metadata&quot; type=&quot;ask_metadata&quot; minOccurs=&quot;0&quot;/&gt;
+                        &lt;/xs:sequence&gt;
+                        &lt;xs:attribute name=&quot;answerType&quot; type=&quot;xs:string&quot;/&gt;
+                        &lt;xs:attribute name=&quot;systemName&quot; type=&quot;xs:string&quot; /&gt;
+                        &lt;/xs:complexType&gt;
+
+                        &lt;xs:complexType name=&quot;ask_answers&quot;&gt;
+                        &lt;xs:sequence minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;
+                        &lt;xs:element name=&quot;answer&quot; type=&quot;ask_answer&quot;/&gt;
+                        &lt;/xs:sequence&gt;
+                        &lt;/xs:complexType&gt;
+
+                        &lt;xs:complexType name=&quot;ask_responsedata&quot;&gt;
+                        &lt;xs:sequence&gt;
+                        &lt;xs:element name=&quot;answers&quot; type=&quot;ask_answers&quot; minOccurs=&quot;0&quot;/&gt;
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
 
@@ -112,83 +93,6 @@
                         &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
                         &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
                         &lt;xs:include schemaLocation=&quot;sharedXsd.xsd&quot;/&gt;
-
-                        &lt;!-- Question resources --&gt;
-                        &lt;xs:complexType name=&quot;question&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;id&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;created_time&quot; type=&quot;xs:dateTime&quot;/&gt;
-                        &lt;xs:element name=&quot;modified_time&quot; type=&quot;xs:dateTime&quot;/&gt;
-                        &lt;xs:element name=&quot;text&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;state&quot; type=&quot;question_state&quot;/&gt;
-                        &lt;xs:element name=&quot;question_equivalence_class_id&quot; type=&quot;xs:string&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;questions&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;total_resources&quot; type=&quot;xs:int&quot;/&gt;
-                        &lt;xs:element name=&quot;question&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;
-                        type=&quot;question&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;!-- Question equivalence class and answer resources --&gt;
-                        &lt;xs:complexType name=&quot;question_ids&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;question_id&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;
-                        type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;qec_answer&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;text&quot; type=&quot;xs:string&quot;/&gt;
-                        &lt;xs:element name=&quot;metadata&quot; minOccurs=&quot;0&quot; type=&quot;metadata&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;question_equivalence_class&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;id&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;created_time&quot; type=&quot;xs:dateTime&quot;/&gt;
-                        &lt;xs:element name=&quot;modified_time&quot; type=&quot;xs:dateTime&quot;/&gt;
-                        &lt;xs:element name=&quot;rule&quot; type=&quot;xs:string&quot;/&gt;
-                        &lt;xs:element name=&quot;state&quot; type=&quot;question_equivalence_class_state&quot;/&gt;
-                        &lt;xs:element name=&quot;reference_question&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;question_ids&quot; type=&quot;question_ids&quot;/&gt;
-                        &lt;xs:element name=&quot;answer&quot; type=&quot;qec_answer&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;question_equivalence_classes&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;total_resources&quot; type=&quot;xs:int&quot;/&gt;
-                        &lt;xs:element name=&quot;question_equivalence_class&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;
-                        type=&quot;question_equivalence_class&quot;&gt;&lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;!-- Rule suggestion --&gt;
-                        &lt;xs:simpleType name=&quot;rule_suggestion&quot;&gt;
-                        &lt;xs:restriction base=&quot;xs:string&quot;/&gt;
-                        &lt;/xs:simpleType&gt;
-
-                        &lt;!-- Schema resources --&gt;
-                        &lt;xs:complexType name=&quot;schemaInfo&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;action&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;type&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;xs:element name=&quot;schema&quot; type=&quot;NonEmptyString&quot;/&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;schemas&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;schemaInfo&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;
-                        type=&quot;schemaInfo&quot;&gt;&lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
 
                         &lt;xs:complexType name=&quot;actionXsd&quot;&gt;
                         &lt;xs:sequence&gt;
@@ -206,14 +110,9 @@
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
 
-                        &lt;!-- General resources --&gt;
                         &lt;xs:complexType name=&quot;resource&quot;&gt;
                         &lt;xs:choice&gt;
-                        &lt;xs:element name=&quot;questions&quot; type=&quot;questions&quot;/&gt;
-                        &lt;xs:element name=&quot;question_equivalence_classes&quot; type=&quot;question_equivalence_classes&quot;/&gt;
-                        &lt;xs:element name=&quot;schemas&quot; type=&quot;schemas&quot;/&gt;
                         &lt;xs:element name=&quot;xsds&quot; type=&quot;xsds&quot;/&gt;
-                        &lt;xs:element name=&quot;rule_suggestion&quot; type=&quot;rule_suggestion&quot;/&gt;
                         &lt;/xs:choice&gt;
                         &lt;/xs:complexType&gt;
 
@@ -227,57 +126,22 @@
                     </xsd>
                 </actionXsd>
                 <actionXsd>
-                    <action>getStats</action>
-                    <xsd>
-                        &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-                        &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-                        &lt;xs:include schemaLocation=&quot;sharedXsd.xsd&quot;/&gt;
-
-                        &lt;xs:complexType name=&quot;question_states&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;stat&quot; minOccurs=&quot;5&quot; maxOccurs=&quot;5&quot;&gt;
-                        &lt;xs:complexType&gt;
-                        &lt;xs:attribute name=&quot;count&quot; type=&quot;xs:int&quot;/&gt;
-                        &lt;xs:attribute name=&quot;state&quot; type=&quot;question_state&quot;/&gt;
-                        &lt;/xs:complexType&gt;
-                        &lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;question_equivalence_class_states&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;stat&quot; minOccurs=&quot;2&quot; maxOccurs=&quot;2&quot;&gt;
-                        &lt;xs:complexType&gt;
-                        &lt;xs:attribute name=&quot;count&quot; type=&quot;xs:int&quot; /&gt;
-                        &lt;xs:attribute name=&quot;state&quot; type=&quot;question_equivalence_class_state&quot; /&gt;
-                        &lt;/xs:complexType&gt;
-                        &lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;stats&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;question_states&quot; type=&quot;question_states&quot;/&gt;
-                        &lt;xs:element name=&quot;question_equivalence_class_states&quot; type=&quot;question_equivalence_class_states&quot;
-                        /&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;getStats_responsedata&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;stats&quot; type=&quot;stats&quot;&gt;&lt;/xs:element&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;/xs:schema&gt;
-                    </xsd>
-                </actionXsd>
-                <actionXsd>
                     <action>getStatus</action>
                     <xsd>
                         &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
                         &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
                         &lt;xs:include schemaLocation=&quot;sharedXsd.xsd&quot;/&gt;
+
+                        &lt;xs:complexType name=&quot;getstatus_metadata&quot;&gt;
+                        &lt;xs:sequence&gt;
+                        &lt;xs:element name=&quot;field&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;
+                        &lt;xs:complexType&gt;
+                        &lt;xs:attribute name=&quot;key&quot; type=&quot;NonEmptyString&quot;/&gt;
+                        &lt;xs:attribute name=&quot;value&quot; type=&quot;xs:string&quot;/&gt;
+                        &lt;/xs:complexType&gt;
+                        &lt;/xs:element&gt;
+                        &lt;/xs:sequence&gt;
+                        &lt;/xs:complexType&gt;
 
                         &lt;xs:complexType name=&quot;system&quot;&gt;
                         &lt;xs:sequence&gt;
@@ -285,7 +149,7 @@
                         maxOccurs=&quot;1&quot;/&gt;
                         &lt;xs:element name=&quot;type&quot; type=&quot;NonEmptyString&quot; minOccurs=&quot;1&quot;
                         maxOccurs=&quot;1&quot;/&gt;
-                        &lt;xs:element name=&quot;info&quot; type=&quot;metadata&quot; minOccurs=&quot;0&quot;
+                        &lt;xs:element name=&quot;info&quot; type=&quot;getstatus_metadata&quot; minOccurs=&quot;0&quot;
                         maxOccurs=&quot;1&quot; /&gt;
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
@@ -297,7 +161,7 @@
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
 
-                        &lt;xs:complexType name=&quot;answerserver_getStatus&quot;&gt;
+                        &lt;xs:complexType name=&quot;getStatus_responsedata&quot;&gt;
                         &lt;xs:sequence&gt;
                         &lt;xs:element name=&quot;product&quot; type=&quot;NonEmptyString&quot; minOccurs=&quot;1&quot;
                         maxOccurs=&quot;1&quot;/&gt;
@@ -314,68 +178,6 @@
                         maxOccurs=&quot;1&quot;/&gt;
                         &lt;xs:element name=&quot;systems&quot; type=&quot;systems&quot; minOccurs=&quot;1&quot;
                         maxOccurs=&quot;1&quot; /&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;/xs:schema&gt;
-                    </xsd>
-                </actionXsd>
-                <actionXsd>
-                    <action>manageResources</action>
-                    <xsd>
-                        &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
-                        &lt;xs:schema xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
-                        &lt;xs:include schemaLocation=&quot;sharedXsd.xsd&quot;/&gt;
-
-                        &lt;xs:simpleType name=&quot;operationType&quot; final=&quot;restriction&quot;&gt;
-                        &lt;xs:restriction base=&quot;xs:string&quot;&gt;
-                        &lt;xs:enumeration value=&quot;add&quot; /&gt;
-                        &lt;xs:enumeration value=&quot;update&quot; /&gt;
-                        &lt;xs:enumeration value=&quot;delete&quot; /&gt;
-                        &lt;xs:enumeration value=&quot;undelete&quot; /&gt;
-                        &lt;/xs:restriction&gt;
-                        &lt;/xs:simpleType&gt;
-
-                        &lt;xs:simpleType name=&quot;resourceType&quot; final=&quot;restriction&quot;&gt;
-                        &lt;xs:restriction base=&quot;xs:string&quot;&gt;
-                        &lt;xs:enumeration value=&quot;question&quot; /&gt;
-                        &lt;xs:enumeration value=&quot;question_equivalence_class&quot; /&gt;
-                        &lt;/xs:restriction&gt;
-                        &lt;/xs:simpleType&gt;
-
-                        &lt;xs:complexType name=&quot;ManagedResources&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;type&quot; type=&quot;resourceType&quot; /&gt;
-                        &lt;xs:element name=&quot;operation&quot; type=&quot;operationType&quot; /&gt;
-                        &lt;xs:element name=&quot;id&quot; type=&quot;NonEmptyString&quot; maxOccurs=&quot;unbounded&quot;
-                        /&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;ManagementResult&quot;&gt;
-                        &lt;xs:annotation&gt;
-                        &lt;xs:documentation&gt;
-                        &quot;managed_resources&quot; is a list of ManagedResources instances describing what was done
-                        to each resource
-                        &quot;operation&quot; is the operation that will be completed on the resources.
-                        &quot;type&quot; is the type of resource that the operation will be completed on.
-                        &quot;job_token&quot; is the token to pass into getJobStatus to get the status of this job.
-                        &lt;/xs:documentation&gt;
-                        &lt;/xs:annotation&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;managed_resources&quot; type=&quot;ManagedResources&quot; maxOccurs=&quot;unbounded&quot;
-                        /&gt;
-                        &lt;xs:element name=&quot;operation&quot; type=&quot;operationType&quot; /&gt;
-                        &lt;xs:element name=&quot;type&quot; type=&quot;resourceType&quot; /&gt;
-                        &lt;xs:element name=&quot;job_token&quot; type=&quot;NonEmptyString&quot; minOccurs=&quot;1&quot;
-                        maxOccurs=&quot;unbounded&quot; /&gt;
-                        &lt;/xs:sequence&gt;
-                        &lt;/xs:complexType&gt;
-
-                        &lt;xs:complexType name=&quot;manageResources_responsedata&quot;&gt;
-                        &lt;xs:sequence&gt;
-                        &lt;xs:element name=&quot;result&quot; type=&quot;ManagementResult&quot; minOccurs=&quot;0&quot;
-                        maxOccurs=&quot;unbounded&quot; /&gt;
                         &lt;/xs:sequence&gt;
                         &lt;/xs:complexType&gt;
 
