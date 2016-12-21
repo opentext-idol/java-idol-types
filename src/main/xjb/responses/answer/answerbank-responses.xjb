@@ -14,6 +14,7 @@
                 xmlType="xs:dateTime"
                 parseMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
                 printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
+        <serializable/>
     </globalBindings>
     <bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
         <bindings node="//xs:complexType[@name='question']">
