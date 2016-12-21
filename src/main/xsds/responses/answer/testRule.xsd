@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:include schemaLocation="sharedXsd.xsd"/>
+    <xs:complexType name="question_set">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="text" type="NonEmptyString"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="test_rule_outcome">
+        <xs:sequence>
+            <xs:element name="rule" type="xs:string"/>
+            <xs:element name="matched" type="question_set"/>
+            <xs:element name="not_matched" type="question_set"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="testRule_responsedata">
+        <xs:sequence>
+            <xs:element name="outcome" type="test_rule_outcome"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

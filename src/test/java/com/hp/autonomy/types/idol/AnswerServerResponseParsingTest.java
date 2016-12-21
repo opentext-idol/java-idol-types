@@ -9,12 +9,13 @@ import com.autonomy.aci.client.services.Processor;
 import com.hp.autonomy.types.idol.marshalling.ProcessorFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
-import com.hp.autonomy.types.idol.responses.answer.AnswerserverGetStatus;
 import com.hp.autonomy.types.idol.responses.answer.AskResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetJobStatusResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetResourcesResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.GetStatsResponsedata;
+import com.hp.autonomy.types.idol.responses.answer.GetStatusResponsedata;
 import com.hp.autonomy.types.idol.responses.answer.ManageResourcesResponsedata;
+import com.hp.autonomy.types.idol.responses.answer.TestRuleResponsedata;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
@@ -31,14 +32,16 @@ public class AnswerServerResponseParsingTest<T> extends AbstractParsingTest<T> {
         return Arrays.asList(
                 new Object[]{AskResponsedata.class, "/answer/askAnswerbank.xml"},
                 new Object[]{AskResponsedata.class, "/answer/askFactbank.xml"},
-                new Object[]{AnswerserverGetStatus.class, "/answer/getStatus.xml"},
+                new Object[]{GetStatusResponsedata.class, "/answer/getStatus.xml"},
                 new Object[]{GetJobStatusResponsedata.class, "/answer/getJobStatus.xml"},
                 new Object[]{ManageResourcesResponsedata.class, "/answer/manageResources.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getQuestions.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getQuestionEquivalenceClasses.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getSchemas.xml"},
                 new Object[]{GetResourcesResponsedata.class, "/answer/getXsds.xml"},
-                new Object[]{GetStatsResponsedata.class, "/answer/getStats.xml"});
+                new Object[]{GetResourcesResponsedata.class, "/answer/getAnswerbankXsds.xml"},
+                new Object[]{GetStatsResponsedata.class, "/answer/getStats.xml"},
+                new Object[]{TestRuleResponsedata.class, "/answer/testRule.xml"});
     }
 
     public AnswerServerResponseParsingTest(final Class<T> type, final String fileName) throws IOException {

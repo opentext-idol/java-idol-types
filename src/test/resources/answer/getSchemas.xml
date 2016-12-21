@@ -20,6 +20,11 @@
                         &quot;type&quot;: &quot;string&quot;,
                         &quot;description&quot;: &quot;Text to filter by&quot;
                         },
+                        &quot;reference_question_text&quot;: {
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;description&quot;: &quot;When getting Question Equivalence Class resources, text to filter
+                        by against the reference question of the Question Equivalence Classes.&quot;
+                        },
                         &quot;state&quot;: {
                         &quot;type&quot;: &quot;array&quot;,
                         &quot;description&quot;: &quot;Resource state to filter by&quot;,
@@ -32,7 +37,6 @@
                         &quot;type&quot;: &quot;array&quot;,
                         &quot;description&quot;: &quot;array of objects specifying a filter of resources to not be
                         associated with&quot;,
-                        &quot;minItems&quot;: 1,
                         &quot;items&quot;: {
                         &quot;type&quot;: &quot;object&quot;,
                         &quot;description&quot;: &quot;When getting resources, restrict the resources returned to ones
@@ -81,7 +85,7 @@
                         &quot;sortBy&quot;: {
                         &quot;description&quot;: &quot;Resource attribute to sort by&quot;,
                         &quot;enum&quot;: [ &quot;id&quot;, &quot;createdTime&quot;, &quot;modifiedTime&quot;, &quot;status&quot;,
-                        &quot;random&quot; ]
+                        &quot;popularity&quot;, &quot;random&quot; ]
                         },
                         &quot;ascending&quot;: {
                         &quot;description&quot;: &quot;Whether to sort in ascending order (defaults to true).&quot;,
@@ -187,7 +191,7 @@
                         &quot;id&quot;: &quot;answerbank#ResourceOperation_aqec&quot;,
                         &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
                         &quot;title&quot;: &quot;Resource Operation - Add Question Equivalence Class&quot;,
-                        &quot;description&quot;: &quot;An operation to add a question equivalence class to answerserver&quot;,
+                        &quot;description&quot;: &quot;An operation to add question equivalence classes to answerserver&quot;,
                         &quot;type&quot;: &quot;object&quot;,
                         &quot;properties&quot;: {
                         &quot;operation&quot;: {
@@ -198,6 +202,13 @@
                         &quot;description&quot;: &quot;The type of object this operation deals with&quot;,
                         &quot;enum&quot;: [&quot;question_equivalence_class&quot;]
                         },
+                        &quot;question_equivalence_classes&quot;: {
+                        &quot;description&quot;: &quot;array of question equivalence classes to add&quot;,
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;description&quot;: &quot;specification of a single question equivalence class&quot;,
+                        &quot;properties&quot;: {
                         &quot;question_ids&quot;: {
                         &quot;type&quot;:&quot;array&quot;,
                         &quot;minItems&quot;: 0,
@@ -251,8 +262,12 @@
                         }
                         },
                         &quot;additionalProperties&quot;: false,
-                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;reference_question&quot;,
-                        &quot;answer&quot;]
+                        &quot;required&quot;: [&quot;reference_question&quot;, &quot;answer&quot;]
+                        }
+                        }
+                        },
+                        &quot;additionalProperties&quot;: false,
+                        &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;question_equivalence_classes&quot;]
                         }
 
 
@@ -536,6 +551,31 @@
                         &quot;required&quot;: [&quot;operation&quot;, &quot;type&quot;, &quot;question_equivalence_class&quot;]
                         }
 
+
+                    </schema>
+                </schemaInfo>
+                <schemaInfo>
+                    <action>TestResources</action>
+                    <type>rule</type>
+                    <schema>
+                        {
+                        &quot;id&quot;: &quot;answerbank#TestRule&quot;,
+                        &quot;$schema&quot;: &quot;http://json-schema.org/draft-04/schema#&quot;,
+                        &quot;title&quot;: &quot;Test Rule - Questions for Testing&quot;,
+                        &quot;description&quot;: &quot;Questions that can be tested against a rule for matching&quot;,
+                        &quot;type&quot;: &quot;object&quot;,
+                        &quot;properties&quot;: {
+                        &quot;text&quot;: {
+                        &quot;type&quot;: &quot;array&quot;,
+                        &quot;description&quot;: &quot;Array of questions to test against the supplied rule&quot;,
+                        &quot;items&quot;: {
+                        &quot;type&quot;: &quot;string&quot;
+                        }
+                        }
+                        },
+                        &quot;additionalProperties&quot;: false,
+                        &quot;required&quot;: [&quot;text&quot;]
+                        }
 
                     </schema>
                 </schemaInfo>

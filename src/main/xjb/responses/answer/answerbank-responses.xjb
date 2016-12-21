@@ -38,7 +38,7 @@
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
         </bindings>
         <bindings node="//xs:complexType[@name='qec_answer']//xs:element[@name='metadata']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(MetadataMapAdapter.class)</annox:annotate>
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QecMetadataMapAdapter.class)</annox:annotate>
             <property>
                 <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
             </property>
@@ -46,6 +46,28 @@
         <bindings node="//xs:element[@name='question_ids']">
             <annox:annotate target="field">@lombok.Singular</annox:annotate>
             <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionIdsAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
+            </property>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../../xsds/responses/answer/getStatus.xsd">
+        <bindings node="//xs:complexType[@name='system']//xs:element[@name='info']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(GetStatusMetadataMapAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
+            </property>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../../xsds/responses/answer/testRule.xsd">
+        <bindings node="//xs:complexType[@name='test_rule_outcome']//xs:element[@name='matched']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionSetAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
+            </property>
+        </bindings>
+        <bindings node="//xs:complexType[@name='test_rule_outcome']//xs:element[@name='not_matched']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionSetAdapter.class)</annox:annotate>
             <property>
                 <baseType name="java.util.List&lt;java.lang.String&gt;"/>
             </property>

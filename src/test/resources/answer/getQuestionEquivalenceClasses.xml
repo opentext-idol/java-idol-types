@@ -5,38 +5,196 @@
     <responsedata>
         <resource>
             <question_equivalence_classes>
-                <total_resources>2</total_resources>
+                <total_resources>100</total_resources>
+                <usage_period_start>2016-12-12T17:40:07Z</usage_period_start>
+                <usage_period_end>2016-12-19T17:40:07Z</usage_period_end>
                 <question_equivalence_class>
-                    <id>14617008575454574537</id>
-                    <created_time>2016-12-01T16:21:36Z</created_time>
-                    <modified_time>2016-12-01T16:21:36Z</modified_time>
-                    <rule/>
-                    <state>Incoming</state>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
+                    <id>2227728875941233948</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>where NEAR cruel NEAR pirate NEAR plunder NEAR unfailingly?</rule>
+                    <state>Published</state>
+                    <reference_question>where cruel pirate plunder unfailingly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>11095724704152921716</question_id>
+                    </question_ids>
                     <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                        <text>db034a64-2734-4941-8ecf-516ae750154b</text>
                         <metadata>
-                            <field key="CREATED_BY" value="TestUser"/>
-                            <field key="LAST_MODIFIED_BY" value="TestUser"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>7554575378891999623</id>
-                    <created_time>2016-12-01T16:21:23Z</created_time>
-                    <modified_time>2016-12-01T16:21:29Z</modified_time>
-                    <rule/>
-                    <state>Incoming</state>
-                    <reference_question>What are graphics cards (GPUs)?</reference_question>
-                    <question_ids/>
+                    <id>7358328253837423551</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>whom NEAR hostile NEAR coast NEAR pistol NEAR tenderly?</rule>
+                    <state>Published</state>
+                    <reference_question>whom hostile coast pistol tenderly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>3052575247935517149</question_id>
+                    </question_ids>
                     <answer>
-                        <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars....
-                        </text>
+                        <text>d100b014-0583-4459-868e-1f2aae61221c</text>
                         <metadata>
-                            <field key="CREATED_BY" value="TestUser"/>
-                            <field key="LAST_MODIFIED_BY" value="TestUser"/>
-                            <field key="TESTING" value="testing"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>8199603104490348336</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>whom NEAR notorious NEAR malaria NEAR loot NEAR humorously?</rule>
+                    <state>Published</state>
+                    <reference_question>whom notorious malaria loot humorously?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>8077186524243954788</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>aa1bb970-399d-4c53-8274-a1e505f819a0</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>250481157601551892</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>how NEAR bad NEAR X NEAR marks NEAR the NEAR spot NEAR sail NEAR exactly?</rule>
+                    <state>Published</state>
+                    <reference_question>how bad X marks the spot sail exactly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>15360569209024931166</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>6517e00c-a09b-43af-b29e-658e4748d110</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>15227684208386169617</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>how NEAR cruel NEAR scar NEAR walk NEAR the NEAR plank NEAR woefully?</rule>
+                    <state>Published</state>
+                    <reference_question>how cruel scar walk the plank woefully?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>773896595302337773</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>bebaa261-0bb5-42b4-b959-116fa046b05d</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>16700305231952843122</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>where NEAR lawless NEAR brawl NEAR fight NEAR helpfully?</rule>
+                    <state>Published</state>
+                    <reference_question>where lawless brawl fight helpfully?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>18381639151481383475</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>2e747c50-4c58-4c9f-b89f-3b88997dfb6e</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>14508445118130427614</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>where NEAR vile NEAR greed NEAR walk NEAR the NEAR plank NEAR around?</rule>
+                    <state>Published</state>
+                    <reference_question>where vile greed walk the plank around?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>2220474602948678529</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>88d40248-2882-40b5-b58a-6201d6c480fc</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>9511474456479322622</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>whom NEAR bad NEAR hook NEAR ransack NEAR candidly?</rule>
+                    <state>Published</state>
+                    <reference_question>whom bad hook ransack candidly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>8895102134901492725</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>188c5b88-68f0-4c4a-af1a-c01013bff47f</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>17644040338812118886</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>whose NEAR ruthless NEAR criminal NEAR fear NEAR briskly?</rule>
+                    <state>Published</state>
+                    <reference_question>whose ruthless criminal fear briskly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>8997999863683301362</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>7ecabeb7-0335-4756-b8d5-f6174120aa95</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>5283426144539175909</id>
+                    <created_time>2016-12-19T17:09:29Z</created_time>
+                    <modified_time>2016-12-19T17:09:29Z</modified_time>
+                    <rule>who NEAR criminal NEAR quest NEAR capsize NEAR securely?</rule>
+                    <state>Published</state>
+                    <reference_question>who criminal quest capsize securely?</reference_question>
+                    <usage_count>0</usage_count>
+                    <question_ids>
+                        <question_id>2592551296944997315</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>501175dd-bb81-4f72-9d39-00f0ca18a56c</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>

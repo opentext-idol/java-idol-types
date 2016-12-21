@@ -6,16 +6,19 @@
         <answers>
             <answer answerType="Simple" systemName="answerbank0">
                 <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                <score>0.0</score>
                 <interpretation>What are graphics cards (GPUs)?</interpretation>
                 <source/>
             </answer>
             <answer answerType="Simple" systemName="answerbank0">
                 <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars.</text>
+                <score>0.0</score>
                 <interpretation>What are graphics cards (GPUs)?</interpretation>
                 <source/>
             </answer>
             <answer answerType="Simple" systemName="answerbank0">
                 <text>Graphics cards (or GPUs - graphical processing units) are mammals native to Mars....</text>
+                <score>0.0</score>
                 <interpretation>What are graphics cards (GPUs)?</interpretation>
                 <source/>
             </answer>
