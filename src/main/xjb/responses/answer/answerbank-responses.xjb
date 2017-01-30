@@ -38,6 +38,13 @@
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
         </bindings>
+        <bindings node="//xs:complexType[@name='qec_rule']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
         <bindings node="//xs:complexType[@name='qec_answer']//xs:element[@name='metadata']">
             <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QecMetadataMapAdapter.class)</annox:annotate>
             <property>

@@ -10,6 +10,7 @@
             <xs:element name="modified_time" type="xs:dateTime"/>
             <xs:element name="text" type="NonEmptyString"/>
             <xs:element name="state" type="question_state"/>
+            <xs:element name="answer_likelihood_score" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
             <xs:element name="question_equivalence_class_id" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
@@ -18,6 +19,15 @@
             <xs:element name="total_resources" type="xs:int"/>
             <xs:element name="question" minOccurs="0" maxOccurs="unbounded" type="question"/>
         </xs:sequence>
+    </xs:complexType>
+
+    <!-- Question equivalence class and answer resources -->
+    <xs:complexType name="qec_rule">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="fieldtext" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
     </xs:complexType>
 
     <!-- Question equivalence class and answer resources -->
@@ -37,7 +47,7 @@
             <xs:element name="id" type="NonEmptyString"/>
             <xs:element name="created_time" type="xs:dateTime"/>
             <xs:element name="modified_time" type="xs:dateTime"/>
-            <xs:element name="rule" type="xs:string"/>
+            <xs:element name="rule" type="qec_rule"/>
             <xs:element name="state" type="question_equivalence_class_state"/>
             <xs:element name="reference_question" type="NonEmptyString"/>
             <xs:element name="usage_count" type="xs:int"/>

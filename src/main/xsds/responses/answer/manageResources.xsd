@@ -4,6 +4,7 @@
     <xs:simpleType name="operationType" final="restriction">
         <xs:restriction base="xs:string">
             <xs:enumeration value="add"/>
+            <xs:enumeration value="amend"/>
             <xs:enumeration value="update"/>
             <xs:enumeration value="delete"/>
             <xs:enumeration value="undelete"/>
@@ -34,7 +35,7 @@
             <xs:element name="managed_resources" type="ManagedResources" maxOccurs="unbounded"/>
             <xs:element name="operation" type="operationType"/>
             <xs:element name="type" type="resourceType"/>
-            <xs:element name="job_token" type="NonEmptyString" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="job_token" type="NonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="manageResources_responsedata">
