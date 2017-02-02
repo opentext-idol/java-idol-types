@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <autnresponse>
-    <action>GETSTATS</action>
+    <action>GET_STATS</action>
     <response>SUCCESS</response>
     <responsedata>
         <stats>
             <question_states>
-                <stat count="36" state="Incoming"/>
-                <stat count="6" state="Answerable"/>
-                <stat count="0" state="NeedsAnswer"/>
-                <stat count="0" state="Answered"/>
-                <stat count="8" state="Rejected"/>
+                <stat count="171" state="incoming"/>
+                <stat count="85" state="answerable"/>
+                <stat count="106" state="needs_answer"/>
+                <stat count="106" state="answered"/>
+                <stat count="24" state="rejected"/>
             </question_states>
             <question_equivalence_class_states>
-                <stat count="1222" state="Incoming"/>
-                <stat count="95" state="Published"/>
+                <stat count="109" state="incoming"/>
+                <stat count="119" state="published"/>
             </question_equivalence_class_states>
         </stats>
     </responsedata>

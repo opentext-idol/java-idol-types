@@ -4,7 +4,7 @@
     <response>SUCCESS</response>
     <responsedata>
         <answers>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>46814237</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -21,7 +21,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>47444751</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -38,7 +38,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>48119649</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -55,7 +55,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>48803680</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -72,7 +72,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>49449403</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -89,7 +89,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>50023774</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -106,7 +106,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>50508717</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -123,7 +123,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>50915456</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -140,7 +140,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>51276054</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -157,7 +157,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>51638260</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -174,7 +174,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>52035095</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -191,7 +191,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>52480421</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -208,7 +208,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>52959228</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -225,7 +225,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>53441264</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -242,7 +242,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>53882416</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -259,7 +259,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>54252574</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -276,7 +276,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>54541493</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -293,7 +293,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>54764462</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -310,7 +310,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>54947975</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -327,7 +327,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>55130594</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -344,7 +344,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>55340782</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -361,7 +361,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>55585824</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -378,7 +378,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>55858727</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -395,7 +395,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>56156284</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -412,7 +412,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>56470769</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -429,7 +429,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>56795686</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -446,7 +446,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>57132691</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -463,7 +463,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>57482591</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -480,7 +480,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>57836486</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -497,7 +497,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>58182702</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -514,7 +514,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>58512808</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -531,7 +531,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>58559312</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -548,7 +548,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>58851216</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -565,7 +565,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>59106766</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -582,7 +582,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>59327194</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -599,7 +599,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>59541900</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -616,7 +616,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>59753098</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -633,7 +633,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>59964845</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -650,7 +650,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>60186291</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -667,7 +667,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>60496715</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -684,7 +684,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>60912498</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -701,7 +701,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>61357431</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -718,7 +718,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>61805267</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -735,7 +735,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>62244884</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -752,7 +752,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>62704897</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -769,7 +769,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>63179356</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -786,7 +786,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>63621376</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -803,7 +803,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>64016229</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -820,7 +820,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>64374990</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -837,7 +837,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>64707044</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -854,7 +854,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>65027512</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -871,7 +871,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>65342776</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -888,7 +888,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>65659790</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -905,7 +905,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>65972097</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -922,7 +922,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>66495940</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>
@@ -939,7 +939,7 @@
                     </fact>
                 </metadata>
             </answer>
-            <answer answerType="FactBank" systemName="factbank0">
+            <answer answer_type="FactBank" system_name="factbank0">
                 <text>66808385</text>
                 <score>0.0</score>
                 <interpretation>What is the &apos;population&apos; of &apos;france&apos;?</interpretation>

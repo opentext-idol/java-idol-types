@@ -14,8 +14,8 @@
             <xs:element name="source" type="xs:string"/>
             <xs:element name="metadata" type="ask_metadata" minOccurs="0"/>
         </xs:sequence>
-        <xs:attribute name="answerType" type="xs:string"/>
-        <xs:attribute name="systemName" type="xs:string"/>
+        <xs:attribute name="answer_type" type="xs:string"/>
+        <xs:attribute name="system_name" type="xs:string"/>
     </xs:complexType>
     <xs:complexType name="ask_answers">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">

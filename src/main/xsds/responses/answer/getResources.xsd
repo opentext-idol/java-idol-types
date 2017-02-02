@@ -5,11 +5,12 @@
     <!-- Question resources -->
     <xs:complexType name="question">
         <xs:sequence>
-            <xs:element name="id" type="NonEmptyString"/>
+            <xs:element name="id" type="nonempty_string"/>
             <xs:element name="created_time" type="xs:dateTime"/>
             <xs:element name="modified_time" type="xs:dateTime"/>
-            <xs:element name="text" type="NonEmptyString"/>
+            <xs:element name="text" type="nonempty_string"/>
             <xs:element name="state" type="question_state"/>
+            <xs:element name="answer_likelihood_score" minOccurs="0" maxOccurs="1" type="xs:decimal"/>
             <xs:element name="question_equivalence_class_id" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
@@ -21,9 +22,16 @@
     </xs:complexType>
 
     <!-- Question equivalence class and answer resources -->
+    <xs:complexType name="qec_rule">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="fieldtext" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:complexType name="question_ids">
         <xs:sequence>
-            <xs:element name="question_id" minOccurs="0" maxOccurs="unbounded" type="NonEmptyString"/>
+            <xs:element name="question_id" minOccurs="0" maxOccurs="unbounded" type="nonempty_string"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="qec_answer">
@@ -34,12 +42,12 @@
     </xs:complexType>
     <xs:complexType name="question_equivalence_class">
         <xs:sequence>
-            <xs:element name="id" type="NonEmptyString"/>
+            <xs:element name="id" type="nonempty_string"/>
             <xs:element name="created_time" type="xs:dateTime"/>
             <xs:element name="modified_time" type="xs:dateTime"/>
-            <xs:element name="rule" type="xs:string"/>
+            <xs:element name="rule" type="qec_rule"/>
             <xs:element name="state" type="question_equivalence_class_state"/>
-            <xs:element name="reference_question" type="NonEmptyString"/>
+            <xs:element name="reference_question" type="nonempty_string"/>
             <xs:element name="usage_count" type="xs:int"/>
             <xs:element name="question_ids" type="question_ids"/>
             <xs:element name="answer" type="qec_answer"/>
@@ -61,29 +69,29 @@
     </xs:simpleType>
 
     <!-- Schema resources -->
-    <xs:complexType name="schemaInfo">
+    <xs:complexType name="schema_info">
         <xs:sequence>
-            <xs:element name="action" type="NonEmptyString"/>
-            <xs:element name="type" type="NonEmptyString"/>
-            <xs:element name="schema" type="NonEmptyString"/>
+            <xs:element name="action" type="nonempty_string"/>
+            <xs:element name="type" type="nonempty_string"/>
+            <xs:element name="schema" type="nonempty_string"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="schemas">
         <xs:sequence>
-            <xs:element name="schemaInfo" minOccurs="0" maxOccurs="unbounded" type="schemaInfo"/>
+            <xs:element name="schema_info" minOccurs="0" maxOccurs="unbounded" type="schema_info"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="actionXsd">
+    <xs:complexType name="action_xsd">
         <xs:sequence>
-            <xs:element name="action" type="NonEmptyString"/>
-            <xs:element name="xsd" type="NonEmptyString"/>
+            <xs:element name="action" type="nonempty_string"/>
+            <xs:element name="xsd" type="nonempty_string"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="xsds">
         <xs:sequence>
-            <xs:element name="baseXsd" type="NonEmptyString"/>
-            <xs:element name="sharedXsd" type="NonEmptyString"/>
-            <xs:element name="actionXsd" minOccurs="0" maxOccurs="unbounded" type="actionXsd"/>
+            <xs:element name="base_xsd" type="nonempty_string"/>
+            <xs:element name="shared_xsd" type="nonempty_string"/>
+            <xs:element name="action_xsd" minOccurs="0" maxOccurs="unbounded" type="action_xsd"/>
         </xs:sequence>
     </xs:complexType>
 

@@ -3,7 +3,7 @@
     <xs:include schemaLocation="sharedXsd.xsd"/>
     <xs:complexType name="question_set">
         <xs:sequence minOccurs="0" maxOccurs="unbounded">
-            <xs:element name="text" type="NonEmptyString"/>
+            <xs:element name="text" type="nonempty_string"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="test_rule_outcome">

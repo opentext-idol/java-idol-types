@@ -1,90 +1,100 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <autnresponse>
-    <action>GETRESOURCES</action>
+    <action>GET_RESOURCES</action>
     <response>SUCCESS</response>
     <responsedata>
         <resource>
             <questions>
-                <total_resources>100</total_resources>
+                <total_resources>492</total_resources>
                 <question>
-                    <id>11095724704152921716</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>where cruel pirate plunder unfailingly?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>2227728875941233948</question_equivalence_class_id>
+                    <id>9769836950788946830</id>
+                    <created_time>2017-01-06T11:36:36Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>Cá bhfuil Corcaigh ?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>55.64</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>3052575247935517149</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>whom hostile coast pistol tenderly?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>7358328253837423551</question_equivalence_class_id>
+                    <id>9196233507014482636</id>
+                    <created_time>2017-01-27T16:52:36Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What are GPUs?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>61.94</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>8077186524243954788</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>whom notorious malaria loot humorously?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>8199603104490348336</question_equivalence_class_id>
+                    <id>8971682737714230002</id>
+                    <created_time>2017-01-30T10:43:27Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What are GPUs?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>61.94</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>15360569209024931166</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>how bad X marks the spot sail exactly?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>250481157601551892</question_equivalence_class_id>
+                    <id>8272036618056963168</id>
+                    <created_time>2017-01-10T12:16:24Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>Tell me, do you know the Muffin Man?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>76.62</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>773896595302337773</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>how cruel scar walk the plank woefully?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>15227684208386169617</question_equivalence_class_id>
+                    <id>7779769122489267984</id>
+                    <created_time>2017-01-10T12:18:55Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>Why are chocolate milkshakes so good?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>48.26</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>18381639151481383475</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>where lawless brawl fight helpfully?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>16700305231952843122</question_equivalence_class_id>
+                    <id>7413902824545417280</id>
+                    <created_time>2017-01-30T10:49:38Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What is a graphics card?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>64.45</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>2220474602948678529</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>where vile greed walk the plank around?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>14508445118130427614</question_equivalence_class_id>
+                    <id>5825834094937025379</id>
+                    <created_time>2017-01-30T10:48:37Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>027d0fd8-46ea-4bb9-aec0-e83ec936cf1b</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>0.00</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>8895102134901492725</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>whom bad hook ransack candidly?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>9511474456479322622</question_equivalence_class_id>
+                    <id>3141437044737813481</id>
+                    <created_time>2017-01-30T10:49:26Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What makes a good deipnosophist?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>42.02</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>8997999863683301362</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>whose ruthless criminal fear briskly?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>17644040338812118886</question_equivalence_class_id>
+                    <id>2999703065149074223</id>
+                    <created_time>2017-01-30T10:49:07Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What is a graphics card?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>64.45</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
                 <question>
-                    <id>2592551296944997315</id>
-                    <created_time>2016-12-19T17:09:18Z</created_time>
-                    <modified_time>2016-12-19T17:09:29Z</modified_time>
-                    <text>who criminal quest capsize securely?</text>
-                    <state>Answered</state>
-                    <question_equivalence_class_id>5283426144539175909</question_equivalence_class_id>
+                    <id>16138246039718189522</id>
+                    <created_time>2017-01-30T10:49:50Z</created_time>
+                    <modified_time>2017-01-30T11:25:00Z</modified_time>
+                    <text>What is a graphics card?</text>
+                    <state>incoming</state>
+                    <answer_likelihood_score>64.45</answer_likelihood_score>
+                    <question_equivalence_class_id/>
                 </question>
             </questions>
         </resource>

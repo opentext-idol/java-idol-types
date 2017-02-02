@@ -5,11 +5,11 @@
     <responsedata>
         <job>
             <token>7</token>
-            <status>Finished</status>
+            <status>finished</status>
         </job>
         <job>
             <token>8</token>
-            <status>Finished</status>
+            <status>finished</status>
         </job>
     </responsedata>
 </autnresponse>
