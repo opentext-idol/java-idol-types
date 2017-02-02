@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:include schemaLocation="sharedXsd.xsd"/>
-    <xs:simpleType name="operationType" final="restriction">
+    <xs:simpleType name="operation_type" final="restriction">
         <xs:restriction base="xs:string">
             <xs:enumeration value="add"/>
             <xs:enumeration value="amend"/>
@@ -10,20 +10,20 @@
             <xs:enumeration value="undelete"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:simpleType name="resourceType" final="restriction">
+    <xs:simpleType name="resource_type" final="restriction">
         <xs:restriction base="xs:string">
             <xs:enumeration value="question"/>
             <xs:enumeration value="question_equivalence_class"/>
         </xs:restriction>
     </xs:simpleType>
-    <xs:complexType name="ManagedResources">
+    <xs:complexType name="managed_resources">
         <xs:sequence>
-            <xs:element name="type" type="resourceType"/>
-            <xs:element name="operation" type="operationType"/>
-            <xs:element name="id" type="NonEmptyString" maxOccurs="unbounded"/>
+            <xs:element name="type" type="resource_type"/>
+            <xs:element name="operation" type="operation_type"/>
+            <xs:element name="id" type="nonempty_string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="ManagementResult">
+    <xs:complexType name="management_result">
         <xs:annotation>
             <xs:documentation>"managed_resources" is a list of ManagedResources instances describing what was done to
                 each resource "operation" is the operation that will be completed on the resources. "type" is the type
@@ -32,15 +32,15 @@
             </xs:documentation>
         </xs:annotation>
         <xs:sequence>
-            <xs:element name="managed_resources" type="ManagedResources" maxOccurs="unbounded"/>
-            <xs:element name="operation" type="operationType"/>
-            <xs:element name="type" type="resourceType"/>
-            <xs:element name="job_token" type="NonEmptyString" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="managed_resources" type="managed_resources" maxOccurs="unbounded"/>
+            <xs:element name="operation" type="operation_type"/>
+            <xs:element name="type" type="resource_type"/>
+            <xs:element name="job_token" type="nonempty_string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
     <xs:complexType name="manageResources_responsedata">
         <xs:sequence>
-            <xs:element name="result" type="ManagementResult" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="result" type="management_result" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 </xs:schema>

@@ -5,7 +5,7 @@
     <responsedata>
         <product>answerserver</product>
         <version>11.3.0</version>
-        <build>1285049</build>
+        <build>1287728</build>
         <aciport>7000</aciport>
         <serviceport>7002</serviceport>
         <directory>C:\test\dg\AUTOTEST_AnswerServer_7000</directory>

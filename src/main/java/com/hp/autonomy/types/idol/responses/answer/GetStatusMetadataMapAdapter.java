@@ -11,22 +11,22 @@ import java.util.List;
 import java.util.Map;
 
 @SuppressWarnings("WeakerAccess")
-public class GetStatusMetadataMapAdapter extends XmlAdapter<GetstatusMetadata, Map<String, String>> {
+public class GetStatusMetadataMapAdapter extends XmlAdapter<SystemMetadata, Map<String, String>> {
     @Override
-    public Map<String, String> unmarshal(final GetstatusMetadata metadata) {
+    public Map<String, String> unmarshal(final SystemMetadata metadata) {
         final Map<String, String> metadataMap = new LinkedHashMap<>();
         metadata.getField().forEach(field -> metadataMap.put(field.getKey(), field.getValue()));
         return metadataMap;
     }
 
     @Override
-    public GetstatusMetadata marshal(final Map<String, String> metadataMap) {
-        GetstatusMetadata metadata = null;
+    public SystemMetadata marshal(final Map<String, String> metadataMap) {
+        SystemMetadata metadata = null;
         if (metadataMap != null) {
-            metadata = new GetstatusMetadata();
-            final List<GetstatusMetadata.Field> fields = metadata.getField();
+            metadata = new SystemMetadata();
+            final List<SystemMetadata.Field> fields = metadata.getField();
             metadataMap.entrySet().forEach(entry -> {
-                final GetstatusMetadata.Field field = new GetstatusMetadata.Field();
+                final SystemMetadata.Field field = new SystemMetadata.Field();
                 field.setKey(entry.getKey());
                 field.setValue(entry.getValue());
                 fields.add(field);
