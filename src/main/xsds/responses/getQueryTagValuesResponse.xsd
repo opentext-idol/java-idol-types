@@ -56,7 +56,7 @@
             <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:recursiveField"/>
             <xs:element name="value_details" minOccurs="0" type="autn:valueDetails"/>
         </xs:sequence>
-        <xs:attribute name="count" type="xs:string"/>
+        <xs:attribute name="count" type="xs:int"/>
         <xs:attribute name="date" type="xs:string"/>
         <xs:attribute name="date_with_offset" type="xs:string"/>
         <xs:attribute name="value" type="xs:string"/>
