@@ -122,6 +122,13 @@
         <bindings node="xs:complexType[@name='getQueryTagValuesResponseData']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
+        <bindings node="//xs:complexType[@name='recursiveField']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/getSampleResponse.xsd">
         <bindings node="xs:complexType[@name='getSampleResponseData']">
