@@ -22,8 +22,21 @@
             <xs:element name="answer" type="ask_answer"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="ask_warning">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="system_name" type="xs:string"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+    <xs:complexType name="ask_warnings">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="warning" type="ask_warning"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="ask_responsedata">
         <xs:sequence>
+            <xs:element name="warnings" type="ask_warnings" minOccurs="0"/>
             <xs:element name="answers" type="ask_answers" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
