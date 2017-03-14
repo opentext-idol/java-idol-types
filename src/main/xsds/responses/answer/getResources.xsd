@@ -49,6 +49,7 @@
             <xs:element name="state" type="question_equivalence_class_state"/>
             <xs:element name="reference_question" type="nonempty_string"/>
             <xs:element name="usage_count" type="xs:int"/>
+            <xs:element name="incongruity_count" type="xs:int"/>
             <xs:element name="question_ids" type="question_ids"/>
             <xs:element name="answer" type="qec_answer"/>
         </xs:sequence>

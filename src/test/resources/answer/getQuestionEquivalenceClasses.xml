@@ -1,24 +1,47 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <autnresponse>
-    <action>GET_RESOURCES</action>
+    <action>GETRESOURCES</action>
     <response>SUCCESS</response>
     <responsedata>
         <resource>
             <question_equivalence_classes>
-                <total_resources>228</total_resources>
-                <usage_period_start>2017-01-23T12:03:05Z</usage_period_start>
-                <usage_period_end>2017-01-30T12:03:05Z</usage_period_end>
+                <total_resources>201</total_resources>
+                <usage_period_start>1970-01-01T00:00:00Z</usage_period_start>
+                <usage_period_end>2017-03-13T12:26:37Z</usage_period_end>
                 <question_equivalence_class>
-                    <id>15929731836451558924</id>
-                    <created_time>2017-01-27T16:52:52Z</created_time>
-                    <modified_time>2017-01-27T16:52:52Z</modified_time>
-                    <rule/>
-                    <state>incoming</state>
-                    <reference_question>null</reference_question>
+                    <id>4977337619124267953</id>
+                    <created_time>2017-02-16T19:20:34Z</created_time>
+                    <modified_time>2017-02-16T19:20:34Z</modified_time>
+                    <rule>Stuff OR Things</rule>
+                    <state>published</state>
+                    <reference_question>Cá bhfuil Corcaigh ?</reference_question>
                     <usage_count>0</usage_count>
-                    <question_ids/>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>524674450115995685</question_id>
+                    </question_ids>
                     <answer>
-                        <text>null</text>
+                        <text>42 Obviously!</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="selenium"/>
+                            <field key="LAST_MODIFIED_BY" value="selenium"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>7917434978043892347</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>where NEAR cruel NEAR pirate NEAR plunder NEAR unfailingly?</rule>
+                    <state>published</state>
+                    <reference_question>where cruel pirate plunder unfailingly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>13545650675761049866</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>431d7029-7bd1-4c92-afb9-3409af8389be</text>
                         <metadata>
                             <field key="CREATED_BY" value="user"/>
                             <field key="LAST_MODIFIED_BY" value="user"/>
@@ -26,162 +49,162 @@
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>9617115203958807723</id>
-                    <created_time>2017-01-17T14:58:08Z</created_time>
-                    <modified_time>2017-01-17T14:58:08Z</modified_time>
-                    <rule>pirate</rule>
+                    <id>18125156901872090788</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>whom NEAR hostile NEAR coast NEAR pistol NEAR tenderly?</rule>
                     <state>published</state>
-                    <reference_question>Testing?</reference_question>
+                    <reference_question>whom hostile coast pistol tenderly?</reference_question>
                     <usage_count>0</usage_count>
-                    <question_ids/>
-                    <answer>
-                        <text>Testing</text>
-                        <metadata>
-                            <field key="CREATED_BY" value="ivo.miller"/>
-                            <field key="LAST_MODIFIED_BY" value="ivo.miller"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>8059656968793727500</id>
-                    <created_time>2017-01-09T18:29:19Z</created_time>
-                    <modified_time>2017-01-09T18:30:19Z</modified_time>
-                    <rule>whale AND speak</rule>
-                    <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
-                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
                     <question_ids>
-                        <question_id>16437831078021685788</question_id>
+                        <question_id>13671997124810765699</question_id>
                     </question_ids>
                     <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
+                        <text>f9bb3c87-35fa-4c1f-b562-b60b1e201f16</text>
                         <metadata>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>14518009193620511581</id>
-                    <created_time>2017-01-09T18:24:41Z</created_time>
-                    <modified_time>2017-01-09T18:25:43Z</modified_time>
-                    <rule>whale AND speak</rule>
+                    <id>8195992512938398761</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>whom NEAR notorious NEAR malaria NEAR loot NEAR humorously?</rule>
                     <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
+                    <reference_question>whom notorious malaria loot humorously?</reference_question>
                     <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
                     <question_ids>
-                        <question_id>15753924162566119431</question_id>
+                        <question_id>9670825862802151431</question_id>
                     </question_ids>
                     <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
+                        <text>8ab5aac4-37cd-4637-ad77-1bf998db5643</text>
                         <metadata>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>13506359293345257586</id>
-                    <created_time>2017-01-09T18:23:31Z</created_time>
-                    <modified_time>2017-01-09T18:23:31Z</modified_time>
-                    <rule>whale AND speak</rule>
+                    <id>10330617295540856158</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>how NEAR bad NEAR X NEAR marks NEAR the NEAR spot NEAR sail NEAR exactly?</rule>
                     <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
+                    <reference_question>how bad X marks the spot sail exactly?</reference_question>
                     <usage_count>0</usage_count>
-                    <question_ids/>
-                    <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
-                        <metadata>
-                            <field key="CREATED_BY" value="selenium"/>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>1154043018333347260</id>
-                    <created_time>2017-01-09T18:21:35Z</created_time>
-                    <modified_time>2017-01-09T18:21:35Z</modified_time>
-                    <rule>whale AND speak</rule>
-                    <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
-                    <usage_count>0</usage_count>
-                    <question_ids/>
-                    <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
-                        <metadata>
-                            <field key="CREATED_BY" value="selenium"/>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>14273437912124880155</id>
-                    <created_time>2017-01-09T18:17:40Z</created_time>
-                    <modified_time>2017-01-09T18:18:40Z</modified_time>
-                    <rule>whale AND speak</rule>
-                    <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
-                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
                     <question_ids>
-                        <question_id>12750890569227270215</question_id>
+                        <question_id>8783321165538438877</question_id>
                     </question_ids>
                     <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
+                        <text>3d3cc7cb-485e-4800-8d6e-71e70355cd0e</text>
                         <metadata>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>
                 <question_equivalence_class>
-                    <id>16474626712895322881</id>
-                    <created_time>2017-01-09T17:57:06Z</created_time>
-                    <modified_time>2017-01-09T17:57:06Z</modified_time>
-                    <rule>whale AND speak</rule>
+                    <id>7775780054729321</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>how NEAR cruel NEAR scar NEAR walk NEAR the NEAR plank NEAR woefully?</rule>
                     <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
+                    <reference_question>how cruel scar walk the plank woefully?</reference_question>
                     <usage_count>0</usage_count>
-                    <question_ids/>
-                    <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
-                        <metadata>
-                            <field key="CREATED_BY" value="selenium"/>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>5600593696903026684</id>
-                    <created_time>2017-01-09T17:44:19Z</created_time>
-                    <modified_time>2017-01-09T17:44:19Z</modified_time>
-                    <rule>whale AND speak</rule>
-                    <state>published</state>
-                    <reference_question>Do you speak whale?</reference_question>
-                    <usage_count>0</usage_count>
-                    <question_ids/>
-                    <answer>
-                        <text>Ooooooooooouuuuuuuiiiihhhhhhhhhheeeeeeiiiiiiiiuuuuuuuuuuu</text>
-                        <metadata>
-                            <field key="CREATED_BY" value="selenium"/>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
-                        </metadata>
-                    </answer>
-                </question_equivalence_class>
-                <question_equivalence_class>
-                    <id>7043035997580193533</id>
-                    <created_time>2017-01-06T11:37:41Z</created_time>
-                    <modified_time>2017-01-06T11:37:41Z</modified_time>
-                    <rule>(ca NEAR2 bhfuil NEAR2 corcaigh) OR (0a830648 NEAR2 73c6 NEAR2 4f97 NEAR2 943b NEAR2
-                        d7c5d7498ce8)
-                    </rule>
-                    <state>published</state>
-                    <reference_question>0a830648-73c6-4f97-943b-d7c5d7498ce8</reference_question>
-                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
                     <question_ids>
-                        <question_id>8270109612785169394</question_id>
+                        <question_id>4351370333018343366</question_id>
                     </question_ids>
                     <answer>
-                        <text>test</text>
+                        <text>f62c76aa-e643-4aa3-bc7e-628c45b2c417</text>
                         <metadata>
-                            <field key="CREATED_BY" value="selenium"/>
-                            <field key="LAST_MODIFIED_BY" value="selenium"/>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>5643121144010665006</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>where NEAR lawless NEAR brawl NEAR fight NEAR helpfully?</rule>
+                    <state>published</state>
+                    <reference_question>where lawless brawl fight helpfully?</reference_question>
+                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>10281676505296549568</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>6060e176-002b-4c2b-b4ad-492367fe9bc1</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>13991736635509288399</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>where NEAR vile NEAR greed NEAR walk NEAR the NEAR plank NEAR around?</rule>
+                    <state>published</state>
+                    <reference_question>where vile greed walk the plank around?</reference_question>
+                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>8873121398635109040</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>4ca19d8b-6f8c-4eef-bac1-321364d53297</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>5196558118814600503</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>whom NEAR bad NEAR hook NEAR ransack NEAR candidly?</rule>
+                    <state>published</state>
+                    <reference_question>whom bad hook ransack candidly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>11985107335851561576</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>b7df9928-e394-4b8c-a324-94b2a68fd28e</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
+                        </metadata>
+                    </answer>
+                </question_equivalence_class>
+                <question_equivalence_class>
+                    <id>16883299050318904074</id>
+                    <created_time>2017-02-16T11:30:19Z</created_time>
+                    <modified_time>2017-02-16T11:30:19Z</modified_time>
+                    <rule>whose NEAR ruthless NEAR criminal NEAR fear NEAR briskly?</rule>
+                    <state>published</state>
+                    <reference_question>whose ruthless criminal fear briskly?</reference_question>
+                    <usage_count>0</usage_count>
+                    <incongruity_count>0</incongruity_count>
+                    <question_ids>
+                        <question_id>8288470583920996257</question_id>
+                    </question_ids>
+                    <answer>
+                        <text>258804c0-68a3-4a95-8e73-2ca1a2c8ef92</text>
+                        <metadata>
+                            <field key="CREATED_BY" value="user"/>
+                            <field key="LAST_MODIFIED_BY" value="user"/>
                         </metadata>
                     </answer>
                 </question_equivalence_class>

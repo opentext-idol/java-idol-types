@@ -68,18 +68,4 @@
             </property>
         </bindings>
     </bindings>
-    <bindings schemaLocation="../../../xsds/responses/answer/testRule.xsd">
-        <bindings node="//xs:complexType[@name='test_rule_outcome']//xs:element[@name='matched']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionSetAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
-            </property>
-        </bindings>
-        <bindings node="//xs:complexType[@name='test_rule_outcome']//xs:element[@name='not_matched']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionSetAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
-            </property>
-        </bindings>
-    </bindings>
 </bindings>
