@@ -21,7 +21,7 @@
             <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printDate"/>
         </bindings>
         <bindings node="xs:simpleType[@name='queryResultDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseQueryResponseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printQueryResponseDate"/>
+            <javaType name="java.time.ZonedDateTime" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseQueryResponseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printQueryResponseDate"/>
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/autnResponse.xsd">

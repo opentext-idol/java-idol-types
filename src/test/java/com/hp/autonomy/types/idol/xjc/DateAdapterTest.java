@@ -5,11 +5,10 @@
 
 package com.hp.autonomy.types.idol.xjc;
 
-import com.hp.autonomy.types.idol.xjc.DateAdapter;
-import com.hp.autonomy.types.idol.xjc.IdolDateParsingException;
 import org.junit.Test;
 
 import java.text.ParseException;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
@@ -42,13 +41,8 @@ public class DateAdapterTest {
     @Test
     public void parseQueryResponseDate() throws ParseException {
         final String sampleDate = "14:42:52 19/02/2014";
-        final Date parsedDate = DateAdapter.parseQueryResponseDate(sampleDate);
+        final ZonedDateTime parsedDate = DateAdapter.parseQueryResponseDate(sampleDate);
         assertNotNull(parsedDate);
         assertEquals(sampleDate, DateAdapter.printQueryResponseDate(parsedDate));
-    }
-
-    @Test(expected = IdolDateParsingException.class)
-    public void badQueryResponseDate() {
-        DateAdapter.parseQueryResponseDate("20 Aou 15 16:49:50");
     }
 }
