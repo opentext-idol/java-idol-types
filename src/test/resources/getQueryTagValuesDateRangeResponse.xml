@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETQUERYTAGVALUES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:number_of_fields>1</autn:number_of_fields>
+        <autn:predicted>true</autn:predicted>
+        <autn:field>
+            <autn:name>autn_date</autn:name>
+            <autn:number_of_values>3</autn:number_of_values>
+            <autn:total_values>3</autn:total_values>
+            <autn:values>2325561</autn:values>
+            <autn:valuesum>3.341600432565698E15</autn:valuesum>
+            <autn:valueaverage date="19:06:27 14/07/2015">1.436900787E9</autn:valueaverage>
+            <autn:valuemin date="00:33:28 01/01/1970">2008.0</autn:valuemin>
+            <autn:valuemax date="16:36:24 25/04/2017">1.493138184E9</autn:valuemax>
+            <autn:valuepercentile date="13:36:52 14/07/2016" percentile="10">1.468503412E9</autn:valuepercentile>
+            <autn:valuepercentile date="14:18:23 14/07/2016" percentile="25">1.468505903E9</autn:valuepercentile>
+            <autn:valuepercentile date="13:32:54 29/03/2017" percentile="50">1.490794374E9</autn:valuepercentile>
+            <autn:valuepercentile date="13:34:11 29/03/2017" percentile="75">1.490794451E9</autn:valuepercentile>
+            <autn:valuepercentile date="13:37:46 29/03/2017" percentile="90">1.490794666E9</autn:valuepercentile>
+            <autn:value type="range" count="71269" date="before lower end of range">2684354560,1234567</autn:value>
+            <autn:value type="range" count="0" date="06:56:07 15/01/1970">1234567,1234599</autn:value>
+            <autn:value type="range" count="2254292" date="06:56:39 15/01/1970">1234599,</autn:value>
+        </autn:field>
+    </responsedata>
+</autnresponse>
