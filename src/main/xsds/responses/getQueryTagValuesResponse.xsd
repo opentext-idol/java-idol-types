@@ -37,6 +37,8 @@
                 <xs:attribute name="count" type="xs:int"/>
                 <xs:attribute name="date" type="xs:string"/>
                 <xs:attribute name="date_with_offset" type="xs:string"/>
+                <xs:attribute name="end_date" type="xs:string"/>
+                <xs:attribute name="end_date_with_offset" type="xs:string"/>
                 <xs:attribute name="type" type="xs:string"/>
             </xs:extension>
         </xs:simpleContent>
@@ -61,6 +63,8 @@
         <xs:attribute name="count" type="xs:int"/>
         <xs:attribute name="date" type="xs:string"/>
         <xs:attribute name="date_with_offset" type="xs:string"/>
+        <xs:attribute name="end_date" type="xs:string"/>
+        <xs:attribute name="end_date_with_offset" type="xs:string"/>
         <xs:attribute name="value" type="xs:string"/>
     </xs:complexType>
 
@@ -74,6 +78,7 @@
     <xs:complexType name="getQueryTagValuesResponseData">
         <xs:sequence>
             <xs:element name="number_of_fields" type="xs:integer"/>
+            <xs:element name="predicted" type="xs:boolean" minOccurs="0"/>
             <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:flatField"/>
             <xs:element name="values" minOccurs="0" type="autn:values"/>
             <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
@@ -86,6 +91,7 @@
             <xs:extension base="xs:double">
                 <!-- unfortunately has to be treated as a String as timezone dependent on DateOffset parameter and boundaries of acceptable date ranges have custom strings -->
                 <xs:attribute name="date" type="xs:string" use="optional"/>
+                <xs:attribute name="date_with_offset" type="xs:string" use="optional"/>
             </xs:extension>
         </xs:simpleContent>
     </xs:complexType>
@@ -95,6 +101,7 @@
             <xs:extension base="xs:double">
                 <!-- unfortunately has to be treated as a String as timezone dependent on DateOffset parameter and boundaries of acceptable date ranges have custom strings -->
                 <xs:attribute name="date" type="xs:string" use="optional"/>
+                <xs:attribute name="date_with_offset" type="xs:string" use="optional"/>
                 <xs:attribute name="percentile" type="xs:int" use="required"/>
             </xs:extension>
         </xs:simpleContent>
