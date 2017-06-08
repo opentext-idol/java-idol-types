@@ -1,0 +1,100 @@
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="autonomy::scheduler"
+           xmlns:scheduler="autonomy::scheduler"
+           targetNamespace="autonomy::scheduler"
+           blockDefault=""
+           finalDefault=""
+           id="TYPES">
+
+    <xs:complexType name="Param">
+        <xs:attribute name="name" type="xs:string" use="required" />
+        <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <xs:simpleType name="actionType">
+        <!-- Can't use this as codegen doesn't appear to make ResponseValue classes for simpleTypes...? -->
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="aciAction"/>
+            <xs:enumeration value="indexAction"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="ScheduleAction">
+        <xs:sequence>
+            <xs:element name="params" type="Param" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+        <xs:attribute name="firstparam" type="xs:string" use="optional" />
+        <xs:attribute name="type" type="actionType" use="optional" default="aciAction"/>
+        <xs:attribute name="host" type="xs:string" use="required" />
+        <xs:attribute name="port" type="xs:nonNegativeInteger" use="required" />
+        <xs:attribute name="action" type="xs:string" use="required" />
+        <xs:attribute name="sslSection" type="xs:string" use="optional" />
+    </xs:complexType>
+
+    <xs:complexType name="TimedScheduleInfo">
+        <xs:sequence>
+            <xs:element name="start" type="xs:string" />
+            <xs:element name="end" type="xs:string" />
+            <xs:element name="interval" type="xs:string" />
+            <xs:element name="count" type="xs:int" default="0" />
+            <xs:element name="paused" type="xs:boolean" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ScheduleInfoAction">
+        <xs:sequence>
+            <xs:element name="host" type="xs:string" />
+            <xs:element name="port" type="xs:int" />
+            <xs:element name="type" type="xs:string" />
+            <xs:element name="command" type="xs:string" />
+            <xs:element name="fullcommand" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ScheduleInfo">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="paused" type="xs:boolean" />
+            <xs:element name="start" type="xs:string" />
+            <xs:element name="end" type="xs:string" />
+            <xs:element name="interval" type="xs:string" />
+            <xs:element name="next" type="xs:string" />
+            <xs:element name="count" type="xs:int" />
+            <xs:element name="action" type="ScheduleInfoAction" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Schedules">
+        <xs:sequence>
+            <xs:element name="schedule" type="ScheduleInfo" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="RunResponse">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Run">
+        <xs:sequence>
+            <xs:element name="response" type="RunResponse" />
+        </xs:sequence>
+        <xs:attribute name="schedule" type="xs:string" />
+        <xs:attribute name="start" type="xs:string" />
+        <xs:attribute name="end" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="Runs">
+        <xs:sequence>
+            <xs:element name="run" type="Run" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+
+        <xs:attribute name="total" type="xs:nonNegativeInteger" use="required" />
+    </xs:complexType>
+</xs:schema>

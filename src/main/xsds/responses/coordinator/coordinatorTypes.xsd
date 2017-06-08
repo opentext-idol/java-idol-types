@@ -1,0 +1,127 @@
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="autonomy::servicecontrol::coordinator"
+           xmlns:coordinator="autonomy::servicecontrol::coordinator"
+           xmlns:schedulerlib="autonomy::scheduler"
+           targetNamespace="autonomy::servicecontrol::coordinator"
+           blockDefault=""
+           finalDefault="">
+
+    <xs:import schemaLocation="schedulerTypes.xsd" namespace="autonomy::scheduler"/>
+
+    <xs:complexType name="ResponseController">
+        <xs:attribute name="uuid"          type="xs:string" />
+        <xs:attribute name="hostName"      type="xs:string" />
+        <xs:attribute name="ip"            type="xs:string" />
+        <xs:attribute name="port"          type="xs:int"    />
+        <xs:attribute name="indexport"     type="xs:int"    />
+        <xs:attribute name="name"          type="xs:string" />
+        <xs:attribute name="registered"    type="xs:boolean"/>
+        <xs:attribute name="connectByHostName" type="xs:boolean"/>
+        <xs:attribute name="lastResponded" type="xs:int"    />
+        <xs:attribute name="connectionStatus" type="xs:string" />
+        <xs:attribute name="useSSL" type="xs:boolean" />
+    </xs:complexType>
+
+    <xs:complexType name="ResponseService">
+        <xs:attribute name="port"           type="xs:int"    />
+        <xs:attribute name="indexPort"      type="xs:int"    />
+        <xs:attribute name="servicePort"    type="xs:int"    />
+        <xs:attribute name="registered"     type="xs:boolean"/>
+        <xs:attribute name="controlMethod"  type="xs:string" />
+        <xs:attribute name="state"          type="xs:string" />
+        <xs:attribute name="productType"    type="xs:string" />
+        <xs:attribute name="scmServiceName" type="xs:string" />
+        <xs:attribute name="execPath"       type="xs:string" />
+        <xs:attribute name="initScriptPath" type="xs:string" />
+        <xs:attribute name="workingDir"     type="xs:string" />
+        <xs:attribute name="configPath"     type="xs:string" />
+        <xs:attribute name="name"           type="xs:string" />
+        <xs:attribute name="type"           type="xs:string" />
+        <xs:attribute name="labels"         type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="ControllerServices">
+        <xs:sequence>
+            <xs:element name="uuid" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="service" type="ResponseService" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ResponseMeterGroup">
+        <xs:sequence>
+            <xs:any minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ControllerMeters">
+        <xs:sequence>
+            <xs:element name="uuid" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="meterGroup" type="ResponseMeterGroup" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LuaStatus">
+        <xs:attribute name="type"      type="xs:string" />
+        <xs:attribute name="id"        type="xs:string" />
+        <xs:attribute name="startTime" type="xs:int" />
+        <xs:attribute name="endTime"   type="xs:int" />
+        <xs:attribute name="message"   type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="LuaStatuses">
+        <xs:sequence>
+            <xs:element name="status"       type="LuaStatus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="LuaMonitor">
+        <xs:sequence>
+            <xs:element name="name"         type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="description"  type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="scriptName"   type="xs:string" minOccurs="0" maxOccurs="1" />
+            <xs:element name="lastStatus"   type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="errors"       type="xs:long"   minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="warnings"     type="xs:long"   minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="otherReports" type="xs:long"   minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="currentStatus" type="LuaStatuses" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="statusHistory" type="LuaStatuses" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ServiceLuaMonitors">
+        <xs:sequence>
+            <xs:element name="port"    type="xs:int"      minOccurs="0" maxOccurs="1" />
+            <xs:element name="name"    type="xs:string"   minOccurs="0" maxOccurs="1" />
+            <xs:element name="type"    type="xs:string"   minOccurs="0" maxOccurs="1" />
+            <xs:element name="labels"  type="xs:string"   minOccurs="0" maxOccurs="1" />
+            <xs:element name="state"   type="xs:string"   minOccurs="0" maxOccurs="1" />
+            <xs:element name="productType" type="xs:string"   minOccurs="0" maxOccurs="1" />
+            <xs:element name="monitor" type="LuaMonitor"  minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ControllerLuaMonitors">
+        <xs:sequence>
+            <xs:element name="uuid"     type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="hostName" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="ip"       type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="error"    type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="service"  type="ServiceLuaMonitors" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ControllerSchedules">
+        <xs:sequence>
+            <xs:element name="uuid" type="xs:string"  minOccurs="0" maxOccurs="1"/>
+            <xs:element name="error" type="xs:string" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="schedules" type="xs:int" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="schedule" type="schedulerlib:ScheduleInfo" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
