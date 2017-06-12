@@ -23,7 +23,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-class ProcessorFactoryImpl implements ProcessorFactory {
+public class ProcessorFactoryImpl implements ProcessorFactory {
     private final MarshallerFactory marshallerFactory;
     private final ResponseParser responseParser;
 
@@ -31,7 +31,8 @@ class ProcessorFactoryImpl implements ProcessorFactory {
     private final Map<QueryResponseCacheKey<?, ?>, ResponseDataParser<?>> queryResponseDataMarshallerMap = new ConcurrentHashMap<>();
     private final Map<Class<?>, DocumentGenerator<?>> documentGeneratorMap = new ConcurrentHashMap<>();
 
-    ProcessorFactoryImpl(final MarshallerFactory marshallerFactory) {
+    @SuppressWarnings("WeakerAccess")
+    public ProcessorFactoryImpl(final MarshallerFactory marshallerFactory) {
         this.marshallerFactory = marshallerFactory;
         responseParser = marshallerFactory.getResponseParser();
     }
