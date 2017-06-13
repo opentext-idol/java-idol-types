@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETCONTROLLERS</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <controller uuid="18980200-4d02-8030-a2de-005056bd7989" hostName="localhost" ip="127.0.0.1" port="41200"
+                    registered="true" lastResponded="11127"></controller>
+        <controller uuid="39b22000-4d0d-8030-a2de-005056bd31dd" hostName="remotehost" ip="127.0.0.2" port="41200"
+                    lastResponded="1127" connectionStatus="ok"></controller>
+    </responsedata>
+</autnresponse>

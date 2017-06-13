@@ -1,0 +1,333 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse>
+    <action>GETSTATUSOVERVIEW</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <controller>
+            <uuid>0d336600-423d-11e7-a2de-080027d76bcd</uuid>
+            <hostName>isa-indexing</hostName>
+            <ip>192.168.249.101</ip>
+            <error></error>
+            <service>
+                <port>9040</port>
+                <name></name>
+                <type></type>
+                <labels>8</labels>
+                <state>stopped</state>
+                <productType>CAP</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="c77fa8b5cfb91b6d5707d4e891c26cef" startTime="1496913122"
+                                endTime="1497278342" message="No response from diskreport action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>3</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="44cb14bc78f3e2a8e537559331f14515" startTime="1496913128"
+                                endTime="1497278343" message="No response from query action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>2</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="a760468f0d0a5ac1c05b05c815aa1713" startTime="1496913129"
+                                endTime="1497278337" message="No getstatus response from service"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+            <service>
+                <port>9070</port>
+                <name></name>
+                <type></type>
+                <labels>2</labels>
+                <state>running</state>
+                <productType>DIH</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>8</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Success" id="a7b725ad69068456d7b35708e3525d4f" startTime="1497162926"
+                                endTime="1497278343" message="Task successfully completed"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>2</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="a72f3f194706d0b874eeca3b0abaef80" startTime="1496832615"
+                                endTime="1497278343" message="Query action did not return SUCCESS"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>0</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Success" id="b7a8d8cc64f2895fee58099ebde141f1" startTime="1496832616"
+                                endTime="1497278337" message="Task successfully completed"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+            <service>
+                <port>12000</port>
+                <name></name>
+                <type></type>
+                <labels>8</labels>
+                <state>running</state>
+                <productType>CONNECTORFRAMEWORK</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>0</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Success" id="86b6ae986a21040dd2678f7693a5918b" startTime="1496832615"
+                                endTime="1497278343" message="Task successfully completed"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>2</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="ce8312a42240fd5623a625da0d7071ee" startTime="1496832615"
+                                endTime="1497278343" message="Query action did not return SUCCESS"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>0</errors>
+                    <warnings>3</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Warning" id="f2f1e23a38cd8c62a9848d0b0cbb4144" startTime="1496832819"
+                                endTime="1497278337" message="2 configuration keys not used"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+        </controller>
+        <controller>
+            <uuid>3a334900-423c-11e7-a2de-080027d76bcd</uuid>
+            <hostName>isa-content-01</hostName>
+            <ip>192.168.249.102</ip>
+            <error></error>
+            <service>
+                <port>9000</port>
+                <name></name>
+                <type></type>
+                <labels>7</labels>
+                <state>stopped</state>
+                <productType>AXE</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="a53e90462c7f9182bf4702dd41dbfd3d" startTime="1496913126"
+                                endTime="1497278345" message="No response from diskreport action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="d0285dfe830f64f4c91e7b93a1cc1cd9" startTime="1496913128"
+                                endTime="1497278338" message="No response from query action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>4</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="f3467da48a25ce97bc5a24e333b46edd" startTime="1496913128"
+                                endTime="1497278342" message="No getstatus response from service"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+        </controller>
+        <controller>
+            <uuid>aebab780-423d-11e7-a2de-080027d76bcd</uuid>
+            <hostName>isa-connectors</hostName>
+            <ip>192.168.249.100</ip>
+            <error></error>
+            <service>
+                <port>5678</port>
+                <name></name>
+                <type></type>
+                <labels>11</labels>
+                <state>stopped</state>
+                <productType>HTTPCONNECTOR</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="60b108a022f4630fec5b2e124fbe8722" startTime="1496913288"
+                                endTime="1497278343" message="No response from diskreport action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>3</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="cd85eb303a4bbdd7a5b64367e415801a" startTime="1496913289"
+                                endTime="1497278347" message="No response from query action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>4</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="67b85baacc9f07361127026f83292df2" startTime="1496913289"
+                                endTime="1497278342" message="No getstatus response from service"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+            <service>
+                <port>10000</port>
+                <name></name>
+                <type></type>
+                <labels>9</labels>
+                <state>running</state>
+                <productType>DISTRIBUTED_CONNECTOR</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>0</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Success" id="495c1eca42db7eca0b7555f9cec43f1b" startTime="1496832809"
+                                endTime="1497278343" message="Task successfully completed"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>2</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="eda10181e27377b41eda20cc76d84452" startTime="1496832809"
+                                endTime="1497278347" message="Query action did not return SUCCESS"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>0</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Success" id="24002ba697ca211038d9b78dd3638d1e" startTime="1496832809"
+                                endTime="1497278342" message="Task successfully completed"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+            <service>
+                <port>11000</port>
+                <name></name>
+                <type></type>
+                <labels>9</labels>
+                <state>stopped</state>
+                <productType>RSSCONNECTOR</productType>
+                <monitor>
+                    <name>Check disk usage</name>
+                    <description>Checks disk usage</description>
+                    <scriptName>CheckDiskUsage.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="705b924c0fa7dc9de8f5330c6e0ed688" startTime="1496913329"
+                                endTime="1497278343" message="No response from diskreport action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Check response time</name>
+                    <description>Checks response time</description>
+                    <scriptName>CheckResponseTime.lua</scriptName>
+                    <errors>3</errors>
+                    <warnings>0</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="81d4345eb9bf68ea6a31268caf2f0520" startTime="1496913329"
+                                endTime="1497278347" message="No response from query action"></status>
+                    </currentStatus>
+                </monitor>
+                <monitor>
+                    <name>Validate config</name>
+                    <description>Validates config</description>
+                    <scriptName>ValidateConfig.lua</scriptName>
+                    <errors>1</errors>
+                    <warnings>2</warnings>
+                    <otherReports>0</otherReports>
+                    <currentStatus>
+                        <status type="Error" id="454a6323bcfee915532c428394c1a7b0" startTime="1496913329"
+                                endTime="1497278342" message="No getstatus response from service"></status>
+                    </currentStatus>
+                </monitor>
+            </service>
+        </controller>
+    </responsedata>
+</autnresponse>

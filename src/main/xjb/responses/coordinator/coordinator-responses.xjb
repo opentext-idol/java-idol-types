@@ -14,4 +14,77 @@
         <javaType name="long" xmlType="xs:integer"/>
         <javaType name="int" xmlType="xs:nonNegativeInteger"/>
     </globalBindings>
+
+    <bindings schemaLocation="../../../xsds/responses/coordinator/coordinatorTypes.xsd">
+        <bindings node="//xs:attribute[@name='uuid']">
+            <property name="uuid">
+                <baseType>
+                    <javaType name="java.util.UUID"
+                              parseMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.parse"
+                              printMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.print"/>
+                </baseType>
+            </property>
+        </bindings>
+
+        <bindings node="//xs:complexType[@name='ResponseService']">
+            <bindings node="//xs:attribute[@name='controlMethod']">
+                <property name="controlMethod">
+                    <baseType>
+                        <javaType name="com.hp.autonomy.types.idol.responses.coordinator.ControlMethod"
+                                  parseMethod="com.hp.autonomy.types.idol.xjc.ControlMethodConverter.parse"
+                                  printMethod="com.hp.autonomy.types.idol.xjc.ControlMethodConverter.print"/>
+                    </baseType>
+                </property>
+            </bindings>
+            <bindings node="//xs:attribute[@name='state']">
+                <property name="runState">
+                    <baseType>
+                        <javaType name="com.hp.autonomy.types.idol.responses.coordinator.RunState"
+                                  parseMethod="com.hp.autonomy.types.idol.xjc.RunStateConverter.parse"
+                                  printMethod="com.hp.autonomy.types.idol.xjc.RunStateConverter.print"/>
+                    </baseType>
+                </property>
+            </bindings>
+        </bindings>
+
+        <bindings node="//xs:complexType[@name='ControllerServices']//xs:element[@name='uuid']">
+            <property name="uuid">
+                <baseType>
+                    <javaType name="java.util.UUID"
+                              parseMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.parse"
+                              printMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.print"/>
+                </baseType>
+            </property>
+        </bindings>
+
+        <bindings node="//xs:complexType[@name='ControllerMeters']//xs:element[@name='uuid']">
+            <property name="uuid">
+                <baseType>
+                    <javaType name="java.util.UUID"
+                              parseMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.parse"
+                              printMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.print"/>
+                </baseType>
+            </property>
+        </bindings>
+
+        <bindings node="//xs:complexType[@name='ControllerLuaMonitors']//xs:element[@name='uuid']">
+            <property name="uuid">
+                <baseType>
+                    <javaType name="java.util.UUID"
+                              parseMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.parse"
+                              printMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.print"/>
+                </baseType>
+            </property>
+        </bindings>
+
+        <bindings node="//xs:complexType[@name='ControllerSchedules']//xs:element[@name='uuid']">
+            <property name="uuid">
+                <baseType>
+                    <javaType name="java.util.UUID"
+                              parseMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.parse"
+                              printMethod="com.hp.autonomy.types.idol.xjc.UuidConverter.print"/>
+                </baseType>
+            </property>
+        </bindings>
+    </bindings>
 </bindings>

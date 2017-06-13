@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:coordinator="autonomy::servicecontrol::coordinator">
+    <xs:import schemaLocation="coordinatorTypes.xsd" namespace="autonomy::servicecontrol::coordinator"/>
+    
+    <xs:complexType name="get-controllers-response-data">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="controller" type="coordinator:ResponseController" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="get-services-response-data">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="controller" type="coordinator:ControllerServices" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="get-schedules-response-data">
+        <xs:sequence>
+            <xs:element name="schedules" type="xs:int"/>
+            <xs:element name="controller" type="coordinator:ControllerSchedules" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="get-status-overview-response-data">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="controller" type="coordinator:ControllerLuaMonitors" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
