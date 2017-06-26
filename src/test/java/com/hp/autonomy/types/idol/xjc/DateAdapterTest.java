@@ -45,4 +45,12 @@ public class DateAdapterTest {
         assertNotNull(parsedDate);
         assertEquals(sampleDate, DateAdapter.printQueryResponseDate(parsedDate));
     }
+
+    @Test
+    public void parseBCQueryResponseDate() throws ParseException {
+        final String sampleDate = "01:00:00 01/01/1 BC";
+        final ZonedDateTime parsedDate = DateAdapter.parseQueryResponseDate(sampleDate);
+        assertNotNull(parsedDate);
+        assertEquals(sampleDate, DateAdapter.printQueryResponseDate(parsedDate));
+    }
 }

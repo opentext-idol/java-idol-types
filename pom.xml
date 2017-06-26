@@ -12,7 +12,7 @@
 
     <groupId>com.hp.autonomy.frontend</groupId>
     <artifactId>idol-types</artifactId>
-    <version>1.5.0</version>
+    <version>1.6.0</version>
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
@@ -135,12 +135,12 @@
         <dependency>
             <groupId>com.hp.autonomy.frontend</groupId>
             <artifactId>aci-types</artifactId>
-            <version>0.19.1</version>
+            <version>0.20.0</version>
         </dependency>
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>
             <artifactId>aci-api</artifactId>
-            <version>5.0.0</version>
+            <version>5.0.1</version>
         </dependency>
 
         <dependency>
