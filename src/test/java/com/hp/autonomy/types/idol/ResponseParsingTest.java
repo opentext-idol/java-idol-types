@@ -47,6 +47,7 @@ public class ResponseParsingTest<T> extends AbstractParsingTest<T> {
                 new Object[]{GetChildrenResponseData.class, "/getChildren.xml"},
                 new Object[]{GetContentResponseData.class, "/getContent.xml"},
                 new Object[]{GetQueryTagValuesResponseData.class, "/getQueryTagValuesRangeResponse.xml"},
+                new Object[]{GetQueryTagValuesResponseData.class, "/getQueryTagValuesDateRangeResponse.xml"},
 //                new Object[]{GetSampleResponseData.class, ""},
                 new Object[]{GetStatusResponseData.class, "/getStatus.xml"},
                 new Object[]{GetTagNamesResponseData.class, "/getTagNames.xml"},
