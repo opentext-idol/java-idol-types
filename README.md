@@ -15,7 +15,7 @@ java-idol-types is available from the central Maven repository.
     <dependency>
         <groupId>com.hp.autonomy.frontend</groupId>
         <artifactId>idol-types</artifactId>
-        <version>1.6.0-SNAPSHOT</version>
+        <version>1.7.0-SNAPSHOT</version>
     </dependency>
 
 ## License
