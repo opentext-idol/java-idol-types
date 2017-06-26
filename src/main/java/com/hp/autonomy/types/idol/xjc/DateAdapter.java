@@ -16,10 +16,11 @@ import java.util.Locale;
 @SuppressWarnings({"UseOfObsoleteDateTimeApi", "UtilityClass", "WeakerAccess"}) //TODO rework now we can use java8
 public class DateAdapter {
     private static final String IDOL_DATE_PATTERN = "dd MMM yy HH:mm:ss";
-    private static final String QUERY_RESPONSE_DATE_PATTERN = "HH:mm:ss dd/MM/yyyy";
+    private static final String QUERY_RESPONSE_DATE_PATTERN = "HH:mm:ss dd/MM/y[ G]";
     private static final SimpleDateFormat IDOL_DATE_FORMAT = new SimpleDateFormat(IDOL_DATE_PATTERN, Locale.ENGLISH);
     private static final DateTimeFormatter QUERY_RESPONSE_DATE_FORMAT = DateTimeFormatter.ofPattern(QUERY_RESPONSE_DATE_PATTERN, Locale.ENGLISH)
             .withZone(ZoneOffset.UTC);
+    private static final String OPTIONAL_ERA_SUFFIX = " AD";
 
     public static Date parseEpochDate(final String epochDate) {
         return new Date(Long.parseLong(epochDate) * 1000);
@@ -47,6 +48,7 @@ public class DateAdapter {
 
     @SuppressWarnings("TypeMayBeWeakened")
     public static String printQueryResponseDate(final ZonedDateTime date) {
-        return QUERY_RESPONSE_DATE_FORMAT.format(date);
+        final String dateString = QUERY_RESPONSE_DATE_FORMAT.format(date);
+        return dateString.endsWith(OPTIONAL_ERA_SUFFIX) ? dateString.substring(0, dateString.length() - OPTIONAL_ERA_SUFFIX.length()) : dateString;
     }
 }

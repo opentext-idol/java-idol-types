@@ -21,9 +21,10 @@
                     <xs:sequence minOccurs="0" maxOccurs="1">
                         <xs:element name="values" type="xs:int"/>
                         <xs:element name="valuesum" type="xs:double"/>
-                        <xs:element name="valueaverage" type="xs:double"/>
-                        <xs:element name="valuemin" type="xs:double"/>
-                        <xs:element name="valuemax" type="xs:double"/>
+                        <xs:element name="valueaverage" type="autn:dateOrNumber"/>
+                        <xs:element name="valuemin" type="autn:dateOrNumber"/>
+                        <xs:element name="valuemax" type="autn:dateOrNumber"/>
+                        <xs:element name="valuepercentile" type="autn:dateOrNumberPercentile" minOccurs="0" maxOccurs="unbounded"/>
                     </xs:sequence>
                 </xs:choice>
             </xs:sequence>
@@ -36,6 +37,8 @@
                 <xs:attribute name="count" type="xs:int"/>
                 <xs:attribute name="date" type="xs:string"/>
                 <xs:attribute name="date_with_offset" type="xs:string"/>
+                <xs:attribute name="end_date" type="xs:string"/>
+                <xs:attribute name="end_date_with_offset" type="xs:string"/>
                 <xs:attribute name="type" type="xs:string"/>
             </xs:extension>
         </xs:simpleContent>
@@ -45,9 +48,10 @@
         <xs:sequence>
             <xs:element name="values" type="xs:integer"/>
             <xs:element name="value_sum" type="xs:double"/>
-            <xs:element name="value_average" type="xs:double"/>
-            <xs:element name="value_min" type="xs:double"/>
-            <xs:element name="value_max" type="xs:double"/>
+            <xs:element name="value_average" type="autn:dateOrNumber"/>
+            <xs:element name="value_min" type="autn:dateOrNumber"/>
+            <xs:element name="value_max" type="autn:dateOrNumber"/>
+            <xs:element name="value_percentile" type="autn:dateOrNumberPercentile" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -59,6 +63,8 @@
         <xs:attribute name="count" type="xs:int"/>
         <xs:attribute name="date" type="xs:string"/>
         <xs:attribute name="date_with_offset" type="xs:string"/>
+        <xs:attribute name="end_date" type="xs:string"/>
+        <xs:attribute name="end_date_with_offset" type="xs:string"/>
         <xs:attribute name="value" type="xs:string"/>
     </xs:complexType>
 
@@ -72,6 +78,7 @@
     <xs:complexType name="getQueryTagValuesResponseData">
         <xs:sequence>
             <xs:element name="number_of_fields" type="xs:integer"/>
+            <xs:element name="predicted" type="xs:boolean" minOccurs="0"/>
             <xs:element name="field" minOccurs="0" maxOccurs="unbounded" type="autn:flatField"/>
             <xs:element name="values" minOccurs="0" type="autn:values"/>
             <xs:element name="warning" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
@@ -79,5 +86,25 @@
         </xs:sequence>
     </xs:complexType>
 
+    <xs:complexType name="dateOrNumber">
+        <xs:simpleContent>
+            <xs:extension base="xs:double">
+                <!-- unfortunately has to be treated as a String as timezone dependent on DateOffset parameter and boundaries of acceptable date ranges have custom strings -->
+                <xs:attribute name="date" type="xs:string" use="optional"/>
+                <xs:attribute name="date_with_offset" type="xs:string" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="dateOrNumberPercentile">
+        <xs:simpleContent>
+            <xs:extension base="xs:double">
+                <!-- unfortunately has to be treated as a String as timezone dependent on DateOffset parameter and boundaries of acceptable date ranges have custom strings -->
+                <xs:attribute name="date" type="xs:string" use="optional"/>
+                <xs:attribute name="date_with_offset" type="xs:string" use="optional"/>
+                <xs:attribute name="percentile" type="xs:int" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
 </xs:schema>
 

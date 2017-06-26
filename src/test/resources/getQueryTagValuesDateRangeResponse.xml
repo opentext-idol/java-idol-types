@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETQUERYTAGVALUES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <autn:number_of_fields>1</autn:number_of_fields>
+        <autn:predicted>false</autn:predicted>
+        <autn:field>
+            <autn:name>autn_date</autn:name>
+            <autn:number_of_values>35</autn:number_of_values>
+            <autn:total_values>35</autn:total_values>
+            <autn:values>57252</autn:values>
+            <autn:valuesum>1.1515385E8</autn:valuesum>
+            <autn:valueaverage date="00:33:31 01/01/1970" date_with_offset="06:03:31 01/01/1970">2011.0
+            </autn:valueaverage>
+            <autn:valuemin date="00:33:26 01/01/1970" date_with_offset="06:03:26 01/01/1970">2006.0</autn:valuemin>
+            <autn:valuemax date="00:33:32 01/01/1970" date_with_offset="06:03:32 01/01/1970">2012.0</autn:valuemax>
+            <autn:valuepercentile date="00:33:30 01/01/1970" date_with_offset="06:03:30 01/01/1970" percentile="10">
+                2010.0
+            </autn:valuepercentile>
+            <autn:valuepercentile date="00:33:31 01/01/1970" date_with_offset="06:03:31 01/01/1970" percentile="25">
+                2011.0
+            </autn:valuepercentile>
+            <autn:valuepercentile date="00:33:32 01/01/1970" date_with_offset="06:03:32 01/01/1970" percentile="50">
+                2012.0
+            </autn:valuepercentile>
+            <autn:valuepercentile date="00:33:32 01/01/1970" date_with_offset="06:03:32 01/01/1970" percentile="75">
+                2012.0
+            </autn:valuepercentile>
+            <autn:valuepercentile date="00:33:32 01/01/1970" date_with_offset="06:03:32 01/01/1970" percentile="90">
+                2012.0
+            </autn:valuepercentile>
+            <autn:value type="range" count="57252" date="23:59:00 31/12/1969" date_with_offset="05:29:00 01/01/1970"
+                        end_date="15:05:02 11/12/1971" end_date_with_offset="20:35:02 11/12/1971">4294901759,61311902
+            </autn:value>
+            <autn:value type="range" count="0" date="15:05:02 11/12/1971" date_with_offset="20:35:02 11/12/1971"
+                        end_date="06:10:11 20/11/1973" end_date_with_offset="11:40:11 20/11/1973">61311902,122623811
+            </autn:value>
+            <autn:value type="range" count="0" date="06:10:11 20/11/1973" date_with_offset="11:40:11 20/11/1973"
+                        end_date="21:15:20 30/10/1975" end_date_with_offset="02:45:20 31/10/1975">122623811,183935720
+            </autn:value>
+            <autn:value type="range" count="0" date="21:15:20 30/10/1975" date_with_offset="02:45:20 31/10/1975"
+                        end_date="12:20:29 09/10/1977" end_date_with_offset="17:50:29 09/10/1977">183935720,245247629
+            </autn:value>
+            <autn:value type="range" count="0" date="12:20:29 09/10/1977" date_with_offset="17:50:29 09/10/1977"
+                        end_date="03:25:38 19/09/1979" end_date_with_offset="08:55:38 19/09/1979">245247629,306559538
+            </autn:value>
+            <autn:value type="range" count="0" date="03:25:38 19/09/1979" date_with_offset="08:55:38 19/09/1979"
+                        end_date="18:30:47 28/08/1981" end_date_with_offset="00:00:47 29/08/1981">306559538,367871447
+            </autn:value>
+            <autn:value type="range" count="0" date="18:30:47 28/08/1981" date_with_offset="00:00:47 29/08/1981"
+                        end_date="09:35:56 08/08/1983" end_date_with_offset="15:05:56 08/08/1983">367871447,429183356
+            </autn:value>
+            <autn:value type="range" count="0" date="09:35:56 08/08/1983" date_with_offset="15:05:56 08/08/1983"
+                        end_date="00:41:05 18/07/1985" end_date_with_offset="06:11:05 18/07/1985">429183356,490495265
+            </autn:value>
+            <autn:value type="range" count="0" date="00:41:05 18/07/1985" date_with_offset="06:11:05 18/07/1985"
+                        end_date="15:46:14 27/06/1987" end_date_with_offset="21:16:14 27/06/1987">490495265,551807174
+            </autn:value>
+            <autn:value type="range" count="0" date="15:46:14 27/06/1987" date_with_offset="21:16:14 27/06/1987"
+                        end_date="06:51:23 06/06/1989" end_date_with_offset="12:21:23 06/06/1989">551807174,613119083
+            </autn:value>
+            <autn:value type="range" count="0" date="06:51:23 06/06/1989" date_with_offset="12:21:23 06/06/1989"
+                        end_date="21:56:32 16/05/1991" end_date_with_offset="03:26:32 17/05/1991">613119083,674430992
+            </autn:value>
+            <autn:value type="range" count="0" date="21:56:32 16/05/1991" date_with_offset="03:26:32 17/05/1991"
+                        end_date="13:01:41 25/04/1993" end_date_with_offset="18:31:41 25/04/1993">674430992,735742901
+            </autn:value>
+            <autn:value type="range" count="0" date="13:01:41 25/04/1993" date_with_offset="18:31:41 25/04/1993"
+                        end_date="04:06:50 05/04/1995" end_date_with_offset="09:36:50 05/04/1995">735742901,797054810
+            </autn:value>
+            <autn:value type="range" count="0" date="04:06:50 05/04/1995" date_with_offset="09:36:50 05/04/1995"
+                        end_date="19:11:59 14/03/1997" end_date_with_offset="00:41:59 15/03/1997">797054810,858366719
+            </autn:value>
+            <autn:value type="range" count="0" date="19:11:59 14/03/1997" date_with_offset="00:41:59 15/03/1997"
+                        end_date="10:17:08 22/02/1999" end_date_with_offset="15:47:08 22/02/1999">858366719,919678628
+            </autn:value>
+            <autn:value type="range" count="0" date="10:17:08 22/02/1999" date_with_offset="15:47:08 22/02/1999"
+                        end_date="01:22:17 01/02/2001" end_date_with_offset="06:52:17 01/02/2001">919678628,980990537
+            </autn:value>
+            <autn:value type="range" count="0" date="01:22:17 01/02/2001" date_with_offset="06:52:17 01/02/2001"
+                        end_date="16:27:26 11/01/2003" end_date_with_offset="21:57:26 11/01/2003">980990537,1042302446
+            </autn:value>
+            <autn:value type="range" count="0" date="16:27:26 11/01/2003" date_with_offset="21:57:26 11/01/2003"
+                        end_date="07:32:35 21/12/2004" end_date_with_offset="13:02:35 21/12/2004">1042302446,1103614355
+            </autn:value>
+            <autn:value type="range" count="0" date="07:32:35 21/12/2004" date_with_offset="13:02:35 21/12/2004"
+                        end_date="22:37:44 30/11/2006" end_date_with_offset="04:07:44 01/12/2006">1103614355,1164926264
+            </autn:value>
+            <autn:value type="range" count="0" date="22:37:44 30/11/2006" date_with_offset="04:07:44 01/12/2006"
+                        end_date="13:42:53 09/11/2008" end_date_with_offset="19:12:53 09/11/2008">1164926264,1226238173
+            </autn:value>
+            <autn:value type="range" count="0" date="13:42:53 09/11/2008" date_with_offset="19:12:53 09/11/2008"
+                        end_date="04:48:02 20/10/2010" end_date_with_offset="10:18:02 20/10/2010">1226238173,1287550082
+            </autn:value>
+            <autn:value type="range" count="0" date="04:48:02 20/10/2010" date_with_offset="10:18:02 20/10/2010"
+                        end_date="19:53:11 28/09/2012" end_date_with_offset="01:23:11 29/09/2012">1287550082,1348861991
+            </autn:value>
+            <autn:value type="range" count="0" date="19:53:11 28/09/2012" date_with_offset="01:23:11 29/09/2012"
+                        end_date="10:58:20 08/09/2014" end_date_with_offset="16:28:20 08/09/2014">1348861991,1410173900
+            </autn:value>
+            <autn:value type="range" count="0" date="10:58:20 08/09/2014" date_with_offset="16:28:20 08/09/2014"
+                        end_date="02:03:29 18/08/2016" end_date_with_offset="07:33:29 18/08/2016">1410173900,1471485809
+            </autn:value>
+            <autn:value type="range" count="0" date="02:03:29 18/08/2016" date_with_offset="07:33:29 18/08/2016"
+                        end_date="17:08:38 28/07/2018" end_date_with_offset="22:38:38 28/07/2018">1471485809,1532797718
+            </autn:value>
+            <autn:value type="range" count="0" date="17:08:38 28/07/2018" date_with_offset="22:38:38 28/07/2018"
+                        end_date="08:13:47 07/07/2020" end_date_with_offset="13:43:47 07/07/2020">1532797718,1594109627
+            </autn:value>
+            <autn:value type="range" count="0" date="08:13:47 07/07/2020" date_with_offset="13:43:47 07/07/2020"
+                        end_date="23:18:56 16/06/2022" end_date_with_offset="04:48:56 17/06/2022">1594109627,1655421536
+            </autn:value>
+            <autn:value type="range" count="0" date="23:18:56 16/06/2022" date_with_offset="04:48:56 17/06/2022"
+                        end_date="14:24:05 26/05/2024" end_date_with_offset="19:54:05 26/05/2024">1655421536,1716733445
+            </autn:value>
+            <autn:value type="range" count="0" date="14:24:05 26/05/2024" date_with_offset="19:54:05 26/05/2024"
+                        end_date="05:29:14 06/05/2026" end_date_with_offset="10:59:14 06/05/2026">1716733445,1778045354
+            </autn:value>
+            <autn:value type="range" count="0" date="05:29:14 06/05/2026" date_with_offset="10:59:14 06/05/2026"
+                        end_date="20:34:23 14/04/2028" end_date_with_offset="02:04:23 15/04/2028">1778045354,1839357263
+            </autn:value>
+            <autn:value type="range" count="0" date="20:34:23 14/04/2028" date_with_offset="02:04:23 15/04/2028"
+                        end_date="11:39:32 25/03/2030" end_date_with_offset="17:09:32 25/03/2030">1839357263,1900669172
+            </autn:value>
+            <autn:value type="range" count="0" date="11:39:32 25/03/2030" date_with_offset="17:09:32 25/03/2030"
+                        end_date="02:44:41 04/03/2032" end_date_with_offset="08:14:41 04/03/2032">1900669172,1961981081
+            </autn:value>
+            <autn:value type="range" count="0" date="02:44:41 04/03/2032" date_with_offset="08:14:41 04/03/2032"
+                        end_date="17:49:50 11/02/2034" end_date_with_offset="23:19:50 11/02/2034">1961981081,2023292990
+            </autn:value>
+            <autn:value type="range" count="0" date="17:49:50 11/02/2034" date_with_offset="23:19:50 11/02/2034"
+                        end_date="08:54:59 22/01/2036" end_date_with_offset="14:24:59 22/01/2036">2023292990,2084604899
+            </autn:value>
+            <autn:value type="range" count="0" date="08:54:59 22/01/2036" date_with_offset="14:24:59 22/01/2036"
+                        end_date="00:00:08 01/01/2038" end_date_with_offset="05:30:08 01/01/2038">2084604899,2145916808
+            </autn:value>
+        </autn:field>
+    </responsedata>
+</autnresponse>
