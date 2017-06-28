@@ -1,0 +1,28 @@
+<autnresponse>
+    <action>GETSCHEDULES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <schedules>1</schedules>
+        <controller>
+            <uuid>3a334900-423c-11e7-a2de-080027d76bcd</uuid>
+            <error></error>
+            <schedules>1</schedules>
+            <schedule>
+                <name>Test Schedule</name>
+                <paused>false</paused>
+                <start>2017-Jun-07 11:22:00</start>
+                <end></end>
+                <interval>1 hour</interval>
+                <next>2017-Jun-12 11:22:00</next>
+                <count>0</count>
+                <action>
+                    <host>localhost</host>
+                    <port>9000</port>
+                    <type>aciAction</type>
+                    <command>GetVersion</command>
+                    <fullcommand>a=GetVersion</fullcommand>
+                </action>
+            </schedule>
+        </controller>
+    </responsedata>
+</autnresponse>
