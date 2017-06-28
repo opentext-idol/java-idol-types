@@ -27,4 +27,11 @@
             <xs:element name="controller" type="coordinator:ControllerLuaMonitors" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="get-service-config-response-data">
+        <xs:sequence>
+            <xs:element name="checksum" type="xs:string"/>
+            <xs:element name="config" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
