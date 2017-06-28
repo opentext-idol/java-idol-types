@@ -162,7 +162,7 @@
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>
             <artifactId>aci-api</artifactId>
-            <version>5.0.1</version>
+            <version>6.0.0</version>
         </dependency>
 
         <dependency>
