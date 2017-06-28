@@ -12,7 +12,7 @@
 
     <groupId>com.hp.autonomy.frontend</groupId>
     <artifactId>idol-types</artifactId>
-    <version>1.6.1</version>
+    <version>1.7.0</version>
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
@@ -39,7 +39,12 @@
     <developers>
         <developer>
             <name>Ivo Miller</name>
-            <email>ivo.miller@hpe.com</email>
+            <organization>Hewlett-Packard Enterprise</organization>
+            <organizationUrl>http://www.hpe.com</organizationUrl>
+        </developer>
+        <developer>
+            <name>Alex Scown</name>
+            <email>alex.scown@hpe.com</email>
             <organization>Hewlett-Packard Enterprise</organization>
             <organizationUrl>http://www.hpe.com</organizationUrl>
         </developer>
@@ -89,7 +94,8 @@
                             <generatePackage>com.hp.autonomy.types.idol.responses</generatePackage>
                             <bindingDirectory>src/main/xjb/responses</bindingDirectory>
                             <schemaDirectory>src/main/xsds/responses</schemaDirectory>
-                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-responses
                             </generateDirectory>
                         </configuration>
                     </execution>
@@ -102,7 +108,8 @@
                             <generatePackage>com.hp.autonomy.types.idol.responses.answer</generatePackage>
                             <bindingDirectory>src/main/xjb/responses/answer</bindingDirectory>
                             <schemaDirectory>src/main/xsds/responses/answer</schemaDirectory>
-                            <generateDirectory>${project.build.directory}/generated-sources/xjc-responses-answer
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-responses-answer
                             </generateDirectory>
                         </configuration>
                     </execution>
@@ -115,7 +122,22 @@
                             <generatePackage>com.hp.autonomy.types.idol.content</generatePackage>
                             <bindingDirectory>src/main/xjb/content</bindingDirectory>
                             <schemaDirectory>src/main/xsds/content</schemaDirectory>
-                            <generateDirectory>${project.build.directory}/generated-sources/xjc-content
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-content
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>coordinator xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.coordinator</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/coordinator</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/coordinator</schemaDirectory>
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-coordinator
                             </generateDirectory>
                         </configuration>
                     </execution>
@@ -140,7 +162,7 @@
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>
             <artifactId>aci-api</artifactId>
-            <version>5.0.1</version>
+            <version>6.0.0</version>
         </dependency>
 
         <dependency>

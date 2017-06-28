@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:s="AutnSimpleTypes">
+    <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:complexType name="action">
+        <xs:sequence>
+            <xs:element name="status" type="xs:string"/>
+            <xs:element name="queued_time" type="s:queueInfoDate"/>
+            <xs:element name="time_in_queue" type="xs:long"/>
+            <xs:element name="process_end_time" type="s:queueInfoDate"/>
+            <xs:element name="process_start_time" type="s:queueInfoDate"/>
+            <xs:element name="time_processing" type="xs:long"/>
+            <xs:element name="error" type="xs:string" minOccurs="0"/>
+            <xs:element name="token" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="actions">
+        <xs:sequence  minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="action" type="action"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="queue-info-get-status-response-data">
+        <xs:sequence>
+            <xs:element name="actions" type="actions"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="async-token-response-data">
+        <xs:sequence>
+            <xs:element name="token" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

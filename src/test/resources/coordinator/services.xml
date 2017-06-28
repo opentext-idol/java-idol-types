@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>GETSERVICES</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <controller>
+            <uuid>81637980-4c31-8030-a2de-005056bd7989</uuid>
+            <service port="7777" controlMethod="process" state="running" execPath="/opt/cfs/cfs" workingDir="/opt/cfs"
+                     configPath="/opt/cfs/cfs.cfg" labels="100,200" name="myService"></service>
+            <service port="9000" controlMethod="process" state="running" execPath="/opt/content/content"
+                     workingDir="/opt/content" configPath="/opt/content/content.cfg" labels=""></service>
+        </controller>
+    </responsedata>
+</autnresponse>
