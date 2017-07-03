@@ -18,6 +18,7 @@
             <xs:element name="time_processing" type="xs:long"/>
             <xs:element name="error" type="xs:string" minOccurs="0"/>
             <xs:element name="token" type="xs:string"/>
+            <xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 

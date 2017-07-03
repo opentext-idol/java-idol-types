@@ -10,7 +10,10 @@ import com.hp.autonomy.types.idol.marshalling.marshallers.DocumentGenerator;
 import com.hp.autonomy.types.idol.marshalling.marshallers.MarshallerFactory;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseDataParser;
 import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
+import com.hp.autonomy.types.idol.responses.QueueInfoGetStatusResponseData;
 import lombok.Getter;
+
+import java.util.Map;
 
 public class Jaxb2MarshallerFactory implements MarshallerFactory {
     @Getter
@@ -27,6 +30,14 @@ public class Jaxb2MarshallerFactory implements MarshallerFactory {
             final Class<R> responseDataType,
             final Class<C> contentType) {
         return new Jaxb2QueryResponseDataParser<>(responseDataMarshaller, responseDataType, contentType);
+    }
+
+    @Override
+    public ResponseDataParser<QueueInfoGetStatusResponseData> getQueueInfoGetStatusResponseDataParser(
+            final ResponseDataParser<QueueInfoGetStatusResponseData> responseDataMarshaller,
+            final Map<String, Class<?>> resultTypes
+    ) {
+        return new QueueInfoResponseParser(responseDataMarshaller, resultTypes);
     }
 
     @Override

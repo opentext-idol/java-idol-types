@@ -6,6 +6,9 @@
 package com.hp.autonomy.types.idol.marshalling.marshallers;
 
 import com.hp.autonomy.types.idol.responses.QueryResponse;
+import com.hp.autonomy.types.idol.responses.QueueInfoGetStatusResponseData;
+
+import java.util.Map;
 
 /**
  * Provides implementations for all marshalling functionality for a particular marshaller type
@@ -42,6 +45,20 @@ public interface MarshallerFactory {
             final ResponseDataParser<R> responseDataMarshaller,
             final Class<R> responseDataType,
             final Class<C> contentType);
+
+    /**
+     * Returns a parser for handling QueueInfoGetStatus response data with known result types
+     *
+     * @param responseDataMarshaller ResponseDataParser for parsing the base response
+     * @param resultTypes A map of node name to types representing those nodes
+     * @return the parser
+     */
+    default ResponseDataParser<QueueInfoGetStatusResponseData> getQueueInfoGetStatusResponseDataParser(
+            final ResponseDataParser<QueueInfoGetStatusResponseData> responseDataMarshaller,
+            final Map<String, Class<?>> resultTypes
+    ) {
+        throw new UnsupportedOperationException("Method not supported");
+    }
 
     /**
      * Returns a generator of Idol documents
