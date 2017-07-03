@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:connector="autonomy::connector"
+           blockDefault=""
+           finalDefault="">
+
+    <xs:import schemaLocation="connectors.xsd" namespace="autonomy::connector"/>
+
+    <xs:complexType name="task-list-response-data">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="task" type="connector:TaskListTaskInfo" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
