@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="autonomy::connector"
+           xmlns:connector="autonomy::connector"
+           targetNamespace="autonomy::connector"
+           blockDefault=""
+           finalDefault="">
+
+  <xs:complexType name="SupportedActionsAction">
+    <xs:attribute name="action" type="xs:string" use="required" />
+    <xs:attribute name="fetchaction" type="xs:string" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="SupportedActions">
+    <xs:sequence>
+      <xs:element name="action" type="SupportedActionsAction" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="GetStatusIdentifierType" mixed="true">
+    <xs:attribute name="attributes" type="xs:string" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="GetStatusIdentifierTypes">
+    <xs:sequence>
+      <xs:element name="identifiertype" type="GetStatusIdentifierType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Action=Fetch Response document counts -->
+  <xs:complexType name="DocumentCount">
+    <xs:attribute name="task" type="xs:string" use="optional"/> <!-- Task name: Auto assigned -->
+    <xs:attribute name="seen" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Manually increment -->
+    <xs:attribute name="added" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Auto incremented -->
+    <xs:attribute name="deleted" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize/Delete/Remove: Auto incremented -->
+    <xs:attribute name="updated" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize/Update: Auto incremented -->
+    <xs:attribute name="unchanged" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Manually increment -->
+    <xs:attribute name="collected" type="xs:nonNegativeInteger" use="optional"/> <!-- Collect: Auto incremented -->
+    <xs:attribute name="inserted" type="xs:nonNegativeInteger" use="optional"/> <!-- Insert: Auto incremented -->
+    <xs:attribute name="holds" type="xs:nonNegativeInteger" use="optional"/> <!-- Hold: Auto incremented -->
+    <xs:attribute name="releasedholds" type="xs:nonNegativeInteger" use="optional"/> <!-- ReleaseHold: Auto incremented -->
+    <xs:attribute name="ingestadded" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Auto incremented -->
+    <xs:attribute name="ingestupdated" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Auto incremented -->
+    <xs:attribute name="ingestdeleted" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Auto incremented -->
+    <xs:attribute name="ingestfailed" type="xs:nonNegativeInteger" use="optional"/> <!-- Synchronize: Auto incremented -->
+    <xs:attribute name="errors" type="xs:nonNegativeInteger" use="required"/> <!-- Any action: Manually increment -->
+    <xs:attribute name="stubbed" type="xs:nonNegativeInteger" use="optional"/> <!-- Stub: Auto incremented -->
+  </xs:complexType>
+  <xs:complexType name="DocumentCounts">
+    <xs:sequence>
+      <xs:element name="documentcount" type="DocumentCount" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Metadatum">
+    <xs:attribute name="name" type="xs:string" use="required" />
+    <xs:attribute name="value" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="AclUpdate">
+    <xs:sequence>
+      <xs:any/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IdentifiersXMLData">
+    <xs:sequence>
+      <xs:element name="metadata" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="acl_update" type="AclUpdate" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="value" type="xs:string" use="required" />
+    <!-- FetchAction=Collect Request per document destination/filename -->
+    <xs:attribute name="destination" type="xs:string" />
+    <xs:attribute name="filename" type="xs:string" />
+  </xs:complexType>
+
+  <!-- FetchAction=Collect/Update Request IdentifiersXML -->
+  <xs:complexType name="IdentifiersXML">
+    <xs:sequence>
+      <xs:element name="identifier" type="IdentifiersXMLData" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ResponseIdentifier" mixed="true">
+    <!-- insert_id: custom id for insert task doc -->
+    <xs:attribute name="insert_id" type="xs:string" use="optional"/>
+    <!-- stub_id: custom id for stub task doc -->
+    <xs:attribute name="stub_id" type="xs:string" use="optional"/>
+    <!-- type of the identifier returned by identifiers action -->
+    <xs:attribute name="type" type="xs:string" use="optional"/>
+    <!-- attributes of identifier as CSV (e.g. container,document) returned by identifiers action -->
+    <xs:attribute name="attributes" type="xs:string" use="optional"/>
+    <!-- optional display name for the identifier if provided -->
+    <xs:attribute name="name" type="xs:string" use="optional"/>
+  </xs:complexType>
+
+  <!-- FetchAction=Identifiers Response -->
+  <xs:complexType name="Identifiers">
+    <xs:sequence>
+      <xs:element name="error" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="identifier" type="ResponseIdentifier" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="parent_identifier" type="xs:string" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="InsertXMLFile">
+    <xs:sequence>
+      <!-- Deprecated: isfilename -->
+      <xs:element name="isfilename" type="xs:boolean" default="true" />
+      <!-- Deprecated: ownfile -->
+      <xs:element name="ownfile" type="xs:boolean" default="false" />
+      <!-- type takes one of the following values:
+        file       - isfilename=true, ownfile=false, content=<local_filename> (default)
+        tempfile   - isfilename=true, ownfile=true, content=<local_filename>
+        content    - isfilename=false, content=<base64_file_contents>
+        drecontent - content=<document_DRECONTENT>
+        dataid     - content=<dataid_of_file_received_by_DataServer>
+      -->
+      <xs:element name="type" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="displayname" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="content" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="InsertXMLInsert">
+    <xs:sequence>
+      <xs:element name="reference" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="section" type="xs:string" />
+      <xs:element name="property" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="metadata" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="file" type="InsertXMLFile" />
+      <xs:element name="insert_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- FetchAction=Insert Request InsertXML -->
+  <xs:complexType name="InsertXML">
+    <xs:sequence>
+      <xs:element name="reference" type="xs:string" />
+      <xs:element name="property" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="metadata" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="file" type="InsertXMLFile" />
+      <xs:element name="insert_id" type="xs:string" />
+      <xs:element name="insert" type="InsertXMLInsert" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StubXMLTarget">
+    <xs:sequence>
+      <xs:element name="group" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="identifier" type="xs:string" minOccurs="0" maxOccurs="1" />
+      <xs:element name="uri" type="xs:string" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="StubXMLStub">
+    <xs:sequence>
+      <xs:element name="reference" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="section" type="xs:string" />
+      <xs:element name="property" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="metadata" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="target" type="StubXMLTarget" />
+      <xs:element name="stub_id" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- FetchAction=Stub Request StubXML -->
+  <xs:complexType name="StubXML">
+    <xs:sequence>
+      <xs:element name="stub" type="StubXMLStub" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="FailedActionTask" mixed="true">
+    <xs:attribute name="message" type="xs:string" />
+  </xs:complexType>
+
+  <!-- FetchAction=Identifiers/Collect/Delete Response -->
+  <xs:complexType name="ActionTasks">
+    <xs:sequence>
+      <xs:element name="success" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="failed" type="FailedActionTask" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Action=TaskList Response -->
+  <xs:complexType name="TaskListTaskInfo">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="action" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="calls" type="xs:nonNegativeInteger" minOccurs="1" maxOccurs="1" />
+      <xs:element name="datastore" type="xs:string" minOccurs="0" maxOccurs="1" default="" />
+      <xs:element name="lastStartTime" type="xs:string" minOccurs="0" maxOccurs="1" default="" />
+      <xs:element name="lastFinishTime" type="xs:string" minOccurs="0" maxOccurs="1" default="" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="XmlMetadata">
+    <xs:sequence>
+      <xs:any/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
