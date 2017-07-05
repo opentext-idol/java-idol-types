@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:annox="http://annox.dev.java.net"
+          xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+          extensionBindingPrefixes="annox"
+          version="2.1">
+    <globalBindings>
+        <serializable/>
+        <javaType name="long" xmlType="xs:integer"/>
+        <javaType name="int" xmlType="xs:nonNegativeInteger"/>
+    </globalBindings>
+</bindings>

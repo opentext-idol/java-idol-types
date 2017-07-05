@@ -141,6 +141,34 @@
                             </generateDirectory>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>cfs xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.cfs</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/cfs</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/cfs</schemaDirectory>
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-cfs
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>connectors xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.connectors</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/connectors</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/connectors</schemaDirectory>
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-connectors
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
@@ -157,7 +185,7 @@
         <dependency>
             <groupId>com.hp.autonomy.frontend</groupId>
             <artifactId>aci-types</artifactId>
-            <version>0.20.0</version>
+            <version>0.22.0</version>
         </dependency>
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>

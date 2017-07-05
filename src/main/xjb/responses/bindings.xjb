@@ -266,4 +266,12 @@
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
     </bindings>
+
+    <bindings schemaLocation="../../xsds/responses/asynchronousTypes.xsd">
+        <bindings node="xs:complexType[@name='action']">
+            <bindings node="//xs:any">
+                <property name="results"/>
+            </bindings>
+        </bindings>
+    </bindings>
 </bindings>

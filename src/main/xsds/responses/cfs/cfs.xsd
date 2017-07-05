@@ -1,0 +1,122 @@
+<!--
+  ~ Copyright 2015 Hewlett-Packard Development Company, L.P.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+     xmlns="autonomy::piranha"
+     xmlns:testserver="autonomy::piranha"
+     targetNamespace="autonomy::piranha"
+     blockDefault=""
+     finalDefault="">
+
+  <xs:complexType name="IngestCounts">
+    <xs:attribute name="calls" type="xs:nonNegativeInteger" use="required" />
+    <xs:attribute name="adds" type="xs:nonNegativeInteger" use="optional" />
+    <xs:attribute name="updates" type="xs:nonNegativeInteger" use="optional" />
+    <xs:attribute name="removes" type="xs:nonNegativeInteger" use="optional" />
+  </xs:complexType>
+
+  <xs:complexType name="ImportCounts">
+    <xs:attribute name="queued" type="xs:nonNegativeInteger" use="required" />
+    <xs:attribute name="started" type="xs:nonNegativeInteger" use="optional" />
+    <xs:attribute name="finished" type="xs:nonNegativeInteger" use="optional" />
+    <xs:attribute name="cancelled" type="xs:nonNegativeInteger" use="optional" />
+  </xs:complexType>
+
+  <!--This is more descriptive, and more extensible, than the old method of using a boolean-->
+  <xs:simpleType name="Lifetime">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="temporary" />
+      <xs:enumeration value="permanent" />
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!--The intent here is to replace the old ContentType enumeration with this,
+      which is simply not present if there is no attached file. Also, since it
+      makes no sense to specify lifetime in the absence of a file, they are together.-->
+  <xs:complexType name="Source">
+    <xs:attribute name="dataid" type="xs:string" /> <!-- dataid of file received by DataServer -->
+    <xs:attribute name="filename" type="xs:string" />
+    <xs:attribute name="content" type="xs:string" /> <!-- base64 content of file -->
+    <xs:attribute name="lifetime" type="Lifetime" default="permanent" />
+  </xs:complexType>
+
+  <xs:complexType name="Metadatum">
+    <xs:attribute name="name" type="xs:string" />
+    <xs:attribute name="value" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="Page">
+    <xs:attribute name="content" type="xs:string" />
+  </xs:complexType>
+
+  <xs:complexType name="XmlMetadata">
+    <xs:sequence>
+      <xs:any/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Document">
+    <xs:sequence>
+      <xs:element name="reference" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+      <xs:element name="metadata" type="Metadatum" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="xmlmetadata" type="XmlMetadata" minOccurs="0" maxOccurs="1" />
+      <xs:element name="pages" type="Page" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Add">
+    <xs:sequence>
+      <xs:element name="document" type="Document" minOccurs="0" maxOccurs="1" />
+      <xs:element name="source" type="Source" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Adds">
+    <xs:sequence>
+      <xs:element name="add" type="Add" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Updates">
+    <xs:sequence>
+      <xs:element name="update" type="Document" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RemoveDocs">
+    <xs:sequence>
+      <xs:element name="remove" type="Document" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IngestTestLog">
+    <xs:attribute name="time" type="xs:string" use="required" />
+    <xs:attribute name="level" type="xs:int" use="required" />
+    <xs:attribute name="message" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="Documents">
+    <xs:sequence>
+      <xs:element name="document" type="Document" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="IngestTestLogging">
+    <xs:sequence>
+      <xs:element name="log" type="IngestTestLog" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Script" mixed="true">
+    <xs:attribute name="name" type="xs:string" use="required" />
+  </xs:complexType>
+
+  <xs:complexType name="Scripts">
+    <xs:sequence>
+      <xs:element name="script" type="Script" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

@@ -14,6 +14,7 @@ import com.hp.autonomy.types.idol.marshalling.marshallers.ResponseParser;
 import com.hp.autonomy.types.idol.marshalling.processors.ResponseDataProcessor;
 import com.hp.autonomy.types.idol.marshalling.processors.VoidProcessor;
 import com.hp.autonomy.types.idol.marshalling.processors.WrapperProcessor;
+import com.hp.autonomy.types.idol.responses.QueueInfoGetStatusResponseData;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 
@@ -29,6 +30,7 @@ public class ProcessorFactoryImpl implements ProcessorFactory {
 
     private final Map<Class<?>, ResponseDataParser<?>> responseDataMarshallerMap = new ConcurrentHashMap<>();
     private final Map<QueryResponseCacheKey<?, ?>, ResponseDataParser<?>> queryResponseDataMarshallerMap = new ConcurrentHashMap<>();
+    private final Map<Map<String, Class<?>>, ResponseDataParser<?>> queueInfoGetStatusMarshallerMap = new ConcurrentHashMap<>();
     private final Map<Class<?>, DocumentGenerator<?>> documentGeneratorMap = new ConcurrentHashMap<>();
 
     @SuppressWarnings("WeakerAccess")
@@ -60,6 +62,17 @@ public class ProcessorFactoryImpl implements ProcessorFactory {
         final QueryResponseCacheKey<R, C> cacheKey = new QueryResponseCacheKey<>(responseDataType, contentType);
         final ResponseDataParser<R> queryResponseDataMarshaller = getMarshaller(queryResponseDataMarshallerMap, cacheKey, () -> marshallerFactory.getQueryResponseDataParser(responseDataMarshaller, responseDataType, contentType));
         return new ResponseDataProcessor<>(queryResponseDataMarshaller);
+    }
+
+    @Override
+    public Processor<QueueInfoGetStatusResponseData> getQueueInfoGetStatusResponseDataProcessor(final Map<String, Class<?>> resultTypes) {
+        final ResponseDataParser<QueueInfoGetStatusResponseData> responseDataMarshaller = getMarshaller(responseDataMarshallerMap, QueueInfoGetStatusResponseData.class,
+                () -> marshallerFactory.getResponseDataParser(QueueInfoGetStatusResponseData.class));
+
+        final ResponseDataParser<QueueInfoGetStatusResponseData> queueInfoGetStatusResponseDataResponseDataParser = getMarshaller(queueInfoGetStatusMarshallerMap, resultTypes,
+                () -> marshallerFactory.getQueueInfoGetStatusResponseDataParser(responseDataMarshaller, resultTypes));
+
+        return new ResponseDataProcessor<>(queueInfoGetStatusResponseDataResponseDataParser);
     }
 
     @Override
