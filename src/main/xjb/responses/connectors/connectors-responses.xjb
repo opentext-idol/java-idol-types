@@ -14,4 +14,20 @@
         <javaType name="long" xmlType="xs:integer"/>
         <javaType name="int" xmlType="xs:nonNegativeInteger"/>
     </globalBindings>
+    <bindings schemaLocation="../../../xsds/responses/connectors/connectors.xsd">
+        <bindings node="//xs:complexType[@name='ResponseIdentifier']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
+        <bindings node="//xs:complexType[@name='Identifiers']">
+            <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+        </bindings>
+    </bindings>
 </bindings>
