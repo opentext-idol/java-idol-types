@@ -83,6 +83,16 @@
         <bindings node="xs:complexType[@name='user']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
+        <bindings node="xs:complexType[@name='userFields']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <bindings node="//xs:element[@name='fields']">
+                <property>
+                    <baseType name="java.util.LinkedHashMap&lt;java.lang.String,java.lang.String&gt;"/>
+                </property>
+                <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value =
+                    com.hp.autonomy.types.idol.responses.community.KeyValueMapAdapter.class)</annox:annotate>
+            </bindings>
+        </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/responses/dateConvertResponse.xsd">
         <bindings node="xs:complexType[@name='dateConvertResponseData']">
