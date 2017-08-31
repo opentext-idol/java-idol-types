@@ -9,7 +9,11 @@
         <autn:maxagents>15</autn:maxagents>
         <autn:numagents>0</autn:numagents>
         <autn:lastloggedin>1455814985</autn:lastloggedin>
-        <autn:numfields>0</autn:numfields>
+        <autn:fields>
+            <color>red</color>
+            <animal>cat</animal>
+        </autn:fields>
+        <autn:numfields>2</autn:numfields>
         <autn:securityinfo>
             OTJ8AasUFwU/OD0ZJM5WNGRjNMxt+qzP8q6aLnutjS9/ZNxsUmPbQX5WKSoZmrfyZuNXMFjBSJAYBkVqyL/JCdm+OUyHQrp2JoKF3ryTpgLZeFexJUGx1rkTBL8atDk=
         </autn:securityinfo>

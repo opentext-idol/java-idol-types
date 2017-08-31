@@ -17,7 +17,11 @@
             <autn:maxagents>15</autn:maxagents>
             <autn:numagents>0</autn:numagents>
             <autn:lastloggedin>1455862417</autn:lastloggedin>
-            <autn:numfields>0</autn:numfields>
+            <autn:fields>
+                <color>red</color>
+                <animal>cat</animal>
+            </autn:fields>
+            <autn:numfields>2</autn:numfields>
             <autn:securityinfo>
                 OTJ8iF/OXLKE4uZSeZsnKEAFXkyLNNYXxVdIVt8F312YSXeQz7tVPMvJ0qQJfoOxSqE1ejKBQamrUMn1Y3bSFsxhb62017iWLrXYKvxCOnDkGzFD190wFZHDHvWHT30=
             </autn:securityinfo>

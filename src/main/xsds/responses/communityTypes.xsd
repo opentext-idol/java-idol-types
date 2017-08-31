@@ -4,8 +4,15 @@
   ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
   -->
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="AutnSimpleTypes" targetNamespace="http://schemas.autonomy.com/aci/" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="AutnSimpleTypes" xmlns:aci="http://schemas.autonomy.com/aci/" targetNamespace="http://schemas.autonomy.com/aci/" elementFormDefault="qualified">
     <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:complexType name="userFields">
+        <xs:sequence>
+            <xs:any namespace="##local" minOccurs="0" maxOccurs="unbounded" processContents="skip"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <xs:complexType name="user">
         <xs:sequence>
             <xs:element name="uid" type="xs:long"/>
@@ -17,6 +24,7 @@
             <xs:element name="lastloggedin" type="s:epochDate"/>
             <xs:element name="numfields" type="xs:int"/>
             <xs:element name="securityinfo" minOccurs="0" type="xs:string"/>
+            <xs:element name="fields" minOccurs="0" type="aci:userFields"/>
         </xs:sequence>
     </xs:complexType>
 
