@@ -16,7 +16,7 @@ import org.w3c.dom.Element;
 public class KeyValueMapAdapter extends XmlAdapter<UserFields, Map<String, String>> {
 
     @Override
-    public LinkedHashMap<String,String> unmarshal(final UserFields v) throws Exception {
+    public Map<String,String> unmarshal(final UserFields v) throws Exception {
         final LinkedHashMap<String,String> ret = new LinkedHashMap<String,String>();
 
         for(final Element element : v.getAny()) {
