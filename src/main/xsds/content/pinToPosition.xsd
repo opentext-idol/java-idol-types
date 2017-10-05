@@ -13,6 +13,7 @@
             <xs:element name="SCHEDULE" type="xs:string" minOccurs="0"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
             <xs:element name="QMSFIELDTEXT" type="xs:string" minOccurs="0"/>
+            <xs:element name="FIELD_CRITERIA_DATABASEMATCH" type="xs:string" minOccurs="0"/>
         </xs:all>
     </xs:complexType>
 </xs:schema>
