@@ -186,6 +186,9 @@
             <bindings node="//xs:element[@name='DATABASERESTRICTION']">
                 <property name="databaseRestriction"/>
             </bindings>
+            <bindings node="//xs:element[@name='SYNONYMDATABASEMATCH']">
+                <property name="synonymDatabaseMatch"/>
+            </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
             </bindings>
