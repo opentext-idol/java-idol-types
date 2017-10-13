@@ -10,12 +10,13 @@
         <xs:all>
             <xs:element name="DREREFERENCE" type="xs:string"/>
             <xs:element name="QMSTYPE" type="xs:int"/>
-            <xs:element name="DATABASERESTRICTION" type="xs:string"/>
+            <xs:element name="DATABASERESTRICTION" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="DRETITLE" type="xs:string"/>
             <xs:element name="QMSAGENTBOOL" type="xs:string"/>
             <xs:element name="KEYWORDS" type="xs:string"/>
             <xs:element name="CONCEPT" type="xs:string"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
+            <xs:element name="SYNONYMDATABASEMATCH" type="xs:string" minOccurs="0"/>
         </xs:all>
     </xs:complexType>
 </xs:schema>

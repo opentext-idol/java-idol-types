@@ -12,7 +12,7 @@
 
     <groupId>com.hp.autonomy.frontend</groupId>
     <artifactId>idol-types</artifactId>
-    <version>1.9.0</version>
+    <version>1.10.0</version>
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
@@ -122,6 +122,15 @@
                             <generatePackage>com.hp.autonomy.types.idol.content</generatePackage>
                             <bindingDirectory>src/main/xjb/content</bindingDirectory>
                             <schemaDirectory>src/main/xsds/content</schemaDirectory>
+                            <!--
+                                We need non-strict validation so that XSD 1.1 structures like
+                                  <xs:element … maxOccurs="unbounded"/>
+                                 within <xs:any> can work.
+                                 Otherwise, it's rejected by XSD 1.0 validation (but strangely enough, only on the
+                                    first file, so if you're lucky enough that the hashmap of filenames doesn't
+                                    include it as the first file, then it'll work even with strict=true).
+                             -->
+                            <strict>false</strict>
                             <generateDirectory>
                                 ${project.build.directory}/generated-sources/xjc-content
                             </generateDirectory>

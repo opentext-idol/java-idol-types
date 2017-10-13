@@ -54,6 +54,9 @@
             <bindings node="//xs:element[@name='QMSFIELDTEXT']">
                 <property name="fieldText"/>
             </bindings>
+            <bindings node="//xs:element[@name='FIELD_CRITERIA_DATABASEMATCH']">
+                <property name="fieldCriteriaDatabaseMatch"/>
+            </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
             </bindings>
@@ -112,6 +115,9 @@
             <bindings node="//xs:element[@name='QMSFIELDTEXT']">
                 <property name="fieldText"/>
             </bindings>
+            <bindings node="//xs:element[@name='FIELD_CRITERIA_DATABASEMATCH']">
+                <property name="fieldCriteriaDatabaseMatch"/>
+            </bindings>
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/content/spotlight.xsd">
@@ -141,6 +147,9 @@
             </bindings>
             <bindings node="//xs:element[@name='QMSFIELDTEXT']">
                 <property name="fieldText"/>
+            </bindings>
+            <bindings node="//xs:element[@name='FIELD_CRITERIA_DATABASEMATCH']">
+                <property name="fieldCriteriaDatabaseMatch"/>
             </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
@@ -176,6 +185,9 @@
             </bindings>
             <bindings node="//xs:element[@name='DATABASERESTRICTION']">
                 <property name="databaseRestriction"/>
+            </bindings>
+            <bindings node="//xs:element[@name='SYNONYMDATABASEMATCH']">
+                <property name="synonymDatabaseMatch"/>
             </bindings>
             <bindings node="//xs:element[@name='DRETITLE']">
                 <property name="title"/>
