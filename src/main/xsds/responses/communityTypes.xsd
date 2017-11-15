@@ -21,6 +21,7 @@
             <xs:element name="lockedlasttime" type="s:epochDate"/>
             <xs:element name="maxagents" type="xs:int"/>
             <xs:element name="numagents" type="xs:int"/>
+            <xs:element name="emailaddress" minOccurs="0" type="xs:string"/>
             <xs:element name="lastloggedin" type="s:epochDate"/>
             <xs:element name="numfields" type="xs:int"/>
             <xs:element name="securityinfo" minOccurs="0" type="xs:string"/>
