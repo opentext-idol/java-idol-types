@@ -83,6 +83,9 @@
         <bindings node="xs:complexType[@name='user']">
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
+        <bindings node="//xs:element[@name='role']">
+            <property name="roles"/>
+        </bindings>
         <bindings node="xs:complexType[@name='userFields']">
             <annox:annotate target="field">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
             <bindings node="//xs:element[@name='fields']">

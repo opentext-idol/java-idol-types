@@ -2,6 +2,10 @@
     <action>USERREAD</action>
     <response>SUCCESS</response>
     <responsedata>
+        <autn:role>FindAdmin</autn:role>
+        <autn:role>FindBi</autn:role>
+        <autn:role>FindRating</autn:role>
+        <autn:role>FindUser</autn:role>
         <autn:uid>3</autn:uid>
         <autn:username>user1</autn:username>
         <autn:locked>false</autn:locked>
