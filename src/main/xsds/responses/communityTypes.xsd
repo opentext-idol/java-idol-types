@@ -15,6 +15,7 @@
 
     <xs:complexType name="user">
         <xs:sequence>
+            <xs:element name="role" minOccurs="0" maxOccurs="unbounded" type="xs:string"/>
             <xs:element name="uid" type="xs:long"/>
             <xs:element name="username" type="xs:string"/>
             <xs:element name="locked" type="xs:boolean"/>
