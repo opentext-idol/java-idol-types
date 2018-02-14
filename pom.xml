@@ -114,6 +114,20 @@
                         </configuration>
                     </execution>
                     <execution>
+                        <id>answer-server conversation module response xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.responses.conversation</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/conversation</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/conversation</schemaDirectory>
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-responses-conversation
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
                         <id>content xsds</id>
                         <goals>
                             <goal>generate</goal>

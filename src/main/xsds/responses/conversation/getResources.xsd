@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:include schemaLocation="sharedXsd.xsd"/> <!-- ConversationSession resources -->
+  <xs:complexType name="conversation_session">
+    <xs:sequence>
+      <xs:element name="session_id" type="nonempty_string"/>
+      <xs:element name="created_time" type="xs:dateTime"/>
+      <xs:element name="last_accessed_time" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conversation_sessions">
+    <xs:sequence>
+      <xs:element name="total_resources" type="xs:int"/>
+      <xs:element name="conversation_session" minOccurs="0" maxOccurs="unbounded" type="conversation_session"/>
+    </xs:sequence>
+  </xs:complexType> <!-- Schema resources -->
+  <xs:complexType name="schema_info">
+    <xs:sequence>
+      <xs:element name="action" type="nonempty_string" minOccurs="0"/>
+      <xs:element name="type" type="nonempty_string"/>
+      <xs:element name="schema" type="nonempty_string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="schemas">
+    <xs:sequence>
+      <xs:element name="schema_info" minOccurs="0" maxOccurs="unbounded" type="schema_info"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="action_xsd">
+    <xs:sequence>
+      <xs:element name="action" type="nonempty_string"/>
+      <xs:element name="xsd" type="nonempty_string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="xsds">
+    <xs:sequence>
+      <xs:element name="base_xsd" type="nonempty_string"/>
+      <xs:element name="shared_xsd" type="nonempty_string"/>
+      <xs:element name="action_xsd" minOccurs="0" maxOccurs="unbounded" type="action_xsd"></xs:element>
+    </xs:sequence>
+  </xs:complexType> <!-- Transcript resources -->
+  <xs:complexType name="system_prompt">
+    <xs:sequence>
+      <xs:element name="text" type="nonempty_string" maxOccurs="1"/>
+      <xs:element name="suggestions" type="suggestions" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="valid_choices" type="valid_choices" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="system_reply">
+    <xs:sequence>
+      <xs:element name="prompt" type="system_prompt" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="conversation_stage">
+    <xs:sequence>
+      <xs:element name="user_input" type="nonempty_string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="system_reply" type="system_reply"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="transcript">
+    <xs:sequence>
+      <xs:element name="stage" type="conversation_stage" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType> <!-- General resources -->
+  <xs:complexType name="resource">
+    <xs:choice>
+      <xs:element name="conversation_sessions" type="conversation_sessions"/>
+      <xs:element name="schemas" type="schemas"/>
+      <xs:element name="xsds" type="xsds"/>
+      <xs:element name="transcript" type="transcript"/>
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="getResources_responsedata">
+    <xs:sequence>
+      <xs:element name="resource" type="resource"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
