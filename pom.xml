@@ -192,6 +192,20 @@
                             </generateDirectory>
                         </configuration>
                     </execution>
+                    <execution>
+                        <id>statsserver xsds</id>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <generatePackage>com.hp.autonomy.types.idol.stats</generatePackage>
+                            <bindingDirectory>src/main/xjb/responses/stats</bindingDirectory>
+                            <schemaDirectory>src/main/xsds/responses/stats</schemaDirectory>
+                            <generateDirectory>
+                                ${project.build.directory}/generated-sources/xjc-stats
+                            </generateDirectory>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
             <plugin>
