@@ -1,0 +1,24 @@
+<!--
+  ~ Copyright 2018 Micro Focus International plc.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          xmlns:annox="http://annox.dev.java.net"
+          extensionBindingPrefixes="annox"
+          version="2.1">
+    <globalBindings>
+        <javaType
+          name="java.time.ZonedDateTime"
+          xmlType="xs:dateTime"
+          parseMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
+          printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
+        <serializable/>
+    </globalBindings>
+    <bindings schemaLocation="../../../xsds/responses/stats/statResult.xsd">
+        <bindings node="//xs:element[@type='valuesType']">
+            <property name="values"/>
+        </bindings>
+    </bindings>
+</bindings>
