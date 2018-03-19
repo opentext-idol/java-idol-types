@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2018 Micro Focus International plc.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:s="AutnSimpleTypes" xmlns:autn="http://schemas.autonomy.com/aci/" elementFormDefault="qualified" targetNamespace="http://schemas.autonomy.com/aci/">
+    <xs:import namespace="AutnSimpleTypes" schemaLocation="autnSimpleTypes.xsd"/>
+
+    <xs:complexType name="term">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute type="xs:int" name="weight" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="profile">
+        <xs:sequence>
+            <xs:element name="pid" type="xs:string"/>
+            <xs:element name="parent" type="xs:string"/>
+            <xs:element name="parentusername" type="xs:string"/>
+            <xs:element name="namedarea" type="xs:string"/>
+            <xs:element name="score" type="xs:int"/>
+            <xs:element name="term" type="autn:term" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="numterms" type="xs:int" minOccurs="0"/>
+            <xs:element name="created" type="s:epochDate"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="profiles">
+        <xs:sequence>
+            <xs:element name="totalprofiles" type="xs:int"/>
+            <xs:element name="numprofiles" type="xs:int"/>
+            <xs:element name="profile" type="autn:profile" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
