@@ -15,11 +15,12 @@ java-idol-types is available from the central Maven repository.
     <dependency>
         <groupId>com.hp.autonomy.frontend</groupId>
         <artifactId>idol-types</artifactId>
-        <version>1.9.0</version>
+        <version>1.13.0</version>
     </dependency>
 
 ## License
 Copyright 2015 Hewlett-Packard Development Company, L.P.
 Copyright 2015-2017 Hewlett Packard Enterprise Development LP
+Copyright 2018 Micro Focus International plc.
 
 Licensed under the MIT License (the "License"); you may not use this project except in compliance with the License.
