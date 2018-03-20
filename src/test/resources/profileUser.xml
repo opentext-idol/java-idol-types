@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+  <action>PROFILEUSER</action>
+  <response>SUCCESS</response>
+  <responsedata>
+    <autn:newprofile>false</autn:newprofile>
+    <autn:pid>1-p1</autn:pid>
+    <autn:parent>1</autn:parent>
+    <autn:parentusername>tungj</autn:parentusername>
+    <autn:namedarea>default</autn:namedarea>
+    <autn:score>60</autn:score>
+    <autn:created>1521482436</autn:created>
+  </responsedata>
+</autnresponse>

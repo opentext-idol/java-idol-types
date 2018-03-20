@@ -279,6 +279,16 @@
             <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </bindings>
     </bindings>
+    <bindings schemaLocation="../../xsds/responses/profileRead.xsd">
+        <bindings node="xs:complexType[@name='profiles']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/responses/profileUser.xsd">
+        <bindings node="xs:complexType[@name='profileUser']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </bindings>
+    </bindings>
 
     <bindings schemaLocation="../../xsds/responses/asynchronousTypes.xsd">
         <bindings node="xs:complexType[@name='action']">

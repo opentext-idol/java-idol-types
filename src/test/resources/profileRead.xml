@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+  <action>PROFILEREAD</action>
+  <response>SUCCESS</response>
+  <responsedata>
+    <autn:totalprofiles>2</autn:totalprofiles>
+    <autn:numprofiles>2</autn:numprofiles>
+    <autn:profile>
+      <autn:pid>1-p1</autn:pid>
+      <autn:parent>1</autn:parent>
+      <autn:parentusername>tungj</autn:parentusername>
+      <autn:namedarea>default</autn:namedarea>
+      <autn:score>60</autn:score>
+      <autn:term weight="354">なぞ</autn:term>
+      <autn:numterms>1</autn:numterms>
+      <autn:created>1521482436</autn:created>
+    </autn:profile>
+    <autn:profile>
+      <autn:pid>1-p0</autn:pid>
+      <autn:parent>1</autn:parent>
+      <autn:parentusername>tungj</autn:parentusername>
+      <autn:namedarea>default</autn:namedarea>
+      <autn:score>267</autn:score>
+      <autn:term weight="746">ENGLISH</autn:term>
+      <autn:term weight="227">HAS</autn:term>
+      <autn:term weight="1">IN</autn:term>
+      <autn:term weight="175">IT</autn:term>
+      <autn:term weight="842">SAMPL</autn:term>
+      <autn:term weight="278">SOME</autn:term>
+      <autn:term weight="666">TEXT</autn:term>
+      <autn:term weight="135">THI</autn:term>
+      <autn:numterms>8</autn:numterms>
+      <autn:created>1521482291</autn:created>
+    </autn:profile>
+  </responsedata>
+</autnresponse>

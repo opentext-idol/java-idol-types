@@ -17,6 +17,8 @@ import com.hp.autonomy.types.idol.responses.GetStatusResponseData;
 import com.hp.autonomy.types.idol.responses.GetTagNamesResponseData;
 import com.hp.autonomy.types.idol.responses.GetVersionResponseData;
 import com.hp.autonomy.types.idol.responses.LanguageSettingsResponseData;
+import com.hp.autonomy.types.idol.responses.ProfileUser;
+import com.hp.autonomy.types.idol.responses.Profiles;
 import com.hp.autonomy.types.idol.responses.QueryResponseData;
 import com.hp.autonomy.types.idol.responses.RolesResponseData;
 import com.hp.autonomy.types.idol.responses.Security;
@@ -39,6 +41,8 @@ public class ResponseParsingTest<T> extends AbstractParsingTest<T> {
     @Parameterized.Parameters(name = "{1}")
     public static Collection<Object[]> data() {
         return Arrays.asList(
+                new Object[]{Profiles.class, "/profileRead.xml"},
+                new Object[]{ProfileUser.class, "/profileUser.xml"},
                 new Object[]{CommunityStatusResponseData.class, "/communityGetStatus.xml"},
 //                new Object[]{DateConvertResponseData.class, ""},
 //                new Object[]{DetectLanguageResponseData.class, ""},
