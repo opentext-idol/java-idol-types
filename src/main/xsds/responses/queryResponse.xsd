@@ -36,7 +36,7 @@
 
     <xs:complexType name="expansionOrder">
         <xs:sequence>
-            <xs:element name="rule" type="autn:rule"/>
+            <xs:element name="rule" type="autn:rule" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
