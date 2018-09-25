@@ -12,11 +12,11 @@
 
     <groupId>com.hp.autonomy.frontend</groupId>
     <artifactId>idol-types</artifactId>
-    <version>1.16.1</version>
+    <version>1.17.0</version>
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
-    <url>https://github.com/hpautonomy/java-idol-types</url>
+    <url>https://github.com/microfocus-idol/java-idol-types</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -26,27 +26,28 @@
     <inceptionYear>2015</inceptionYear>
 
     <scm>
-        <connection>scm:git:git@github.com:hpautonomy/java-idol-types.git</connection>
-        <developerConnection>scm:git:git@github.com:hpautonomy/java-idol-types.git</developerConnection>
-        <url>git@github.com:hpautonomy/java-idol-types.git</url>
+        <connection>scm:git:git@github.com:microfocus-idol/java-idol-types.git</connection>
+        <developerConnection>scm:git:git@github.com:microfocus-idol/java-idol-types.git</developerConnection>
+        <url>git@github.com:microfocus-idol/java-idol-types.git</url>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/hpautonomy/java-idol-types/issues</url>
+        <url>https://github.com/microfocus-idol/java-idol-types/issues</url>
     </issueManagement>
 
     <developers>
         <developer>
+            <name>Tung Jin Chew</name>
+            <email>tung-jin.chew@microfocus.com</email>
+            <organization>Micro Focus</organization>
+            <organizationUrl>http://www.microfocus.com</organizationUrl>
+        </developer>
+        <developer>
             <name>Ivo Miller</name>
-            <organization>Hewlett-Packard Enterprise</organization>
-            <organizationUrl>http://www.hpe.com</organizationUrl>
         </developer>
         <developer>
             <name>Alex Scown</name>
-            <email>alex.scown@hpe.com</email>
-            <organization>Hewlett-Packard Enterprise</organization>
-            <organizationUrl>http://www.hpe.com</organizationUrl>
         </developer>
     </developers>
 
@@ -222,7 +223,7 @@
         <dependency>
             <groupId>com.hp.autonomy.frontend</groupId>
             <artifactId>aci-types</artifactId>
-            <version>0.24.1</version>
+            <version>0.25.0</version>
         </dependency>
         <dependency>
             <groupId>com.hp.autonomy.aci.client</groupId>
