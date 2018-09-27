@@ -46,6 +46,7 @@
             <xs:element name="created_time" type="xs:dateTime"/>
             <xs:element name="modified_time" type="xs:dateTime"/>
             <xs:element name="rule" type="qec_rule"/>
+            <xs:element name="original_rule" type="xs:string"/>
             <xs:element name="state" type="question_equivalence_class_state"/>
             <xs:element name="reference_question" type="nonempty_string"/>
             <xs:element name="usage_count" type="xs:int"/>
