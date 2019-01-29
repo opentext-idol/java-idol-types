@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2016 Hewlett Packard Enterprise Development Company, L.P.
+  ~ Copyright 2016-2018 Micro Focus International plc.
   ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
   -->
 
@@ -126,6 +126,18 @@
             <xs:element name="nonexistentterms" type="xs:integer"/>
             <xs:element name="type" type="xs:integer"/>
         </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="expansionOrder">
+        <xs:sequence>
+            <xs:element name="rule" type="autn:rule" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="rule">
+        <xs:attribute name="reference" type="xs:string"/>
+        <xs:attribute name="modified_query" type="xs:string"/>
+        <xs:attribute name="rule_type" type="xs:string"/>
     </xs:complexType>
 
 </xs:schema>

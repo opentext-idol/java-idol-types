@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2018 Micro Focus International plc.
+  ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
+  -->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:autn="http://schemas.autonomy.com/aci/"
+           targetNamespace="http://schemas.autonomy.com/aci/"
+           elementFormDefault="qualified">
+
+    <xs:include schemaLocation="commonQueryTypes.xsd"/>
+
+    <xs:complexType name="expandTextData">
+        <xs:sequence>
+            <xs:element name="expansionOrder" type="autn:expansionOrder"/>
+            <xs:element name="expanded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
