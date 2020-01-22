@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<autnresponse xmlns:autn='http://schemas.autonomy.com/aci/'>
+    <action>REPORT</action>
+    <response>SUCCESS</response>
+    <responsedata>
+        <report>
+            <item item_type="fact_bank" system_name="FactBank">
+                <text>Adam Crozier has Position Held with value chairman (where company has value
+                    ITV, Date has value 2020-01-18).
+                </text>
+                <metadata>
+                    <fact entity_name="Adam Crozier" entity_code="05f256dc5e12e2e24cfa6d9d0d752cfe"
+                          source="http://news.sky.com/story/adam-crozier-in-talks-to-chair-market-research-giant-11911902">
+                        <property name="Position Held" code="c32d189baeaecaeab15a130dcc71b530"
+                                  value="chairman" value_type="entity"
+                                  value_code="30db42e0ca2d0de4206048b2cf5374a1">
+                            <qualifier name="company" code="6890e86a07fc8f8c23fa01d0ad222819"
+                                       value="ITV" value_type="entity"
+                                       value_code="bcf0c9b73677e09a9a70f7de6bab993c"></qualifier>
+                            <qualifier name="Date" code="1b560b6eba362fd15882a4a648b7ead2"
+                                       value="2020-01-18" value_type="time"></qualifier>
+                        </property>
+                    </fact>
+                </metadata>
+                <source>
+                    http://news.sky.com/story/adam-crozier-in-talks-to-chair-market-research-giant-11911902
+                </source>
+            </item>
+            <item item_type="fact_bank" system_name="FactBank">
+                <text>Adam Crozier has Position Held with value chairman (where country has value
+                    Britain, Date has value 2020-01-18).
+                </text>
+                <metadata>
+                    <fact entity_name="Adam Crozier" entity_code="05f256dc5e12e2e24cfa6d9d0d752cfe"
+                          source="http://news.sky.com/story/adam-crozier-in-talks-to-chair-market-research-giant-11911902">
+                        <property name="Position Held" code="c32d189baeaecaeab15a130dcc71b530"
+                                  value="chairman" value_type="entity"
+                                  value_code="30db42e0ca2d0de4206048b2cf5374a1">
+                            <qualifier name="country" code="4d587f8b25e786e021b50cf355c6d3ef"
+                                       value="Britain" value_type="entity"
+                                       value_code="1abe8cab964a8c87007b7c4ef7519866"></qualifier>
+                            <qualifier name="Date" code="1b560b6eba362fd15882a4a648b7ead2"
+                                       value="2020-01-18" value_type="time"></qualifier>
+                        </property>
+                    </fact>
+                </metadata>
+                <source>
+                    http://news.sky.com/story/adam-crozier-in-talks-to-chair-market-research-giant-11911902
+                </source>
+            </item>
+        </report>
+    </responsedata>
+</autnresponse>

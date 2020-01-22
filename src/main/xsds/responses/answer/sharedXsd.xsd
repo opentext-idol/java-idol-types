@@ -30,4 +30,19 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+
+    <xs:complexType name="warning">
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="system_name" type="xs:string">
+                </xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+    <xs:complexType name="warnings">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="warning" type="warning"/>
+        </xs:sequence>
+    </xs:complexType>
 </xs:schema>
