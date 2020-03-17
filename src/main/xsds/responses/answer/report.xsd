@@ -24,6 +24,7 @@
     <xs:complexType name="report_fact">
         <xs:sequence>
             <xs:element name="property" type="report_fact_property" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="sentence" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
         <xs:attribute name="entity_name" type="xs:string"/>
         <xs:attribute name="entity_code" type="xs:string"/>
