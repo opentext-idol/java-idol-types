@@ -34,7 +34,6 @@
     <xs:complexType name="report_metadata">
         <xs:sequence>
             <xs:element name="fact" type="report_fact" minOccurs="0" maxOccurs="unbounded"/>
-            <xs:any minOccurs="0" maxOccurs="unbounded" processContents="lax"/>
         </xs:sequence>
     </xs:complexType>
 
