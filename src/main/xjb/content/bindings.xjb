@@ -1,5 +1,5 @@
 <!--
-  ~ (c) Copyright 2016 Micro Focus or one of its affiliates.
+  ~ (c) Copyright 2016, 2020 Micro Focus or one of its affiliates.
   ~
   ~ Licensed under the MIT License (the "License"); you may not use this file
   ~ except in compliance with the License.
@@ -38,6 +38,42 @@
             </bindings>
             <bindings node="//xs:element[@name='KEYWORDS']">
                 <property name="keywords"/>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/content/boostRule.xsd">
+        <bindings node="xs:complexType[@name='boostRule']">
+            <annox:annotate target="class">@lombok.ToString</annox:annotate>
+            <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name =
+                "DOCUMENT")
+            </annox:annotate>
+            <bindings node="//xs:element[@name='DREREFERENCE']">
+                <property name="reference"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRETITLE']">
+                <property name="title"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSTYPE']">
+                <property name="qmsType"/>
+            </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DATABASERESTRICTION']">
+                <property name="databaseRestriction"/>
+            </bindings>
+            <bindings node="//xs:element[@name='SYNONYMDATABASEMATCH']">
+                <property name="synonymDatabaseMatch"/>
+            </bindings>
+            <bindings node="//xs:element[@name='CONCEPT']">
+                <property name="concept"/>
+            </bindings>
+            <bindings node="//xs:element[@name='DRECONTENT']">
+                <property name="content"/>
+            </bindings>
+            <bindings node="//xs:any">
+                <property name="alwaysMatchField"/>
             </bindings>
         </bindings>
     </bindings>
