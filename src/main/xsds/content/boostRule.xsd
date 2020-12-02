@@ -25,8 +25,9 @@
                         minOccurs="0" maxOccurs="unbounded"/>
             <xs:element name="SYNONYMDATABASEMATCH" type="xs:string" minOccurs="0"/>
             <xs:element name="CONCEPT" type="xs:string"/>
+            <xs:element name="QMSFIELDTEXT" type="xs:string"/>
             <xs:element name="DRECONTENT" type="xs:string"/>
-            <!-- alwaysmatch -->
+            <!-- referenced fields, alwaysmatch -->
             <xs:any processContents="skip" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
         </xs:all>
     </xs:complexType>

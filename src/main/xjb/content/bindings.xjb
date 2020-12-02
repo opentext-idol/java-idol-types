@@ -69,11 +69,14 @@
             <bindings node="//xs:element[@name='CONCEPT']">
                 <property name="concept"/>
             </bindings>
+            <bindings node="//xs:element[@name='QMSFIELDTEXT']">
+                <property name="qmsFieldText"/>
+            </bindings>
             <bindings node="//xs:element[@name='DRECONTENT']">
                 <property name="content"/>
             </bindings>
             <bindings node="//xs:any">
-                <property name="alwaysMatchField"/>
+                <property name="extraFields"/>
             </bindings>
         </bindings>
     </bindings>
