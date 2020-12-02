@@ -1,5 +1,5 @@
 <!--
-  ~ (c) Copyright 2016 Micro Focus or one of its affiliates.
+  ~ (c) Copyright 2016, 2020 Micro Focus or one of its affiliates.
   ~
   ~ Licensed under the MIT License (the "License"); you may not use this file
   ~ except in compliance with the License.
@@ -103,6 +103,20 @@
                 </property>
                 <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value =
                     com.hp.autonomy.types.idol.responses.community.KeyValueMapAdapter.class)</annox:annotate>
+            </bindings>
+        </bindings>
+    </bindings>
+    <bindings schemaLocation="../../xsds/responses/communityUserGetAllFieldNames.xsd">
+        <bindings node="xs:complexType[@name='userFieldNames']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <bindings node="//xs:element[@name='field']">
+                <property name="fields"/>
+            </bindings>
+        </bindings>
+        <bindings node="xs:complexType[@name='userFieldNamesResponse']">
+            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <bindings node="//xs:element[@name='fields']">
+                <property name="fields"/>
             </bindings>
         </bindings>
     </bindings>
