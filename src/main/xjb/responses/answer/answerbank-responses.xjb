@@ -25,6 +25,14 @@
                 printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
         <serializable/>
     </globalBindings>
+    <bindings schemaLocation="../../../xsds/responses/answer/ask.xsd">
+        <bindings node="//xs:complexType[@name='ask_answer']//xs:element[@name='metadata']">
+            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(AskMetadataAdapter.class)</annox:annotate>
+            <property>
+                <baseType name="com.hp.autonomy.types.idol.responses.answer.AskMetadataMap"/>
+            </property>
+        </bindings>
+    </bindings>
     <bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
         <bindings node="//xs:complexType[@name='question']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
