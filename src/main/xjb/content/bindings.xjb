@@ -39,6 +39,9 @@
             <bindings node="//xs:element[@name='KEYWORDS']">
                 <property name="keywords"/>
             </bindings>
+            <bindings node="//xs:element[@name='QMSAGENTBOOL']">
+                <property name="qmsAgentBoolean"/>
+            </bindings>
         </bindings>
     </bindings>
     <bindings schemaLocation="../../xsds/content/boostRule.xsd">

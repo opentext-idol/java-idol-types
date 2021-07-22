@@ -21,6 +21,7 @@
             <xs:element name="QMSTYPE" type="xs:int"/>
             <xs:element name="DRETITLE" type="xs:string"/>
             <xs:element name="KEYWORDS" type="xs:string"/>
+            <xs:element name="QMSAGENTBOOL" type="xs:string"/>
         </xs:all>
     </xs:complexType>
 </xs:schema>

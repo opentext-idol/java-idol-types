@@ -18,6 +18,8 @@
                     <DRETITLE>ISO_BLACKLIST</DRETITLE>
                     <QMSTYPE>6</QMSTYPE>
                     <KEYWORDS>badd%2Cfooba</KEYWORDS>
+                    <QMSAGENTBOOL>ISO_BLACKLIST</QMSAGENTBOOL>
+                    <DRECONTENT>ISO_BLACKLIST</DRECONTENT>
                 </DOCUMENT>
             </autn:content>
             <autn:baseid>695</autn:baseid>
@@ -41,6 +43,8 @@
                     <DRETITLE>ISO_BLACKLIST</DRETITLE>
                     <QMSTYPE>6</QMSTYPE>
                     <KEYWORDS>maison</KEYWORDS>
+                    <QMSAGENTBOOL>ISO_BLACKLIST</QMSAGENTBOOL>
+                    <DRECONTENT>ISO_BLACKLIST</DRECONTENT>
                 </DOCUMENT>
             </autn:content>
             <autn:baseid>377</autn:baseid>
