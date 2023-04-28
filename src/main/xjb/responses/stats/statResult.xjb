@@ -1,24 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Copyright 2018 Micro Focus International plc.
   ~ Licensed under the MIT License (the "License"); you may not use this file except in compliance with the License.
   -->
 
-<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xmlns:annox="http://annox.dev.java.net"
-          extensionBindingPrefixes="annox"
-          version="2.1">
-    <globalBindings>
-        <javaType
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xjc="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               version="3.0">
+    <jaxb:globalBindings>
+        <xjc:javaType
           name="java.time.ZonedDateTime"
           xmlType="xs:dateTime"
-          parseMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
-          printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
-        <serializable/>
-    </globalBindings>
-    <bindings schemaLocation="../../../xsds/responses/stats/statResult.xsd">
-        <bindings node="//xs:element[@type='valuesType']">
-            <property name="values"/>
-        </bindings>
-    </bindings>
-</bindings>
+          parseMethod="com.opentext.idol.types.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
+          printMethod="com.opentext.idol.types.responses.answer.AnswerbankXmlTransformer.marshalDate" />
+        <xjc:serializable/>
+    </jaxb:globalBindings>
+    <jaxb:bindings schemaLocation="../../../xsds/responses/stats/statResult.xsd">
+        <jaxb:bindings node="//xs:element[@type='valuesType']">
+            <jaxb:property name="values"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>

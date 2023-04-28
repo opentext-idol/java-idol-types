@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ (c) Copyright 2016 Micro Focus or one of its affiliates.
   ~
@@ -12,77 +13,78 @@
   ~ information contained herein is subject to change without notice.
   -->
 
-<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xmlns:annox="http://annox.dev.java.net"
-          extensionBindingPrefixes="annox"
-          version="2.1">
-    <globalBindings>
-        <javaType
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xjc="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:annox="http://jvnet.org/basicjaxb/xjc/annox"
+               extensionBindingPrefixes="annox"
+               version="3.0">
+    <jaxb:globalBindings>
+        <xjc:javaType
                 name="java.time.ZonedDateTime"
                 xmlType="xs:dateTime"
-                parseMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
-                printMethod="com.hp.autonomy.types.idol.responses.answer.AnswerbankXmlTransformer.marshalDate" />
-        <serializable/>
-    </globalBindings>
-    <bindings schemaLocation="../../../xsds/responses/answer/ask.xsd">
-        <bindings node="//xs:complexType[@name='ask_answer']//xs:element[@name='metadata']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(AskMetadataAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="com.hp.autonomy.types.idol.responses.answer.AskMetadataMap"/>
-            </property>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
-        <bindings node="//xs:complexType[@name='question']">
+                parseMethod="com.opentext.idol.types.responses.answer.AnswerbankXmlTransformer.unmarshalDate"
+                printMethod="com.opentext.idol.types.responses.answer.AnswerbankXmlTransformer.marshalDate" />
+        <xjc:serializable/>
+    </jaxb:globalBindings>
+    <jaxb:bindings schemaLocation="../../../xsds/responses/answer/ask.xsd">
+        <jaxb:bindings node="//xs:complexType[@name='ask_answer']//xs:element[@name='metadata']">
+            <annox:annotate target="field">@jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter(AskMetadataAdapter.class)</annox:annotate>
+            <jaxb:property>
+                <jaxb:baseType name="com.opentext.idol.types.responses.answer.AskMetadataMap"/>
+            </jaxb:property>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
+        <jaxb:bindings node="//xs:complexType[@name='question']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
-        </bindings>
-        <bindings node="//xs:complexType[@name='question_equivalence_class']">
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='question_equivalence_class']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
-        </bindings>
-        <bindings node="//xs:complexType[@name='qec_answer']">
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='qec_answer']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
-        </bindings>
-        <bindings node="//xs:complexType[@name='qec_rule']">
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='qec_rule']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
-            <property name="text"/>
-        </bindings>
-        <bindings node="//xs:complexType[@name='qec_answer']//xs:element[@name='metadata']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QecMetadataMapAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
-            </property>
-        </bindings>
-        <bindings node="//xs:element[@name='question_ids']">
+            <jaxb:property name="text"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='qec_answer']//xs:element[@name='metadata']">
+            <annox:annotate target="field">@jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QecMetadataMapAdapter.class)</annox:annotate>
+            <jaxb:property>
+                <jaxb:baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
+            </jaxb:property>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='question_ids']">
             <annox:annotate target="field">@lombok.Singular</annox:annotate>
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionIdsAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="java.util.List&lt;java.lang.String&gt;"/>
-            </property>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../../xsds/responses/answer/getStatus.xsd">
-        <bindings node="//xs:complexType[@name='system']//xs:element[@name='info']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(GetStatusMetadataMapAdapter.class)</annox:annotate>
-            <property>
-                <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
-            </property>
-        </bindings>
-    </bindings>
-</bindings>
+            <annox:annotate target="field">@jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter(QuestionIdsAdapter.class)</annox:annotate>
+            <jaxb:property>
+                <jaxb:baseType name="java.util.List&lt;java.lang.String&gt;"/>
+            </jaxb:property>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../../xsds/responses/answer/getStatus.xsd">
+        <jaxb:bindings node="//xs:complexType[@name='system']//xs:element[@name='info']">
+            <annox:annotate target="field">@jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter(GetStatusMetadataMapAdapter.class)</annox:annotate>
+            <jaxb:property>
+                <jaxb:baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
+            </jaxb:property>
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>

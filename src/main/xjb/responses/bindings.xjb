@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ (c) Copyright 2016, 2020 Micro Focus or one of its affiliates.
   ~
@@ -12,312 +13,313 @@
   ~ information contained herein is subject to change without notice.
   -->
 
-<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
-          xmlns:xs="http://www.w3.org/2001/XMLSchema"
-          xmlns:annox="http://annox.dev.java.net"
-          xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
-          extensionBindingPrefixes="annox"
-          version="2.1">
-    <globalBindings>
-        <serializable/>
-        <javaType name="long" xmlType="xs:integer"/>
-    </globalBindings>
-    <bindings schemaLocation="../../xsds/responses/autnSimpleTypes.xsd">
-        <bindings node="xs:simpleType[@name='epochDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseEpochDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printEpochDate"/>
-        </bindings>
-        <bindings node="xs:simpleType[@name='idolDate']">
-            <javaType name="java.util.Date" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printDate"/>
-        </bindings>
-        <bindings node="xs:simpleType[@name='queryResultDate']">
-            <javaType name="java.time.ZonedDateTime" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseQueryResponseDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printQueryResponseDate"/>
-        </bindings>
-        <bindings node="xs:simpleType[@name='queueInfoDate']">
-            <javaType name="java.time.ZonedDateTime" parseMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.parseQueueInfoDate" printMethod="com.hp.autonomy.types.idol.xjc.DateAdapter.printQueueInfoDate"/>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/autnResponse.xsd">
-        <bindings node="//xs:element[@name='responsedata']">
-            <property name="responseData"/>
-        </bindings>
-        <bindings node="xs:complexType[@name='errorResponse']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/commonQueryTypes.xsd">
-        <bindings node="//xs:attribute[@name='pdocs']">
-            <property name="docsWithPhrase"/>
-        </bindings>
-        <bindings node="//xs:attribute[@name='poccs']">
-            <property name="occurrences"/>
-        </bindings>
-        <bindings node="//xs:attribute[@name='docs']">
-            <property name="docsWithAllTerms"/>
-        </bindings>
-        <bindings node="//xs:complexType[@name='qsElement']">
-            <property name="text"/>
+<jaxb:bindings xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xjc="https://jakarta.ee/xml/ns/jaxb"
+               xmlns:xs="http://www.w3.org/2001/XMLSchema"
+               xmlns:annox="http://jvnet.org/basicjaxb/xjc/annox"
+               xmlns:inheritance="http://jvnet.org/basicjaxb/xjc/inheritance"
+               extensionBindingPrefixes="annox"
+               version="3.0">
+    <jaxb:globalBindings>
+        <xjc:serializable/>
+        <xjc:javaType name="long" xmlType="xs:integer"/>
+    </jaxb:globalBindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/autnSimpleTypes.xsd">
+        <jaxb:bindings node="xs:simpleType[@name='epochDate']">
+            <xjc:javaType name="java.util.Date" parseMethod="com.opentext.idol.types.xjc.DateAdapter.parseEpochDate" printMethod="com.opentext.idol.types.xjc.DateAdapter.printEpochDate"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:simpleType[@name='idolDate']">
+            <xjc:javaType name="java.util.Date" parseMethod="com.opentext.idol.types.xjc.DateAdapter.parseDate" printMethod="com.opentext.idol.types.xjc.DateAdapter.printDate"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:simpleType[@name='queryResultDate']">
+            <xjc:javaType name="java.time.ZonedDateTime" parseMethod="com.opentext.idol.types.xjc.DateAdapter.parseQueryResponseDate" printMethod="com.opentext.idol.types.xjc.DateAdapter.printQueryResponseDate"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:simpleType[@name='queueInfoDate']">
+            <xjc:javaType name="java.time.ZonedDateTime" parseMethod="com.opentext.idol.types.xjc.DateAdapter.parseQueueInfoDate" printMethod="com.opentext.idol.types.xjc.DateAdapter.printQueueInfoDate"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/autnResponse.xsd">
+        <jaxb:bindings node="//xs:element[@name='responsedata']">
+            <jaxb:property name="responseData"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:complexType[@name='errorResponse']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/commonQueryTypes.xsd">
+        <jaxb:bindings node="//xs:attribute[@name='pdocs']">
+            <jaxb:property name="docsWithPhrase"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:attribute[@name='poccs']">
+            <jaxb:property name="occurrences"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:attribute[@name='docs']">
+            <jaxb:property name="docsWithAllTerms"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='qsElement']">
+            <jaxb:property name="text"/>
             <inheritance:implements>com.hp.autonomy.types.requests.idol.actions.query.QuerySummaryElement</inheritance:implements>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/communityGetStatusResponse.xsd">
-        <bindings node="xs:complexType[@name='communityStatusResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-        <bindings node="//xs:element[@name='securitytypes']">
-            <property name="securityTypes"/>
-        </bindings>
-        <bindings node="//xs:element[@name='maxusers']">
-            <property name="maxUsers"/>
-        </bindings>
-        <bindings node="//xs:element[@name='numusers']">
-            <property name="numUsers"/>
-        </bindings>
-        <bindings node="//xs:element[@name='defaultrolename']">
-            <property name="defaultRoleName"/>
-        </bindings>
-        <bindings node="//xs:element[@name='databaseprivilege']">
-            <property name="databasePrivilege"/>
-        </bindings>
-        <bindings node="//xs:element[@name='defaultsecuritytype']">
-            <property name="defaultSecurityType"/>
-        </bindings>
-        <bindings node="//xs:element[@name='securitytype']">
-            <property name="securityType"/>
-        </bindings>
-        <bindings node="//xs:element[@name='documentsecurity']">
-            <property name="documentSecurity"/>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/communityTypes.xsd">
-        <bindings node="xs:complexType[@name='user']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-        <bindings node="//xs:element[@name='role']">
-            <property name="roles"/>
-        </bindings>
-        <bindings node="xs:complexType[@name='userFields']">
-            <annox:annotate target="field">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <bindings node="//xs:element[@name='fields']">
-                <property>
-                    <baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
-                </property>
-                <annox:annotate target="field">@javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value =
-                    com.hp.autonomy.types.idol.responses.community.KeyValueMapAdapter.class)</annox:annotate>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/communityUserGetAllFieldNames.xsd">
-        <bindings node="xs:complexType[@name='userFieldNames']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <bindings node="//xs:element[@name='field']">
-                <property name="fields"/>
-            </bindings>
-        </bindings>
-        <bindings node="xs:complexType[@name='userFieldNamesResponse']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <bindings node="//xs:element[@name='fields']">
-                <property name="fields"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/dateConvertResponse.xsd">
-        <bindings node="xs:complexType[@name='dateConvertResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/detectLanguageResponse.xsd">
-        <bindings node="xs:complexType[@name='detectLanguageResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/documentStatsResponse.xsd">
-        <bindings node="xs:complexType[@name='documentStatsResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-        <bindings node="xs:complexType[@name='documentStatsResponseData']//xs:any[2]">
-            <property name="any2"/>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getAllRefsResponse.xsd">
-        <bindings node="xs:complexType[@name='getAllRefsResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getChildrenResponse.xsd">
-        <bindings node="xs:complexType[@name='getChildrenResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getContentResponse.xsd">
-        <bindings node="xs:complexType[@name='getContentResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getQueryTagValuesResponse.xsd">
-        <bindings node="xs:complexType[@name='getQueryTagValuesResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-        <bindings node="//xs:complexType[@name='recursiveField']">
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/communityGetStatusResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='communityStatusResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='securitytypes']">
+            <jaxb:property name="securityTypes"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='maxusers']">
+            <jaxb:property name="maxUsers"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='numusers']">
+            <jaxb:property name="numUsers"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='defaultrolename']">
+            <jaxb:property name="defaultRoleName"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='databaseprivilege']">
+            <jaxb:property name="databasePrivilege"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='defaultsecuritytype']">
+            <jaxb:property name="defaultSecurityType"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='securitytype']">
+            <jaxb:property name="securityType"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='documentsecurity']">
+            <jaxb:property name="documentSecurity"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/communityTypes.xsd">
+        <jaxb:bindings node="xs:complexType[@name='user']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:element[@name='role']">
+            <jaxb:property name="roles"/>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:complexType[@name='userFields']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <jaxb:bindings node="//xs:element[@name='fields']">
+                <jaxb:property>
+                    <jaxb:baseType name="java.util.Map&lt;java.lang.String,java.lang.String&gt;"/>
+                </jaxb:property>
+                <annox:annotate target="field">@jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter(value =
+                    com.opentext.idol.types.responses.community.KeyValueMapAdapter.class)</annox:annotate>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/communityUserGetAllFieldNames.xsd">
+        <jaxb:bindings node="xs:complexType[@name='userFieldNames']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <jaxb:bindings node="//xs:element[@name='field']">
+                <jaxb:property name="fields"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:complexType[@name='userFieldNamesResponse']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <jaxb:bindings node="//xs:element[@name='fields']">
+                <jaxb:property name="fields"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/dateConvertResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='dateConvertResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/detectLanguageResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='detectLanguageResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/documentStatsResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='documentStatsResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:complexType[@name='documentStatsResponseData']//xs:any[2]">
+            <jaxb:property name="any2"/>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getAllRefsResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getAllRefsResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getChildrenResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getChildrenResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getContentResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getContentResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getQueryTagValuesResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getQueryTagValuesResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='recursiveField']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getSampleResponse.xsd">
-        <bindings node="xs:complexType[@name='getSampleResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getStatusResponse.xsd">
-        <bindings node="xs:complexType[@name='getStatusResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-        <bindings node="xs:complexType[@name='database']">
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getSampleResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getSampleResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getStatusResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getStatusResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+        <jaxb:bindings node="xs:complexType[@name='database']">
             <inheritance:implements>com.hp.autonomy.types.IdolDatabase</inheritance:implements>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getTagNamesResponse.xsd">
-        <bindings node="xs:complexType[@name='getTagNamesResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getTagValuesResponse.xsd">
-        <bindings node="xs:complexType[@name='getTagValuesResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/getVersionResponse.xsd">
-        <bindings node="xs:complexType[@name='getVersionResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/highlightResponse.xsd">
-        <bindings node="xs:complexType[@name='highlightResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/languageSettingsResponse.xsd">
-        <bindings node="xs:complexType[@name='languageSettingsResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/listResponse.xsd">
-        <bindings node="xs:complexType[@name='listResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/queryResponse.xsd">
-        <bindings node="xs:complexType[@name='queryResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/querySummaryManagementResponse.xsd">
-        <bindings node="xs:complexType[@name='querySummaryManagementResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/roleResponse.xsd">
-        <bindings node="xs:complexType[@name='rolesResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/securityResponse.xsd">
-        <bindings node="xs:complexType[@name='security']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/suggestOnTextResponse.xsd">
-        <bindings node="xs:complexType[@name='suggestOnTextResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/suggestResponse.xsd">
-        <bindings node="xs:complexType[@name='suggestResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-            <inheritance:implements>com.hp.autonomy.types.idol.responses.QueryResponse</inheritance:implements>
-            <bindings node="//xs:element[@name='hit']">
-                <property name="hits"/>
-            </bindings>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/summarizeResponse.xsd">
-        <bindings node="xs:complexType[@name='summarizeResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/termExpandResponse.xsd">
-        <bindings node="xs:complexType[@name='termExpandResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/termGetAllResponse.xsd">
-        <bindings node="xs:complexType[@name='termGetAllResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/termGetBestResponse.xsd">
-        <bindings node="xs:complexType[@name='termGetBestResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/termGetInfoResponse.xsd">
-        <bindings node="xs:complexType[@name='termGetInfoResponseData']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/uidResponse.xsd">
-        <bindings node="xs:complexType[@name='uid']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/userDetailsResponse.xsd">
-        <bindings node="xs:complexType[@name='userDetails']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/userListResponse.xsd">
-        <bindings node="xs:complexType[@name='users']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/profileRead.xsd">
-        <bindings node="xs:complexType[@name='profiles']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
-    <bindings schemaLocation="../../xsds/responses/profileUser.xsd">
-        <bindings node="xs:complexType[@name='profileUser']">
-            <annox:annotate target="class">@javax.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
-        </bindings>
-    </bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getTagNamesResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getTagNamesResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getTagValuesResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getTagValuesResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/getVersionResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='getVersionResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/highlightResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='highlightResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/languageSettingsResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='languageSettingsResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/listResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='listResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/queryResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='queryResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/querySummaryManagementResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='querySummaryManagementResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/roleResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='rolesResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/securityResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='security']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/suggestOnTextResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='suggestOnTextResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/suggestResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='suggestResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+            <inheritance:implements>com.opentext.idol.types.responses.QueryResponse</inheritance:implements>
+            <jaxb:bindings node="//xs:element[@name='hit']">
+                <jaxb:property name="hits"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/summarizeResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='summarizeResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/termExpandResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='termExpandResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/termGetAllResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='termGetAllResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/termGetBestResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='termGetBestResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/termGetInfoResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='termGetInfoResponseData']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/uidResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='uid']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/userDetailsResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='userDetails']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/userListResponse.xsd">
+        <jaxb:bindings node="xs:complexType[@name='users']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/profileRead.xsd">
+        <jaxb:bindings node="xs:complexType[@name='profiles']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/profileUser.xsd">
+        <jaxb:bindings node="xs:complexType[@name='profileUser']">
+            <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
+        </jaxb:bindings>
+    </jaxb:bindings>
 
-    <bindings schemaLocation="../../xsds/responses/asynchronousTypes.xsd">
-        <bindings node="xs:complexType[@name='action']">
-            <bindings node="//xs:any">
-                <property name="results"/>
-            </bindings>
-        </bindings>
-    </bindings>
-</bindings>
+    <jaxb:bindings schemaLocation="../../xsds/responses/asynchronousTypes.xsd">
+        <jaxb:bindings node="xs:complexType[@name='action']">
+            <jaxb:bindings node="//xs:any">
+                <jaxb:property name="results"/>
+            </jaxb:bindings>
+        </jaxb:bindings>
+    </jaxb:bindings>
+</jaxb:bindings>
