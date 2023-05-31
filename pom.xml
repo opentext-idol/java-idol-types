@@ -16,7 +16,7 @@
 
     <name>Java Idol Types</name>
     <description>Java Client for DOM parsing of ACI responses in accordance with XML schemas</description>
-    <url>https://github.com/microfocus-idol/java-idol-types</url>
+    <url>https://github.com/opentext-idol/java-idol-types</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -26,14 +26,14 @@
     <inceptionYear>2015</inceptionYear>
 
     <scm>
-        <connection>scm:git:git@github.com:microfocus-idol/java-idol-types.git</connection>
-        <developerConnection>scm:git:git@github.com:microfocus-idol/java-idol-types.git</developerConnection>
-        <url>git@github.com:microfocus-idol/java-idol-types.git</url>
+        <connection>scm:git:git@github.com:opentext-idol/java-idol-types.git</connection>
+        <developerConnection>scm:git:git@github.com:opentext-idol/java-idol-types.git</developerConnection>
+        <url>git@github.com:opentext-idol/java-idol-types.git</url>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/microfocus-idol/java-idol-types/issues</url>
+        <url>https://github.com/opentext-idol/java-idol-types/issues</url>
     </issueManagement>
 
     <developers>
