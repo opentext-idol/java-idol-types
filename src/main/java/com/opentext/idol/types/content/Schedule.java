@@ -19,14 +19,14 @@ import biweekly.ValidationWarnings;
 import biweekly.util.Recurrence;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-import org.joda.time.DateTime;
 
-import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
+import java.time.Instant;
 
 @SuppressWarnings("WeakerAccess")
 @Getter
@@ -37,9 +37,9 @@ public class Schedule implements Serializable {
     private static final long serialVersionUID = 7216265876306134378L;
 
     private final String productId;
-    private final DateTime startDate;
-    private final DateTime endDate;
-    private final DateTime until;
+    private final Instant startDate;
+    private final Instant endDate;
+    private final Instant until;
     private final Recurrence.Frequency frequency;
 
     private Schedule(final Builder builder) {
@@ -65,9 +65,9 @@ public class Schedule implements Serializable {
     @JsonPOJOBuilder(withPrefix = "set")
     public static class Builder {
         private String productId;
-        private DateTime startDate;
-        private DateTime endDate;
-        private DateTime until;
+        private Instant startDate;
+        private Instant endDate;
+        private Instant until;
         private Recurrence.Frequency frequency;
 
         public Schedule build() {

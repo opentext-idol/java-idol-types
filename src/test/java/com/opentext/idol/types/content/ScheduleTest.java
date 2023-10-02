@@ -16,28 +16,27 @@ package com.opentext.idol.types.content;
 
 import biweekly.util.Recurrence;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.joda.JodaModule;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.time.Instant;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ScheduleTest {
     private final Schedule schedule = new Schedule.Builder()
             .setProductId("Idol Types")
-            .setStartDate(new DateTime(1423612800000L, DateTimeZone.UTC))
-            .setEndDate(new DateTime(1423785600000L, DateTimeZone.UTC))
-            .setUntil(new DateTime(1432162800000L, DateTimeZone.UTC))
+            .setStartDate(Instant.ofEpochMilli(1423612800000L))
+            .setEndDate(Instant.ofEpochMilli(1423785600000L))
+            .setUntil(Instant.ofEpochMilli(1432162800000L))
             .setFrequency(Recurrence.Frequency.MONTHLY)
             .build();
 
     @Test
     public void json() throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JodaModule());
+        objectMapper.registerModule(new JavaTimeModule());
         final byte[] json = objectMapper.writeValueAsBytes(schedule);
         assertNotNull(json);
         final Schedule processedSchedule = objectMapper.readValue(json, Schedule.class);

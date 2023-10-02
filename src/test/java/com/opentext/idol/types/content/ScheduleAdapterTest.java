@@ -15,9 +15,10 @@
 package com.opentext.idol.types.content;
 
 import biweekly.util.Recurrence;
-import org.joda.time.DateTime;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import java.time.Instant;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -55,9 +56,9 @@ public class ScheduleAdapterTest {
     public void marshal() {
         final Schedule schedule = new Schedule.Builder()
                 .setProductId("Idol Types")
-                .setStartDate(new DateTime(1423612800000L))
-                .setEndDate(new DateTime(1423785600000L))
-                .setUntil(new DateTime(1432162800000L))
+                .setStartDate(Instant.ofEpochMilli(1423612800000L))
+                .setEndDate(Instant.ofEpochMilli(1423785600000L))
+                .setUntil(Instant.ofEpochMilli(1432162800000L))
                 .setFrequency(Recurrence.Frequency.MONTHLY)
                 .build();
         final String scheduleAsString = adapter.marshal(schedule);

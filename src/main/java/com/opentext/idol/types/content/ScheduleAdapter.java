@@ -21,10 +21,11 @@ import biweekly.property.DateEnd;
 import biweekly.property.DateStart;
 import biweekly.util.ICalDate;
 import biweekly.util.Recurrence;
-import org.apache.commons.lang3.StringUtils;
-import org.joda.time.DateTime;
-
 import jakarta.xml.bind.annotation.adapters.XmlAdapter;
+import org.apache.commons.lang3.StringUtils;
+
+import java.time.Instant;
+import java.util.Date;
 import java.util.regex.Pattern;
 
 @SuppressWarnings("WeakerAccess")
@@ -47,17 +48,17 @@ public class ScheduleAdapter extends XmlAdapter<String, Schedule> {
         }
 
         final VEvent event = iCalendar.getEvents().get(0);
-        final DateTime startDate = new DateTime(event.getDateStart().getValue().getTime());
-        final DateTime endDate = new DateTime(event.getDateEnd().getValue().getTime());
+        final Instant startDate = event.getDateStart().getValue().toInstant();
+        final Instant endDate = event.getDateEnd().getValue().toInstant();
 
-        DateTime until = null;
+        Instant until = null;
         Recurrence.Frequency frequency = null;
 
         if (event.getRecurrenceRule() != null) {
             frequency = event.getRecurrenceRule().getValue().getFrequency();
 
             if (event.getRecurrenceRule().getValue().getUntil() != null) {
-                until = new DateTime(event.getRecurrenceRule().getValue().getUntil().getRawComponents().toDate());
+                until = event.getRecurrenceRule().getValue().getUntil().getRawComponents().toDate().toInstant();
             }
         }
 
@@ -82,16 +83,16 @@ public class ScheduleAdapter extends XmlAdapter<String, Schedule> {
         final ICalendar iCalendar = new ICalendar();
 
         final VEvent event = new VEvent();
-        event.setDateStart(new DateStart(schedule.getStartDate().toDate(), true));
-        event.setDateEnd(new DateEnd(schedule.getEndDate().toDate(), true));
+        event.setDateStart(new DateStart(Date.from(schedule.getStartDate()), true));
+        event.setDateEnd(new DateEnd(Date.from(schedule.getEndDate()), true));
 
         final Recurrence.Frequency frequency = schedule.getFrequency();
         if (frequency != null) {
             final Recurrence.Builder builder = new Recurrence.Builder(frequency);
 
-            final DateTime until = schedule.getUntil();
+            final Instant until = schedule.getUntil();
             if (until != null) {
-                builder.until(new ICalDate(until.toDate()));
+                builder.until(new ICalDate(Date.from(until)));
             }
 
             event.setRecurrenceRule(builder.build());
