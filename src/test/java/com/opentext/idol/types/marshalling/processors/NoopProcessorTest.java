@@ -16,7 +16,7 @@ package com.opentext.idol.types.marshalling.processors;
 
 import com.autonomy.aci.client.services.Processor;
 import com.autonomy.aci.client.transport.AciResponseInputStream;
-import org.apache.http.HttpStatus;
+import org.apache.hc.core5.http.HttpStatus;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

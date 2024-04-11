@@ -14,7 +14,7 @@
 
 package com.opentext.idol.types.content;
 
-import biweekly.util.Recurrence;
+import biweekly.util.Frequency;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -41,7 +41,7 @@ public class ScheduleAdapterTest {
         assertNotNull(schedule.getStartDate());
         assertNotNull(schedule.getEndDate());
         assertNotNull(schedule.getUntil());
-        assertEquals(Recurrence.Frequency.MONTHLY, schedule.getFrequency());
+        assertEquals(Frequency.MONTHLY, schedule.getFrequency());
         assertTrue(schedule.validate().isEmpty());
         return schedule;
     }
@@ -59,7 +59,7 @@ public class ScheduleAdapterTest {
                 .setStartDate(Instant.ofEpochMilli(1423612800000L))
                 .setEndDate(Instant.ofEpochMilli(1423785600000L))
                 .setUntil(Instant.ofEpochMilli(1432162800000L))
-                .setFrequency(Recurrence.Frequency.MONTHLY)
+                .setFrequency(Frequency.MONTHLY)
                 .build();
         final String scheduleAsString = adapter.marshal(schedule);
         assertNotNull(scheduleAsString);

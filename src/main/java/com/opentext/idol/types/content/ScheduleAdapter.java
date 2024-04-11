@@ -19,6 +19,7 @@ import biweekly.ICalendar;
 import biweekly.component.VEvent;
 import biweekly.property.DateEnd;
 import biweekly.property.DateStart;
+import biweekly.util.Frequency;
 import biweekly.util.ICalDate;
 import biweekly.util.Recurrence;
 import jakarta.xml.bind.annotation.adapters.XmlAdapter;
@@ -52,7 +53,7 @@ public class ScheduleAdapter extends XmlAdapter<String, Schedule> {
         final Instant endDate = event.getDateEnd().getValue().toInstant();
 
         Instant until = null;
-        Recurrence.Frequency frequency = null;
+        Frequency frequency = null;
 
         if (event.getRecurrenceRule() != null) {
             frequency = event.getRecurrenceRule().getValue().getFrequency();
@@ -86,7 +87,7 @@ public class ScheduleAdapter extends XmlAdapter<String, Schedule> {
         event.setDateStart(new DateStart(Date.from(schedule.getStartDate()), true));
         event.setDateEnd(new DateEnd(Date.from(schedule.getEndDate()), true));
 
-        final Recurrence.Frequency frequency = schedule.getFrequency();
+        final Frequency frequency = schedule.getFrequency();
         if (frequency != null) {
             final Recurrence.Builder builder = new Recurrence.Builder(frequency);
 

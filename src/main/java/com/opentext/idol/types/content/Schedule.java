@@ -16,7 +16,7 @@ package com.opentext.idol.types.content;
 
 import biweekly.ICalVersion;
 import biweekly.ValidationWarnings;
-import biweekly.util.Recurrence;
+import biweekly.util.Frequency;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
@@ -40,7 +40,7 @@ public class Schedule implements Serializable {
     private final Instant startDate;
     private final Instant endDate;
     private final Instant until;
-    private final Recurrence.Frequency frequency;
+    private final Frequency frequency;
 
     private Schedule(final Builder builder) {
         productId = builder.productId;
@@ -68,7 +68,7 @@ public class Schedule implements Serializable {
         private Instant startDate;
         private Instant endDate;
         private Instant until;
-        private Recurrence.Frequency frequency;
+        private Frequency frequency;
 
         public Schedule build() {
             return new Schedule(this);
