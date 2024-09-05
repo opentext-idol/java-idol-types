@@ -10,12 +10,6 @@ Information can be found on the project homepage [here](http://opentext-idol.git
 
 java-idol-types is available from the central Maven repository.
 
-    <dependency>
-        <groupId>com.hp.autonomy.frontend</groupId>
-        <artifactId>idol-types</artifactId>
-        <version>2.3.0-SNAPSHOT</version>
-    </dependency>
-
 ## License
 
 Copyright 2015-2020 OpenText or one of its affiliates.
