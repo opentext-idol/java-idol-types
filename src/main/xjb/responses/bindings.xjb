@@ -136,9 +136,6 @@
         <jaxb:bindings node="xs:complexType[@name='documentStatsResponseData']">
             <annox:annotate target="class">@jakarta.xml.bind.annotation.XmlRootElement(namespace = "", name = "responsedata")</annox:annotate>
         </jaxb:bindings>
-        <jaxb:bindings node="xs:complexType[@name='documentStatsResponseData']//xs:any[2]">
-            <jaxb:property name="any2"/>
-        </jaxb:bindings>
     </jaxb:bindings>
     <jaxb:bindings schemaLocation="../../xsds/responses/getAllRefsResponse.xsd">
         <jaxb:bindings node="xs:complexType[@name='getAllRefsResponseData']">

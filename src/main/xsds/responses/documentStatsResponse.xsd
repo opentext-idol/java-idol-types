@@ -51,7 +51,6 @@
             <xs:element minOccurs="0" name="distinct" type="termStats"/>
             <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element minOccurs="0" name="characters" type="characters"/>
-            <xs:any namespace="##other" minOccurs="0" maxOccurs="unbounded"/>
             <xs:element minOccurs="0" name="autnresponse" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
