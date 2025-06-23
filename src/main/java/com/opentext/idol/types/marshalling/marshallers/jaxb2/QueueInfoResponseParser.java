@@ -37,7 +37,8 @@ class QueueInfoResponseParser implements ResponseDataParser<QueueInfoGetStatusRe
 
     QueueInfoResponseParser(
             final ResponseDataParser<QueueInfoGetStatusResponseData> responseDataMarshaller,
-            final Map<String, Class<?>> expectedResults
+            final Map<String, Class<?>> expectedResults,
+            final Map<String, ?> jaxbContextProperties
     ) {
         this.responseDataMarshaller = responseDataMarshaller;
 
@@ -45,6 +46,7 @@ class QueueInfoResponseParser implements ResponseDataParser<QueueInfoGetStatusRe
             final Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
             marshaller.setMappedClass(clazz);
             marshaller.setClassesToBeBound(clazz);
+            marshaller.setJaxbContextProperties(jaxbContextProperties);
 
             this.expectedResults.put(nodeName, marshaller);
         });

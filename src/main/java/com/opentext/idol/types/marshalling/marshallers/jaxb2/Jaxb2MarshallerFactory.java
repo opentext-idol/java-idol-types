@@ -14,23 +14,29 @@
 
 package com.opentext.idol.types.marshalling.marshallers.jaxb2;
 
-import com.opentext.idol.types.responses.QueryResponse;
 import com.opentext.idol.types.marshalling.marshallers.DocumentGenerator;
 import com.opentext.idol.types.marshalling.marshallers.MarshallerFactory;
 import com.opentext.idol.types.marshalling.marshallers.ResponseDataParser;
 import com.opentext.idol.types.marshalling.marshallers.ResponseParser;
+import com.opentext.idol.types.responses.QueryResponse;
 import com.opentext.idol.types.responses.QueueInfoGetStatusResponseData;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.util.Map;
 
+@NoArgsConstructor
+@AllArgsConstructor
 public class Jaxb2MarshallerFactory implements MarshallerFactory {
+    private Map<String, ?> jaxbContextProperties = Map.of();
+
     @Getter
-    private final ResponseParser responseParser = new Jaxb2ResponseParser();
+    private final ResponseParser responseParser = new Jaxb2ResponseParser(jaxbContextProperties);
 
     @Override
     public <R> ResponseDataParser<R> getResponseDataParser(final Class<R> type) {
-        return new Jaxb2ResponseDataParser<>(responseParser, type);
+        return new Jaxb2ResponseDataParser<>(responseParser, type, jaxbContextProperties);
     }
 
     @Override
@@ -38,7 +44,8 @@ public class Jaxb2MarshallerFactory implements MarshallerFactory {
             final ResponseDataParser<R> responseDataMarshaller,
             final Class<R> responseDataType,
             final Class<C> contentType) {
-        return new Jaxb2QueryResponseDataParser<>(responseDataMarshaller, responseDataType, contentType);
+        return new Jaxb2QueryResponseDataParser<>(
+                responseDataMarshaller, responseDataType, contentType, jaxbContextProperties);
     }
 
     @Override
@@ -46,11 +53,11 @@ public class Jaxb2MarshallerFactory implements MarshallerFactory {
             final ResponseDataParser<QueueInfoGetStatusResponseData> responseDataMarshaller,
             final Map<String, Class<?>> resultTypes
     ) {
-        return new QueueInfoResponseParser(responseDataMarshaller, resultTypes);
+        return new QueueInfoResponseParser(responseDataMarshaller, resultTypes, jaxbContextProperties);
     }
 
     @Override
     public <T> DocumentGenerator<T> getDocumentGenerator(final Class<T> type) {
-        return new Jaxb2DocumentGenerator<>(type);
+        return new Jaxb2DocumentGenerator<>(type, jaxbContextProperties);
     }
 }

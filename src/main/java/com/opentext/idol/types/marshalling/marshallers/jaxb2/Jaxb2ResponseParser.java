@@ -24,6 +24,7 @@ import org.w3c.dom.Node;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamSource;
 import java.io.InputStream;
+import java.util.Map;
 
 class Jaxb2ResponseParser implements ResponseParser {
     private static final String SUCCESS_STATE = "SUCCESS";
@@ -31,9 +32,10 @@ class Jaxb2ResponseParser implements ResponseParser {
     private final Jaxb2Marshaller responseEnvelopeMarshaller;
     private final Jaxb2Marshaller errorMarshaller;
 
-    Jaxb2ResponseParser() {
+    Jaxb2ResponseParser(final Map<String, ?> jaxbContextProperties) {
         responseEnvelopeMarshaller = new Jaxb2Marshaller();
         responseEnvelopeMarshaller.setClassesToBeBound(Autnresponse.class);
+        responseEnvelopeMarshaller.setJaxbContextProperties(jaxbContextProperties);
 
         errorMarshaller = new Jaxb2Marshaller();
         errorMarshaller.setClassesToBeBound(ErrorResponse.class);

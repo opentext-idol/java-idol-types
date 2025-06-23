@@ -23,18 +23,24 @@ import org.w3c.dom.Node;
 
 import javax.xml.transform.dom.DOMSource;
 import java.io.InputStream;
+import java.util.Map;
 
 class Jaxb2ResponseDataParser<R> implements ResponseDataParser<R> {
     private final ResponseParser responseParser;
     private final Class<R> type;
     private final Jaxb2Marshaller marshaller;
 
-    Jaxb2ResponseDataParser(final ResponseParser responseParser, final Class<R> type) {
+    Jaxb2ResponseDataParser(
+            final ResponseParser responseParser,
+            final Class<R> type,
+            final Map<String, ?> jaxbContextProperties
+    ) {
         this.responseParser = responseParser;
         this.type = type;
         marshaller = new Jaxb2Marshaller();
         marshaller.setClassesToBeBound(type);
         marshaller.setMappedClass(type);
+        marshaller.setJaxbContextProperties(jaxbContextProperties);
     }
 
     @Override

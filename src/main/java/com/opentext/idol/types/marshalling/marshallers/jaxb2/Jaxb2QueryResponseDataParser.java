@@ -15,16 +15,17 @@
 package com.opentext.idol.types.marshalling.marshallers.jaxb2;
 
 import com.autonomy.aci.client.services.AciErrorException;
+import com.opentext.idol.types.marshalling.marshallers.ResponseDataParser;
 import com.opentext.idol.types.responses.Autnresponse;
 import com.opentext.idol.types.responses.DocContent;
 import com.opentext.idol.types.responses.QueryResponse;
-import com.opentext.idol.types.marshalling.marshallers.ResponseDataParser;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.w3c.dom.Node;
 
 import javax.xml.transform.dom.DOMSource;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Map;
 
 class Jaxb2QueryResponseDataParser<R extends QueryResponse, C> implements ResponseDataParser<R> {
     private final ResponseDataParser<R> responseDataMarshaller;
@@ -32,13 +33,19 @@ class Jaxb2QueryResponseDataParser<R extends QueryResponse, C> implements Respon
     private final Class<C> contentType;
     private final Jaxb2Marshaller marshaller;
 
-    Jaxb2QueryResponseDataParser(final ResponseDataParser<R> responseDataMarshaller, final Class<R> responseDataType, final Class<C> contentType) {
+    Jaxb2QueryResponseDataParser(
+            final ResponseDataParser<R> responseDataMarshaller,
+            final Class<R> responseDataType,
+            final Class<C> contentType,
+            final Map<String, ?> jaxbContextProperties
+    ) {
         this.responseDataMarshaller = responseDataMarshaller;
         this.responseDataType = responseDataType;
         this.contentType = contentType;
         marshaller = new Jaxb2Marshaller();
         marshaller.setClassesToBeBound(contentType);
         marshaller.setMappedClass(contentType);
+        marshaller.setJaxbContextProperties(jaxbContextProperties);
     }
 
     @Override

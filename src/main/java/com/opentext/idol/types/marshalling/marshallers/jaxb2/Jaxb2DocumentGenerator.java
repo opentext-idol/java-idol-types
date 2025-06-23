@@ -22,14 +22,16 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.ByteArrayOutputStream;
 import java.nio.charset.Charset;
 import java.util.List;
+import java.util.Map;
 
 class Jaxb2DocumentGenerator<T> implements DocumentGenerator<T> {
     private final Jaxb2Marshaller marshaller;
 
-    Jaxb2DocumentGenerator(final Class<T> type) {
+    Jaxb2DocumentGenerator(final Class<T> type, final Map<String, ?> jaxbContextProperties) {
         marshaller = new Jaxb2Marshaller();
         marshaller.setClassesToBeBound(Documents.class, type);
         marshaller.setMappedClass(type);
+        marshaller.setJaxbContextProperties(jaxbContextProperties);
     }
 
     @Override
