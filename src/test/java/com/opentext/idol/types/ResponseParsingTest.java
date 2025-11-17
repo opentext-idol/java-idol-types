@@ -87,18 +87,16 @@ public class ResponseParsingTest extends AbstractParsingTest<Object> {
     }
 
     @Test
-    protected void ValueDetailsCompatibilityTest(){
+    protected void ValueDetailsCompatibilityTest() throws IOException {
         TestData<GetQueryTagValuesResponseData> data = new TestData<>(GetQueryTagValuesResponseData.class, "/getQueryTagValuesFieldDependenceMultiLevelResponse-compat.xml");
         final Processor<GetQueryTagValuesResponseData> processor = getProcessor(processorFactory, data);
         try (final MockAciResponseInputStream mockInputStream = new MockAciResponseInputStream(
-            this.getClass().getResourceAsStream("/getQueryTagValuesFieldDependenceMultiLevelResponse-compat.xml")
-            )) {
+            getClass().getResourceAsStream("/getQueryTagValuesFieldDependenceMultiLevelResponse-compat.xml")
+        )) {
             final GetQueryTagValuesResponseData gqtv = processor.process(mockInputStream);
             assertNotNull(gqtv);
-            assertEquals(gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValueMin().getValue(), 1.78);
-            assertEquals(gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValuemin().getValue(), 1.78);
-        } catch (final IOException e) {
-            throw new RuntimeException(e);
+            assertEquals(1.78, gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValueMin().getValue());
+            assertEquals(1.78, gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValuemin().getValue());
         }
     }
 }

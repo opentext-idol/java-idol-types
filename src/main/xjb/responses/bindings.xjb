@@ -168,6 +168,7 @@
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
         </jaxb:bindings>
         <jaxb:bindings node="//xs:complexType[@name='valueDetails']">
+            <!-- use this instead of a generated class so we can support multiple field naming schemes, for backwards compatibility -->
             <jaxb:class ref="com.opentext.idol.types.responses.ValueDetails"/>
         </jaxb:bindings>
     </jaxb:bindings>
