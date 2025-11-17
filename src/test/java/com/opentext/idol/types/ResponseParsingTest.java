@@ -15,12 +15,19 @@
 package com.opentext.idol.types;
 
 import com.autonomy.aci.client.services.Processor;
+
 import com.opentext.idol.types.marshalling.ProcessorFactory;
 import com.opentext.idol.types.marshalling.marshallers.MarshallerFactory;
 import com.opentext.idol.types.marshalling.marshallers.ResponseParser;
 import com.opentext.idol.types.responses.*;
 
+import org.junit.jupiter.api.Test;
+
+import java.io.IOException;
 import java.util.stream.Stream;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class ResponseParsingTest extends AbstractParsingTest<Object> {
 
@@ -38,6 +45,7 @@ public class ResponseParsingTest extends AbstractParsingTest<Object> {
                 new TestData<>(GetContentResponseData.class, "/getContent.xml"),
                 new TestData<>(GetQueryTagValuesResponseData.class, "/getQueryTagValuesRangeResponse.xml"),
                 new TestData<>(GetQueryTagValuesResponseData.class, "/getQueryTagValuesDateRangeResponse.xml"),
+                new TestData<>(GetQueryTagValuesResponseData.class, "/getQueryTagValuesFieldDependenceMultiLevelResponse.xml"),
 //                new TestData<>(GetSampleResponseData.class, ""),
                 new TestData<>(GetStatusResponseData.class, "/getStatus.xml"),
                 new TestData<>(GetTagNamesResponseData.class, "/getTagNames.xml"),
@@ -76,5 +84,19 @@ public class ResponseParsingTest extends AbstractParsingTest<Object> {
     @Override
     protected <T extends Object> ResponseParser getResponseParser(final MarshallerFactory marshallerFactory, final TestData<T> data) {
         return marshallerFactory.getResponseDataParser(data.getType());
+    }
+
+    @Test
+    protected void ValueDetailsCompatibilityTest() throws IOException {
+        TestData<GetQueryTagValuesResponseData> data = new TestData<>(GetQueryTagValuesResponseData.class, "/getQueryTagValuesFieldDependenceMultiLevelResponse-compat.xml");
+        final Processor<GetQueryTagValuesResponseData> processor = getProcessor(processorFactory, data);
+        try (final MockAciResponseInputStream mockInputStream = new MockAciResponseInputStream(
+            getClass().getResourceAsStream("/getQueryTagValuesFieldDependenceMultiLevelResponse-compat.xml")
+        )) {
+            final GetQueryTagValuesResponseData gqtv = processor.process(mockInputStream);
+            assertNotNull(gqtv);
+            assertEquals(1.78, gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValueMin().getValue());
+            assertEquals(1.78, gqtv.getValues().getField().get(0).getField().get(0).getValueDetails().getValuemin().getValue());
+        }
     }
 }

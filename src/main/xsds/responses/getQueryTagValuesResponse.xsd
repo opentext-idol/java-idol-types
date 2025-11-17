@@ -56,11 +56,23 @@
     <xs:complexType name="valueDetails">
         <xs:sequence>
             <xs:element name="values" type="xs:integer"/>
-            <xs:element name="value_sum" type="xs:double"/>
-            <xs:element name="value_average" type="autn:dateOrNumber"/>
-            <xs:element name="value_min" type="autn:dateOrNumber"/>
-            <xs:element name="value_max" type="autn:dateOrNumber"/>
-            <xs:element name="value_percentile" type="autn:dateOrNumberPercentile" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:choice>
+                <xs:element name="value_sum" type="xs:double"/>
+                <xs:element name="valuesum" type="xs:double"/>
+            </xs:choice>
+            <xs:choice>
+                <xs:element name="value_average" type="autn:dateOrNumber"/>
+                <xs:element name="valueaverage" type="autn:dateOrNumber"/>
+            </xs:choice>
+            <xs:choice>
+                <xs:element name="value_min" type="autn:dateOrNumber"/>
+                <xs:element name="valuemin" type="autn:dateOrNumber"/>
+            </xs:choice>
+            <xs:choice>
+                <xs:element name="value_max" type="autn:dateOrNumber"/>
+                <xs:element name="valuemax" type="autn:dateOrNumber"/>
+            </xs:choice>
+            <xs:element name="valuepercentile" type="autn:dateOrNumberPercentile" minOccurs="0" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -75,6 +87,7 @@
         <xs:attribute name="end_date" type="xs:string"/>
         <xs:attribute name="end_date_with_offset" type="xs:string"/>
         <xs:attribute name="value" type="xs:string"/>
+        <xs:attribute name="type" type="xs:string"/>
     </xs:complexType>
 
     <xs:complexType name="values">
@@ -116,4 +129,3 @@
         </xs:simpleContent>
     </xs:complexType>
 </xs:schema>
-

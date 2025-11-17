@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autnresponse xmlns:autn="http://schemas.autonomy.com/aci/">
+  <action>GETQUERYTAGVALUES</action>
+  <response>SUCCESS</response>
+  <responsedata>
+    <autn:number_of_fields>3</autn:number_of_fields>
+    <autn:field>
+      <autn:name>DOCUMENT/PRFIELD1</autn:name>
+      <autn:name>DOCUMENT/PET</autn:name>
+      <autn:name>DOCUMENT/PRFIELD2</autn:name>
+    </autn:field>
+    <autn:values>
+      <autn:field value="0,1e+5" type="range" count="1102">
+        <autn:field value="CAT" count="290">
+          <autn:value_details>
+            <autn:values>290</autn:values>
+            <autn:valuesum>15157447.30</autn:valuesum>
+            <autn:valueaverate>52267.06</autn:valueaverate>
+            <autn:valuemin>1.78</autn:valuemin>
+            <autn:valuemax>986595.15</autn:valuemax>
+            <autn:valuepercentile percentile="10">24925.21</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">55391.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">94480.02</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">130150.21</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">156221.18</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="271">
+          <autn:value_details>
+            <autn:values>271</autn:values>
+            <autn:valuesum>17421265.70</autn:valuesum>
+            <autn:valueaverate>64285.11</autn:valueaverate>
+            <autn:valuemin>4.24</autn:valuemin>
+            <autn:valuemax>993074.96</autn:valuemax>
+            <autn:valuepercentile percentile="10">26703.93</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">54868.39</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">103851.41</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">162844.03</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">198110.22</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="266">
+          <autn:value_details>
+            <autn:values>266</autn:values>
+            <autn:valuesum>10661085.53</autn:valuesum>
+            <autn:valueaverate>40079.27</autn:valueaverate>
+            <autn:valuemin>1.09</autn:valuemin>
+            <autn:valuemax>994009.15</autn:valuemax>
+            <autn:valuepercentile percentile="10">13993.89</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">30479.51</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">67142.07</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">114100.82</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">149891.65</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="275">
+          <autn:value_details>
+            <autn:values>275</autn:values>
+            <autn:valuesum>10815786.33</autn:valuesum>
+            <autn:valueaverate>39330.13</autn:valueaverate>
+            <autn:valuemin>5.84</autn:valuemin>
+            <autn:valuemax>962168.64</autn:valuemax>
+            <autn:valuepercentile percentile="10">21497.91</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">43271.01</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">75765.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">120212.92</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">144003.46</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="1e+5,2e+5" type="range" count="121">
+        <autn:field value="CAT" count="27">
+          <autn:value_details>
+            <autn:values>27</autn:values>
+            <autn:valuesum>12914500.57</autn:valuesum>
+            <autn:valueaverate>478314.84</autn:valueaverate>
+            <autn:valuemin>27760.23</autn:valuemin>
+            <autn:valuemax>952893.61</autn:valuemax>
+            <autn:valuepercentile percentile="10">96947.85</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">168644.01</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">485768.05</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">758187.16</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">892292.61</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="26">
+          <autn:value_details>
+            <autn:values>26</autn:values>
+            <autn:valuesum>11131200.08</autn:valuesum>
+            <autn:valueaverate>428123.08</autn:valueaverate>
+            <autn:valuemin>21403.14</autn:valuemin>
+            <autn:valuemax>916414.7</autn:valuemax>
+            <autn:valuepercentile percentile="10">41951.95</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">245419.76</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">396824.41</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">628484.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">871320.45</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="31">
+          <autn:value_details>
+            <autn:values>31</autn:values>
+            <autn:valuesum>15964484.77</autn:valuesum>
+            <autn:valueaverate>514983.38</autn:valueaverate>
+            <autn:valuemin>32361.59</autn:valuemin>
+            <autn:valuemax>972633.87</autn:valuemax>
+            <autn:valuepercentile percentile="10">100303.96</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">182650.71</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">522854.27</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">785529.41</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">931478.96</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="37">
+          <autn:value_details>
+            <autn:values>37</autn:values>
+            <autn:valuesum>23828900.09</autn:valuesum>
+            <autn:valueaverate>644024.33</autn:valueaverate>
+            <autn:valuemin>100928.78</autn:valuemin>
+            <autn:valuemax>999435.61</autn:valuemax>
+            <autn:valuepercentile percentile="10">183039.23</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">473874.88</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">738429.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">846788.91</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">949961.97</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="2e+5,3e+5" type="range" count="82">
+        <autn:field value="CAT" count="21">
+          <autn:value_details>
+            <autn:values>21</autn:values>
+            <autn:valuesum>10355440.17</autn:valuesum>
+            <autn:valueaverate>493116.21</autn:valueaverate>
+            <autn:valuemin>71904.72</autn:valuemin>
+            <autn:valuemax>985728.53</autn:valuemax>
+            <autn:valuepercentile percentile="10">182406.12</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">327229.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">417793.46</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">621053.43</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">940898.15</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="15">
+          <autn:value_details>
+            <autn:values>15</autn:values>
+            <autn:valuesum>5726845.69</autn:valuesum>
+            <autn:valueaverate>381789.71</autn:valueaverate>
+            <autn:valuemin>17862.39</autn:valuemin>
+            <autn:valuemax>848123.44</autn:valuemax>
+            <autn:valuepercentile percentile="10">48297.53</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">90678.82</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">347059.09</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">610836.84</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">816736.01</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="24">
+          <autn:value_details>
+            <autn:values>24</autn:values>
+            <autn:valuesum>10598218.56</autn:valuesum>
+            <autn:valueaverate>441592.44</autn:valueaverate>
+            <autn:valuemin>3360.82</autn:valuemin>
+            <autn:valuemax>959114.81</autn:valuemax>
+            <autn:valuepercentile percentile="10">43928.39</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">53428.43</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">451572.08</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">615189.18</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">933396.07</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="22">
+          <autn:value_details>
+            <autn:values>22</autn:values>
+            <autn:valuesum>12681844.24</autn:valuesum>
+            <autn:valueaverate>576447.47</autn:valueaverate>
+            <autn:valuemin>12380.12</autn:valuemin>
+            <autn:valuemax>977385.83</autn:valuemax>
+            <autn:valuepercentile percentile="10">168907.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">375303.97</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">591551.92</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">779934.76</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">935445.46</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="3e+5,4e+5" type="range" count="99">
+        <autn:field value="CAT" count="26">
+          <autn:value_details>
+            <autn:values>26</autn:values>
+            <autn:valuesum>12905427.78</autn:valuesum>
+            <autn:valueaverate>496362.61</autn:valueaverate>
+            <autn:valuemin>21762.61</autn:valuemin>
+            <autn:valuemax>988473.93</autn:valuemax>
+            <autn:valuepercentile percentile="10">123967.34</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">296510.87</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">458297.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">682620.14</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">906208.35</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="25">
+          <autn:value_details>
+            <autn:values>25</autn:values>
+            <autn:valuesum>12145665.57</autn:valuesum>
+            <autn:valueaverate>485826.62</autn:valueaverate>
+            <autn:valuemin>59584.15</autn:valuemin>
+            <autn:valuemax>954265.69</autn:valuemax>
+            <autn:valuepercentile percentile="10">142859.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">290900.87</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">473607.95</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">650082.08</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">940586.34</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="23">
+          <autn:value_details>
+            <autn:values>23</autn:values>
+            <autn:valuesum>11780720.50</autn:valuesum>
+            <autn:valueaverate>512205.24</autn:valueaverate>
+            <autn:valuemin>2794.41</autn:valuemin>
+            <autn:valuemax>976535.01</autn:valuemax>
+            <autn:valuepercentile percentile="10">106327.41</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">341133.51</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">471927.36</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">801728.64</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">903995.93</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="25">
+          <autn:value_details>
+            <autn:values>25</autn:values>
+            <autn:valuesum>13944669.29</autn:valuesum>
+            <autn:valueaverate>557786.77</autn:valueaverate>
+            <autn:valuemin>31993.67</autn:valuemin>
+            <autn:valuemax>954235.22</autn:valuemax>
+            <autn:valuepercentile percentile="10">255054.08</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">338133.18</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">620974.21</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">732722.49</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">915464.73</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="4e+5,5e+5" type="range" count="96">
+        <autn:field value="CAT" count="24">
+          <autn:value_details>
+            <autn:values>24</autn:values>
+            <autn:valuesum>9389638.44</autn:valuesum>
+            <autn:valueaverate>391234.93</autn:valueaverate>
+            <autn:valuemin>7778.88</autn:valuemin>
+            <autn:valuemax>964179.01</autn:valuemax>
+            <autn:valuepercentile percentile="10">60313.32</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">126145.57</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">287628.96</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">576440.02</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">769155.49</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="20">
+          <autn:value_details>
+            <autn:values>20</autn:values>
+            <autn:valuesum>10979013.24</autn:valuesum>
+            <autn:valueaverate>548950.66</autn:valueaverate>
+            <autn:valuemin>8057.18</autn:valuemin>
+            <autn:valuemax>963585.23</autn:valuemax>
+            <autn:valuepercentile percentile="10">74917.75</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">220605.58</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">538020.91</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">836265.98</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">908026.89</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="22">
+          <autn:value_details>
+            <autn:values>22</autn:values>
+            <autn:valuesum>9976724.22</autn:valuesum>
+            <autn:valueaverate>453487.46</autn:valueaverate>
+            <autn:valuemin>999.12</autn:valuemin>
+            <autn:valuemax>871979.87</autn:valuemax>
+            <autn:valuepercentile percentile="10">67741.54</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">264598.27</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">427789.18</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">656715.06</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">807782.35</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="30">
+          <autn:value_details>
+            <autn:values>30</autn:values>
+            <autn:valuesum>14673574.22</autn:valuesum>
+            <autn:valueaverate>489119.14</autn:valueaverate>
+            <autn:valuemin>15105.01</autn:valuemin>
+            <autn:valuemax>973162.81</autn:valuemax>
+            <autn:valuepercentile percentile="10">66019.25</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">222458.01</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">475668.89</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">732428.09</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">937055.34</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="5e+5,6e+5" type="range" count="94">
+        <autn:field value="CAT" count="25">
+          <autn:value_details>
+            <autn:values>25</autn:values>
+            <autn:valuesum>11339400.49</autn:valuesum>
+            <autn:valueaverate>453576.02</autn:valueaverate>
+            <autn:valuemin>14703.35</autn:valuemin>
+            <autn:valuemax>935905.01</autn:valuemax>
+            <autn:valuepercentile percentile="10">42205.39</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">109677.76</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">454038.06</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">710463.77</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">899774.62</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="24">
+          <autn:value_details>
+            <autn:values>24</autn:values>
+            <autn:valuesum>9855482.58</autn:valuesum>
+            <autn:valueaverate>410645.11</autn:valueaverate>
+            <autn:valuemin>66490.55</autn:valuemin>
+            <autn:valuemax>901928.61</autn:valuemax>
+            <autn:valuepercentile percentile="10">124675.94</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">195069.71</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">306486.74</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">580475.33</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">892760.11</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="23">
+          <autn:value_details>
+            <autn:values>23</autn:values>
+            <autn:valuesum>14759040.70</autn:valuesum>
+            <autn:valueaverate>641697.42</autn:valueaverate>
+            <autn:valuemin>84808.73</autn:valuemin>
+            <autn:valuemax>973970.89</autn:valuemax>
+            <autn:valuepercentile percentile="10">134695.76</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">360838.89</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">711878.61</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">920574.24</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">963339.74</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="22">
+          <autn:value_details>
+            <autn:values>22</autn:values>
+            <autn:valuesum>9802258.81</autn:valuesum>
+            <autn:valueaverate>445557.22</autn:valueaverate>
+            <autn:valuemin>11213.35</autn:valuemin>
+            <autn:valuemax>968761.61</autn:valuemax>
+            <autn:valuepercentile percentile="10">189022.04</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">267108.65</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">350804.04</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">617327.22</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">838072.94</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="6e+5,7e+5" type="range" count="97">
+        <autn:field value="CAT" count="28">
+          <autn:value_details>
+            <autn:values>28</autn:values>
+            <autn:valuesum>13911918.46</autn:valuesum>
+            <autn:valueaverate>496854.23</autn:valueaverate>
+            <autn:valuemin>26025.38</autn:valuemin>
+            <autn:valuemax>986441.06</autn:valuemax>
+            <autn:valuepercentile percentile="10">44634.46</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">118696.49</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">430173.64</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">806795.67</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">968275.59</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="20">
+          <autn:value_details>
+            <autn:values>20</autn:values>
+            <autn:valuesum>10591376.14</autn:valuesum>
+            <autn:valueaverate>529568.81</autn:valueaverate>
+            <autn:valuemin>6746.71</autn:valuemin>
+            <autn:valuemax>969381.55</autn:valuemax>
+            <autn:valuepercentile percentile="10">11519.32</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">248172.92</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">522094.72</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">851986.36</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">953333.77</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="20">
+          <autn:value_details>
+            <autn:values>20</autn:values>
+            <autn:valuesum>7635925.61</autn:valuesum>
+            <autn:valueaverate>381796.28</autn:valueaverate>
+            <autn:valuemin>17471.31</autn:valuemin>
+            <autn:valuemax>931736.91</autn:valuemax>
+            <autn:valuepercentile percentile="10">27514.97</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">79203.03</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">342287.74</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">548999.86</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">713587.95</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="29">
+          <autn:value_details>
+            <autn:values>29</autn:values>
+            <autn:valuesum>14081921.92</autn:valuesum>
+            <autn:valueaverate>485583.51</autn:valueaverate>
+            <autn:valuemin>78294.61</autn:valuemin>
+            <autn:valuemax>992573.76</autn:valuemax>
+            <autn:valuepercentile percentile="10">87808.25</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">346665.18</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">524002.44</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">632853.15</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">803182.01</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="7e+5,8e+5" type="range" count="103">
+        <autn:field value="CAT" count="30">
+          <autn:value_details>
+            <autn:values>30</autn:values>
+            <autn:valuesum>15921197.40</autn:valuesum>
+            <autn:valueaverate>530706.58</autn:valueaverate>
+            <autn:valuemin>15246.81</autn:valuemin>
+            <autn:valuemax>980326.16</autn:valuemax>
+            <autn:valuepercentile percentile="10">43423.52</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">335061.43</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">575420.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">772889.09</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">896197.44</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="28">
+          <autn:value_details>
+            <autn:values>28</autn:values>
+            <autn:valuesum>13435725.32</autn:valuesum>
+            <autn:valueaverate>479847.33</autn:valueaverate>
+            <autn:valuemin>13132.26</autn:valuemin>
+            <autn:valuemax>967138.48</autn:valuemax>
+            <autn:valuepercentile percentile="10">89563.02</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">209710.71</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">411192.96</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">659444.72</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">897406.95</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="15">
+          <autn:value_details>
+            <autn:values>15</autn:values>
+            <autn:valuesum>8703735.61</autn:valuesum>
+            <autn:valueaverate>580249.04</autn:valueaverate>
+            <autn:valuemin>26182.41</autn:valuemin>
+            <autn:valuemax>983363.66</autn:valuemax>
+            <autn:valuepercentile percentile="10">71818.05</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">382265.89</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">549749.87</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">882532.77</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">961256.38</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="30">
+          <autn:value_details>
+            <autn:values>30</autn:values>
+            <autn:valuesum>16871827.44</autn:valuesum>
+            <autn:valueaverate>562394.25</autn:valueaverate>
+            <autn:valuemin>4638.59</autn:valuemin>
+            <autn:valuemax>985434.14</autn:valuemax>
+            <autn:valuepercentile percentile="10">19722.42</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">362920.92</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">606763.86</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">777084.47</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">895479.42</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="8e+5,9e+5" type="range" count="103">
+        <autn:field value="CAT" count="26">
+          <autn:value_details>
+            <autn:values>26</autn:values>
+            <autn:valuesum>11921958.36</autn:valuesum>
+            <autn:valueaverate>458536.86</autn:valueaverate>
+            <autn:valuemin>4658.74</autn:valuemin>
+            <autn:valuemax>928906.35</autn:valuemax>
+            <autn:valuepercentile percentile="10">54441.21</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">182577.44</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">382455.56</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">736939.45</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">827555.16</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="29">
+          <autn:value_details>
+            <autn:values>29</autn:values>
+            <autn:valuesum>16425136.42</autn:valuesum>
+            <autn:valueaverate>566384.01</autn:valueaverate>
+            <autn:valuemin>15702.03</autn:valuemin>
+            <autn:valuemax>981534.36</autn:valuemax>
+            <autn:valuepercentile percentile="10">209843.47</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">479944.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">553542.85</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">724087.66</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">969764.22</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="26">
+          <autn:value_details>
+            <autn:values>26</autn:values>
+            <autn:valuesum>12887691.93</autn:valuesum>
+            <autn:valueaverate>495680.46</autn:valueaverate>
+            <autn:valuemin>11020.73</autn:valuemin>
+            <autn:valuemax>997277.79</autn:valuemax>
+            <autn:valuepercentile percentile="10">27718.29</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">236923.65</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">570975.39</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">663112.19</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">943790.25</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="22">
+          <autn:value_details>
+            <autn:values>22</autn:values>
+            <autn:valuesum>10897566.69</autn:valuesum>
+            <autn:valueaverate>495343.94</autn:valueaverate>
+            <autn:valuemin>2766.77</autn:valuemin>
+            <autn:valuemax>937498.88</autn:valuemax>
+            <autn:valuepercentile percentile="10">127045.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">301002.84</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">445165.25</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">685828.14</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">856689.31</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+      <autn:field value="9e+5,1e+6" type="range" count="103">
+        <autn:field value="CAT" count="26">
+          <autn:value_details>
+            <autn:values>26</autn:values>
+            <autn:valuesum>12808357.91</autn:valuesum>
+            <autn:valueaverate>492629.15</autn:valueaverate>
+            <autn:valuemin>171673.33</autn:valuemin>
+            <autn:valuemax>898630.99</autn:valuemax>
+            <autn:valuepercentile percentile="10">223520.34</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">308432.09</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">407223.11</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">719363.96</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">853490.65</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="DOG" count="28">
+          <autn:value_details>
+            <autn:values>28</autn:values>
+            <autn:valuesum>13956481.24</autn:valuesum>
+            <autn:valueaverate>498445.76</autn:valueaverate>
+            <autn:valuemin>5237.77</autn:valuemin>
+            <autn:valuemax>960174.82</autn:valuemax>
+            <autn:valuepercentile percentile="10">164118.13</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">229380.33</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">398900.31</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">792306.51</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">919611.54</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="FISH" count="18">
+          <autn:value_details>
+            <autn:values>18</autn:values>
+            <autn:valuesum>9539609.01</autn:valuesum>
+            <autn:valueaverate>529978.28</autn:valueaverate>
+            <autn:valuemin>45907.52</autn:valuemin>
+            <autn:valuemax>960616.68</autn:valuemax>
+            <autn:valuepercentile percentile="10">55899.52</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">263392.75</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">629519.24</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">782197.28</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">893747.85</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+        <autn:field value="PIG" count="31">
+          <autn:value_details>
+            <autn:values>31</autn:values>
+            <autn:valuesum>13331961.33</autn:valuesum>
+            <autn:valueaverate>430063.27</autn:valueaverate>
+            <autn:valuemin>6508.84</autn:valuemin>
+            <autn:valuemax>986660.28</autn:valuemax>
+            <autn:valuepercentile percentile="10">106952.01</autn:valuepercentile>
+            <autn:valuepercentile percentile="25">174458.05</autn:valuepercentile>
+            <autn:valuepercentile percentile="50">374104.35</autn:valuepercentile>
+            <autn:valuepercentile percentile="75">615594.61</autn:valuepercentile>
+            <autn:valuepercentile percentile="90">872294.27</autn:valuepercentile>
+          </autn:value_details>
+        </autn:field>
+      </autn:field>
+    </autn:values>
+    <autn:engines>
+      <autn:used>0,1</autn:used>
+    </autn:engines>
+  </responsedata>
+</autnresponse>
