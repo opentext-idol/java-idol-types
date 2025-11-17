@@ -167,6 +167,9 @@
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
             <annox:annotate target="class">@lombok.ToString</annox:annotate>
         </jaxb:bindings>
+        <jaxb:bindings node="//xs:complexType[@name='valueDetails']">
+            <jaxb:class ref="com.opentext.idol.types.responses.ValueDetails"/>
+        </jaxb:bindings>
     </jaxb:bindings>
     <jaxb:bindings schemaLocation="../../xsds/responses/getSampleResponse.xsd">
         <jaxb:bindings node="xs:complexType[@name='getSampleResponseData']">
