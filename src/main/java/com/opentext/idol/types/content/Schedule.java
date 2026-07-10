@@ -17,13 +17,13 @@ package com.opentext.idol.types.content;
 import biweekly.ICalVersion;
 import biweekly.ValidationWarnings;
 import biweekly.util.Frequency;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+import tools.jackson.databind.annotation.JsonDeserialize;
+import tools.jackson.databind.annotation.JsonPOJOBuilder;
 
 import java.io.Serializable;
 import java.time.Instant;

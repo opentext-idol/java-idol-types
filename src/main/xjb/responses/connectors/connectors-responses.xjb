@@ -27,6 +27,7 @@
     <jaxb:bindings schemaLocation="../../../xsds/responses/connectors/connectors.xsd">
         <jaxb:bindings node="//xs:complexType[@name='ResponseIdentifier']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
@@ -34,6 +35,7 @@
         </jaxb:bindings>
         <jaxb:bindings node="//xs:complexType[@name='Identifiers']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>

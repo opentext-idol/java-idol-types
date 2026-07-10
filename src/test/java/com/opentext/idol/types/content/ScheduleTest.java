@@ -15,9 +15,8 @@
 package com.opentext.idol.types.content;
 
 import biweekly.util.Frequency;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import org.junit.jupiter.api.Test;
+import tools.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -36,7 +35,6 @@ public class ScheduleTest {
     @Test
     public void json() throws IOException {
         final ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
         final byte[] json = objectMapper.writeValueAsBytes(schedule);
         assertNotNull(json);
         final Schedule processedSchedule = objectMapper.readValue(json, Schedule.class);

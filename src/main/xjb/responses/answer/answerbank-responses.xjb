@@ -38,6 +38,7 @@
     <jaxb:bindings schemaLocation="../../../xsds/responses/answer/getResources.xsd">
         <jaxb:bindings node="//xs:complexType[@name='question']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
@@ -45,6 +46,7 @@
         </jaxb:bindings>
         <jaxb:bindings node="//xs:complexType[@name='question_equivalence_class']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
@@ -52,6 +54,7 @@
         </jaxb:bindings>
         <jaxb:bindings node="//xs:complexType[@name='qec_answer']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
@@ -59,6 +62,7 @@
         </jaxb:bindings>
         <jaxb:bindings node="//xs:complexType[@name='qec_rule']">
             <annox:annotate target="class">@lombok.Builder(toBuilder = true)</annox:annotate>
+            <annox:annotate target="class">@lombok.extern.jackson.Jacksonized</annox:annotate>
             <annox:annotate target="class">@lombok.AllArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.NoArgsConstructor</annox:annotate>
             <annox:annotate target="class">@lombok.EqualsAndHashCode</annox:annotate>
